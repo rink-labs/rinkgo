@@ -19,8 +19,6 @@ require (
 	connectrpc.com/connect v1.18.1
 	connectrpc.com/grpcreflect v1.3.0
 	github.com/DataDog/zstd v1.5.2
-	github.com/Rinkuby-Labs/coreth v1.0.3
-	github.com/Rinkuby-Labs/subnet-evm v1.0.3
 	github.com/StephenButtolph/canoto v0.17.3
 	github.com/antithesishq/antithesis-sdk-go v0.3.8
 	github.com/ava-labs/libevm v1.13.15-0.20251016142715-1bccf4f2ddb2
@@ -48,6 +46,8 @@ require (
 	github.com/prometheus/client_golang v1.23.0
 	github.com/prometheus/client_model v0.6.2
 	github.com/prometheus/common v0.65.0
+	github.com/rink-labs/coreth v1.0.4
+	github.com/rink-labs/subnet-evm v1.0.4
 	github.com/rs/cors v1.7.0
 	github.com/shirou/gopsutil v3.21.11+incompatible
 	github.com/spf13/cast v1.9.2

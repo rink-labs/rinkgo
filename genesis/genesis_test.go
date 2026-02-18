@@ -47,9 +47,9 @@ func TestValidateConfig(t *testing.T) {
 		config      *Config
 		expectedErr error
 	}{
-		"rinkuby": {
+		"rink": {
 			networkID:   90059,
-			config:      &RinkubyConfig,
+			config:      &RinkConfig,
 			expectedErr: nil,
 		},
 		/*"chennai": {
@@ -62,9 +62,9 @@ func TestValidateConfig(t *testing.T) {
 			config:      &LocalConfig,
 			expectedErr: nil,
 		},
-		"rinkuby (networkID mismatch)": {
+		"rink (networkID mismatch)": {
 			networkID:   2,
-			config:      &RinkubyConfig,
+			config:      &RinkConfig,
 			expectedErr: errConflictingNetworkIDs,
 		},
 		"invalid start time": {
@@ -184,8 +184,8 @@ func TestGenesisFromFile(t *testing.T) {
 		expectedErr     error
 		expectedHash    string
 	}{
-		"rinkuby": {
-			networkID:    constants.RinkubyID,
+		"rink": {
+			networkID:    constants.RinkID,
 			customConfig: customGenesisConfigJSON,
 			expectedErr:  errOverridesStandardNetworkConfig,
 		},
@@ -273,7 +273,7 @@ func TestGenesisFromFlag(t *testing.T) {
 		expectedHash string
 	}{
 		"mainnet": {
-			networkID:   constants.RinkubyID,
+			networkID:   constants.RinkID,
 			expectedErr: errOverridesStandardNetworkConfig,
 		},
 		"fuji": {
@@ -321,8 +321,8 @@ func TestGenesisFromFlag(t *testing.T) {
 				// try loading a default config
 				var err error
 				switch test.networkID {
-				case constants.RinkubyID:
-					genBytes, err = json.Marshal(&RinkubyConfig)
+				case constants.RinkID:
+					genBytes, err = json.Marshal(&RinkConfig)
 					require.NoError(err)
 				/*case constants.TestnetID:
 				genBytes, err = json.Marshal(&ChennaiConfig)
@@ -355,7 +355,7 @@ func TestGenesis(t *testing.T) {
 		expectedID string
 	}{
 		{
-			config:     &RinkubyConfig,
+			config:     &RinkConfig,
 			expectedID: "UUvXi6j7QhVvgpbKM89MP5HdrxKm9CaJeHc187TsDNf8nZdLk",
 		},
 		/*{
@@ -390,7 +390,7 @@ func TestVMGenesis(t *testing.T) {
 		vmTest    []vmTest
 	}{
 		{
-			networkID: constants.RinkubyID,
+			networkID: constants.RinkID,
 			vmTest: []vmTest{
 				{
 					vmID:       constants.AVMID,
@@ -464,7 +464,7 @@ func TestAVAXAssetID(t *testing.T) {
 		expectedID string
 	}{
 		{
-			networkID:  constants.RinkubyID,
+			networkID:  constants.RinkID,
 			expectedID: "FvwEAhmxKfeiG8SnEvq42hc6whRyY3EFYAvebMqDNDGCgxN5Z",
 		},
 		{
@@ -501,7 +501,7 @@ func TestCChainGenesisTimestamp(t *testing.T) {
 		expectedGenesisTime uint64
 	}{
 		{
-			networkID:           constants.RinkubyID,
+			networkID:           constants.RinkID,
 			expectedGenesisTime: 0,
 		},
 		{

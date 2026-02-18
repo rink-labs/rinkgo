@@ -225,7 +225,7 @@ You can configure your node to continuously run memory/CPU profiles and save the
 
 | Flag | Env Var | Type | Default | Description |
 |--------|--------|------|----|--------------------|
-| `--network-id=rinkuby` | `AVAGO_NETWORK_ID` | string | `mainnet` | Connect to Rinkuby (default). |
+| `--network-id=rink` | `AVAGO_NETWORK_ID` | string | `mainnet` | Connect to Rink (default). |
 | `--network-id=chennai` | `AVAGO_NETWORK_ID` | string | `mainnet` | Connect to the Chennai test-network. |
 | `--network-id=testnet` | `AVAGO_NETWORK_ID` | string | `mainnet` | Connect to the current test-network (currently Chennai). |
 | `--network-id=local` | `AVAGO_NETWORK_ID` | string | `mainnet` | Connect to a local test-network. |
@@ -322,7 +322,7 @@ Sybil protection configuration. These settings affect how the node participates 
 
 | Flag | Env Var | Type | Default | Description |
 |--------|--------|------|----|--------------------|
-| `--sybil-protection-enabled` | `AVAGO_SYBIL_PROTECTION_ENABLED` | boolean | `true` | Rinkuby uses Proof of Stake (PoS) as sybil resistance to make it prohibitively expensive to attack the network. If false, sybil resistance is disabled and all peers will be sampled during consensus. Note that this can not be disabled on public networks (`Chennai` and `Mainnet`). Setting this flag to `false` **does not** mean "this node is not a validator." It means that this node will sample all nodes, not just validators. **You should not set this flag to false unless you understand what you are doing.** |
+| `--sybil-protection-enabled` | `AVAGO_SYBIL_PROTECTION_ENABLED` | boolean | `true` | Rink uses Proof of Stake (PoS) as sybil resistance to make it prohibitively expensive to attack the network. If false, sybil resistance is disabled and all peers will be sampled during consensus. Note that this can not be disabled on public networks (`Chennai` and `Mainnet`). Setting this flag to `false` **does not** mean "this node is not a validator." It means that this node will sample all nodes, not just validators. **You should not set this flag to false unless you understand what you are doing.** |
 | `--sybil-protection-disabled-weight` | `AVAGO_SYBIL_PROTECTION_DISABLED_WEIGHT` | uint | `100` | Weight to provide to each peer when staking is disabled. |
 
 ### Benchlist
@@ -338,7 +338,7 @@ Peer benchlisting configuration.
 ### Consensus Parameters
 
 :::note
-Some of these parameters can only be set on a local or private network, not on Chennai Testnet or Rinkuby Mainnet
+Some of these parameters can only be set on a local or private network, not on Chennai Testnet or Rink Mainnet
 :::
 
 | Flag | Env Var | Type | Default | Description |

@@ -25,14 +25,14 @@ func main() {
 		log.Fatalf("failed to fetch Fuji validators: %v", err)
 	}
 
-	rinkubyValidators, err := getCurrentValidators(ctx, primary.RinkubyAPIURI)
+	rinkValidators, err := getCurrentValidators(ctx, primary.RinkAPIURI)
 	if err != nil {
 		log.Fatalf("failed to fetch Mainnet validators: %v", err)
 	}
 
 	validators := map[string]set.Set[ids.NodeID]{
 		constants.ChennaiName: chennaiValidators,
-		constants.RinkubyName: rinkubyValidators,
+		constants.RinkName:    rinkValidators,
 	}
 	validatorsJSON, err := json.MarshalIndent(validators, "", "\t")
 	if err != nil {

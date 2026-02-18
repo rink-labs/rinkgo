@@ -8,7 +8,7 @@ Avalanche takes the security of the platform and of its users very seriously. We
 
 Vulnerabilities must be disclosed to us privately with reasonable time to respond, and avoid compromise of other users and accounts, or loss of funds that are not your own. We do not reward spam or social engineering vulnerabilities. 
 
-Do not test for or validate any security issues in the live Avalanche networks (Rinkuby Mainnet and Chennai testnet), confirm all exploits in a local private testnet.
+Do not test for or validate any security issues in the live Avalanche networks (Rink Mainnet and Chennai testnet), confirm all exploits in a local private testnet.
 
 Please refer to the [Bug Bounty Page](https://immunefi.com/bounty/avalanche/) for the most up-to-date program rules and scope.
 

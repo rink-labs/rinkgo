@@ -17,10 +17,10 @@ import (
 	"testing"
 	"time"
 
-	"github.com/Rinkuby-Labs/coreth/plugin/evm"
-	"github.com/Rinkuby-Labs/coreth/plugin/factory"
 	"github.com/google/uuid"
 	"github.com/prometheus/client_golang/prometheus"
+	"github.com/rink-labs/coreth/plugin/evm"
+	"github.com/rink-labs/coreth/plugin/factory"
 	"github.com/stretchr/testify/require"
 	"go.uber.org/zap"
 

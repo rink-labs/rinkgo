@@ -9,8 +9,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/Rinkuby-Labs/coreth/plugin/evm"
 	"github.com/onsi/ginkgo/v2"
+	"github.com/rink-labs/coreth/plugin/evm"
 	"github.com/stretchr/testify/require"
 	"go.uber.org/zap"
 

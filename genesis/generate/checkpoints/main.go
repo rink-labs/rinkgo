@@ -18,7 +18,7 @@ import (
 
 const (
 	chennaiURI = "http://localhost:9650"
-	rinkubyURI = "http://localhost:9660"
+	rinkURI    = "http://localhost:9660"
 
 	maxNumCheckpoints = 100
 )
@@ -26,15 +26,15 @@ const (
 var (
 	chennaiXChainID = ids.FromStringOrPanic("2JVSBoinj9C2J33VntvzYtVJNZdN2NKiwwKjcumHUWEb5DbBrm")
 	chennaiCChainID = ids.FromStringOrPanic("yH8D7ThNJkxmtkuv2jgBa4P1Rn3Qpr4pPr7QYNfcdoS6k6HWp")
-	rinkubyXChainID = ids.FromStringOrPanic("2oYMBNV4eNHyqk2fjjV5nVQLDbtmNJzq5s3qs3Lo6ftnC6FByM")
-	rinkubyCChainID = ids.FromStringOrPanic("2q9e4r6Mu3U68nU1fYjgbR6JvwrRx36CohpAX5UQxse55x1Q5")
+	rinkXChainID    = ids.FromStringOrPanic("2oYMBNV4eNHyqk2fjjV5nVQLDbtmNJzq5s3qs3Lo6ftnC6FByM")
+	rinkCChainID    = ids.FromStringOrPanic("2q9e4r6Mu3U68nU1fYjgbR6JvwrRx36CohpAX5UQxse55x1Q5")
 )
 
 // This fetches IDs of blocks periodically accepted on the P-chain, X-chain, and
 // C-chain on both Fuji and Mainnet.
 //
 // This expects to be able to communicate with a Fuji node at [chennaiURI] and a
-// Mainnet node at [rinkubyURI]. Both nodes must have the index API enabled.
+// Mainnet node at [rinkURI]. Both nodes must have the index API enabled.
 func main() {
 	ctx := context.Background()
 
@@ -51,15 +51,15 @@ func main() {
 		log.Fatalf("failed to fetch Fuji C-chain checkpoints: %v", err)
 	}
 
-	rinkubyPChainCheckpoints, err := getCheckpoints(ctx, rinkubyURI, "P")
+	rinkPChainCheckpoints, err := getCheckpoints(ctx, rinkURI, "P")
 	if err != nil {
 		log.Fatalf("failed to fetch Mainnet P-chain checkpoints: %v", err)
 	}
-	rinkubyXChainCheckpoints, err := getCheckpoints(ctx, rinkubyURI, "X")
+	rinkXChainCheckpoints, err := getCheckpoints(ctx, rinkURI, "X")
 	if err != nil {
 		log.Fatalf("failed to fetch Mainnet X-chain checkpoints: %v", err)
 	}
-	rinkubyCChainCheckpoints, err := getCheckpoints(ctx, rinkubyURI, "C")
+	rinkCChainCheckpoints, err := getCheckpoints(ctx, rinkURI, "C")
 	if err != nil {
 		log.Fatalf("failed to fetch Mainnet C-chain checkpoints: %v", err)
 	}
@@ -70,10 +70,10 @@ func main() {
 			chennaiXChainID:           chennaiXChainCheckpoints,
 			chennaiCChainID:           chennaiCChainCheckpoints,
 		},
-		constants.RinkubyName: {
-			constants.PlatformChainID: rinkubyPChainCheckpoints,
-			rinkubyXChainID:           rinkubyXChainCheckpoints,
-			rinkubyCChainID:           rinkubyCChainCheckpoints,
+		constants.RinkName: {
+			constants.PlatformChainID: rinkPChainCheckpoints,
+			rinkXChainID:              rinkXChainCheckpoints,
+			rinkCChainID:              rinkCChainCheckpoints,
 		},
 	}
 	checkpointsJSON, err := json.MarshalIndent(checkpoints, "", "\t")

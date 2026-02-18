@@ -53,10 +53,6 @@ github.com/DataDog/zstd v1.5.2/go.mod h1:g4AWEaM3yOg3HYfnJ3YIawPnVdXJh9QME85blwS
 github.com/Joker/hpp v1.0.0/go.mod h1:8x5n+M1Hp5hC0g8okX3sR3vFQwynaX/UgSOM9MeBKzY=
 github.com/Microsoft/go-winio v0.6.1 h1:9/kr64B9VUZrLm5YYwbGtUJnMgqWVOdUAXu6Migciow=
 github.com/Microsoft/go-winio v0.6.1/go.mod h1:LRdKpFKfdobln8UmuiYcKPot9D2v6svN5+sAH+4kjUM=
-github.com/Rinkuby-Labs/coreth v1.0.3 h1:xQhKprE25O5Xt/dOunSnkPXBKfGbWodtqgUZ9VwZp08=
-github.com/Rinkuby-Labs/coreth v1.0.3/go.mod h1:jIZsHLb/PYmNU/kz4aHD4ntwCNDO8rucqyReM9geChE=
-github.com/Rinkuby-Labs/subnet-evm v1.0.3 h1:VrO3VQUbG9AXHTawvYH7OX+x1g0kGhQQp3Xzte/4D+k=
-github.com/Rinkuby-Labs/subnet-evm v1.0.3/go.mod h1:qniYE3YNI23M3zbZ9c12ppbyPHhALqJSfDs7SJrpjXk=
 github.com/Shopify/goreferrer v0.0.0-20181106222321-ec9c9a553398/go.mod h1:a1uqRtAwp2Xwc6WNPJEufxJ7fx3npB4UV/JOLmbu5I0=
 github.com/StephenButtolph/canoto v0.17.3 h1:lvsnYD4b96vD1knnmp1xCmZqfYpY/jSeRozGdOfdvGI=
 github.com/StephenButtolph/canoto v0.17.3/go.mod h1:IcnAHC6nJUfQFVR9y60ko2ecUqqHHSB6UwI9NnBFZnE=
@@ -597,6 +593,10 @@ github.com/prometheus/common v0.65.0 h1:QDwzd+G1twt//Kwj/Ww6E9FQq1iVMmODnILtW1t2
 github.com/prometheus/common v0.65.0/go.mod h1:0gZns+BLRQ3V6NdaerOhMbwwRbNh9hkGINtQAsP5GS8=
 github.com/prometheus/procfs v0.16.1 h1:hZ15bTNuirocR6u0JZ6BAHHmwS1p8B4P6MRqxtzMyRg=
 github.com/prometheus/procfs v0.16.1/go.mod h1:teAbpZRB1iIAJYREa1LsoWUXykVXA1KlTmWl8x/U+Is=
+github.com/rink-labs/coreth v1.0.4 h1:/HnHhfu0oFEgBKMBILYbK2ohMPOfuhmTb3hoz9UY6HE=
+github.com/rink-labs/coreth v1.0.4/go.mod h1:SOa93NzY2mkBt22wzu7e2yLcFIDiP4PwFVJTPPl+ZTk=
+github.com/rink-labs/subnet-evm v1.0.4 h1:lls5kZymLEklrS6q9iPDJ1qTzVllVuA2qP+IvPWbyQU=
+github.com/rink-labs/subnet-evm v1.0.4/go.mod h1:16TI0zdTw9iakadTNtdmzPQzIs0sJnM9Xfa/U6dh8+U=
 github.com/rivo/uniseg v0.2.0 h1:S1pD9weZBuJdFmowNwbpi7BJ8TNftyUImj/0WQi72jY=
 github.com/rivo/uniseg v0.2.0/go.mod h1:J6wj4VEh+S6ZtnVlnTBMWIodfgj8LQOQFoIToxlJtxc=
 github.com/rogpeppe/fastuuid v1.2.0/go.mod h1:jVj6XXZzXRy/MSR5jhDC/2q6DgLz+nrA6LYCDYWNEvQ=

@@ -11,8 +11,8 @@ import (
 	"github.com/ava-labs/libevm/core/types"
 	"github.com/stretchr/testify/require"
 
-	cchain "github.com/Rinkuby-Labs/coreth/plugin/evm/customtypes"
-	subnet "github.com/Rinkuby-Labs/subnet-evm/plugin/evm/customtypes"
+	cchain "github.com/rink-labs/coreth/plugin/evm/customtypes"
+	subnet "github.com/rink-labs/subnet-evm/plugin/evm/customtypes"
 )
 
 // setAndGetMillis is an arbitrary function that can be run if and only if
