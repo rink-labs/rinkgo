@@ -16,7 +16,7 @@ import (
 // Const variables to be exported
 const (
 	MainnetID  uint32 = 1
-	RinkubyID  uint32 = 90059
+	RinkID     uint32 = 90059
 	ChennaiID  uint32 = 2099
 	TestnetID  uint32 = ChennaiID // Deprecated: use ChennaiID
 	FujiID     uint32 = 5
@@ -25,14 +25,14 @@ const (
 
 	MainnetName  = "mainnet"
 	FujiName     = "fuji"
-	RinkubyName  = "rinkuby"
+	RinkName     = "rink"
 	ChennaiName  = "chennai"
 	UnitTestName = "testing"
 	LocalName    = "local"
 
 	MainnetHRP  = "avax"
 	FujiHRP     = "fuji"
-	RinkubyHRP  = "rinkuby"
+	RinkubyHRP  = "rink"
 	ChennaiHRP  = "chennai"
 	UnitTestHRP = "testing"
 	LocalHRP    = "local"
@@ -47,7 +47,7 @@ var (
 
 	NetworkIDToNetworkName = map[uint32]string{
 		MainnetID:  MainnetName,
-		RinkubyID:  RinkubyName,
+		RinkID:     RinkName,
 		ChennaiID:  ChennaiName,
 		FujiID:     FujiName,
 		UnitTestID: UnitTestName,
@@ -55,7 +55,7 @@ var (
 	}
 	NetworkNameToNetworkID = map[string]uint32{
 		MainnetName:  MainnetID,
-		RinkubyName:  RinkubyID,
+		RinkName:     RinkID,
 		ChennaiName:  ChennaiID,
 		FujiName:     FujiID,
 		UnitTestName: UnitTestID,
@@ -64,20 +64,20 @@ var (
 
 	NetworkIDToHRP = map[uint32]string{
 		MainnetID:  MainnetHRP,
-		RinkubyID:  RinkubyHRP,
+		RinkID:     RinkubyHRP,
 		FujiID:     FujiHRP,
 		UnitTestID: UnitTestHRP,
 		LocalID:    LocalHRP,
 	}
 	NetworkHRPToNetworkID = map[string]uint32{
 		MainnetHRP:  MainnetID,
-		RinkubyHRP:  RinkubyID,
+		RinkubyHRP:  RinkID,
 		ChennaiHRP:  ChennaiID,
 		FujiHRP:     FujiID,
 		UnitTestHRP: UnitTestID,
 		LocalHRP:    LocalID,
 	}
-	ProductionNetworkIDs = set.Of(RinkubyID, ChennaiID)
+	ProductionNetworkIDs = set.Of(RinkID, ChennaiID)
 
 	ValidNetworkPrefix = "network-"
 

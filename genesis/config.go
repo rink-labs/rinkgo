@@ -163,7 +163,7 @@ func (c *Config) InitialSupply() (uint64, error) {
 }
 
 var (
-	RinkubyConfig Config
+	RinkConfig    Config
 	ChennaiConfig Config
 	LocalConfig   Config
 
@@ -171,12 +171,12 @@ var (
 )
 
 func init() {
-	unparsedRinkubyConfig := UnparsedConfig{}
+	unparsedRinkConfig := UnparsedConfig{}
 	unparsedChennaiConfig := UnparsedConfig{}
 	unparsedLocalConfig := UnparsedConfig{}
 
 	err := errors.Join(
-		json.Unmarshal(rinkubyGenesisConfigJSON, &unparsedRinkubyConfig),
+		json.Unmarshal(rinkGenesisConfigJSON, &unparsedRinkConfig),
 		json.Unmarshal(chennaiGenesisConfigJSON, &unparsedChennaiConfig),
 		json.Unmarshal(localGenesisConfigJSON, &unparsedLocalConfig),
 	)
@@ -189,7 +189,7 @@ func init() {
 		panic(err)
 	}
 
-	RinkubyConfig, err = unparsedRinkubyConfig.Parse()
+	RinkConfig, err = unparsedRinkConfig.Parse()
 	if err != nil {
 		panic(err)
 	}
@@ -212,8 +212,8 @@ func init() {
 
 func GetConfig(networkID uint32) *Config {
 	switch networkID {
-	case constants.RinkubyID:
-		return &RinkubyConfig
+	case constants.RinkID:
+		return &RinkConfig
 	case constants.ChennaiID:
 		return &ChennaiConfig
 	case constants.LocalID:

@@ -8,9 +8,9 @@ import (
 	"math/big"
 	"time"
 
-	"github.com/Rinkuby-Labs/coreth/ethclient"
-	"github.com/Rinkuby-Labs/coreth/plugin/evm/atomic"
-	"github.com/Rinkuby-Labs/coreth/plugin/evm/client"
+	"github.com/rink-labs/coreth/ethclient"
+	"github.com/rink-labs/coreth/plugin/evm/atomic"
+	"github.com/rink-labs/coreth/plugin/evm/client"
 
 	"github.com/ava-labs/avalanchego/ids"
 	"github.com/ava-labs/avalanchego/utils/rpc"

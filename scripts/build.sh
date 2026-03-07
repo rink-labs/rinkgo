@@ -5,7 +5,7 @@ set -euo pipefail
 print_usage() {
   printf "Usage: build [OPTIONS]
 
-  Build RinkubyGo
+  Build RinkGo
 
   Options:
 
@@ -31,7 +31,7 @@ source "${REPO_ROOT}"/scripts/constants.sh
 # Determine the git commit hash to use for the build
 source "${REPO_ROOT}"/scripts/git_commit.sh
 
-echo "Building RinkubyGo with [$(go version)]..."
-go build ${race} -o "${rinkuby_path}" \
+echo "Building RinkGo with [$(go version)]..."
+go build ${race} -o "${rink_path}" \
    -ldflags "-X github.com/ava-labs/avalanchego/version.GitCommit=$git_commit $static_ld_flags" \
    "${REPO_ROOT}"/main

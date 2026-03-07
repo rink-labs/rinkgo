@@ -7,9 +7,9 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/Rinkuby-Labs/coreth/ethclient"
-	"github.com/Rinkuby-Labs/coreth/plugin/evm/atomic"
-	"github.com/Rinkuby-Labs/coreth/plugin/evm/client"
+	"github.com/rink-labs/coreth/ethclient"
+	"github.com/rink-labs/coreth/plugin/evm/atomic"
+	"github.com/rink-labs/coreth/plugin/evm/client"
 
 	"github.com/ava-labs/avalanchego/api/info"
 	"github.com/ava-labs/avalanchego/codec"
@@ -32,7 +32,7 @@ import (
 )
 
 const (
-	RinkubyAPIURI = "http://localhost:9650"
+	RinkAPIURI    = "http://localhost:9650"
 	ChennaiAPIURI = "http://localhost:9750"
 	LocalAPIURI   = "http://localhost:9650"
 

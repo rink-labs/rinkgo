@@ -8,8 +8,8 @@
 package emulate
 
 import (
-	cchain "github.com/Rinkuby-Labs/coreth/plugin/evm"
-	subnet "github.com/Rinkuby-Labs/subnet-evm/plugin/evm"
+	cchain "github.com/rink-labs/coreth/plugin/evm"
+	subnet "github.com/rink-labs/subnet-evm/plugin/evm"
 )
 
 // CChain executes `fn` as if running in a `coreth` node.

@@ -4,12 +4,12 @@
 
 ---
 
-Node implementation for the [Rinkuby] network -
+Node implementation for the [Rink] network -
 a blockchains platform with high throughput, and blazing fast transactions.
 
 ## Installation
 
-Rinkuby is an incredibly lightweight protocol, so the minimum computer requirements are quite modest.
+Rink is an incredibly lightweight protocol, so the minimum computer requirements are quite modest.
 Note that as network usage increases, hardware requirements may change.
 
 The minimum recommended hardware specification for nodes connected to Mainnet is:
@@ -40,9 +40,9 @@ cd avalanchego
 
 This will clone and checkout the `master` branch.
 
-#### Building RinkubyGo
+#### Building RinkGo
 
-Build RinkubyGo by running the build task:
+Build RinkGo by running the build task:
 
 ```sh
 ./scripts/run_task.sh build
@@ -56,7 +56,7 @@ The `avalanchego` binary is now in the `build` directory. To run:
 
 ### Binary Repository
 
-Install RinkubyGo using an `apt` repository.
+Install RinkGo using an `apt` repository.
 
 #### Adding the APT Repository
 
@@ -127,7 +127,7 @@ You can use `Ctrl+C` to kill the node.
 To connect to the Fuji Testnet, run:
 
 ```sh
-./build/rinkubygo --network-id=chennai
+./build/rinkgo --network-id=chennai
 ```
 
 ### Creating a Local Testnet
