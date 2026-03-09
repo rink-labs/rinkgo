@@ -1,4 +1,4 @@
-// Copyright (C) 2019-2026, Ava Labs, Inc. All rights reserved.
+// Copyright (C) 2019-2025, Ava Labs, Inc. All rights reserved.
 // See the file LICENSE for licensing terms.
 
 package constants
@@ -15,32 +15,28 @@ import (
 
 // Const variables to be exported
 const (
-	MainnetID uint32 = 1
-	CascadeID uint32 = 2
-	DenaliID  uint32 = 3
-	EverestID uint32 = 4
-	FujiID    uint32 = 5
-
-	TestnetID  uint32 = FujiID
+	MainnetID  uint32 = 1
+	RinkID     uint32 = 90059
+	ChennaiID  uint32 = 2099
+	TestnetID  uint32 = ChennaiID // Deprecated: use ChennaiID
+	FujiID     uint32 = 5
 	UnitTestID uint32 = 10
 	LocalID    uint32 = 12345
 
 	MainnetName  = "mainnet"
-	CascadeName  = "cascade"
-	DenaliName   = "denali"
-	EverestName  = "everest"
 	FujiName     = "fuji"
-	TestnetName  = "testnet"
+	RinkName     = "rink"
+	ChennaiName  = "chennai"
 	UnitTestName = "testing"
 	LocalName    = "local"
 
 	MainnetHRP  = "avax"
-	CascadeHRP  = "cascade"
-	DenaliHRP   = "denali"
-	EverestHRP  = "everest"
 	FujiHRP     = "fuji"
+	RinkubyHRP  = "rink"
+	ChennaiHRP  = "chennai"
 	UnitTestHRP = "testing"
 	LocalHRP    = "local"
+
 	FallbackHRP = "custom"
 )
 
@@ -51,43 +47,37 @@ var (
 
 	NetworkIDToNetworkName = map[uint32]string{
 		MainnetID:  MainnetName,
-		CascadeID:  CascadeName,
-		DenaliID:   DenaliName,
-		EverestID:  EverestName,
+		RinkID:     RinkName,
+		ChennaiID:  ChennaiName,
 		FujiID:     FujiName,
 		UnitTestID: UnitTestName,
 		LocalID:    LocalName,
 	}
 	NetworkNameToNetworkID = map[string]uint32{
 		MainnetName:  MainnetID,
-		CascadeName:  CascadeID,
-		DenaliName:   DenaliID,
-		EverestName:  EverestID,
+		RinkName:     RinkID,
+		ChennaiName:  ChennaiID,
 		FujiName:     FujiID,
-		TestnetName:  TestnetID,
 		UnitTestName: UnitTestID,
 		LocalName:    LocalID,
 	}
 
 	NetworkIDToHRP = map[uint32]string{
 		MainnetID:  MainnetHRP,
-		CascadeID:  CascadeHRP,
-		DenaliID:   DenaliHRP,
-		EverestID:  EverestHRP,
+		RinkID:     RinkubyHRP,
 		FujiID:     FujiHRP,
 		UnitTestID: UnitTestHRP,
 		LocalID:    LocalHRP,
 	}
 	NetworkHRPToNetworkID = map[string]uint32{
 		MainnetHRP:  MainnetID,
-		CascadeHRP:  CascadeID,
-		DenaliHRP:   DenaliID,
-		EverestHRP:  EverestID,
+		RinkubyHRP:  RinkID,
+		ChennaiHRP:  ChennaiID,
 		FujiHRP:     FujiID,
 		UnitTestHRP: UnitTestID,
 		LocalHRP:    LocalID,
 	}
-	ProductionNetworkIDs = set.Of(MainnetID, FujiID)
+	ProductionNetworkIDs = set.Of(RinkID, ChennaiID)
 
 	ValidNetworkPrefix = "network-"
 

@@ -49,4 +49,3 @@ triedb/*
 !internal/ethapi/api_extra_test.go
 !tests/utils/*
 !tests/warp/*
-!triedb/firewood/*

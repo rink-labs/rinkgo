@@ -239,7 +239,7 @@ func TestVerifyNetworkUpgrades(t *testing.T) {
 			name: "Invalid_Mainnet_Durango_reconfigured_to_Fuji",
 			upgrades: &NetworkUpgrades{
 				SubnetEVMTimestamp: utils.NewUint64(0),
-				DurangoTimestamp:   utils.TimeToNewUint64(upgrade.GetConfig(constants.FujiID).DurangoTime),
+				DurangoTimestamp:   utils.TimeToNewUint64(upgrade.GetConfig(constants.ChennaiID).DurangoTime),
 			},
 			avagoUpgrades: upgrade.Mainnet,
 			wantError:     errTimestampTooEarly,
@@ -248,7 +248,7 @@ func TestVerifyNetworkUpgrades(t *testing.T) {
 			name: "Valid_Fuji_Durango_reconfigured_to_Mainnet",
 			upgrades: &NetworkUpgrades{
 				SubnetEVMTimestamp: utils.NewUint64(0),
-				DurangoTimestamp:   utils.TimeToNewUint64(upgrade.GetConfig(constants.MainnetID).DurangoTime),
+				DurangoTimestamp:   utils.TimeToNewUint64(upgrade.GetConfig(constants.RinkID).DurangoTime),
 			},
 			avagoUpgrades: upgrade.Fuji,
 			wantError:     errCannotBeNil, // Etna is required but not specified

@@ -49,10 +49,10 @@ type Params struct {
 
 func GetTxFeeConfig(networkID uint32) TxFeeConfig {
 	switch networkID {
-	case constants.MainnetID:
-		return MainnetParams.TxFeeConfig
-	case constants.FujiID:
-		return FujiParams.TxFeeConfig
+	case constants.RinkID:
+		return RinkParams.TxFeeConfig
+	case constants.ChennaiID:
+		return ChennaiParams.TxFeeConfig
 	case constants.LocalID:
 		return LocalParams.TxFeeConfig
 	default:
@@ -62,10 +62,10 @@ func GetTxFeeConfig(networkID uint32) TxFeeConfig {
 
 func GetStakingConfig(networkID uint32) StakingConfig {
 	switch networkID {
-	case constants.MainnetID:
-		return MainnetParams.StakingConfig
-	case constants.FujiID:
-		return FujiParams.StakingConfig
+	case constants.RinkID:
+		return RinkParams.StakingConfig
+	case constants.ChennaiID:
+		return ChennaiParams.StakingConfig
 	case constants.LocalID:
 		return LocalParams.StakingConfig
 	default:

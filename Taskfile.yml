@@ -293,42 +293,6 @@ tasks:
           BLOCK_DIR_SRC: 'cchain-mainnet-blocks-30m-40m-ldb'
           CURRENT_STATE_DIR_SRC: 'cchain-current-state-hashdb-full-33m'
 
-  c-chain-reexecution-firewood-33m-33m500k:
-    desc: C-Chain re-execution from block 33m to 33.5m with firewood
-    cmds:
-      - task: reexecute-cchain-range-with-copied-data
-        vars:
-          TASK_NAME: '{{.TASK}}'
-          START_BLOCK: 33000001
-          END_BLOCK: 33500000
-          BLOCK_DIR_SRC: 'cchain-mainnet-blocks-30m-40m-ldb'
-          CURRENT_STATE_DIR_SRC: 'cchain-current-state-firewood-33m'
-          CONFIG: firewood
-
-  c-chain-reexecution-firewood-33m-40m:
-    desc: C-Chain re-execution from block 33m to 40m with firewood
-    cmds:
-      - task: reexecute-cchain-range-with-copied-data
-        vars:
-          TASK_NAME: '{{.TASK}}'
-          START_BLOCK: 33000001
-          END_BLOCK: 40000000
-          BLOCK_DIR_SRC: 'cchain-mainnet-blocks-30m-40m-ldb'
-          CURRENT_STATE_DIR_SRC: 'cchain-current-state-firewood-33m'
-          CONFIG: firewood
-
-  c-chain-reexecution-firewood-101-250k:
-    desc: C-Chain re-execution from block 101 to 250k with firewood
-    cmds:
-      - task: reexecute-cchain-range-with-copied-data
-        vars:
-          TASK_NAME: '{{.TASK}}'
-          START_BLOCK: 101
-          END_BLOCK: 250000
-          BLOCK_DIR_SRC: 'cchain-mainnet-blocks-1m-ldb'
-          CURRENT_STATE_DIR_SRC: 'cchain-current-state-firewood-100'
-          CONFIG: firewood
-
   test-bootstrap-monitor-e2e:
     desc: Runs bootstrap monitor e2e tests
     cmd: bash -x ./scripts/tests.e2e.bootstrap_monitor.sh

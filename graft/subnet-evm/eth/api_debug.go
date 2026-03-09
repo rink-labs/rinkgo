@@ -44,11 +44,8 @@ import (
 	"github.com/ava-labs/libevm/trie"
 
 	"github.com/ava-labs/avalanchego/graft/subnet-evm/internal/ethapi"
-	"github.com/ava-labs/avalanchego/graft/subnet-evm/plugin/evm/customrawdb"
 	"github.com/ava-labs/avalanchego/graft/subnet-evm/rpc"
 )
-
-var errFirewoodNotSupported = errors.New("firewood triedb scheme does not yet support this operation")
 
 // DebugAPI is the collection of Ethereum full node APIs for debugging the
 // protocol.
@@ -177,10 +174,6 @@ type storageEntry struct {
 
 // StorageRangeAt returns the storage at the given block height and transaction index.
 func (api *DebugAPI) StorageRangeAt(ctx context.Context, blockNrOrHash rpc.BlockNumberOrHash, txIndex int, contractAddress common.Address, keyStart hexutil.Bytes, maxResult int) (StorageRangeResult, error) {
-	if api.isFirewood() {
-		return StorageRangeResult{}, errFirewoodNotSupported
-	}
-
 	block, err := api.eth.APIBackend.BlockByNumberOrHash(ctx, blockNrOrHash)
 	if err != nil {
 		return StorageRangeResult{}, err
@@ -239,10 +232,6 @@ func storageRangeAt(statedb *state.StateDB, root common.Hash, address common.Add
 //
 // With one parameter, returns the list of accounts modified in the specified block.
 func (api *DebugAPI) GetModifiedAccountsByNumber(startNum uint64, endNum *uint64) ([]common.Address, error) {
-	if api.isFirewood() {
-		return nil, errFirewoodNotSupported
-	}
-
 	var startBlock, endBlock *types.Block
 	startBlock = api.eth.blockchain.GetBlockByNumber(startNum)
 	if startBlock == nil {
@@ -270,10 +259,6 @@ func (api *DebugAPI) GetModifiedAccountsByNumber(startNum uint64, endNum *uint64
 //
 // With one parameter, returns the list of accounts modified in the specified block.
 func (api *DebugAPI) GetModifiedAccountsByHash(startHash common.Hash, endHash *common.Hash) ([]common.Address, error) {
-	if api.isFirewood() {
-		return nil, errFirewoodNotSupported
-	}
-
 	var startBlock, endBlock *types.Block
 	startBlock = api.eth.blockchain.GetBlockByHash(startHash)
 	if startBlock == nil {
@@ -384,8 +369,4 @@ func (api *DebugAPI) GetAccessibleState(from, to rpc.BlockNumber) (uint64, error
 		}
 	}
 	return 0, errors.New("no state found")
-}
-
-func (api *DebugAPI) isFirewood() bool {
-	return api.eth.blockchain.CacheConfig().StateScheme == customrawdb.FirewoodScheme
 }

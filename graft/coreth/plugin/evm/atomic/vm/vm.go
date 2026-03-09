@@ -125,9 +125,9 @@ func (vm *VM) Initialize(
 	var extDataHashes map[common.Hash]common.Hash
 	// Set the chain config for mainnet/fuji chain IDs
 	switch chainCtx.NetworkID {
-	case constants.MainnetID:
+	case constants.RinkID:
 		extDataHashes = mainnetExtDataHashes
-	case constants.FujiID:
+	case constants.ChennaiID:
 		extDataHashes = fujiExtDataHashes
 	}
 	// Free the memory of the extDataHash map
@@ -219,7 +219,7 @@ func (vm *VM) Initialize(
 	var (
 		bonusBlockHeights map[uint64]ids.ID
 	)
-	if vm.Ctx.NetworkID == constants.MainnetID {
+	if vm.Ctx.NetworkID == constants.RinkID {
 		var err error
 		bonusBlockHeights, err = readMainnetBonusBlocks()
 		if err != nil {

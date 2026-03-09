@@ -887,7 +887,7 @@ var fujiOverridePChainHeightUntilTimestamp = time.Date(2025, time.March, 7, 17, 
 func (vm *VM) selectChildPChainHeight(ctx context.Context, minPChainHeight uint64) (uint64, error) {
 	var (
 		now            = vm.Clock.Time()
-		shouldOverride = vm.ctx.NetworkID == constants.FujiID &&
+		shouldOverride = vm.ctx.NetworkID == constants.ChennaiID &&
 			vm.ctx.SubnetID != constants.PrimaryNetworkID &&
 			now.Before(fujiOverridePChainHeightUntilTimestamp) &&
 			minPChainHeight < fujiOverridePChainHeightUntilHeight

@@ -16,7 +16,6 @@ import (
 	"sync"
 	"time"
 
-	"github.com/ava-labs/firewood-go-ethhash/ffi"
 	"github.com/ava-labs/libevm/common"
 	"github.com/ava-labs/libevm/core/rawdb"
 	"github.com/ava-labs/libevm/core/types"
@@ -54,7 +53,6 @@ import (
 	"github.com/ava-labs/avalanchego/graft/subnet-evm/params"
 	"github.com/ava-labs/avalanchego/graft/subnet-evm/params/extras"
 	"github.com/ava-labs/avalanchego/graft/subnet-evm/plugin/evm/config"
-	"github.com/ava-labs/avalanchego/graft/subnet-evm/plugin/evm/customrawdb"
 	"github.com/ava-labs/avalanchego/graft/subnet-evm/plugin/evm/extension"
 	"github.com/ava-labs/avalanchego/graft/subnet-evm/plugin/evm/gossip"
 	"github.com/ava-labs/avalanchego/graft/subnet-evm/plugin/evm/message"
@@ -137,22 +135,18 @@ var (
 )
 
 var (
-	errEmptyBlock                                 = errors.New("empty block")
-	errUnsupportedFXs                             = errors.New("unsupported feature extensions")
-	errNilBaseFeeSubnetEVM                        = errors.New("nil base fee is invalid after subnetEVM")
-	errNilBlockGasCostSubnetEVM                   = errors.New("nil blockGasCost is invalid after subnetEVM")
-	errInvalidBlock                               = errors.New("invalid block")
-	errInvalidNonce                               = errors.New("invalid nonce")
-	errUnclesUnsupported                          = errors.New("uncles unsupported")
-	errInvalidHeaderPredicateResults              = errors.New("invalid header predicate results")
-	errInitializingLogger                         = errors.New("failed to initialize logger")
-	errShuttingDownVM                             = errors.New("shutting down VM")
-	errPathStateUnsupported                       = errors.New("path state scheme is not supported")
-	errVerifyGenesis                              = errors.New("failed to verify genesis")
-	errFirewoodSnapshotCacheDisabled              = errors.New("snapshot cache must be disabled for Firewood")
-	errFirewoodOfflinePruningUnsupported          = errors.New("offline pruning is not supported for Firewood")
-	errFirewoodStateSyncUnsupported               = errors.New("state sync is not yet supported for Firewood")
-	errFirewoodMissingTrieRepopulationUnsupported = errors.New("missing trie repopulation is not supported for Firewood")
+	errEmptyBlock                    = errors.New("empty block")
+	errUnsupportedFXs                = errors.New("unsupported feature extensions")
+	errNilBaseFeeSubnetEVM           = errors.New("nil base fee is invalid after subnetEVM")
+	errNilBlockGasCostSubnetEVM      = errors.New("nil blockGasCost is invalid after subnetEVM")
+	errInvalidBlock                  = errors.New("invalid block")
+	errInvalidNonce                  = errors.New("invalid nonce")
+	errUnclesUnsupported             = errors.New("uncles unsupported")
+	errInvalidHeaderPredicateResults = errors.New("invalid header predicate results")
+	errInitializingLogger            = errors.New("failed to initialize logger")
+	errShuttingDownVM                = errors.New("shutting down VM")
+	errPathStateUnsupported          = errors.New("path state scheme is not supported")
+	errVerifyGenesis                 = errors.New("failed to verify genesis")
 )
 
 // legacyApiNames maps pre geth v1.10.20 api names to their updated counterparts.
@@ -408,25 +402,8 @@ func (vm *VM) Initialize(
 	vm.ethConfig.SkipTxIndexing = vm.config.SkipTxIndexing
 	vm.ethConfig.StateScheme = vm.config.StateScheme
 
-	if vm.ethConfig.StateScheme == customrawdb.FirewoodScheme {
-		log.Warn("Firewood state scheme is enabled")
-		log.Warn("This is untested in production, use at your own risk")
-		// Firewood does not support iterators, so the snapshot cannot be constructed
-		if vm.config.SnapshotCache > 0 {
-			return errFirewoodSnapshotCacheDisabled
-		}
-		if vm.config.OfflinePruning {
-			return errFirewoodOfflinePruningUnsupported
-		}
-		if vm.config.StateSyncEnabled {
-			return errFirewoodStateSyncUnsupported
-		}
-		if vm.config.PopulateMissingTries != nil {
-			return errFirewoodMissingTrieRepopulationUnsupported
-		}
-	}
 	if vm.ethConfig.StateScheme == rawdb.PathScheme {
-		log.Error("Path state scheme is not supported. Please use HashDB or Firewood state schemes instead")
+		log.Error("Path state scheme is not supported. Please use HashDB state scheme instead")
 		return errPathStateUnsupported
 	}
 
@@ -584,14 +561,6 @@ func (vm *VM) initializeMetrics() error {
 		return err
 	}
 
-	if vm.config.MetricsExpensiveEnabled && vm.config.StateScheme == customrawdb.FirewoodScheme {
-		if err := ffi.StartMetrics(); err != nil {
-			return fmt.Errorf("failed to start firewood metrics collection: %w", err)
-		}
-		if err := vm.ctx.Metrics.Register("firewood", ffi.Gatherer{}); err != nil {
-			return fmt.Errorf("failed to register firewood metrics: %w", err)
-		}
-	}
 	return vm.ctx.Metrics.Register(sdkMetricsPrefix, vm.sdkMetrics)
 }
 

@@ -19,7 +19,7 @@ func TestSampleBootstrappers(t *testing.T) {
 		bootstrappers := SampleBootstrappers(networkID, length)
 		t.Logf("%s bootstrappers: %+v", networkName, bootstrappers)
 
-		if networkID == constants.MainnetID || networkID == constants.FujiID {
+		if networkID == constants.RinkID || networkID == constants.ChennaiID {
 			require.Len(bootstrappers, length)
 		}
 	}

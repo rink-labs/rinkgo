@@ -22,8 +22,6 @@ The plugin version is unchanged at `44` and is compatible with version `v1.14.0`
 - Removed `avax.version` API
 - Removed `customethclient` package in favor of `ethclient` package and temporary type registrations (`WithTempRegisteredLibEVMExtras`)
   - Removed blockHook extension in `ethclient` package.
-- Enabled Firewood to run with pruning disabled.
-  - This change modified the filepath of Firewood. Any nodes using Firewood will need to resync.
 
 ### What's Changed
 
@@ -78,7 +76,6 @@ The plugin version is unchanged at `43` and is compatible with version `v1.13.4`
 
 ### Fixes
 
-- Fixed Firewood performance regression
 - Fixed duplicate C-Chain eth gossip registration
 - Fixed various C-Chain atomic mempool edge cases
 
@@ -2640,7 +2637,6 @@ The plugin version is updated to `28` all plugins must update to be compatible.
 - `corruptabledb` -- corrupt on iterator error by @danlaine in https://github.com/ava-labs/avalanchego/pull/1829
 - Add support for Maps to the reflect_codec by @nytzuga in https://github.com/ava-labs/avalanchego/pull/1790
 - Make linter fail if `github.com/golang/mock/gomock` is used by @danlaine in https://github.com/ava-labs/avalanchego/pull/1843
-- Firewoodize merkle db Part 1: Make Views ReadOnly by @dboehm-avalabs in https://github.com/ava-labs/avalanchego/pull/1816
 - E2E tests -- use appropriate timeouts by @danlaine in https://github.com/ava-labs/avalanchego/pull/1851
 - e2e: Switch to testnet fixture by @marun in https://github.com/ava-labs/avalanchego/pull/1709
 - `secp256k1` -- add fuzz tests by @danlaine in https://github.com/ava-labs/avalanchego/pull/1809

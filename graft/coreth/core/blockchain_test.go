@@ -72,8 +72,7 @@ var (
 		AcceptorQueueLimit:        64,
 	}
 
-	// Firewood should only be included for snapshot disabled tests.
-	schemes = []string{rawdb.HashScheme, customrawdb.FirewoodScheme}
+	schemes = []string{rawdb.HashScheme}
 )
 
 func newGwei(n int64) *big.Int {
@@ -126,8 +125,8 @@ func testArchiveBlockChainSnapsDisabled(t *testing.T, scheme string) {
 			TrieDirtyCommitTarget:     20,
 			TriePrefetcherParallelism: 4,
 			Pruning:                   false, // Archive mode
-			StateHistory:              32,    // Required for Firewood's minimum Revision count
-			SnapshotLimit:             0,     // Disable snapshots
+			StateHistory:              32,
+			SnapshotLimit:             0, // Disable snapshots
 			AcceptorQueueLimit:        64,
 			StateScheme:               scheme,
 			ChainDataDir:              dataPath,
@@ -683,8 +682,6 @@ func TestUngracefulAsyncShutdown(t *testing.T) {
 // HashDB passes these tests because:
 // lastAcceptedHeight <= lastCommittedHeight + 2 * commitInterval
 // where lastCommittedHeight is the last multiple of commitInterval (so 0)
-// Firewood passes these tests because lastCommittedHeight always equals acceptorTip.
-// This means it will work as long as lastAcceptedHeight <= acceptorTip + 2 * commitInterval
 func TestUngracefulAsyncShutdownNoSnapshots(t *testing.T) {
 	for _, scheme := range schemes {
 		t.Run(scheme, func(t *testing.T) {
@@ -728,7 +725,7 @@ func testUngracefulAsyncShutdown(t *testing.T, scheme string, snapshotEnabled bo
 // TestCanonicalHashMarker tests all the canonical hash markers are updated/deleted
 // correctly in case reorg is called.
 func TestCanonicalHashMarker(t *testing.T) {
-	for _, scheme := range []string{rawdb.HashScheme, rawdb.PathScheme, customrawdb.FirewoodScheme} {
+	for _, scheme := range []string{rawdb.HashScheme, rawdb.PathScheme} {
 		t.Run(scheme, func(t *testing.T) {
 			testCanonicalHashMarker(t, scheme)
 		})

@@ -571,7 +571,7 @@ func createPermissionlessValidatorTx(t testing.TB, subnetID ids.ID, validatorsDa
 	return &txs.AddPermissionlessValidatorTx{
 		BaseTx: txs.BaseTx{
 			BaseTx: avax.BaseTx{
-				NetworkID:    constants.MainnetID,
+				NetworkID:    constants.RinkID,
 				BlockchainID: constants.PlatformChainID,
 				Outs:         []*avax.TransferableOutput{},
 				Ins: []*avax.TransferableInput{
@@ -637,7 +637,7 @@ func createPermissionlessDelegatorTx(subnetID ids.ID, delegatorData txs.Validato
 	return &txs.AddPermissionlessDelegatorTx{
 		BaseTx: txs.BaseTx{
 			BaseTx: avax.BaseTx{
-				NetworkID:    constants.MainnetID,
+				NetworkID:    constants.RinkID,
 				BlockchainID: constants.PlatformChainID,
 				Outs:         []*avax.TransferableOutput{},
 				Ins: []*avax.TransferableInput{

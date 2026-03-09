@@ -65,7 +65,7 @@ func TestRemoveSubnetValidatorTxSerialization(t *testing.T) {
 	simpleRemoveValidatorTx := &RemoveSubnetValidatorTx{
 		BaseTx: BaseTx{
 			BaseTx: avax.BaseTx{
-				NetworkID:    constants.MainnetID,
+				NetworkID:    constants.RinkID,
 				BlockchainID: constants.PlatformChainID,
 				Outs:         []*avax.TransferableOutput{},
 				Ins: []*avax.TransferableInput{
@@ -163,7 +163,7 @@ func TestRemoveSubnetValidatorTxSerialization(t *testing.T) {
 	complexRemoveValidatorTx := &RemoveSubnetValidatorTx{
 		BaseTx: BaseTx{
 			BaseTx: avax.BaseTx{
-				NetworkID:    constants.MainnetID,
+				NetworkID:    constants.RinkID,
 				BlockchainID: constants.PlatformChainID,
 				Outs: []*avax.TransferableOutput{
 					{

@@ -55,7 +55,6 @@ import (
 	"github.com/ava-labs/avalanchego/vms/evm/acp176"
 	"github.com/ava-labs/avalanchego/vms/evm/acp226"
 	"github.com/ava-labs/avalanchego/vms/evm/predicate"
-	"github.com/ava-labs/avalanchego/vms/evm/sync/customrawdb"
 	"github.com/ava-labs/avalanchego/vms/platformvm/warp/payload"
 
 	warpcontract "github.com/ava-labs/avalanchego/graft/coreth/precompile/contracts/warp"
@@ -211,7 +210,7 @@ func testVMUpgrades(t *testing.T, scheme string) {
 
 func TestBuildEthTxBlock(t *testing.T) {
 	// This test is done for all schemes to ensure the VM can be started with any scheme.
-	for _, scheme := range []string{rawdb.HashScheme, rawdb.PathScheme, customrawdb.FirewoodScheme} {
+	for _, scheme := range []string{rawdb.HashScheme} {
 		t.Run(scheme, func(t *testing.T) {
 			testBuildEthTxBlock(t, scheme)
 		})

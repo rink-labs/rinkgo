@@ -30,7 +30,6 @@ package core
 import (
 	"fmt"
 
-	"github.com/ava-labs/avalanchego/vms/evm/sync/customrawdb"
 	"github.com/ava-labs/libevm/common"
 	"github.com/ava-labs/libevm/core/types"
 	"github.com/ava-labs/libevm/ethdb"
@@ -59,8 +58,7 @@ type TrieDB interface {
 }
 
 func NewTrieWriter(db TrieDB, config *CacheConfig) TrieWriter {
-	// Firewood should only be used in pruning mode, but we shouldn't explicitly manage this.
-	if config.Pruning && config.StateScheme != customrawdb.FirewoodScheme {
+	if config.Pruning {
 		cm := &cappedMemoryTrieWriter{
 			TrieDB:           db,
 			memoryCap:        common.StorageSize(config.TrieDirtyLimit) * 1024 * 1024,
@@ -71,10 +69,9 @@ func NewTrieWriter(db TrieDB, config *CacheConfig) TrieWriter {
 		}
 		cm.flushStepSize = (cm.memoryCap - cm.targetCommitSize) / common.StorageSize(flushWindow)
 		return cm
-	} else {
-		return &noPruningTrieWriter{
-			TrieDB: db,
-		}
+	}
+	return &noPruningTrieWriter{
+		TrieDB: db,
 	}
 }
 

@@ -35,7 +35,7 @@ var (
 
 	SubnetEVMDefaultChainConfig = &ChainConfig{
 		FeeConfig:          DefaultFeeConfig,
-		NetworkUpgrades:    GetNetworkUpgrades(upgrade.GetConfig(constants.MainnetID)),
+		NetworkUpgrades:    GetNetworkUpgrades(upgrade.GetConfig(constants.RinkID)),
 		GenesisPrecompiles: Precompiles{},
 	}
 

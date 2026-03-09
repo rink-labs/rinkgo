@@ -203,7 +203,7 @@ func New(
 		}
 	}
 
-	// If the context is not set, avoid a panic. Only necessary during firewood use.
+	// If the context is not set, avoid a panic.
 	chainDataDir := ""
 	if ctx := params.GetExtra(config.Genesis.Config).SnowCtx; ctx != nil {
 		chainDataDir = ctx.ChainDataDir

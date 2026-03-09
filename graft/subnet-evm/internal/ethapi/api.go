@@ -36,7 +36,6 @@ import (
 	"strings"
 	"time"
 
-	"github.com/ava-labs/avalanchego/graft/evm/firewood"
 	"github.com/ava-labs/avalanchego/graft/subnet-evm/consensus"
 	"github.com/ava-labs/avalanchego/graft/subnet-evm/core"
 	"github.com/ava-labs/avalanchego/graft/subnet-evm/eth/gasestimator"
@@ -703,9 +702,6 @@ func (s *BlockChainAPI) GetProof(ctx context.Context, address common.Address, st
 	statedb, header, err := s.b.StateAndHeaderByNumberOrHash(ctx, blockNrOrHash)
 	if statedb == nil || err != nil {
 		return nil, err
-	}
-	if _, ok := statedb.Database().TrieDB().Backend().(*firewood.TrieDB); ok {
-		return nil, errors.New("firewood database does not yet support getProof")
 	}
 	codeHash := statedb.GetCodeHash(address)
 	storageRoot := statedb.GetStorageRoot(address)

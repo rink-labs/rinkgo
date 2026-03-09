@@ -42,7 +42,6 @@ import (
 	"github.com/ava-labs/avalanchego/graft/coreth/params"
 	"github.com/ava-labs/avalanchego/graft/coreth/plugin/evm/customtypes"
 	"github.com/ava-labs/avalanchego/graft/coreth/rpc"
-	"github.com/ava-labs/avalanchego/graft/evm/firewood"
 	"github.com/ava-labs/libevm/accounts"
 	"github.com/ava-labs/libevm/accounts/keystore"
 	"github.com/ava-labs/libevm/accounts/scwallet"
@@ -703,9 +702,6 @@ func (s *BlockChainAPI) GetProof(ctx context.Context, address common.Address, st
 	statedb, header, err := s.b.StateAndHeaderByNumberOrHash(ctx, blockNrOrHash)
 	if statedb == nil || err != nil {
 		return nil, err
-	}
-	if _, ok := statedb.Database().TrieDB().Backend().(*firewood.TrieDB); ok {
-		return nil, errors.New("firewood database does not yet support getProof")
 	}
 	codeHash := statedb.GetCodeHash(address)
 	storageRoot := statedb.GetStorageRoot(address)

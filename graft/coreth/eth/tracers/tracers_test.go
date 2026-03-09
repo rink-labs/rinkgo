@@ -36,7 +36,6 @@ import (
 	"github.com/ava-labs/avalanchego/graft/coreth/params"
 	"github.com/ava-labs/avalanchego/graft/coreth/plugin/evm/customtypes"
 	"github.com/ava-labs/avalanchego/graft/coreth/tests"
-	"github.com/ava-labs/avalanchego/vms/evm/sync/customrawdb"
 	"github.com/ava-labs/libevm/common"
 	"github.com/ava-labs/libevm/core/rawdb"
 	"github.com/ava-labs/libevm/core/types"
@@ -52,7 +51,7 @@ func TestMain(m *testing.M) {
 }
 
 func BenchmarkPrestateTracer(b *testing.B) {
-	for _, scheme := range []string{rawdb.HashScheme, customrawdb.FirewoodScheme} {
+	for _, scheme := range []string{rawdb.HashScheme} {
 		b.Run(scheme, func(b *testing.B) {
 			benchmarkTransactionTrace(b, scheme)
 		})

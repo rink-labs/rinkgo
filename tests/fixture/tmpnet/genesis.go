@@ -52,7 +52,7 @@ func NewTestGenesis(
 ) (*genesis.UnparsedConfig, error) {
 	// Validate inputs
 	switch networkID {
-	case constants.TestnetID, constants.MainnetID, constants.LocalID:
+	case constants.TestnetID, constants.RinkID, constants.LocalID:
 		return nil, stacktrace.Wrap(errInvalidNetworkIDForGenesis)
 	}
 	if len(nodes) == 0 {

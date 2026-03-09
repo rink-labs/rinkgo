@@ -114,7 +114,6 @@ updated by the generator/wallets. The server is configured to be targeted by
 ### Load Test Flags
 
 - `--load-timeout`: Maximum duration to run the load test (default: unlimited)
-- `--firewood`: Whether to use Firewood in Coreth (default: false)
 - `--num-workers`: The number of workers to use for the load test (default: 5)
 
 ### Network Configuration (`tmpnet` Flags)
@@ -124,4 +123,3 @@ The following common flags control the underlying Avalanche network setup:
 - `--node-count`: Number of validator nodes in the test network (default: 5)
 - `--start-metrics-collector`: Starts a metrics collector for node and test metrics. If already running, this is a no-op.
 - `--start-logs-collector`: Starts a logs collector for node output. If already running, this is a no-op.
-

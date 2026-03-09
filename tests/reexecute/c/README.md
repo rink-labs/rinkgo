@@ -241,7 +241,7 @@ task reexecute-cchain-range-with-copied-data EXECUTION_DATA_DIR=$HOME/.reexecute
 
 To support testing the VM in multiple configurations, the benchmark supports a set of pre-defined configs passed via the Task variable ex. `CONFIG=archive`.
 
-The currently supported options are: "default", "archive", and "firewood".
+The currently supported options are: "default" and "archive".
 
 To execute a benchmark with any of these options, you must use a compatible `CURRENT_STATE_DIR` or `CURRENT_STATE_DIR_SRC` or the VM will refuse to start with an incompatible existing database and newly provided config.
 
@@ -294,18 +294,8 @@ Both workflows provide three triggers:
 The manual workflow takes in all parameters specified by the user. To more easily specify a CI matrix and avoid GitHub's pain inducing matrix syntax, we define simple JSON files with the exact set of configs to run for each `pull_request` and `schedule` trigger. To add a new job for either of these triggers, simply define the entry in JSON and add it to run on the desired workflow.
 
 The workflows support two approaches:
-1. **Task-based**: Specify a predefined `task` name (e.g., `"task": "c-chain-reexecution-firewood-101-250k"`)
+1. **Task-based**: Specify a predefined `task` name (e.g., `"task": "c-chain-reexecution-hashdb-101-250k"`)
 2. **Custom parameters**: Specify individual parameters with `"task": ""` and provide `config`, `start-block`, `end-block`, `block-dir-src`, `current-state-dir-src`
-
-For example, to add a new task-based Firewood benchmark to execute the block range [101, 250K] on a daily basis, add the following entry under the `schedule` include array in the [GH Native JSON file](../../../.github/workflows/c-chain-reexecution-benchmark-gh-native.json).
-
-```json
-{
-    "runner": "blacksmith-4vcpu-ubuntu-2404",
-    "task": "c-chain-reexecution-firewood-101-250k",
-    "timeout-minutes": 30
-}
-```
 
 ## Trigger Workflow Dispatch with GitHub CLI
 
@@ -315,7 +305,7 @@ To trigger runs conveniently, you can use the [GitHub CLI](https://cli.github.co
 
 ```bash
 gh workflow run "C-Chain Re-Execution Benchmark GH Native" \
-  -f task=c-chain-reexecution-firewood-101-250k \
+  -f task=c-chain-reexecution-hashdb-101-250k \
   -f runner=blacksmith-4vcpu-ubuntu-2404 \
   -f timeout-minutes=60
 ```

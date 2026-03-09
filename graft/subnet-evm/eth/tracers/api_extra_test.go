@@ -24,7 +24,6 @@ import (
 	"github.com/ava-labs/avalanchego/graft/subnet-evm/internal/ethapi"
 	"github.com/ava-labs/avalanchego/graft/subnet-evm/params"
 	"github.com/ava-labs/avalanchego/graft/subnet-evm/params/extras"
-	"github.com/ava-labs/avalanchego/graft/subnet-evm/plugin/evm/customrawdb"
 	"github.com/ava-labs/avalanchego/graft/subnet-evm/plugin/evm/customtypes"
 	"github.com/ava-labs/avalanchego/graft/subnet-evm/precompile/contracts/txallowlist"
 	"github.com/ava-labs/avalanchego/graft/subnet-evm/rpc"
@@ -38,7 +37,7 @@ func TestMain(m *testing.M) {
 	os.Exit(m.Run())
 }
 
-var schemes = []string{rawdb.HashScheme, customrawdb.FirewoodScheme}
+var schemes = []string{rawdb.HashScheme}
 
 func TestTraceBlockPrecompileActivation(t *testing.T) {
 	for _, scheme := range schemes {

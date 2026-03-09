@@ -1423,13 +1423,13 @@ func TestDeactivateLowBalanceL1ValidatorBlockChanges(t *testing.T) {
 			name:              "Before F Upgrade - L1 validators evicted - on Fuji",
 			currentFork:       upgradetest.Etna,
 			durationToAdvance: time.Second,
-			networkID:         constants.FujiID,
+			networkID:         constants.ChennaiID,
 		},
 		{
 			name:              "After F Upgrade - L1 validators evicted - on Fuji",
 			currentFork:       upgradetest.Fortuna,
 			durationToAdvance: time.Second,
-			networkID:         constants.FujiID,
+			networkID:         constants.ChennaiID,
 		},
 	}
 	for _, test := range tests {

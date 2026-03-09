@@ -20,13 +20,12 @@ import (
 	"github.com/ava-labs/avalanchego/snow/consensus/snowman"
 	"github.com/ava-labs/avalanchego/snow/engine/enginetest"
 	"github.com/ava-labs/avalanchego/upgrade/upgradetest"
-	"github.com/ava-labs/avalanchego/vms/evm/sync/customrawdb"
 
 	avalancheatomic "github.com/ava-labs/avalanchego/chains/atomic"
 	commoneng "github.com/ava-labs/avalanchego/snow/engine/common"
 )
 
-var Schemes = []string{rawdb.HashScheme, customrawdb.FirewoodScheme}
+var Schemes = []string{rawdb.HashScheme}
 
 type TestVMConfig struct {
 	IsSyncing bool
@@ -109,8 +108,7 @@ func ResetMetrics(snowCtx *snow.Context) {
 }
 
 func OverrideSchemeConfig(scheme string, configJSON string) (string, error) {
-	// If the scheme is not Firewood, return the configJSON as is
-	if scheme != customrawdb.FirewoodScheme {
+	if len(scheme) == 0 || scheme == rawdb.HashScheme {
 		return configJSON, nil
 	}
 
@@ -122,12 +120,7 @@ func OverrideSchemeConfig(scheme string, configJSON string) (string, error) {
 		}
 	}
 
-	// Set Firewood-specific configuration flags (these will override any existing values)
-	configMap["state-scheme"] = customrawdb.FirewoodScheme
-	configMap["snapshot-cache"] = 0
-	configMap["pruning-enabled"] = true
-	configMap["state-sync-enabled"] = false
-	configMap["metrics-expensive-enabled"] = false
+	configMap["state-scheme"] = scheme
 
 	// Marshal back to JSON
 	result, err := json.Marshal(configMap)

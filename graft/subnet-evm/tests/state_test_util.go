@@ -30,10 +30,8 @@ package tests
 import (
 	"os"
 
-	"github.com/ava-labs/avalanchego/graft/evm/firewood"
 	"github.com/ava-labs/avalanchego/graft/subnet-evm/core/extstate"
 	"github.com/ava-labs/avalanchego/graft/subnet-evm/core/state/snapshot"
-	"github.com/ava-labs/avalanchego/graft/subnet-evm/plugin/evm/customrawdb"
 	"github.com/ava-labs/avalanchego/graft/subnet-evm/triedb/hashdb"
 	"github.com/ava-labs/avalanchego/graft/subnet-evm/triedb/pathdb"
 	"github.com/ava-labs/libevm/common"
@@ -67,10 +65,6 @@ func MakePreState(db ethdb.Database, accounts types.GenesisAlloc, snapshotter bo
 		tconf.DBOverride = hashdb.Defaults.BackendConstructor
 	case rawdb.PathScheme:
 		tconf.DBOverride = pathdb.Defaults.BackendConstructor
-	case customrawdb.FirewoodScheme:
-		cfg := firewood.Defaults
-		cfg.ChainDataDir = tempdir
-		tconf.DBOverride = cfg.BackendConstructor
 	default:
 		panic("unknown trie database scheme" + scheme)
 	}

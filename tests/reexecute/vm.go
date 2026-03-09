@@ -30,8 +30,8 @@ import (
 )
 
 var (
-	mainnetXChainID    = ids.FromStringOrPanic("2oYMBNV4eNHyqk2fjjV5nVQLDbtmNJzq5s3qs3Lo6ftnC6FByM")
-	mainnetCChainID    = ids.FromStringOrPanic("2q9e4r6Mu3U68nU1fYjgbR6JvwrRx36CohpAX5UQxse55x1Q5")
+	rinkXChainID       = ids.FromStringOrPanic("2oYMBNV4eNHyqk2fjjV5nVQLDbtmNJzq5s3qs3Lo6ftnC6FByM")
+	rinkCChainID       = ids.FromStringOrPanic("2q9e4r6Mu3U68nU1fYjgbR6JvwrRx36CohpAX5UQxse55x1Q5")
 	mainnetAvaxAssetID = ids.FromStringOrPanic("FvwEAhmxKfeiG8SnEvq42hc6whRyY3EFYAvebMqDNDGCgxN5Z")
 )
 
@@ -56,17 +56,17 @@ func NewMainnetCChainVM(
 	}
 
 	blsPublicKey := blsKey.PublicKey()
-	warpSigner := warp.NewSigner(blsKey, constants.MainnetID, mainnetCChainID)
+	warpSigner := warp.NewSigner(blsKey, constants.RinkID, rinkCChainID)
 
-	genesisConfig := genesis.GetConfig(constants.MainnetID)
+	genesisConfig := genesis.GetConfig(constants.RinkID)
 
 	sharedMemoryDB := prefixdb.New([]byte("sharedmemory"), vmAndSharedMemoryDB)
 	atomicMemory := atomic.NewMemory(sharedMemoryDB)
 
 	chainIDToSubnetID := map[ids.ID]ids.ID{
-		mainnetXChainID: constants.PrimaryNetworkID,
-		mainnetCChainID: constants.PrimaryNetworkID,
-		ids.Empty:       constants.PrimaryNetworkID,
+		rinkXChainID: constants.PrimaryNetworkID,
+		rinkCChainID: constants.PrimaryNetworkID,
+		ids.Empty:    constants.PrimaryNetworkID,
 	}
 
 	vm = metervm.NewBlockVM(vm, meterVMRegistry)
@@ -74,19 +74,19 @@ func NewMainnetCChainVM(
 	if err := vm.Initialize(
 		ctx,
 		&snow.Context{
-			NetworkID:       constants.MainnetID,
+			NetworkID:       constants.RinkID,
 			SubnetID:        constants.PrimaryNetworkID,
-			ChainID:         mainnetCChainID,
+			ChainID:         rinkCChainID,
 			NodeID:          ids.GenerateTestNodeID(),
 			PublicKey:       blsPublicKey,
 			NetworkUpgrades: upgrade.Mainnet,
 
-			XChainID:    mainnetXChainID,
-			CChainID:    mainnetCChainID,
+			XChainID:    rinkXChainID,
+			CChainID:    rinkCChainID,
 			AVAXAssetID: mainnetAvaxAssetID,
 
 			Log:          tests.NewDefaultLogger("mainnet-vm-reexecution"),
-			SharedMemory: atomicMemory.NewSharedMemory(mainnetCChainID),
+			SharedMemory: atomicMemory.NewSharedMemory(rinkCChainID),
 			BCLookup:     ids.NewAliaser(),
 			Metrics:      vmMultiGatherer,
 

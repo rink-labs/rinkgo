@@ -58,7 +58,7 @@ func TestTransformSubnetTxSerialization(t *testing.T) {
 	simpleTransformTx := &TransformSubnetTx{
 		BaseTx: BaseTx{
 			BaseTx: avax.BaseTx{
-				NetworkID:    constants.MainnetID,
+				NetworkID:    constants.RinkID,
 				BlockchainID: constants.PlatformChainID,
 				Outs:         []*avax.TransferableOutput{},
 				Ins: []*avax.TransferableInput{
@@ -229,7 +229,7 @@ func TestTransformSubnetTxSerialization(t *testing.T) {
 	complexTransformTx := &TransformSubnetTx{
 		BaseTx: BaseTx{
 			BaseTx: avax.BaseTx{
-				NetworkID:    constants.MainnetID,
+				NetworkID:    constants.RinkID,
 				BlockchainID: constants.PlatformChainID,
 				Outs: []*avax.TransferableOutput{
 					{

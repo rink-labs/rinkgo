@@ -42,8 +42,6 @@ import (
 	"github.com/ava-labs/avalanchego/graft/coreth/precompile/contracts/warp"
 	"github.com/ava-labs/avalanchego/graft/coreth/triedb/pathdb"
 	"github.com/ava-labs/avalanchego/graft/coreth/utils"
-	"github.com/ava-labs/avalanchego/graft/evm/firewood"
-	"github.com/ava-labs/avalanchego/vms/evm/sync/customrawdb"
 	"github.com/ava-labs/libevm/common"
 	"github.com/ava-labs/libevm/core/rawdb"
 	"github.com/ava-labs/libevm/core/types"
@@ -69,7 +67,7 @@ func TestGenesisBlockForTesting(t *testing.T) {
 }
 
 func TestSetupGenesis(t *testing.T) {
-	for _, scheme := range []string{rawdb.HashScheme, rawdb.PathScheme, customrawdb.FirewoodScheme} {
+	for _, scheme := range []string{rawdb.HashScheme, rawdb.PathScheme} {
 		t.Run(scheme, func(t *testing.T) {
 			testSetupGenesis(t, scheme)
 		})
@@ -303,11 +301,6 @@ func newDbConfig(t *testing.T, scheme string) *triedb.Config {
 		return triedb.HashDefaults
 	case rawdb.PathScheme:
 		return &triedb.Config{DBOverride: pathdb.Defaults.BackendConstructor}
-	case customrawdb.FirewoodScheme:
-		fwCfg := firewood.Defaults
-		// Create a unique temporary directory for each test
-		fwCfg.ChainDataDir = t.TempDir()
-		return &triedb.Config{DBOverride: fwCfg.BackendConstructor}
 	default:
 		t.Fatalf("unknown scheme %s", scheme)
 	}

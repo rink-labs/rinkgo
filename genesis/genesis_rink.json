@@ -1,0 +1,41 @@
+{
+  "networkID": 90059,
+  "allocations": [
+    {
+      "ethAddr": "0x19932838099bd4623eba5eaae1610f560afe9bee",
+      "avaxAddr": "X-rink1ycs8zy3ewyv0vnjq29usuk5p23zdattgdr4azh",
+      "initialAmount": 1666666666666666
+    },
+    {
+      "ethAddr": "0x6336BBB90E518423D4D51b603178B5D0fE85A413",
+      "avaxAddr": "X-rink1ycfumh6wlkn9yfeeydulycrxqyzxxwjz585lvj",
+      "initialAmount": 666666666666666,
+      "unlockSchedule": [
+        {
+          "amount": 1000000000000000,
+          "locktime": 1795986000
+        }
+      ]
+    },
+    {
+      "ethAddr": "0x912eA8ceBaE924389B7E132e468b7529E1a3bEb0",
+      "avaxAddr": "X-rink1ggmwcyfem724m5x9uln0gu97hm77tdfmg3xx89",
+      "initialAmount": 1666666666666666
+    }
+  ],
+  "startTime": 1764450000,
+  "initialStakeDuration": 31536000,
+  "initialStakeDurationOffset": 0,
+  "initialStakedFunds": [
+    "X-rink1ycfumh6wlkn9yfeeydulycrxqyzxxwjz585lvj"
+  ],
+  "initialStakers": [
+    {
+      "nodeID": "NodeID-5XQoGFaKV4jiZzfML39D5UjwD2P7TWX6k",
+      "rewardAddress": "X-rink1ycfumh6wlkn9yfeeydulycrxqyzxxwjz585lvj",
+      "delegationFee": 200000
+    }
+  ],
+   "cChainGenesis": "{\"config\":{\"chainId\":90059, \"homesteadBlock\":0,\"daoForkBlock\":0,\"daoForkSupport\":true,\"eip150Block\":0,\"eip150Hash\":\"0x2086799aeebeae135c246c65021c82b4e15a2c451340993aacfd2751886514f0\",\"eip155Block\":0,\"eip158Block\":0,\"byzantiumBlock\":0,\"constantinopleBlock\":0,\"petersburgBlock\":0,\"istanbulBlock\":0,\"muirGlacierBlock\":0},\"nonce\":\"0x0\",\"timestamp\":\"0x0\",\"extraData\":\"0x00\",\"gasLimit\":\"0x5f5e100\",\"difficulty\":\"0x0\",\"mixHash\":\"0x0000000000000000000000000000000000000000000000000000000000000000\",\"coinbase\":\"0x0000000000000000000000000000000000000000\",\"alloc\":{},\n\"number\":\"0x0\",\n\"gasUsed\":\"0x0\",\n\"parentHash\":\"0x0000000000000000000000000000000000000000000000000000000000000000\"\n}",
+  "message": "Custom independent L1 chain RinkGo"
+}

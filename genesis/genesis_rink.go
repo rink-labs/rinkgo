@@ -1,4 +1,4 @@
-// Copyright (C) 2019-2026, Ava Labs, Inc. All rights reserved.
+// Copyright (C) 2019-2025, Ava Labs, Inc. All rights reserved.
 // See the file LICENSE for licensing terms.
 
 package genesis
@@ -15,11 +15,11 @@ import (
 )
 
 var (
-	//go:embed genesis_mainnet.json
-	mainnetGenesisConfigJSON []byte
+	//go:embed genesis_rink.json
+	rinkGenesisConfigJSON []byte
 
-	// MainnetParams are the params used for mainnet
-	MainnetParams = Params{
+	// RinkParams are the params used for mainnet
+	RinkParams = Params{
 		TxFeeConfig: TxFeeConfig{
 			CreateAssetTxFee: 10 * units.MilliAvax,
 			TxFee:            units.MilliAvax,
@@ -63,7 +63,7 @@ var (
 				MaxConsumptionRate: .12 * reward.PercentDenominator,
 				MinConsumptionRate: .10 * reward.PercentDenominator,
 				MintingPeriod:      365 * 24 * time.Hour,
-				SupplyCap:          720 * units.MegaAvax,
+				SupplyCap:          5 * units.MegaAvax,
 			},
 		},
 	}

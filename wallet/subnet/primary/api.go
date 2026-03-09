@@ -31,8 +31,8 @@ import (
 )
 
 const (
-	MainnetAPIURI = "https://api.avax.network"
-	FujiAPIURI    = "https://api.avax-test.network"
+	RinkAPIURI    = "http://localhost:9650"
+	ChennaiAPIURI = "http://localhost:9750"
 	LocalAPIURI   = "http://localhost:9650"
 
 	fetchLimit = 1024

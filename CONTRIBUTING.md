@@ -8,7 +8,7 @@ To start developing on AvalancheGo, you'll need a few things installed.
 - gcc
 - g++
 
-On MacOS, a modern version of bash is required (e.g. via [homebrew](https://brew.sh/) with `brew install bash`). The version installed by default is not compatible with AvalancheGo's [shell scripts](scripts).
+On MacOS, a modern version of bash is required (e.g. via [homebrew](https://brew.sh/) with `brew install bash`). The version installed by default is not compatible with RinkGo's [shell scripts](scripts).
 
 ## Running tasks
 
@@ -22,11 +22,11 @@ This repo uses the [Task](https://taskfile.dev/) task runner to simplify usage a
 
 ### Security
 
-- Do not open up a GitHub issue if it relates to a security vulnerability in AvalancheGo, and instead refer to our [security policy](./SECURITY.md).
+- Do not open up a GitHub issue if it relates to a security vulnerability in RinkGo, and instead refer to our [security policy](./SECURITY.md).
 
 ### Did you fix whitespace, format code, or make a purely cosmetic patch?
 
-- Changes from the community that are cosmetic in nature and do not add anything substantial to the stability, functionality, or testability of `avalanchego` will generally not be accepted.
+- Changes from the community that are cosmetic in nature and do not add anything substantial to the stability, functionality, or testability of `rinkgo` will generally not be accepted.
 
 ### Making an Issue
 

@@ -8,10 +8,10 @@ set -euo pipefail
 # Use lower_case variables in the scripts and UPPER_CASE variables for override
 # Use the constants.sh for env overrides
 
-AVALANCHE_PATH=$( cd "$( dirname "${BASH_SOURCE[0]}" )"; cd .. && pwd ) # Directory above this script
+RINK_PATH=$( cd "$( dirname "${BASH_SOURCE[0]}" )"; cd .. && pwd ) # Directory above this script
 
-# Where AvalancheGo binary goes
-avalanchego_path="$AVALANCHE_PATH/build/avalanchego"
+# Where RinkGo binary goes
+rink_path="$RINK_PATH/build/rinkgo"
 
 # Static compilation
 static_ld_flags=''

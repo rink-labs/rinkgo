@@ -56,4 +56,3 @@ triedb/*
 !ethclient/client_interface_test.go
 !internal/ethapi/api_extra.go
 !internal/ethapi/api_extra_test.go
-!triedb/firewood/*

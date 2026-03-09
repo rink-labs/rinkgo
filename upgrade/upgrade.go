@@ -203,10 +203,14 @@ func (c *Config) IsHeliconActivated(t time.Time) bool {
 
 func GetConfig(networkID uint32) Config {
 	switch networkID {
-	case constants.MainnetID:
-		return Mainnet
+	case constants.RinkID:
+		return Default
+	case constants.ChennaiID:
+		return Default
 	case constants.FujiID:
 		return Fuji
+	case constants.MainnetID:
+		return Mainnet
 	default:
 		return Default
 	}

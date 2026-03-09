@@ -268,12 +268,12 @@ func TestConvertNetworkUpgrades_AllFieldsHandled(t *testing.T) {
 
 	tests := []networks{
 		{
-			name:      "Mainnet",
-			networkID: constants.MainnetID,
+			name:      "Rink",
+			networkID: constants.RinkID,
 		},
 		{
-			name:      "Fuji",
-			networkID: constants.FujiID,
+			name:      "Chennai",
+			networkID: constants.ChennaiID,
 		},
 		{
 			name:      "Local",

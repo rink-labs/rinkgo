@@ -44,12 +44,12 @@ Configuration is provided as a JSON object. All fields are optional unless other
 | `eth` | bool | Adds the `eth_coinbase` and `eth_etherbase` RPC calls to the `eth_*` namespace. | `true` |
 | `eth-filter` | bool |  Enables the public filter API for the `eth_*` namespace and adds the following RPC calls (see [Ethereum JSON-RPC API documentation](https://eth.wiki/json-rpc/API) for complete documentation): <br/> - `eth_newPendingTransactionFilter` <br/> - `eth_newPendingTransactions` <br/> - `eth_newAcceptedTransactions` <br/> - `eth_newBlockFilter` <br/> - `eth_newHeads` <br/> - `eth_logs` <br/> - `eth_newFilter` <br/> - `eth_getLogs` <br/> - `eth_uninstallFilter` <br/> - `eth_getFilterLogs` <br/> - `eth_getFilterChanges` <br/> | `true` |
 | `admin` | bool | Adds the `admin_importChain` and `admin_exportChain` RPC calls to the `admin_*` namespace | `false` |
-| `debug` | bool | Adds the following RPC calls to the `debug_*` namespace. <br/> - `debug_dumpBlock` <br/> - `debug_accountRange` <br/> - `debug_preimage` <br/> - `debug_getBadBlocks` <br/> - `debug_storageRangeAt` <br/> - `debug_getModifiedAccountsByNumber` <br/> - `debug_getModifiedAccountsByHash` <br/> - `debug_getAccessibleState` <br/> The following RPC calls are disabled for any nodes with `state-scheme = firewood`: <br/> - `debug_storageRangeAt` <br/> - `debug_getModifiedAccountsByNumber` <br/> - `debug_getModifiedAccountsByHash` <br/> | `false` |
+| `debug` | bool | Adds the following RPC calls to the `debug_*` namespace. <br/> - `debug_dumpBlock` <br/> - `debug_accountRange` <br/> - `debug_preimage` <br/> - `debug_getBadBlocks` <br/> - `debug_storageRangeAt` <br/> - `debug_getModifiedAccountsByNumber` <br/> - `debug_getModifiedAccountsByHash` <br/> - `debug_getAccessibleState` | `false` |
 | `net` | bool | Adds the following RPC calls to the `net_*` namespace. <br/> - `net_listening` <br/> - `net_peerCount` <br/> - `net_version` <br/> Note: Coreth is a virtual machine and does not have direct access to the networking layer, so `net_listening` always returns true and `net_peerCount` always returns 0. For accurate metrics on the network layer, users should use the AvalancheGo APIs. | `true` |
 | `debug-tracer` | bool | Adds the following RPC calls to the `debug_*` namespace. <br/> - `debug_traceChain` <br/> - `debug_traceBlockByNumber` <br/> - `debug_traceBlockByHash` <br/> - `debug_traceBlock` <br/> - `debug_traceBadBlock` <br/> - `debug_intermediateRoots` <br/> - `debug_traceTransaction` <br/> - `debug_traceCall` | `false` |
 | `web3` | bool | Adds the `web3_clientVersion` and `web3_sha3` RPC calls to the `web3_*` namespace | `true` |
 | `internal-eth` | bool | Adds the following RPC calls to the `eth_*` namespace. <br/> - `eth_gasPrice` <br/> - `eth_baseFee` <br/> - `eth_maxPriorityFeePerGas` <br/> - `eth_feeHistory` | `true` |
-| `internal-blockchain` | bool | Adds the following RPC calls to the `eth_*` namespace. <br/> - `eth_chainId` <br/> - `eth_blockNumber` <br/> - `eth_getBalance` <br/> - `eth_getProof` <br/> - `eth_getHeaderByNumber` <br/> - `eth_getHeaderByHash` <br/> - `eth_getBlockByNumber` <br/> - `eth_getBlockByHash` <br/> - `eth_getUncleBlockByNumberAndIndex` <br/> - `eth_getUncleBlockByBlockHashAndIndex` <br/> - `eth_getUncleCountByBlockNumber` <br/> - `eth_getUncleCountByBlockHash` <br/> - `eth_getCode` <br/> - `eth_getStorageAt` <br/> - `eth_call` <br/> - `eth_estimateGas` <br/> - `eth_createAccessList` <br/> `eth_getProof` is disabled for any node with `state-scheme = firewood` | `true` |
+| `internal-blockchain` | bool | Adds the following RPC calls to the `eth_*` namespace. <br/> - `eth_chainId` <br/> - `eth_blockNumber` <br/> - `eth_getBalance` <br/> - `eth_getProof` <br/> - `eth_getHeaderByNumber` <br/> - `eth_getHeaderByHash` <br/> - `eth_getBlockByNumber` <br/> - `eth_getBlockByHash` <br/> - `eth_getUncleBlockByNumberAndIndex` <br/> - `eth_getUncleBlockByBlockHashAndIndex` <br/> - `eth_getUncleCountByBlockNumber` <br/> - `eth_getUncleCountByBlockHash` <br/> - `eth_getCode` <br/> - `eth_getStorageAt` <br/> - `eth_call` <br/> - `eth_estimateGas` <br/> - `eth_createAccessList` | `true` |
 | `internal-transaction` | bool | Adds the following RPC calls to the `eth_*` namespace. <br/> - `eth_getBlockTransactionCountByNumber` <br/> - `eth_getBlockTransactionCountByHash` <br/> - `eth_getTransactionByBlockNumberAndIndex` <br/> - `eth_getTransactionByBlockHashAndIndex` <br/> - `eth_getRawTransactionByBlockNumberAndIndex` <br/> - `eth_getRawTransactionByBlockHashAndIndex` <br/> - `eth_getTransactionCount` <br/> - `eth_getTransactionByHash` <br/> - `eth_getRawTransactionByHash` <br/> - `eth_getTransactionReceipt` <br/> - `eth_sendTransaction` <br/> - `eth_fillTransaction` <br/> - `eth_sendRawTransaction` <br/> - `eth_sign` <br/> - `eth_signTransaction` <br/> - `eth_pendingTransactions` <br/> - `eth_resend` | `true` |
 | `internal-tx-pool` | bool | Adds the following RPC calls to the `txpool_*` namespace. <br/> - `txpool_content` <br/> - `txpool_contentFrom` <br/> - `txpool_status` <br/> - `txpool_inspect` | `false` |
 | `internal-debug` | bool | Adds the following RPC calls to the `debug_*` namespace. <br/> - `debug_getHeaderRlp` <br/> - `debug_getBlockRlp` <br/> - `debug_printBlock` <br/> - `debug_chaindbProperty` <br/> - `debug_chaindbCompact` | `false` |
@@ -221,7 +221,7 @@ Configuration is provided as a JSON object. All fields are optional unless other
 
 | Option | Type | Description | Default |
 |--------|------|-------------|---------|
-| `metrics-expensive-enabled` | bool | Enable expensive debug-level metrics; this includes Firewood metrics | `true` |
+| `metrics-expensive-enabled` | bool | Enable expensive debug-level metrics | `true` |
 
 ## Security and Access
 
@@ -256,18 +256,12 @@ Configuration is provided as a JSON object. All fields are optional unless other
 
 ## Database Configuration
 
-> **WARNING**: `firewood` and `path` schemes are untested in production. Using `path` is strongly discouraged. To use `firewood`, you must also set the following config options:
->
-> - `populate-missing-tries: nil`
-> - `state-sync-enabled: false`
-> - `snapshot-cache: 0`
-
-Failing to set these options will result in errors on VM initialization. Additionally, not all APIs are available - see these portions of the config documentation for more details.
+> **WARNING**: `path` is untested in production and is strongly discouraged.
 
 | Option | Type | Description | Default |
 |--------|------|-------------|---------|
 | `inspect-database` | bool | Inspect database on startup | `false` |
-| `state-scheme` | string |  EXPERIMENTAL: specifies the database scheme to store state data; can be one of `hash`, `firewood`, or `path` | `hash` |
+| `state-scheme` | string |  EXPERIMENTAL: specifies the database scheme to store state data; can be one of `hash` or `path` | `hash` |
 
 ## Transaction Indexing
 

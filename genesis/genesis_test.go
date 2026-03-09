@@ -47,14 +47,14 @@ func TestValidateConfig(t *testing.T) {
 		config      *Config
 		expectedErr error
 	}{
-		"mainnet": {
-			networkID:   1,
-			config:      &MainnetConfig,
+		"Rink": {
+			networkID:   90059,
+			config:      &RinkConfig,
 			expectedErr: nil,
 		},
-		"fuji": {
-			networkID:   5,
-			config:      &FujiConfig,
+		"Chennai": {
+			networkID:   2099,
+			config:      &ChennaiConfig,
 			expectedErr: nil,
 		},
 		"local": {
@@ -62,9 +62,9 @@ func TestValidateConfig(t *testing.T) {
 			config:      &LocalConfig,
 			expectedErr: nil,
 		},
-		"mainnet (networkID mismatch)": {
+		"Rink (networkID mismatch)": {
 			networkID:   2,
-			config:      &MainnetConfig,
+			config:      &RinkConfig,
 			expectedErr: errConflictingNetworkIDs,
 		},
 		"invalid start time": {
@@ -142,7 +142,7 @@ func TestValidateConfig(t *testing.T) {
 		"initial staked funds not in allocations": {
 			networkID: 5,
 			config: func() *Config {
-				thisConfig := FujiConfig
+				thisConfig := ChennaiConfig
 				thisConfig.InitialStakedFunds = append(thisConfig.InitialStakedFunds, LocalConfig.InitialStakedFunds[0])
 				return &thisConfig
 			}(),
@@ -184,18 +184,18 @@ func TestGenesisFromFile(t *testing.T) {
 		expectedErr     error
 		expectedHash    string
 	}{
-		"mainnet": {
-			networkID:    constants.MainnetID,
+		"Rink": {
+			networkID:    constants.RinkID,
 			customConfig: customGenesisConfigJSON,
 			expectedErr:  errOverridesStandardNetworkConfig,
 		},
-		"fuji": {
-			networkID:    constants.FujiID,
+		"Chennai": {
+			networkID:    constants.ChennaiID,
 			customConfig: customGenesisConfigJSON,
 			expectedErr:  errOverridesStandardNetworkConfig,
 		},
-		"fuji (with custom specified)": {
-			networkID:    constants.FujiID,
+		"Chennai (with custom specified)": {
+			networkID:    constants.ChennaiID,
 			customConfig: localGenesisConfigJSON, // won't load
 			expectedErr:  errOverridesStandardNetworkConfig,
 		},
@@ -272,12 +272,12 @@ func TestGenesisFromFlag(t *testing.T) {
 		expectedErr  error
 		expectedHash string
 	}{
-		"mainnet": {
-			networkID:   constants.MainnetID,
+		"Rink": {
+			networkID:   constants.RinkID,
 			expectedErr: errOverridesStandardNetworkConfig,
 		},
-		"fuji": {
-			networkID:   constants.FujiID,
+		"Chennai": {
+			networkID:   constants.ChennaiID,
 			expectedErr: errOverridesStandardNetworkConfig,
 		},
 		"local": {
@@ -321,11 +321,11 @@ func TestGenesisFromFlag(t *testing.T) {
 				// try loading a default config
 				var err error
 				switch test.networkID {
-				case constants.MainnetID:
-					genBytes, err = json.Marshal(&MainnetConfig)
+				case constants.RinkID:
+					genBytes, err = json.Marshal(&RinkConfig)
 					require.NoError(err)
 				case constants.TestnetID:
-					genBytes, err = json.Marshal(&FujiConfig)
+					genBytes, err = json.Marshal(&ChennaiConfig)
 					require.NoError(err)
 				case constants.LocalID:
 					genBytes, err = json.Marshal(&LocalConfig)
@@ -355,11 +355,11 @@ func TestGenesis(t *testing.T) {
 		expectedID string
 	}{
 		{
-			config:     &MainnetConfig,
+			config:     &RinkConfig,
 			expectedID: "UUvXi6j7QhVvgpbKM89MP5HdrxKm9CaJeHc187TsDNf8nZdLk",
 		},
 		{
-			config:     &FujiConfig,
+			config:     &ChennaiConfig,
 			expectedID: "MSj6o9TpezwsQx4Tv7SHqpVvCbJ8of1ikjsqPZ1bKRjc9zBy3",
 		},
 		{
@@ -390,7 +390,7 @@ func TestVMGenesis(t *testing.T) {
 		vmTest    []vmTest
 	}{
 		{
-			networkID: constants.MainnetID,
+			networkID: constants.RinkID,
 			vmTest: []vmTest{
 				{
 					vmID:       constants.AVMID,
@@ -403,7 +403,7 @@ func TestVMGenesis(t *testing.T) {
 			},
 		},
 		{
-			networkID: constants.FujiID,
+			networkID: constants.ChennaiID,
 			vmTest: []vmTest{
 				{
 					vmID:       constants.AVMID,
@@ -464,11 +464,11 @@ func TestAVAXAssetID(t *testing.T) {
 		expectedID string
 	}{
 		{
-			networkID:  constants.MainnetID,
+			networkID:  constants.RinkID,
 			expectedID: "FvwEAhmxKfeiG8SnEvq42hc6whRyY3EFYAvebMqDNDGCgxN5Z",
 		},
 		{
-			networkID:  constants.FujiID,
+			networkID:  constants.ChennaiID,
 			expectedID: "U8iRqJoiJm8xZHAacmvYyZVwqQx6uDNtQeP3CQ6fcgQk3JqnK",
 		},
 		{
@@ -501,11 +501,11 @@ func TestCChainGenesisTimestamp(t *testing.T) {
 		expectedGenesisTime uint64
 	}{
 		{
-			networkID:           constants.MainnetID,
+			networkID:           constants.RinkID,
 			expectedGenesisTime: 0,
 		},
 		{
-			networkID:           constants.FujiID,
+			networkID:           constants.ChennaiID,
 			expectedGenesisTime: 0,
 		},
 		{

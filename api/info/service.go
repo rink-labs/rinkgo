@@ -36,7 +36,7 @@ import (
 var (
 	errNoChainProvided = errors.New("argument 'chain' not given")
 
-	mainnetGetTxFeeResponse = GetTxFeeResponse{
+	rinkGetTxFeeResponse = GetTxFeeResponse{
 		CreateSubnetTxFee:             json.Uint64(1 * units.Avax),
 		TransformSubnetTxFee:          json.Uint64(10 * units.Avax),
 		CreateBlockchainTxFee:         json.Uint64(1 * units.Avax),
@@ -45,7 +45,7 @@ var (
 		AddSubnetValidatorFee:         json.Uint64(units.MilliAvax),
 		AddSubnetDelegatorFee:         json.Uint64(units.MilliAvax),
 	}
-	fujiGetTxFeeResponse = GetTxFeeResponse{
+	chennaiGetTxFeeResponse = GetTxFeeResponse{
 		CreateSubnetTxFee:             json.Uint64(100 * units.MilliAvax),
 		TransformSubnetTxFee:          json.Uint64(1 * units.Avax),
 		CreateBlockchainTxFee:         json.Uint64(100 * units.MilliAvax),
@@ -440,10 +440,10 @@ func (i *Info) GetTxFee(_ *http.Request, _ *struct{}, reply *GetTxFeeResponse) e
 	)
 
 	switch i.NetworkID {
-	case constants.MainnetID:
-		*reply = mainnetGetTxFeeResponse
-	case constants.FujiID:
-		*reply = fujiGetTxFeeResponse
+	case constants.RinkID:
+		*reply = rinkGetTxFeeResponse
+	case constants.ChennaiID:
+		*reply = chennaiGetTxFeeResponse
 	default:
 		*reply = defaultGetTxFeeResponse
 	}

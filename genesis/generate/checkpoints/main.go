@@ -17,63 +17,63 @@ import (
 )
 
 const (
-	fujiURI    = "http://localhost:9650"
-	mainnetURI = "http://localhost:9660"
+	chennaiURI = "http://localhost:9650"
+	rinkURI    = "http://localhost:9660"
 
 	maxNumCheckpoints = 100
 )
 
 var (
-	fujiXChainID    = ids.FromStringOrPanic("2JVSBoinj9C2J33VntvzYtVJNZdN2NKiwwKjcumHUWEb5DbBrm")
-	fujiCChainID    = ids.FromStringOrPanic("yH8D7ThNJkxmtkuv2jgBa4P1Rn3Qpr4pPr7QYNfcdoS6k6HWp")
-	mainnetXChainID = ids.FromStringOrPanic("2oYMBNV4eNHyqk2fjjV5nVQLDbtmNJzq5s3qs3Lo6ftnC6FByM")
-	mainnetCChainID = ids.FromStringOrPanic("2q9e4r6Mu3U68nU1fYjgbR6JvwrRx36CohpAX5UQxse55x1Q5")
+	chennaiXChainID = ids.FromStringOrPanic("2JVSBoinj9C2J33VntvzYtVJNZdN2NKiwwKjcumHUWEb5DbBrm")
+	chennaiCChainID = ids.FromStringOrPanic("yH8D7ThNJkxmtkuv2jgBa4P1Rn3Qpr4pPr7QYNfcdoS6k6HWp")
+	rinkXChainID    = ids.FromStringOrPanic("2oYMBNV4eNHyqk2fjjV5nVQLDbtmNJzq5s3qs3Lo6ftnC6FByM")
+	rinkCChainID    = ids.FromStringOrPanic("2q9e4r6Mu3U68nU1fYjgbR6JvwrRx36CohpAX5UQxse55x1Q5")
 )
 
 // This fetches IDs of blocks periodically accepted on the P-chain, X-chain, and
 // C-chain on both Fuji and Mainnet.
 //
-// This expects to be able to communicate with a Fuji node at [fujiURI] and a
-// Mainnet node at [mainnetURI]. Both nodes must have the index API enabled.
+// This expects to be able to communicate with a Fuji node at [chennaiURI] and a
+// Mainnet node at [rinkURI]. Both nodes must have the index API enabled.
 func main() {
 	ctx := context.Background()
 
-	fujiPChainCheckpoints, err := getCheckpoints(ctx, fujiURI, "P")
+	fujiPChainCheckpoints, err := getCheckpoints(ctx, chennaiURI, "P")
 	if err != nil {
 		log.Fatalf("failed to fetch Fuji P-chain checkpoints: %v", err)
 	}
-	fujiXChainCheckpoints, err := getCheckpoints(ctx, fujiURI, "X")
+	fujiXChainCheckpoints, err := getCheckpoints(ctx, chennaiURI, "X")
 	if err != nil {
 		log.Fatalf("failed to fetch Fuji X-chain checkpoints: %v", err)
 	}
-	fujiCChainCheckpoints, err := getCheckpoints(ctx, fujiURI, "C")
+	fujiCChainCheckpoints, err := getCheckpoints(ctx, chennaiURI, "C")
 	if err != nil {
 		log.Fatalf("failed to fetch Fuji C-chain checkpoints: %v", err)
 	}
 
-	mainnetPChainCheckpoints, err := getCheckpoints(ctx, mainnetURI, "P")
+	mainnetPChainCheckpoints, err := getCheckpoints(ctx, rinkURI, "P")
 	if err != nil {
 		log.Fatalf("failed to fetch Mainnet P-chain checkpoints: %v", err)
 	}
-	mainnetXChainCheckpoints, err := getCheckpoints(ctx, mainnetURI, "X")
+	mainnetXChainCheckpoints, err := getCheckpoints(ctx, rinkURI, "X")
 	if err != nil {
 		log.Fatalf("failed to fetch Mainnet X-chain checkpoints: %v", err)
 	}
-	mainnetCChainCheckpoints, err := getCheckpoints(ctx, mainnetURI, "C")
+	mainnetCChainCheckpoints, err := getCheckpoints(ctx, rinkURI, "C")
 	if err != nil {
 		log.Fatalf("failed to fetch Mainnet C-chain checkpoints: %v", err)
 	}
 
 	checkpoints := map[string]map[ids.ID]set.Set[ids.ID]{
-		constants.FujiName: {
+		constants.ChennaiName: {
 			constants.PlatformChainID: fujiPChainCheckpoints,
-			fujiXChainID:              fujiXChainCheckpoints,
-			fujiCChainID:              fujiCChainCheckpoints,
+			chennaiXChainID:           fujiXChainCheckpoints,
+			chennaiCChainID:           fujiCChainCheckpoints,
 		},
-		constants.MainnetName: {
+		constants.RinkName: {
 			constants.PlatformChainID: mainnetPChainCheckpoints,
-			mainnetXChainID:           mainnetXChainCheckpoints,
-			mainnetCChainID:           mainnetCChainCheckpoints,
+			rinkXChainID:              mainnetXChainCheckpoints,
+			rinkCChainID:              mainnetCChainCheckpoints,
 		},
 	}
 	checkpointsJSON, err := json.MarshalIndent(checkpoints, "", "\t")

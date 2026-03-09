@@ -45,7 +45,6 @@ import (
 	"github.com/ava-labs/avalanchego/graft/coreth/internal/ethapi"
 	"github.com/ava-labs/avalanchego/graft/coreth/params"
 	"github.com/ava-labs/avalanchego/graft/coreth/rpc"
-	"github.com/ava-labs/avalanchego/vms/evm/sync/customrawdb"
 	"github.com/ava-labs/libevm/common"
 	"github.com/ava-labs/libevm/common/hexutil"
 	"github.com/ava-labs/libevm/core/rawdb"
@@ -64,7 +63,7 @@ var (
 	errStateNotFound = errors.New("state not found")
 	errBlockNotFound = errors.New("block not found")
 
-	schemes = []string{rawdb.HashScheme, customrawdb.FirewoodScheme}
+	schemes = []string{rawdb.HashScheme}
 )
 
 type testBackend struct {
@@ -103,10 +102,6 @@ func newTestBackend(t *testing.T, n int, gspec *core.Genesis, scheme string, gen
 		StateHistory:              100, // Sufficient history for testing
 		ChainDataDir:              t.TempDir(),
 	}
-	if scheme == customrawdb.FirewoodScheme {
-		cacheConfig.SnapshotLimit = 0 // Firewood does not support snapshots
-	}
-
 	chain, err := core.NewBlockChain(backend.chaindb, cacheConfig, gspec, backend.engine, vm.Config{}, common.Hash{}, false)
 	if err != nil {
 		t.Fatalf("failed to create tester chain: %v", err)

@@ -162,13 +162,13 @@ func (c *Config) InitialSupply() (uint64, error) {
 }
 
 var (
-	// MainnetConfig is the config that should be used to generate the mainnet
+	// RinkConfig is the config that should be used to generate the rink
 	// genesis.
-	MainnetConfig Config
+	RinkConfig Config
 
-	// FujiConfig is the config that should be used to generate the fuji
+	// ChennaiConfig is the config that should be used to generate the chennai
 	// genesis.
-	FujiConfig Config
+	ChennaiConfig Config
 
 	// LocalConfig is the config that should be used to generate a local
 	// genesis.
@@ -180,25 +180,25 @@ var (
 )
 
 func init() {
-	unparsedMainnetConfig := UnparsedConfig{}
-	unparsedFujiConfig := UnparsedConfig{}
+	unparsedRinkConfig := UnparsedConfig{}
+	unparsedChennaiConfig := UnparsedConfig{}
 	unparsedLocalConfig := UnparsedConfig{}
 
 	err := errors.Join(
-		json.Unmarshal(mainnetGenesisConfigJSON, &unparsedMainnetConfig),
-		json.Unmarshal(fujiGenesisConfigJSON, &unparsedFujiConfig),
+		json.Unmarshal(rinkGenesisConfigJSON, &unparsedRinkConfig),
+		json.Unmarshal(chennaiGenesisConfigJSON, &unparsedChennaiConfig),
 		json.Unmarshal(localGenesisConfigJSON, &unparsedLocalConfig),
 	)
 	if err != nil {
 		panic(err)
 	}
 
-	MainnetConfig, err = unparsedMainnetConfig.Parse()
+	RinkConfig, err = unparsedRinkConfig.Parse()
 	if err != nil {
 		panic(err)
 	}
 
-	FujiConfig, err = unparsedFujiConfig.Parse()
+	ChennaiConfig, err = unparsedChennaiConfig.Parse()
 	if err != nil {
 		panic(err)
 	}
@@ -222,10 +222,10 @@ func init() {
 
 func GetConfig(networkID uint32) *Config {
 	switch networkID {
-	case constants.MainnetID:
-		return &MainnetConfig
-	case constants.FujiID:
-		return &FujiConfig
+	case constants.RinkID:
+		return &RinkConfig
+	case constants.ChennaiID:
+		return &ChennaiConfig
 	case constants.LocalID:
 		return &LocalConfig
 	default:

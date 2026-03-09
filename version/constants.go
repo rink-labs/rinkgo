@@ -11,7 +11,7 @@ import (
 )
 
 const (
-	Client = "avalanchego"
+	Client = "rinkgo"
 	// RPCChainVMProtocol should be bumped anytime changes are made which
 	// require the plugin vm to upgrade to latest avalanchego release to be
 	// compatible.
