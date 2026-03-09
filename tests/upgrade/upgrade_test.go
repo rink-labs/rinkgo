@@ -23,22 +23,22 @@ func TestUpgrade(t *testing.T) {
 }
 
 var (
-	avalancheGoExecPath            string
-	avalancheGoExecPathToUpgradeTo string
-	collectorVars                  *flags.CollectorVars
-	checkMetricsCollected          bool
-	checkLogsCollected             bool
+	rinkGoExecPath            string
+	rinkGoExecPathToUpgradeTo string
+	collectorVars             *flags.CollectorVars
+	checkMetricsCollected     bool
+	checkLogsCollected        bool
 )
 
 func init() {
 	flag.StringVar(
-		&avalancheGoExecPath,
+		&rinkGoExecPath,
 		"avalanchego-path",
 		"",
 		"avalanchego executable path",
 	)
 	flag.StringVar(
-		&avalancheGoExecPathToUpgradeTo,
+		&rinkGoExecPathToUpgradeTo,
 		"avalanchego-path-to-upgrade-to",
 		"",
 		"avalanchego executable path to upgrade to",
@@ -55,11 +55,11 @@ var _ = ginkgo.Describe("[Upgrade]", func() {
 	require := require.New(tc)
 
 	ginkgo.It("can upgrade versions", func() {
-		network := tmpnet.NewDefaultNetwork("avalanchego-upgrade")
+		network := tmpnet.NewDefaultNetwork("rink-upgrade")
 
 		network.DefaultRuntimeConfig = tmpnet.NodeRuntimeConfig{
 			Process: &tmpnet.ProcessRuntimeConfig{
-				AvalancheGoPath: avalancheGoExecPath,
+				RinkGoPath: rinkGoExecPath,
 			},
 		}
 
@@ -102,14 +102,14 @@ var _ = ginkgo.Describe("[Upgrade]", func() {
 			e2e.EmptyNetworkCmd,
 		)
 
-		tc.By(fmt.Sprintf("restarting all nodes with %q binary", avalancheGoExecPathToUpgradeTo))
+		tc.By(fmt.Sprintf("restarting all nodes with %q binary", rinkGoExecPathToUpgradeTo))
 		for _, node := range network.Nodes {
-			tc.By(fmt.Sprintf("restarting node %q with %q binary", node.NodeID, avalancheGoExecPathToUpgradeTo))
+			tc.By(fmt.Sprintf("restarting node %q with %q binary", node.NodeID, rinkGoExecPathToUpgradeTo))
 			require.NoError(node.Stop(tc.DefaultContext()))
 
 			node.RuntimeConfig = &tmpnet.NodeRuntimeConfig{
 				Process: &tmpnet.ProcessRuntimeConfig{
-					AvalancheGoPath: avalancheGoExecPathToUpgradeTo,
+					RinkGoPath: rinkGoExecPathToUpgradeTo,
 				},
 			}
 

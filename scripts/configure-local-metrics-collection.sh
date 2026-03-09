@@ -7,7 +7,7 @@ set -euo pipefail
 
 API_PORT="${API_PORT:-9650}"
 
-LOGS_PATH="${LOGS_PATH:-${HOME}/.avalanchego/logs}"
+LOGS_PATH="${LOGS_PATH:-${HOME}/.rinkgo/logs}"
 
 # Generate a uuid to uniquely identify the collected metrics
 METRICS_UUID="$(uuidgen)"
@@ -54,7 +54,7 @@ echo "Log collection by promtail can be started with ./bin/tmpnetctl start-logs-
 
 GRAFANA_URI="${GRAFANA_URI:-https://grafana-poc.avax-dev.network/d/kBQpRdWnk/avalanche-main-dashboard}"
 GRAFANA_LINK="${GRAFANA_URI}?var-filter=network_uuid%7C%3D%7C${METRICS_UUID}"
-METRICS_PATH="${HOME}/.avalanchego/metrics.txt"
+METRICS_PATH="${HOME}/.rinkgo/metrics.txt"
 echo "${GRAFANA_LINK}" > "${METRICS_PATH}"
 echo "Metrics and logs can be viewed at: ${GRAFANA_LINK}"
 echo "Link also saved to ${METRICS_PATH}"

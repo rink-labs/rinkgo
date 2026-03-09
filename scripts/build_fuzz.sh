@@ -13,7 +13,7 @@ set -euo pipefail
 # Directory above this script
 AVALANCHE_PATH=$( cd "$( dirname "${BASH_SOURCE[0]}" )"; cd .. && pwd )
 # Load the constants
-source "$AVALANCHE_PATH"/scripts/constants.sh
+source "$RINK_PATH"/scripts/constants.sh
 
 fuzzTime=${1:-1}
 fuzzDir=${2:-.}

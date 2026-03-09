@@ -16,7 +16,7 @@ go build -o ./build/xsvm ./vms/example/xsvm/cmd/xsvm/
 # usage for testing. The local directory should be preferred but the
 # global directory remains supported for backwards compatibility.
 LOCAL_PLUGIN_PATH="${PWD}/build/plugins"
-GLOBAL_PLUGIN_PATH="${HOME}/.avalanchego/plugins"
+GLOBAL_PLUGIN_PATH="${HOME}/.rinkgo/plugins"
 for plugin_dir in "${GLOBAL_PLUGIN_PATH}" "${LOCAL_PLUGIN_PATH}"; do
   PLUGIN_PATH="${plugin_dir}/v3m4wPxaHpvGr8qfMeyK6PRW3idZrPHmYcMTt7oXdK47yurVH"
   echo "Symlinking ./build/xsvm to ${PLUGIN_PATH}"

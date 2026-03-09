@@ -164,9 +164,9 @@ Once the tag is created, you need to test it on the Fuji testnet both locally an
 1. Copy the VM binary to the plugins directory, naming it with the VM ID:
 
     ```bash
-    mkdir -p ~/.avalanchego/plugins
-    cp vm.bin ~/.avalanchego/plugins/mDtV8ES8wRL1j2m6Kvc1qRFAvnpq4kufhueAY1bwbzVhk336o
-    cp vm.bin ~/.avalanchego/plugins/meq3bv7qCMZZ69L8xZRLwyKnWp6chRwyscq8VPtHWignRQVVF
+    mkdir -p ~/.rinkgo/plugins
+    cp vm.bin ~/.rinkgo/plugins/mDtV8ES8wRL1j2m6Kvc1qRFAvnpq4kufhueAY1bwbzVhk336o
+    cp vm.bin ~/.rinkgo/plugins/meq3bv7qCMZZ69L8xZRLwyKnWp6chRwyscq8VPtHWignRQVVF
     rm vm.bin
     ```
 
@@ -183,40 +183,40 @@ Once the tag is created, you need to test it on the Fuji testnet both locally an
     git checkout v1.13.0
     ```
 
-1. Get upgrades for each L1 and write them out to `~/.avalanchego/configs/chains/<blockchain-id>/upgrade.json`:
+1. Get upgrades for each L1 and write them out to `~/.rinkgo/configs/chains/<blockchain-id>/upgrade.json`:
 
     ```bash
-    mkdir -p ~/.avalanchego/configs/chains/2D8RG4UpSXbPbvPCAWppNJyqTG2i2CAXSkTgmTBBvs7GKNZjsY
+    mkdir -p ~/.rinkgo/configs/chains/2D8RG4UpSXbPbvPCAWppNJyqTG2i2CAXSkTgmTBBvs7GKNZjsY
     curl -X POST --silent --header 'Content-Type: application/json' --data '{
         "jsonrpc": "2.0",
         "method": "eth_getChainConfig",
         "params": [],
         "id": 1
     }' https://subnets.avax.network/dispatch/testnet/rpc | \
-    jq -r '.result.upgrades' > ~/.avalanchego/configs/chains/2D8RG4UpSXbPbvPCAWppNJyqTG2i2CAXSkTgmTBBvs7GKNZjsY/upgrade.json
+    jq -r '.result.upgrades' > ~/.rinkgo/configs/chains/2D8RG4UpSXbPbvPCAWppNJyqTG2i2CAXSkTgmTBBvs7GKNZjsY/upgrade.json
     ```
 
     Note it is possible there is no upgrades so the upgrade.json might just be `{}`.
 
     ```bash
-    mkdir -p ~/.avalanchego/configs/chains/98qnjenm7MBd8G2cPZoRvZrgJC33JGSAAKghsQ6eojbLCeRNp
+    mkdir -p ~/.rinkgo/configs/chains/98qnjenm7MBd8G2cPZoRvZrgJC33JGSAAKghsQ6eojbLCeRNp
     curl -X POST --silent --header 'Content-Type: application/json' --data '{
         "jsonrpc": "2.0",
         "method": "eth_getChainConfig",
         "params": [],
         "id": 1
     }' https://subnets.avax.network/echo/testnet/rpc | \
-    jq -r '.result.upgrades' > ~/.avalanchego/configs/chains/98qnjenm7MBd8G2cPZoRvZrgJC33JGSAAKghsQ6eojbLCeRNp/upgrade.json
+    jq -r '.result.upgrades' > ~/.rinkgo/configs/chains/98qnjenm7MBd8G2cPZoRvZrgJC33JGSAAKghsQ6eojbLCeRNp/upgrade.json
     ```
 
 1. (Optional) You can tweak the `config.json` for each L1 if you want to test a particular feature for example.
-    - Dispatch: `~/.avalanchego/configs/chains/2D8RG4UpSXbPbvPCAWppNJyqTG2i2CAXSkTgmTBBvs7GKNZjsY/config.json`
-    - Echo: `~/.avalanchego/configs/chains/98qnjenm7MBd8G2cPZoRvZrgJC33JGSAAKghsQ6eojbLCeRNp/config.json`
-1. (Optional) If you want to reboostrap completely the chain, you can remove `~/.avalanchego/chainData/<blockchain-id>/db/pebbledb`, for example:
-    - Dispatch: `rm -r ~/.avalanchego/chainData/2D8RG4UpSXbPbvPCAWppNJyqTG2i2CAXSkTgmTBBvs7GKNZjsY/db/pebbledb`
-    - Echo: `rm -r ~/.avalanchego/chainData/98qnjenm7MBd8G2cPZoRvZrgJC33JGSAAKghsQ6eojbLCeRNp/db/pebbledb`
+    - Dispatch: `~/.rinkgo/configs/chains/2D8RG4UpSXbPbvPCAWppNJyqTG2i2CAXSkTgmTBBvs7GKNZjsY/config.json`
+    - Echo: `~/.rinkgo/configs/chains/98qnjenm7MBd8G2cPZoRvZrgJC33JGSAAKghsQ6eojbLCeRNp/config.json`
+1. (Optional) If you want to reboostrap completely the chain, you can remove `~/.rinkgo/chainData/<blockchain-id>/db/pebbledb`, for example:
+    - Dispatch: `rm -r ~/.rinkgo/chainData/2D8RG4UpSXbPbvPCAWppNJyqTG2i2CAXSkTgmTBBvs7GKNZjsY/db/pebbledb`
+    - Echo: `rm -r ~/.rinkgo/chainData/98qnjenm7MBd8G2cPZoRvZrgJC33JGSAAKghsQ6eojbLCeRNp/db/pebbledb`
 
-    AvalancheGo keeps its database in `~/.avalanchego/db/fuji/v1.4.5/*.ldb` which you should not delete.
+    AvalancheGo keeps its database in `~/.rinkgo/db/fuji/v1.4.5/*.ldb` which you should not delete.
 1. Build AvalancheGo:
 
     ```bash

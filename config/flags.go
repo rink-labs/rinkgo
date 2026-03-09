@@ -41,7 +41,7 @@ const (
 
 var (
 	// [defaultUnexpandedDataDir] will be expanded when reading the flags
-	defaultDataDir              = filepath.Join("$HOME", ".avalanchego")
+	defaultDataDir              = filepath.Join("$HOME", ".rinkgo")
 	defaultDBDir                = filepath.Join(defaultUnexpandedDataDir, "db")
 	defaultLogDir               = filepath.Join(defaultUnexpandedDataDir, "logs")
 	defaultProfileDir           = filepath.Join(defaultUnexpandedDataDir, "profiles")

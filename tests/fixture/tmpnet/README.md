@@ -179,7 +179,7 @@ _ := tmpnet.BootstrapNewNetwork(          // Bootstrap the network
     network,
     "",                                   // Empty string uses the default network path (~/tmpnet/networks)
     "/path/to/avalanchego",               // The path to the binary that nodes will execute
-    "/path/to/plugins",                   // The path nodes will use for plugin binaries (suggested value ~/.avalanchego/plugins)
+    "/path/to/plugins",                   // The path nodes will use for plugin binaries (suggested value ~/.rinkgo/plugins)
 )
 
 uris := network.GetNodeURIs()

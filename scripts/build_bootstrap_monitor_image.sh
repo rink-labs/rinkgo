@@ -13,7 +13,7 @@ set -euo pipefail
 AVALANCHE_PATH=$( cd "$( dirname "${BASH_SOURCE[0]}" )"; cd .. && pwd )
 
 # Load the constants
-source "$AVALANCHE_PATH"/scripts/constants.sh
+source "$RINK_PATH"/scripts/constants.sh
 
 # The published name should be 'avaplatform/bootstrap-monitor', but to avoid unintentional pushes it
 # is defaulted to 'bootstrap-monitor' (without a repo or registry name) which can only be used to

@@ -4006,7 +4006,7 @@ This version is backwards compatible to [v1.8.0](https://github.com/ava-labs/ava
 - Exposed BLS proof of possession in the `info.getNodeID` API
 - Added BLS proof of possession to `AddPermissionlessValidatorTx`s for the Primary Network
 
-The default value of `--staking-signer-key-file` is `~/.avalanchego/staking/signer.key`. If the key file doesn't exist, it will be populated with a new key.
+The default value of `--staking-signer-key-file` is `~/.rinkgo/staking/signer.key`. If the key file doesn't exist, it will be populated with a new key.
 
 ### Networking
 

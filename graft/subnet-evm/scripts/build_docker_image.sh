@@ -105,7 +105,7 @@ echo "Building Docker Image: $IMAGE_NAME:$BUILD_IMAGE_ID based of AvalancheGo@$A
 # Use repo root as context so Dockerfile can access graft/ directory
 AVALANCHE_PATH="${SUBNET_EVM_PATH}/../.."
 ${DOCKER_CMD} -t "$IMAGE_NAME:$BUILD_IMAGE_ID" -t "$IMAGE_NAME:${DOCKERHUB_TAG}" \
-  "$AVALANCHE_PATH" -f "$SUBNET_EVM_PATH/Dockerfile" \
+  "$RINK_PATH" -f "$SUBNET_EVM_PATH/Dockerfile" \
   --build-arg GO_VERSION="${GO_VERSION}" \
   --build-arg AVALANCHEGO_NODE_IMAGE="$AVALANCHEGO_NODE_IMAGE" \
   --build-arg SUBNET_EVM_COMMIT="$SUBNET_EVM_COMMIT" \

@@ -986,9 +986,9 @@ func checkVMBinaries(log logging.Logger, subnets []*Subnet, config *ProcessRunti
 		return nil
 	}
 
-	avalanchegoRPCVersion, err := getRPCVersion(log, config.AvalancheGoPath, "--version-json")
+	rinkgoRPCVersion, err := getRPCVersion(log, config.RinkGoPath, "--version-json")
 	if err != nil {
-		log.Warn("unable to check rpcchainvm version for avalanchego", zap.Error(err))
+		log.Warn("unable to check rpcchainvm version for rinkgo", zap.Error(err))
 		return nil
 	}
 
@@ -1006,7 +1006,7 @@ func checkVMBinaries(log logging.Logger, subnets []*Subnet, config *ProcessRunti
 				continue
 			}
 
-			if len(chain.VersionArgs) == 0 || avalanchegoRPCVersion == invalidRPCVersion {
+			if len(chain.VersionArgs) == 0 || rinkgoRPCVersion == invalidRPCVersion {
 				// Not possible to check the rpcchainvm version
 				continue
 			}
@@ -1018,11 +1018,11 @@ func checkVMBinaries(log logging.Logger, subnets []*Subnet, config *ProcessRunti
 					zap.String("subnet", subnet.Name),
 					zap.Error(err),
 				)
-			} else if avalanchegoRPCVersion != vmRPCVersion {
+			} else if rinkgoRPCVersion != vmRPCVersion {
 				log.Error("unexpected rpcchainvm version for VM binary",
 					zap.String("subnet", subnet.Name),
-					zap.String("avalanchegoPath", config.AvalancheGoPath),
-					zap.Uint64("avalanchegoRPCVersion", avalanchegoRPCVersion),
+					zap.String("rinkgoPath", config.RinkGoPath),
+					zap.Uint64("rinkgoRPCVersion", rinkgoRPCVersion),
 					zap.String("vmPath", vmPath),
 					zap.Uint64("vmRPCVersion", vmRPCVersion),
 				)

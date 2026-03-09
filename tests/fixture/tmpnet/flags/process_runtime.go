@@ -19,10 +19,10 @@ const (
 	processRuntime   = "process"
 	processDocPrefix = "[process runtime] "
 
-	avalanchegoPathFlag = "avalanchego-path"
+	rinkgoPathFlag = "rinkgo-path"
 )
 
-var errAvalancheGoRequired = fmt.Errorf("--%s or %s are required", avalanchegoPathFlag, tmpnet.AvalancheGoPathEnvName)
+var errRinkGoRequired = fmt.Errorf("--%s or %s are required", rinkgoPathFlag, tmpnet.RinkGoPathEnvName)
 
 type processRuntimeVars struct {
 	config tmpnet.ProcessRuntimeConfig
@@ -38,21 +38,21 @@ func (v *processRuntimeVars) registerWithFlagSet(flagSet *pflag.FlagSet) {
 
 func (v *processRuntimeVars) register(stringVar varFunc[string], boolVar varFunc[bool]) {
 	stringVar(
-		&v.config.AvalancheGoPath,
-		avalanchegoPathFlag,
-		os.Getenv(tmpnet.AvalancheGoPathEnvName),
+		&v.config.RinkGoPath,
+		rinkgoPathFlag,
+		os.Getenv(tmpnet.RinkGoPathEnvName),
 		processDocPrefix+fmt.Sprintf(
-			"The avalanchego executable path. Also possible to configure via the %s env variable.",
-			tmpnet.AvalancheGoPathEnvName,
+			"The rinkgo executable path. Also possible to configure via the %s env variable.",
+			tmpnet.RinkGoPathEnvName,
 		),
 	)
 	stringVar(
 		&v.config.PluginDir,
 		"plugin-dir",
-		tmpnet.GetEnvWithDefault(tmpnet.AvalancheGoPluginDirEnvName, os.ExpandEnv("$HOME/.avalanchego/plugins")),
+		tmpnet.GetEnvWithDefault(tmpnet.RinkGoPluginDirEnvName, os.ExpandEnv("$HOME/.rinkgo/plugins")),
 		processDocPrefix+fmt.Sprintf(
 			"The dir containing VM plugins. Also possible to configure via the %s env variable.",
-			tmpnet.AvalancheGoPluginDirEnvName,
+			tmpnet.RinkGoPluginDirEnvName,
 		),
 	)
 	boolVar(
@@ -71,15 +71,15 @@ func (v *processRuntimeVars) getProcessRuntimeConfig() (*tmpnet.ProcessRuntimeCo
 }
 
 func (v *processRuntimeVars) validate() error {
-	path := v.config.AvalancheGoPath
+	path := v.config.RinkGoPath
 
 	if len(path) == 0 {
-		return stacktrace.Wrap(errAvalancheGoRequired)
+		return stacktrace.Wrap(errRinkGoRequired)
 	}
 
 	if filepath.IsAbs(path) {
 		if _, err := os.Stat(path); err != nil {
-			return stacktrace.Errorf("--%s (%s) not found: %w", avalanchegoPathFlag, path, err)
+			return stacktrace.Errorf("--%s (%s) not found: %w", rinkgoPathFlag, path, err)
 		}
 		return nil
 	}
@@ -89,7 +89,7 @@ func (v *processRuntimeVars) validate() error {
 	if err != nil {
 		return stacktrace.Errorf(
 			"--%s (%s) is a relative path but its absolute path cannot be determined: %w",
-			avalanchegoPathFlag,
+			rinkgoPathFlag,
 			path,
 			err,
 		)
@@ -99,7 +99,7 @@ func (v *processRuntimeVars) validate() error {
 	if _, err := os.Stat(absPath); err != nil {
 		return stacktrace.Errorf(
 			"--%s (%s) is a relative path but its absolute path (%s) is not found: %w",
-			avalanchegoPathFlag,
+			rinkgoPathFlag,
 			path,
 			absPath,
 			err,

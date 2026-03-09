@@ -30,8 +30,8 @@ const (
 var (
 	errTargetPathEnvVarNotSet = errors.New(targetPathEnvName + " environment variable not set")
 	errImageTagEnvVarNotSet   = errors.New(imageTagEnvName + " environment variable not set")
-	errAvalancheGoEvVarNotSet = errors.New(tmpnet.AvalancheGoPathEnvName + " environment variable not set")
-	errPluginDirEnvVarNotSet  = errors.New(tmpnet.AvalancheGoPluginDirEnvName + " environment variable not set")
+	errAvalancheGoEvVarNotSet = errors.New(tmpnet.RinkGoPathEnvName + " environment variable not set")
+	errPluginDirEnvVarNotSet  = errors.New(tmpnet.RinkGoPluginDirEnvName + " environment variable not set")
 )
 
 // Creates docker compose configuration for an antithesis test setup. Configuration is via env vars to
@@ -50,21 +50,21 @@ func GenerateComposeConfig(network *tmpnet.Network, baseImageName string) error 
 
 	// Subnet testing requires creating an initial db state for the bootstrap node
 	if len(network.Subnets) > 0 {
-		avalancheGoPath := os.Getenv(tmpnet.AvalancheGoPathEnvName)
+		avalancheGoPath := os.Getenv(tmpnet.RinkGoPathEnvName)
 		if len(avalancheGoPath) == 0 {
 			return errAvalancheGoEvVarNotSet
 		}
 
 		// Plugin dir configured here is only used for initializing the bootstrap db.
-		pluginDir := os.Getenv(tmpnet.AvalancheGoPluginDirEnvName)
+		pluginDir := os.Getenv(tmpnet.RinkGoPluginDirEnvName)
 		if len(pluginDir) == 0 {
 			return errPluginDirEnvVarNotSet
 		}
 
 		network.DefaultRuntimeConfig = tmpnet.NodeRuntimeConfig{
 			Process: &tmpnet.ProcessRuntimeConfig{
-				AvalancheGoPath: avalancheGoPath,
-				PluginDir:       pluginDir,
+				RinkGoPath: avalancheGoPath,
+				PluginDir:  pluginDir,
 			},
 		}
 
@@ -188,7 +188,7 @@ func newComposeProject(network *tmpnet.Network, nodeImageName string, workloadIm
 			{
 				Type:   types.VolumeTypeBind,
 				Source: fmt.Sprintf("./volumes/%s/logs", serviceName),
-				Target: "/root/.avalanchego/logs",
+				Target: "/root/.rinkgo/logs",
 			},
 		}
 
@@ -200,7 +200,7 @@ func newComposeProject(network *tmpnet.Network, nodeImageName string, workloadIm
 				volumes = append(volumes, types.ServiceVolumeConfig{
 					Type:   types.VolumeTypeBind,
 					Source: fmt.Sprintf("./volumes/%s/db", serviceName),
-					Target: "/root/.avalanchego/db",
+					Target: "/root/.rinkgo/db",
 				})
 			}
 		}

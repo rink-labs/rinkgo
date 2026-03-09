@@ -31,20 +31,20 @@ import (
 )
 
 const (
-	AvalancheGoPathEnvName = "AVALANCHEGO_PATH"
+	RinkGoPathEnvName = "RINKGO_PATH"
 
 	defaultNodeInitTimeout = 10 * time.Second
 )
 
 var (
-	AvalancheGoPluginDirEnvName = config.EnvVarName(config.EnvPrefix, config.PluginDirKey)
+	RinkGoPluginDirEnvName = config.EnvVarName(config.EnvPrefix, config.PluginDirKey)
 
 	errNodeAlreadyRunning = errors.New("failed to start node: node is already running")
 	errNotRunning         = errors.New("node is not running")
 )
 
 type ProcessRuntimeConfig struct {
-	AvalancheGoPath   string `json:"avalancheGoPath,omitempty"`
+	RinkGoPath        string `json:"rinkgoPath,omitempty"`
 	PluginDir         string `json:"pluginDir,omitempty"`
 	ReuseDynamicPorts bool   `json:"reuseDynamicPorts,omitempty"`
 }
@@ -121,7 +121,7 @@ func (p *ProcessRuntime) Start(ctx context.Context) error {
 	}
 
 	// All arguments are provided in the flags file
-	cmd := exec.Command(runtimeConfig.AvalancheGoPath, "--config-file", p.node.GetFlagsPath())
+	cmd := exec.Command(runtimeConfig.RinkGoPath, "--config-file", p.node.GetFlagsPath())
 	// Ensure process is detached from the parent process so that an error in the parent will not affect the child
 	configureDetachedProcess(cmd)
 
