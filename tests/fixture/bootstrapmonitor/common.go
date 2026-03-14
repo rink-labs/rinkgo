@@ -18,10 +18,10 @@ import (
 	"k8s.io/apimachinery/pkg/types"
 	"k8s.io/client-go/kubernetes"
 
-	"github.com/ava-labs/avalanchego/tests/fixture/tmpnet"
-	"github.com/ava-labs/avalanchego/tests/fixture/tmpnet/flags"
-	"github.com/ava-labs/avalanchego/utils/logging"
-	"github.com/ava-labs/avalanchego/version"
+	"github.com/rink-labs/rinkgo/tests/fixture/tmpnet"
+	"github.com/rink-labs/rinkgo/tests/fixture/tmpnet/flags"
+	"github.com/rink-labs/rinkgo/utils/logging"
+	"github.com/rink-labs/rinkgo/version"
 
 	corev1 "k8s.io/api/core/v1"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"

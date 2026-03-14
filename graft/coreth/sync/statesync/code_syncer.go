@@ -8,17 +8,17 @@ import (
 	"fmt"
 	"sync"
 
-	"github.com/ava-labs/libevm/common"
-	"github.com/ava-labs/libevm/core/rawdb"
-	"github.com/ava-labs/libevm/ethdb"
-	"github.com/ava-labs/libevm/libevm/options"
+	"github.com/rink-labs/libevm/common"
+	"github.com/rink-labs/libevm/core/rawdb"
+	"github.com/rink-labs/libevm/ethdb"
+	"github.com/rink-labs/libevm/libevm/options"
 	"golang.org/x/sync/errgroup"
 
-	"github.com/ava-labs/avalanchego/graft/coreth/plugin/evm/message"
-	"github.com/ava-labs/avalanchego/vms/evm/sync/customrawdb"
+	"github.com/rink-labs/rinkgo/graft/coreth/plugin/evm/message"
+	"github.com/rink-labs/rinkgo/vms/evm/sync/customrawdb"
 
-	syncpkg "github.com/ava-labs/avalanchego/graft/coreth/sync"
-	statesyncclient "github.com/ava-labs/avalanchego/graft/coreth/sync/client"
+	syncpkg "github.com/rink-labs/rinkgo/graft/coreth/sync"
+	statesyncclient "github.com/rink-labs/rinkgo/graft/coreth/sync/client"
 )
 
 const defaultNumCodeFetchingWorkers = 5

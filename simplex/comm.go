@@ -7,7 +7,7 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/ava-labs/simplex"
+	"github.com/rink-labs/simplex"
 	"go.uber.org/zap"
 
 	"github.com/ava-labs/avalanchego/ids"

@@ -33,17 +33,17 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/ava-labs/avalanchego/graft/coreth/core"
-	"github.com/ava-labs/avalanchego/graft/coreth/core/extstate"
-	"github.com/ava-labs/avalanchego/graft/coreth/eth/tracers"
-	"github.com/ava-labs/libevm/common"
-	"github.com/ava-labs/libevm/core/rawdb"
-	"github.com/ava-labs/libevm/core/state"
-	"github.com/ava-labs/libevm/core/types"
-	"github.com/ava-labs/libevm/core/vm"
-	"github.com/ava-labs/libevm/log"
-	"github.com/ava-labs/libevm/trie"
-	"github.com/ava-labs/libevm/triedb"
+	"github.com/rink-labs/rinkgo/graft/coreth/core"
+	"github.com/rink-labs/rinkgo/graft/coreth/core/extstate"
+	"github.com/rink-labs/rinkgo/graft/coreth/eth/tracers"
+	"github.com/rink-labs/libevm/common"
+	"github.com/rink-labs/libevm/core/rawdb"
+	"github.com/rink-labs/libevm/core/state"
+	"github.com/rink-labs/libevm/core/types"
+	"github.com/rink-labs/libevm/core/vm"
+	"github.com/rink-labs/libevm/log"
+	"github.com/rink-labs/libevm/trie"
+	"github.com/rink-labs/libevm/triedb"
 )
 
 // noopReleaser is returned in case there is no operation expected

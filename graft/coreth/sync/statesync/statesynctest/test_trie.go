@@ -8,18 +8,18 @@ import (
 	"math/rand"
 	"testing"
 
-	"github.com/ava-labs/libevm/common"
-	"github.com/ava-labs/libevm/core/types"
-	"github.com/ava-labs/libevm/ethdb"
-	"github.com/ava-labs/libevm/rlp"
-	"github.com/ava-labs/libevm/trie"
-	"github.com/ava-labs/libevm/trie/trienode"
-	"github.com/ava-labs/libevm/triedb"
+	"github.com/rink-labs/libevm/common"
+	"github.com/rink-labs/libevm/core/types"
+	"github.com/rink-labs/libevm/ethdb"
+	"github.com/rink-labs/libevm/rlp"
+	"github.com/rink-labs/libevm/trie"
+	"github.com/rink-labs/libevm/trie/trienode"
+	"github.com/rink-labs/libevm/triedb"
 	"github.com/holiman/uint256"
 	"github.com/stretchr/testify/require"
 
-	"github.com/ava-labs/avalanchego/graft/coreth/utils/utilstest"
-	"github.com/ava-labs/avalanchego/utils/wrappers"
+	"github.com/rink-labs/rinkgo/graft/coreth/utils/utilstest"
+	"github.com/rink-labs/rinkgo/utils/wrappers"
 )
 
 // GenerateTrie creates a trie with [numKeys] random key-value pairs inside of [trieDB].

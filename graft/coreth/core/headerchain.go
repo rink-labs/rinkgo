@@ -34,13 +34,13 @@ import (
 	mrand "math/rand"
 	"sync/atomic"
 
-	"github.com/ava-labs/avalanchego/graft/coreth/consensus"
-	"github.com/ava-labs/avalanchego/graft/coreth/params"
-	"github.com/ava-labs/libevm/common"
-	"github.com/ava-labs/libevm/common/lru"
-	"github.com/ava-labs/libevm/core/rawdb"
-	"github.com/ava-labs/libevm/core/types"
-	"github.com/ava-labs/libevm/ethdb"
+	"github.com/rink-labs/rinkgo/graft/coreth/consensus"
+	"github.com/rink-labs/rinkgo/graft/coreth/params"
+	"github.com/rink-labs/libevm/common"
+	"github.com/rink-labs/libevm/common/lru"
+	"github.com/rink-labs/libevm/core/rawdb"
+	"github.com/rink-labs/libevm/core/types"
+	"github.com/rink-labs/libevm/ethdb"
 )
 
 const (

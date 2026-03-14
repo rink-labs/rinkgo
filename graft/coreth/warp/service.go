@@ -8,16 +8,16 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/ava-labs/libevm/common/hexutil"
-	"github.com/ava-labs/libevm/log"
+	"github.com/rink-labs/libevm/common/hexutil"
+	"github.com/rink-labs/libevm/log"
 
-	"github.com/ava-labs/avalanchego/ids"
-	"github.com/ava-labs/avalanchego/network/p2p/acp118"
-	"github.com/ava-labs/avalanchego/snow"
-	"github.com/ava-labs/avalanchego/vms/platformvm/warp"
-	"github.com/ava-labs/avalanchego/vms/platformvm/warp/payload"
+	"github.com/rink-labs/rinkgo/ids"
+	"github.com/rink-labs/rinkgo/network/p2p/acp118"
+	"github.com/rink-labs/rinkgo/snow"
+	"github.com/rink-labs/rinkgo/vms/platformvm/warp"
+	"github.com/rink-labs/rinkgo/vms/platformvm/warp/payload"
 
-	warpprecompile "github.com/ava-labs/avalanchego/graft/coreth/precompile/contracts/warp"
+	warpprecompile "github.com/rink-labs/rinkgo/graft/coreth/precompile/contracts/warp"
 )
 
 var errNoValidators = errors.New("cannot aggregate signatures from subnet with no validators")

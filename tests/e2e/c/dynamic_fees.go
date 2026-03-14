@@ -8,19 +8,19 @@ import (
 	"strings"
 	"time"
 
-	"github.com/ava-labs/libevm/accounts/abi"
-	"github.com/ava-labs/libevm/common"
-	"github.com/ava-labs/libevm/core/types"
-	"github.com/ava-labs/libevm/params"
+	"github.com/rink-labs/libevm/accounts/abi"
+	"github.com/rink-labs/libevm/common"
+	"github.com/rink-labs/libevm/core/types"
+	"github.com/rink-labs/libevm/params"
 	"github.com/onsi/ginkgo/v2"
 	"github.com/stretchr/testify/require"
 	"go.uber.org/zap"
 
-	"github.com/ava-labs/avalanchego/api/info"
-	"github.com/ava-labs/avalanchego/graft/coreth/plugin/evm/upgrade/cortina"
-	"github.com/ava-labs/avalanchego/tests/fixture/e2e"
-	"github.com/ava-labs/avalanchego/tests/fixture/tmpnet"
-	"github.com/ava-labs/avalanchego/vms/evm/acp176"
+	"github.com/rink-labs/rinkgo/api/info"
+	"github.com/rink-labs/rinkgo/graft/coreth/plugin/evm/upgrade/cortina"
+	"github.com/rink-labs/rinkgo/tests/fixture/e2e"
+	"github.com/rink-labs/rinkgo/tests/fixture/tmpnet"
+	"github.com/rink-labs/rinkgo/vms/evm/acp176"
 )
 
 // This test uses the compiled bytecode for `consume_gas.sol` as well as its ABI

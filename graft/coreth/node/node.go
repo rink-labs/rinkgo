@@ -28,8 +28,8 @@
 package node
 
 import (
-	"github.com/ava-labs/avalanchego/graft/coreth/rpc"
-	"github.com/ava-labs/libevm/accounts"
+	"github.com/rink-labs/rinkgo/graft/coreth/rpc"
+	"github.com/rink-labs/libevm/accounts"
 )
 
 // Node is a container on which services can be registered.

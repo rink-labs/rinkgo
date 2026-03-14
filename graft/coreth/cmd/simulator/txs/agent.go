@@ -9,10 +9,10 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/ava-labs/libevm/common"
-	"github.com/ava-labs/libevm/log"
+	"github.com/rink-labs/libevm/common"
+	"github.com/rink-labs/libevm/log"
 
-	"github.com/ava-labs/avalanchego/graft/coreth/cmd/simulator/metrics"
+	"github.com/rink-labs/rinkgo/graft/coreth/cmd/simulator/metrics"
 )
 
 type THash interface {

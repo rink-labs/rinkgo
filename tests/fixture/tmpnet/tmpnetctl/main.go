@@ -15,12 +15,12 @@ import (
 	"github.com/spf13/cobra"
 	"go.uber.org/zap"
 
-	"github.com/ava-labs/avalanchego/tests"
-	"github.com/ava-labs/avalanchego/tests/fixture/stacktrace"
-	"github.com/ava-labs/avalanchego/tests/fixture/tmpnet"
-	"github.com/ava-labs/avalanchego/tests/fixture/tmpnet/flags"
-	"github.com/ava-labs/avalanchego/utils/logging"
-	"github.com/ava-labs/avalanchego/version"
+	"github.com/rink-labs/rinkgo/tests"
+	"github.com/rink-labs/rinkgo/tests/fixture/stacktrace"
+	"github.com/rink-labs/rinkgo/tests/fixture/tmpnet"
+	"github.com/rink-labs/rinkgo/tests/fixture/tmpnet/flags"
+	"github.com/rink-labs/rinkgo/utils/logging"
+	"github.com/rink-labs/rinkgo/version"
 )
 
 const (

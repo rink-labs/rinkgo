@@ -12,22 +12,22 @@ import (
 	"strings"
 	"time"
 
-	"github.com/ava-labs/libevm/core/types"
+	"github.com/rink-labs/libevm/core/types"
 	"github.com/stretchr/testify/require"
 	"go.uber.org/zap"
 
-	"github.com/ava-labs/avalanchego/config"
-	"github.com/ava-labs/avalanchego/graft/coreth/ethclient"
-	"github.com/ava-labs/avalanchego/tests"
-	"github.com/ava-labs/avalanchego/tests/fixture/tmpnet"
-	"github.com/ava-labs/avalanchego/utils/crypto/secp256k1"
-	"github.com/ava-labs/avalanchego/vms/platformvm/txs/fee"
-	"github.com/ava-labs/avalanchego/vms/secp256k1fx"
-	"github.com/ava-labs/avalanchego/wallet/chain/p/builder"
-	"github.com/ava-labs/avalanchego/wallet/subnet/primary"
-	"github.com/ava-labs/avalanchego/wallet/subnet/primary/common"
+	"github.com/rink-labs/rinkgo/config"
+	"github.com/rink-labs/rinkgo/graft/coreth/ethclient"
+	"github.com/rink-labs/rinkgo/tests"
+	"github.com/rink-labs/rinkgo/tests/fixture/tmpnet"
+	"github.com/rink-labs/rinkgo/utils/crypto/secp256k1"
+	"github.com/rink-labs/rinkgo/vms/platformvm/txs/fee"
+	"github.com/rink-labs/rinkgo/vms/secp256k1fx"
+	"github.com/rink-labs/rinkgo/wallet/chain/p/builder"
+	"github.com/rink-labs/rinkgo/wallet/subnet/primary"
+	"github.com/rink-labs/rinkgo/wallet/subnet/primary/common"
 
-	ethereum "github.com/ava-labs/libevm"
+	ethereum "github.com/rink-labs/libevm"
 )
 
 const (
@@ -209,7 +209,7 @@ func SuggestGasPrice(tc tests.TestContext, ethClient *ethclient.Client) *big.Int
 
 	// Double the suggested gas price to maximize the chances of
 	// acceptance. Maybe this can be revisited pending resolution of
-	// https://github.com/ava-labs/avalanchego/graft/coreth/issues/314.
+	// https://github.com/rink-labs/rinkgo/graft/coreth/issues/314.
 	gasPrice.Add(gasPrice, gasPrice)
 	return gasPrice
 }

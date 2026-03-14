@@ -45,7 +45,7 @@ Currently there are no fees enforced in the XSVM.
 #### Install
 
 ```bash
-git clone https://github.com/ava-labs/avalanchego.git;
+git clone https://github.com/rink-labs/rinkgo.git;
 cd avalanchego;
 go install -v ./vms/example/xsvm/cmd/xsvm;
 ```
@@ -301,7 +301,7 @@ The following example shows how to interact with the XSVM to send and receive na
 4. Issue an **import** Tx on Subnet B
 5. Confirm Txs processed correctly
 
-> **Note:**  This demo requires [avalanche-cli](https://github.com/ava-labs/avalanche-cli) version > 1.0.5, [xsvm](https://github.com/ava-labs/xsvm) version > 1.0.2 and [avalanche-network-runner](https://github.com/ava-labs/avalanche-network-runner) v1.3.5.
+> **Note:**  This demo requires [avalanche-cli](https://github.com/rink-labs/avalanche-cli) version > 1.0.5, [xsvm](https://github.com/rink-labs/xsvm) version > 1.0.2 and [avalanche-network-runner](https://github.com/rink-labs/avalanche-network-runner) v1.3.5.
 
 ### Create and Deploy Subnet A, Subnet B
 
@@ -309,7 +309,7 @@ Using the avalanche-cli, this step deploys two subnets running the XSVM. Subnet 
 
 Steps
 
-Build the [XSVM](https://github.com/ava-labs/xsvm)
+Build the [XSVM](https://github.com/rink-labs/xsvm)
 
 ### Create a genesis file
 

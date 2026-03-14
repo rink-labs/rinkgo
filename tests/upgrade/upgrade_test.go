@@ -13,9 +13,9 @@ import (
 	"github.com/onsi/ginkgo/v2"
 	"github.com/stretchr/testify/require"
 
-	"github.com/ava-labs/avalanchego/tests/fixture/e2e"
-	"github.com/ava-labs/avalanchego/tests/fixture/tmpnet"
-	"github.com/ava-labs/avalanchego/tests/fixture/tmpnet/flags"
+	"github.com/rink-labs/rinkgo/tests/fixture/e2e"
+	"github.com/rink-labs/rinkgo/tests/fixture/tmpnet"
+	"github.com/rink-labs/rinkgo/tests/fixture/tmpnet/flags"
 )
 
 func TestUpgrade(t *testing.T) {

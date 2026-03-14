@@ -4,10 +4,10 @@
 package handlers
 
 import (
-	"github.com/ava-labs/libevm/common"
-	"github.com/ava-labs/libevm/core/types"
+	"github.com/rink-labs/libevm/common"
+	"github.com/rink-labs/libevm/core/types"
 
-	"github.com/ava-labs/avalanchego/graft/coreth/core/state/snapshot"
+	"github.com/rink-labs/rinkgo/graft/coreth/core/state/snapshot"
 )
 
 var (

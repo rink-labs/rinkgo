@@ -35,14 +35,14 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/ava-labs/avalanchego/graft/coreth/accounts/abi"
-	"github.com/ava-labs/avalanchego/graft/coreth/nativeasset"
-	"github.com/ava-labs/avalanchego/graft/coreth/rpc"
-	ethereum "github.com/ava-labs/libevm"
-	"github.com/ava-labs/libevm/common"
-	"github.com/ava-labs/libevm/core/types"
-	"github.com/ava-labs/libevm/crypto"
-	"github.com/ava-labs/libevm/event"
+	"github.com/rink-labs/rinkgo/graft/coreth/accounts/abi"
+	"github.com/rink-labs/rinkgo/graft/coreth/nativeasset"
+	"github.com/rink-labs/rinkgo/graft/coreth/rpc"
+	ethereum "github.com/rink-labs/libevm"
+	"github.com/rink-labs/libevm/common"
+	"github.com/rink-labs/libevm/core/types"
+	"github.com/rink-labs/libevm/crypto"
+	"github.com/rink-labs/libevm/event"
 )
 
 const basefeeWiggleMultiplier = 2

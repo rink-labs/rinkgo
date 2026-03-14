@@ -10,17 +10,17 @@ import (
 	"sync"
 	"sync/atomic"
 
-	"github.com/ava-labs/libevm/common"
-	"github.com/ava-labs/libevm/ethdb"
-	"github.com/ava-labs/libevm/libevm/options"
-	"github.com/ava-labs/libevm/log"
-	"github.com/ava-labs/libevm/triedb"
+	"github.com/rink-labs/libevm/common"
+	"github.com/rink-labs/libevm/ethdb"
+	"github.com/rink-labs/libevm/libevm/options"
+	"github.com/rink-labs/libevm/log"
+	"github.com/rink-labs/libevm/triedb"
 	"golang.org/x/sync/errgroup"
 
-	"github.com/ava-labs/avalanchego/graft/coreth/core/state/snapshot"
+	"github.com/rink-labs/rinkgo/graft/coreth/core/state/snapshot"
 
-	syncpkg "github.com/ava-labs/avalanchego/graft/coreth/sync"
-	syncclient "github.com/ava-labs/avalanchego/graft/coreth/sync/client"
+	syncpkg "github.com/rink-labs/rinkgo/graft/coreth/sync"
+	syncclient "github.com/rink-labs/rinkgo/graft/coreth/sync/client"
 )
 
 const (

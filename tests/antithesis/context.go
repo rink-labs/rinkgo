@@ -10,8 +10,8 @@ import (
 
 	"github.com/antithesishq/antithesis-sdk-go/assert"
 
-	"github.com/ava-labs/avalanchego/tests"
-	"github.com/ava-labs/avalanchego/utils/logging"
+	"github.com/rink-labs/rinkgo/tests"
+	"github.com/rink-labs/rinkgo/utils/logging"
 )
 
 // NewInstrumentedTestContext returns a test context that makes antithesis SDK assertions.

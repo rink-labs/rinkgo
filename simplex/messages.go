@@ -6,7 +6,7 @@ package simplex
 import (
 	"fmt"
 
-	"github.com/ava-labs/simplex"
+	"github.com/rink-labs/simplex"
 
 	"github.com/ava-labs/avalanchego/ids"
 	"github.com/ava-labs/avalanchego/proto/pb/p2p"

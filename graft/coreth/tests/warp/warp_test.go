@@ -39,7 +39,7 @@ import (
 
 	warpBackend "github.com/ava-labs/avalanchego/graft/coreth/warp"
 	avalancheWarp "github.com/ava-labs/avalanchego/vms/platformvm/warp"
-	ethereum "github.com/ava-labs/libevm"
+	ethereum "github.com/rink-labs/libevm"
 	ginkgo "github.com/onsi/ginkgo/v2"
 )
 

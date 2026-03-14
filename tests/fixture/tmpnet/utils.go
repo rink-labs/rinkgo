@@ -14,10 +14,10 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/ava-labs/avalanchego/api/health"
-	"github.com/ava-labs/avalanchego/ids"
-	"github.com/ava-labs/avalanchego/tests/fixture/stacktrace"
-	"github.com/ava-labs/avalanchego/utils/crypto/secp256k1"
+	"github.com/rink-labs/rinkgo/api/health"
+	"github.com/rink-labs/rinkgo/ids"
+	"github.com/rink-labs/rinkgo/tests/fixture/stacktrace"
+	"github.com/rink-labs/rinkgo/utils/crypto/secp256k1"
 )
 
 const (

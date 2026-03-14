@@ -6,7 +6,7 @@ package tests
 import (
 	"os"
 
-	"github.com/ava-labs/avalanchego/utils/logging"
+	"github.com/rink-labs/rinkgo/utils/logging"
 )
 
 func NewDefaultLogger(prefix string) logging.Logger {

@@ -36,14 +36,14 @@ import (
 	"testing"
 	"time"
 
-	"github.com/ava-labs/avalanchego/graft/coreth/accounts/abi/bind"
-	"github.com/ava-labs/avalanchego/graft/coreth/params"
-	"github.com/ava-labs/avalanchego/graft/coreth/plugin/evm/customtypes"
-	"github.com/ava-labs/avalanchego/graft/coreth/rpc"
-	"github.com/ava-labs/libevm/common"
-	"github.com/ava-labs/libevm/core/types"
-	"github.com/ava-labs/libevm/crypto"
-	ethparams "github.com/ava-labs/libevm/params"
+	"github.com/rink-labs/rinkgo/graft/coreth/accounts/abi/bind"
+	"github.com/rink-labs/rinkgo/graft/coreth/params"
+	"github.com/rink-labs/rinkgo/graft/coreth/plugin/evm/customtypes"
+	"github.com/rink-labs/rinkgo/graft/coreth/rpc"
+	"github.com/rink-labs/libevm/common"
+	"github.com/rink-labs/libevm/core/types"
+	"github.com/rink-labs/libevm/crypto"
+	ethparams "github.com/rink-labs/libevm/params"
 	"github.com/stretchr/testify/require"
 )
 

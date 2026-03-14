@@ -28,10 +28,10 @@
 package node
 
 import (
-	"github.com/ava-labs/avalanchego/graft/coreth/internal/debug"
-	"github.com/ava-labs/avalanchego/graft/coreth/rpc"
-	"github.com/ava-labs/libevm/common/hexutil"
-	"github.com/ava-labs/libevm/crypto"
+	"github.com/rink-labs/rinkgo/graft/coreth/internal/debug"
+	"github.com/rink-labs/rinkgo/graft/coreth/rpc"
+	"github.com/rink-labs/libevm/common/hexutil"
+	"github.com/rink-labs/libevm/crypto"
 )
 
 // apis returns the collection of built-in RPC APIs.

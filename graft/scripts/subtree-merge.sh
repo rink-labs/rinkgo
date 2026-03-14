@@ -5,12 +5,12 @@ set -euo pipefail
 # Performs a git subtree merge of an external repository into a graft subdirectory and then commits the result.
 #
 # Usage: subtree-merge.sh <module-path> [version]
-# Example: subtree-merge.sh github.com/ava-labs/coreth
-# Example: subtree-merge.sh github.com/ava-labs/coreth 1a498175
-# Example: subtree-merge.sh github.com/ava-labs/coreth master evm
+# Example: subtree-merge.sh github.com/rink-labs/coreth
+# Example: subtree-merge.sh github.com/rink-labs/coreth 1a498175
+# Example: subtree-merge.sh github.com/rink-labs/coreth master evm
 #
 # Arguments:
-#   module-path: The Go module path (e.g., github.com/ava-labs/coreth)
+#   module-path: The Go module path (e.g., github.com/rink-labs/coreth)
 #   version: (Optional) The version/tag/SHA to merge (can be a tag, branch, or commit SHA)
 #            If not provided, the version will be discovered from go.mod
 #   target-path: (Optional) The target path within the repository to merge into, relative to the repo root.
@@ -35,9 +35,9 @@ set -euo pipefail
 if [ $# -lt 1 ] || [ $# -gt 3 ]; then
   echo "Error:  one to three arguments required" >&2
   echo "Usage: $0 <module-path> [version] [target-path]" >&2
-  echo "Example: $0 github.com/ava-labs/coreth" >&2
-  echo "Example: $0 github.com/ava-labs/coreth 1a498175" >&2
-  echo "Example: $0 github.com/ava-labs/coreth master evm" >&2
+  echo "Example: $0 github.com/rink-labs/coreth" >&2
+  echo "Example: $0 github.com/rink-labs/coreth 1a498175" >&2
+  echo "Example: $0 github.com/rink-labs/coreth master evm" >&2
   exit 1
 fi
 
@@ -65,7 +65,7 @@ if [ $# -eq 3 ]; then
   TARGET_PATH="$3"
 else
   # Extract repository name from module path
-  # Example: github.com/ava-labs/coreth -> coreth
+  # Example: github.com/rink-labs/coreth -> coreth
   TARGET_PATH="graft/${REPO_BASENAME}" 
 fi
 

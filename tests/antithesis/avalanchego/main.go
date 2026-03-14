@@ -15,31 +15,31 @@ import (
 	"github.com/stretchr/testify/require"
 	"go.uber.org/zap"
 
-	"github.com/ava-labs/avalanchego/database"
-	"github.com/ava-labs/avalanchego/genesis"
-	"github.com/ava-labs/avalanchego/ids"
-	"github.com/ava-labs/avalanchego/tests"
-	"github.com/ava-labs/avalanchego/tests/antithesis"
-	"github.com/ava-labs/avalanchego/tests/fixture/e2e"
-	"github.com/ava-labs/avalanchego/tests/fixture/tmpnet"
-	"github.com/ava-labs/avalanchego/utils/constants"
-	"github.com/ava-labs/avalanchego/utils/crypto/secp256k1"
-	"github.com/ava-labs/avalanchego/utils/logging"
-	"github.com/ava-labs/avalanchego/utils/set"
-	"github.com/ava-labs/avalanchego/utils/units"
-	"github.com/ava-labs/avalanchego/vms/avm"
-	"github.com/ava-labs/avalanchego/vms/components/avax"
-	"github.com/ava-labs/avalanchego/vms/components/verify"
-	"github.com/ava-labs/avalanchego/vms/platformvm"
-	"github.com/ava-labs/avalanchego/vms/propertyfx"
-	"github.com/ava-labs/avalanchego/vms/secp256k1fx"
-	"github.com/ava-labs/avalanchego/wallet/subnet/primary"
-	"github.com/ava-labs/avalanchego/wallet/subnet/primary/common"
+	"github.com/rink-labs/rinkgo/database"
+	"github.com/rink-labs/rinkgo/genesis"
+	"github.com/rink-labs/rinkgo/ids"
+	"github.com/rink-labs/rinkgo/tests"
+	"github.com/rink-labs/rinkgo/tests/antithesis"
+	"github.com/rink-labs/rinkgo/tests/fixture/e2e"
+	"github.com/rink-labs/rinkgo/tests/fixture/tmpnet"
+	"github.com/rink-labs/rinkgo/utils/constants"
+	"github.com/rink-labs/rinkgo/utils/crypto/secp256k1"
+	"github.com/rink-labs/rinkgo/utils/logging"
+	"github.com/rink-labs/rinkgo/utils/set"
+	"github.com/rink-labs/rinkgo/utils/units"
+	"github.com/rink-labs/rinkgo/vms/avm"
+	"github.com/rink-labs/rinkgo/vms/components/avax"
+	"github.com/rink-labs/rinkgo/vms/components/verify"
+	"github.com/rink-labs/rinkgo/vms/platformvm"
+	"github.com/rink-labs/rinkgo/vms/propertyfx"
+	"github.com/rink-labs/rinkgo/vms/secp256k1fx"
+	"github.com/rink-labs/rinkgo/wallet/subnet/primary"
+	"github.com/rink-labs/rinkgo/wallet/subnet/primary/common"
 
-	timerpkg "github.com/ava-labs/avalanchego/utils/timer"
-	xtxs "github.com/ava-labs/avalanchego/vms/avm/txs"
-	ptxs "github.com/ava-labs/avalanchego/vms/platformvm/txs"
-	xbuilder "github.com/ava-labs/avalanchego/wallet/chain/x/builder"
+	timerpkg "github.com/rink-labs/rinkgo/utils/timer"
+	xtxs "github.com/rink-labs/rinkgo/vms/avm/txs"
+	ptxs "github.com/rink-labs/rinkgo/vms/platformvm/txs"
+	xbuilder "github.com/rink-labs/rinkgo/wallet/chain/x/builder"
 )
 
 const NumKeys = 5
@@ -231,7 +231,7 @@ func (w *workload) executeTest(ctx context.Context) {
 		w.log.Info("sleeping")
 	}
 
-	// TODO(marun) Enable execution of the banff e2e test as part of https://github.com/ava-labs/avalanchego/issues/4049
+	// TODO(marun) Enable execution of the banff e2e test as part of https://github.com/rink-labs/rinkgo/issues/4049
 	// w.log.Info("executing banff.TestCustomAssetTransfer")
 	// addr, _ := w.addrs.Peek()
 	// banff.TestCustomAssetTransfer(tc, *w.wallet, addr)

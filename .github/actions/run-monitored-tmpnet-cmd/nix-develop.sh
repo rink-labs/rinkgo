@@ -9,7 +9,7 @@ else
   echo "No local flake found, will attempt to use avalanchego flake"
 
   # Get module details from go.mod
-  MODULE_DETAILS="$(go list -m "github.com/ava-labs/avalanchego" 2>/dev/null)"
+  MODULE_DETAILS="$(go list -m "github.com/rink-labs/rinkgo" 2>/dev/null)"
 
   # Extract the version part
   AVALANCHE_VERSION="$(echo "${MODULE_DETAILS}" | awk '{print $2}')"

@@ -7,17 +7,17 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/ava-labs/avalanchego/ids"
-	"github.com/ava-labs/avalanchego/message"
-	"github.com/ava-labs/avalanchego/network/throttling"
-	"github.com/ava-labs/avalanchego/snow/networking/router"
-	"github.com/ava-labs/avalanchego/snow/networking/tracker"
-	"github.com/ava-labs/avalanchego/snow/uptime"
-	"github.com/ava-labs/avalanchego/snow/validators"
-	"github.com/ava-labs/avalanchego/utils/logging"
-	"github.com/ava-labs/avalanchego/utils/set"
-	"github.com/ava-labs/avalanchego/utils/timer/mockable"
-	"github.com/ava-labs/avalanchego/version"
+	"github.com/rink-labs/rinkgo/ids"
+	"github.com/rink-labs/rinkgo/message"
+	"github.com/rink-labs/rinkgo/network/throttling"
+	"github.com/rink-labs/rinkgo/snow/networking/router"
+	"github.com/rink-labs/rinkgo/snow/networking/tracker"
+	"github.com/rink-labs/rinkgo/snow/uptime"
+	"github.com/rink-labs/rinkgo/snow/validators"
+	"github.com/rink-labs/rinkgo/utils/logging"
+	"github.com/rink-labs/rinkgo/utils/set"
+	"github.com/rink-labs/rinkgo/utils/timer/mockable"
+	"github.com/rink-labs/rinkgo/version"
 )
 
 type Config struct {

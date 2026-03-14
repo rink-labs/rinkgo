@@ -12,16 +12,16 @@ import (
 	"math/rand"
 	"sync"
 
-	"github.com/ava-labs/libevm/accounts/abi/bind"
-	"github.com/ava-labs/libevm/common"
-	"github.com/ava-labs/libevm/core/types"
-	"github.com/ava-labs/libevm/crypto"
-	"github.com/ava-labs/libevm/params"
+	"github.com/rink-labs/libevm/accounts/abi/bind"
+	"github.com/rink-labs/libevm/common"
+	"github.com/rink-labs/libevm/core/types"
+	"github.com/rink-labs/libevm/crypto"
+	"github.com/rink-labs/libevm/params"
 	"github.com/stretchr/testify/require"
 
-	"github.com/ava-labs/avalanchego/tests"
-	"github.com/ava-labs/avalanchego/tests/load/contracts"
-	"github.com/ava-labs/avalanchego/utils/sampler"
+	"github.com/rink-labs/rinkgo/tests"
+	"github.com/rink-labs/rinkgo/tests/load/contracts"
+	"github.com/rink-labs/rinkgo/utils/sampler"
 )
 
 var maxFeeCap = big.NewInt(300000000000)

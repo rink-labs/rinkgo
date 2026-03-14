@@ -8,13 +8,13 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/ava-labs/libevm/common"
+	"github.com/rink-labs/libevm/common"
 
-	"github.com/ava-labs/avalanchego/graft/coreth/precompile/modules"
-	"github.com/ava-labs/avalanchego/graft/coreth/precompile/precompileconfig"
-	"github.com/ava-labs/avalanchego/graft/coreth/utils"
+	"github.com/rink-labs/rinkgo/graft/coreth/precompile/modules"
+	"github.com/rink-labs/rinkgo/graft/coreth/precompile/precompileconfig"
+	"github.com/rink-labs/rinkgo/graft/coreth/utils"
 
-	ethparams "github.com/ava-labs/libevm/params"
+	ethparams "github.com/rink-labs/libevm/params"
 )
 
 var errNoKey = errors.New("PrecompileUpgrade cannot be empty")

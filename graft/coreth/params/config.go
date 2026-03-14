@@ -30,10 +30,10 @@ package params
 import (
 	"math/big"
 
-	"github.com/ava-labs/avalanchego/graft/coreth/params/extras"
-	"github.com/ava-labs/avalanchego/graft/coreth/utils"
-	"github.com/ava-labs/libevm/libevm"
-	ethparams "github.com/ava-labs/libevm/params"
+	"github.com/rink-labs/rinkgo/graft/coreth/params/extras"
+	"github.com/rink-labs/rinkgo/graft/coreth/utils"
+	"github.com/rink-labs/libevm/libevm"
+	ethparams "github.com/rink-labs/libevm/params"
 )
 
 // Avalanche ChainIDs

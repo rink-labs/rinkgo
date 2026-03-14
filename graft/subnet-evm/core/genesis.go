@@ -194,7 +194,7 @@ func SetupGenesisBlock(
 	// Notes on the following line:
 	// - this is needed in coreth to handle the case where existing nodes do not
 	//   have the Berlin or London forks initialized by block number on disk.
-	//   See https://github.com/ava-labs/coreth/pull/667/files
+	//   See https://github.com/rink-labs/coreth/pull/667/files
 	// - this is not needed in subnet-evm but it does not impact it either
 	if err := params.SetEthUpgrades(storedcfg); err != nil {
 		return genesis.Config, common.Hash{}, err

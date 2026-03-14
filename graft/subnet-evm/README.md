@@ -1,15 +1,15 @@
 # Subnet EVM
 
-[![Releases](https://img.shields.io/github/v/tag/ava-labs/subnet-evm.svg?sort=semver)](https://github.com/ava-labs/subnet-evm/releases)
-[![CI](https://github.com/ava-labs/subnet-evm/actions/workflows/ci.yml/badge.svg)](https://github.com/ava-labs/subnet-evm/actions/workflows/ci.yml)
-[![CodeQL](https://github.com/ava-labs/subnet-evm/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/ava-labs/subnet-evm/actions/workflows/codeql-analysis.yml)
-[![License](https://img.shields.io/github/license/ava-labs/subnet-evm)](https://github.com/ava-labs/subnet-evm/blob/master/LICENSE)
+[![Releases](https://img.shields.io/github/v/tag/ava-labs/subnet-evm.svg?sort=semver)](https://github.com/rink-labs/subnet-evm/releases)
+[![CI](https://github.com/rink-labs/subnet-evm/actions/workflows/ci.yml/badge.svg)](https://github.com/rink-labs/subnet-evm/actions/workflows/ci.yml)
+[![CodeQL](https://github.com/rink-labs/subnet-evm/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/rink-labs/subnet-evm/actions/workflows/codeql-analysis.yml)
+[![License](https://img.shields.io/github/license/ava-labs/subnet-evm)](https://github.com/rink-labs/subnet-evm/blob/master/LICENSE)
 
 [Avalanche](https://build.avax.network/docs/avalanche-l1s) is a network composed of multiple blockchains.
 Each blockchain is an instance of a Virtual Machine (VM), much like an object in an object-oriented language is an instance of a class.
 That is, the VM defines the behavior of the blockchain.
 
-Subnet EVM is the [Virtual Machine (VM)](https://build.avax.network/docs/quick-start/virtual-machines) that defines the Subnet Contract Chains. Subnet EVM is a simplified version of [Coreth VM (C-Chain)](https://github.com/ava-labs/coreth).
+Subnet EVM is the [Virtual Machine (VM)](https://build.avax.network/docs/quick-start/virtual-machines) that defines the Subnet Contract Chains. Subnet EVM is a simplified version of [Coreth VM (C-Chain)](https://github.com/rink-labs/coreth).
 
 This chain implements the Ethereum Virtual Machine and supports Solidity smart contracts as well as most other Ethereum client functionality.
 
@@ -43,7 +43,7 @@ The Subnet EVM supports the following API namespaces:
 - `debug`
 
 Only the `eth` namespace is enabled by default.
-Subnet EVM is a simplified version of [Coreth VM (C-Chain)](https://github.com/ava-labs/coreth).
+Subnet EVM is a simplified version of [Coreth VM (C-Chain)](https://github.com/rink-labs/coreth).
 Full documentation for the C-Chain's API can be found in the [builder docs](https://build.avax.network/docs/rpcs/c-chain).
 
 ## Compatibility
@@ -93,7 +93,7 @@ This will clone and checkout to `master` branch.
 
 ### Run Local Network
 
-To run a local network, it is recommended to use the [avalanche-cli](https://github.com/ava-labs/avalanche-cli#avalanche-cli) to set up an instance of Subnet-EVM on a local Avalanche Network.
+To run a local network, it is recommended to use the [avalanche-cli](https://github.com/rink-labs/avalanche-cli#avalanche-cli) to set up an instance of Subnet-EVM on a local Avalanche Network.
 
 There are two options when using the Avalanche-CLI:
 

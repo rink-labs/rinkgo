@@ -132,7 +132,7 @@ To connect to the Chennai Testnet, run:
 
 ### Creating a Local Testnet
 
-The [avalanche-cli](https://github.com/ava-labs/avalanche-cli) is the easiest way to start a local network.
+The [avalanche-cli](https://github.com/rink-labs/avalanche-cli) is the easiest way to start a local network.
 
 ```sh
 avalanche network start

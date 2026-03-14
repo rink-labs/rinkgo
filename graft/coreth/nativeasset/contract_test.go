@@ -8,22 +8,22 @@ import (
 	"os"
 	"testing"
 
-	"github.com/ava-labs/libevm/common"
-	"github.com/ava-labs/libevm/core/rawdb"
-	"github.com/ava-labs/libevm/core/state"
-	"github.com/ava-labs/libevm/core/vm"
+	"github.com/rink-labs/libevm/common"
+	"github.com/rink-labs/libevm/core/rawdb"
+	"github.com/rink-labs/libevm/core/state"
+	"github.com/rink-labs/libevm/core/vm"
 	"github.com/holiman/uint256"
 	"github.com/stretchr/testify/require"
 
-	"github.com/ava-labs/avalanchego/graft/coreth/core"
-	"github.com/ava-labs/avalanchego/graft/coreth/core/extstate"
-	"github.com/ava-labs/avalanchego/graft/coreth/params"
-	"github.com/ava-labs/avalanchego/graft/coreth/plugin/evm/customtypes"
+	"github.com/rink-labs/rinkgo/graft/coreth/core"
+	"github.com/rink-labs/rinkgo/graft/coreth/core/extstate"
+	"github.com/rink-labs/rinkgo/graft/coreth/params"
+	"github.com/rink-labs/rinkgo/graft/coreth/plugin/evm/customtypes"
 
-	ethtypes "github.com/ava-labs/libevm/core/types"
-	ethparams "github.com/ava-labs/libevm/params"
+	ethtypes "github.com/rink-labs/libevm/core/types"
+	ethparams "github.com/rink-labs/libevm/params"
 
-	. "github.com/ava-labs/avalanchego/graft/coreth/nativeasset"
+	. "github.com/rink-labs/rinkgo/graft/coreth/nativeasset"
 )
 
 func TestMain(m *testing.M) {

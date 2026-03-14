@@ -12,8 +12,8 @@ import (
 	"github.com/stretchr/testify/require"
 	"go.uber.org/zap"
 
-	"github.com/ava-labs/avalanchego/utils/logging"
-	"github.com/ava-labs/avalanchego/wallet/subnet/primary/common"
+	"github.com/rink-labs/rinkgo/utils/logging"
+	"github.com/rink-labs/rinkgo/wallet/subnet/primary/common"
 )
 
 var _ TestContext = (*SimpleTestContext)(nil)

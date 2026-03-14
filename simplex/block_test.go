@@ -10,7 +10,7 @@ import (
 	"testing"
 
 	"github.com/StephenButtolph/canoto"
-	"github.com/ava-labs/simplex"
+	"github.com/rink-labs/simplex"
 	"github.com/stretchr/testify/require"
 
 	"github.com/ava-labs/avalanchego/ids"

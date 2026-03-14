@@ -4,10 +4,10 @@
 package syncutils
 
 import (
-	"github.com/ava-labs/libevm/core/types"
-	"github.com/ava-labs/libevm/ethdb"
+	"github.com/rink-labs/libevm/core/types"
+	"github.com/rink-labs/libevm/ethdb"
 
-	"github.com/ava-labs/avalanchego/graft/coreth/core/state/snapshot"
+	"github.com/rink-labs/rinkgo/graft/coreth/core/state/snapshot"
 )
 
 var (

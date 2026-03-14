@@ -18,14 +18,14 @@ import (
 
 	"go.uber.org/zap"
 
-	"github.com/ava-labs/avalanchego/config"
-	"github.com/ava-labs/avalanchego/ids"
-	"github.com/ava-labs/avalanchego/staking"
-	"github.com/ava-labs/avalanchego/tests/fixture/stacktrace"
-	"github.com/ava-labs/avalanchego/utils/constants"
-	"github.com/ava-labs/avalanchego/utils/crypto/bls/signer/localsigner"
-	"github.com/ava-labs/avalanchego/utils/rpc"
-	"github.com/ava-labs/avalanchego/vms/platformvm/signer"
+	"github.com/rink-labs/rinkgo/config"
+	"github.com/rink-labs/rinkgo/ids"
+	"github.com/rink-labs/rinkgo/staking"
+	"github.com/rink-labs/rinkgo/tests/fixture/stacktrace"
+	"github.com/rink-labs/rinkgo/utils/constants"
+	"github.com/rink-labs/rinkgo/utils/crypto/bls/signer/localsigner"
+	"github.com/rink-labs/rinkgo/utils/rpc"
+	"github.com/rink-labs/rinkgo/vms/platformvm/signer"
 )
 
 // The Node type is defined in this file (node.go - orchestration) and

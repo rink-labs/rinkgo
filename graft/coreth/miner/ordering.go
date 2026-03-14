@@ -31,9 +31,9 @@ import (
 	"container/heap"
 	"math/big"
 
-	"github.com/ava-labs/avalanchego/graft/coreth/core/txpool"
-	"github.com/ava-labs/libevm/common"
-	"github.com/ava-labs/libevm/core/types"
+	"github.com/rink-labs/rinkgo/graft/coreth/core/txpool"
+	"github.com/rink-labs/libevm/common"
+	"github.com/rink-labs/libevm/core/types"
 	"github.com/holiman/uint256"
 )
 

@@ -6,10 +6,10 @@ package snapshot
 import (
 	"time"
 
-	"github.com/ava-labs/libevm/common"
-	"github.com/ava-labs/libevm/ethdb"
+	"github.com/rink-labs/libevm/common"
+	"github.com/rink-labs/libevm/ethdb"
 
-	"github.com/ava-labs/avalanchego/graft/coreth/utils"
+	"github.com/rink-labs/rinkgo/graft/coreth/utils"
 )
 
 func (t *Tree) DiskAccountIterator(seek common.Hash) AccountIterator {

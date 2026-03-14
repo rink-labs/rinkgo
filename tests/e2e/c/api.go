@@ -7,16 +7,16 @@ import (
 	"math/big"
 
 	"connectrpc.com/connect"
-	"github.com/ava-labs/libevm/core/types"
+	"github.com/rink-labs/libevm/core/types"
 	"github.com/onsi/ginkgo/v2"
 	"github.com/stretchr/testify/require"
 
-	"github.com/ava-labs/avalanchego/api/connectclient"
-	"github.com/ava-labs/avalanchego/tests/fixture/e2e"
-	"github.com/ava-labs/avalanchego/vms/proposervm"
+	"github.com/rink-labs/rinkgo/api/connectclient"
+	"github.com/rink-labs/rinkgo/tests/fixture/e2e"
+	"github.com/rink-labs/rinkgo/vms/proposervm"
 
-	pbproposervm "github.com/ava-labs/avalanchego/connectproto/pb/proposervm"
-	pb "github.com/ava-labs/avalanchego/connectproto/pb/proposervm/proposervmconnect"
+	pbproposervm "github.com/rink-labs/rinkgo/connectproto/pb/proposervm"
+	pb "github.com/rink-labs/rinkgo/connectproto/pb/proposervm/proposervmconnect"
 )
 
 var _ = e2e.DescribeCChain("[ProposerVM API]", ginkgo.Label("proposervm"), func() {

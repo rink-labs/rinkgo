@@ -5,8 +5,8 @@
 version: '3'
 
 vars:
-  CORETH_MODULE: github.com/ava-labs/coreth
-  SUBNET_EVM_MODULE: github.com/ava-labs/subnet-evm
+  CORETH_MODULE: github.com/rink-labs/coreth
+  SUBNET_EVM_MODULE: github.com/rink-labs/subnet-evm
 
 tasks:
   default: ../scripts/run_task.sh --list

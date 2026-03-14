@@ -34,7 +34,7 @@ import (
 	"testing"
 
 	"github.com/ava-labs/avalanchego/graft/subnet-evm/core"
-	ethereum "github.com/ava-labs/libevm"
+	ethereum "github.com/rink-labs/libevm"
 	"github.com/ava-labs/libevm/core/types"
 	ethparams "github.com/ava-labs/libevm/params"
 )

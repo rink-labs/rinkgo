@@ -6,16 +6,16 @@ package extstate
 import (
 	"math/big"
 
-	"github.com/ava-labs/libevm/common"
-	"github.com/ava-labs/libevm/core/state"
-	"github.com/ava-labs/libevm/core/types"
-	"github.com/ava-labs/libevm/libevm"
-	"github.com/ava-labs/libevm/libevm/stateconf"
+	"github.com/rink-labs/libevm/common"
+	"github.com/rink-labs/libevm/core/state"
+	"github.com/rink-labs/libevm/core/types"
+	"github.com/rink-labs/libevm/libevm"
+	"github.com/rink-labs/libevm/libevm/stateconf"
 	"github.com/holiman/uint256"
 
-	"github.com/ava-labs/avalanchego/graft/coreth/params"
-	"github.com/ava-labs/avalanchego/graft/coreth/plugin/evm/customtypes"
-	"github.com/ava-labs/avalanchego/vms/evm/predicate"
+	"github.com/rink-labs/rinkgo/graft/coreth/params"
+	"github.com/rink-labs/rinkgo/graft/coreth/plugin/evm/customtypes"
+	"github.com/rink-labs/rinkgo/vms/evm/predicate"
 )
 
 // RegisterExtras registers hooks with libevm to achieve Avalanche state

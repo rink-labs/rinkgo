@@ -32,11 +32,11 @@ import (
 	"math/rand"
 	"testing"
 
-	"github.com/ava-labs/avalanchego/database"
-	"github.com/ava-labs/avalanchego/vms/evm/sync/customrawdb"
-	"github.com/ava-labs/libevm/common"
-	"github.com/ava-labs/libevm/core/rawdb"
-	"github.com/ava-labs/libevm/ethdb/memorydb"
+	"github.com/rink-labs/rinkgo/database"
+	"github.com/rink-labs/rinkgo/vms/evm/sync/customrawdb"
+	"github.com/rink-labs/libevm/common"
+	"github.com/rink-labs/libevm/core/rawdb"
+	"github.com/rink-labs/libevm/ethdb/memorydb"
 )
 
 // Tests that given a database with random data content, all parts of a snapshot

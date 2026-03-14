@@ -4,9 +4,9 @@
 package e2e
 
 import (
-	"github.com/ava-labs/avalanchego/ids"
-	"github.com/ava-labs/avalanchego/tests"
-	"github.com/ava-labs/avalanchego/wallet/subnet/primary"
+	"github.com/rink-labs/rinkgo/ids"
+	"github.com/rink-labs/rinkgo/tests"
+	"github.com/rink-labs/rinkgo/wallet/subnet/primary"
 )
 
 // TODO(marun) What else does a test need? e.g. node URIs?

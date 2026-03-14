@@ -8,7 +8,7 @@ import (
 	"math/big"
 	"strings"
 
-	ethereum "github.com/ava-labs/libevm"
+	ethereum "github.com/rink-labs/libevm"
 	"github.com/ava-labs/avalanchego/graft/subnet-evm/accounts/abi"
 	"github.com/ava-labs/avalanchego/graft/subnet-evm/accounts/abi/bind"
 	"github.com/ava-labs/libevm/common"

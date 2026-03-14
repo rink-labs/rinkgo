@@ -34,9 +34,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/ava-labs/avalanchego/graft/coreth/params/extras"
-	"github.com/ava-labs/avalanchego/graft/coreth/utils"
-	ethparams "github.com/ava-labs/libevm/params"
+	"github.com/rink-labs/rinkgo/graft/coreth/params/extras"
+	"github.com/rink-labs/rinkgo/graft/coreth/utils"
+	ethparams "github.com/rink-labs/libevm/params"
 )
 
 func TestCheckCompatible(t *testing.T) {

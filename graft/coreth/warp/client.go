@@ -7,10 +7,10 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/ava-labs/libevm/common/hexutil"
+	"github.com/rink-labs/libevm/common/hexutil"
 
-	"github.com/ava-labs/avalanchego/graft/coreth/rpc"
-	"github.com/ava-labs/avalanchego/ids"
+	"github.com/rink-labs/rinkgo/graft/coreth/rpc"
+	"github.com/rink-labs/rinkgo/ids"
 )
 
 var _ Client = (*client)(nil)

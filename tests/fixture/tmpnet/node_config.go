@@ -11,8 +11,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/ava-labs/avalanchego/tests/fixture/stacktrace"
-	"github.com/ava-labs/avalanchego/utils/perms"
+	"github.com/rink-labs/rinkgo/tests/fixture/stacktrace"
+	"github.com/rink-labs/rinkgo/utils/perms"
 )
 
 // The Node type is defined in this file node_config.go

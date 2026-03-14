@@ -33,7 +33,7 @@ import (
 	"github.com/ava-labs/avalanchego/graft/coreth/accounts/abi/bind"
 	"github.com/ava-labs/avalanchego/graft/coreth/ethclient/simulated"
 	"github.com/ava-labs/avalanchego/graft/coreth/interfaces"
-	ethereum "github.com/ava-labs/libevm"
+	ethereum "github.com/rink-labs/libevm"
 	"github.com/ava-labs/libevm/common"
 	"github.com/ava-labs/libevm/core/types"
 )

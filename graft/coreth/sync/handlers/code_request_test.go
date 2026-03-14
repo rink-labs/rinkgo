@@ -7,17 +7,17 @@ import (
 	"crypto/rand"
 	"testing"
 
-	"github.com/ava-labs/libevm/common"
-	"github.com/ava-labs/libevm/core/rawdb"
-	"github.com/ava-labs/libevm/crypto"
-	"github.com/ava-labs/libevm/ethdb/memorydb"
+	"github.com/rink-labs/libevm/common"
+	"github.com/rink-labs/libevm/core/rawdb"
+	"github.com/rink-labs/libevm/crypto"
+	"github.com/rink-labs/libevm/ethdb/memorydb"
 	"github.com/stretchr/testify/require"
 
-	"github.com/ava-labs/avalanchego/graft/coreth/plugin/evm/message"
-	"github.com/ava-labs/avalanchego/graft/coreth/sync/handlers/stats/statstest"
-	"github.com/ava-labs/avalanchego/ids"
+	"github.com/rink-labs/rinkgo/graft/coreth/plugin/evm/message"
+	"github.com/rink-labs/rinkgo/graft/coreth/sync/handlers/stats/statstest"
+	"github.com/rink-labs/rinkgo/ids"
 
-	ethparams "github.com/ava-labs/libevm/params"
+	ethparams "github.com/rink-labs/libevm/params"
 )
 
 func TestCodeRequestHandler(t *testing.T) {

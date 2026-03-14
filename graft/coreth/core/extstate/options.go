@@ -4,9 +4,9 @@
 package extstate
 
 import (
-	"github.com/ava-labs/libevm/core/state"
+	"github.com/rink-labs/libevm/core/state"
 
-	"github.com/ava-labs/avalanchego/graft/coreth/utils"
+	"github.com/rink-labs/rinkgo/graft/coreth/utils"
 )
 
 type workerPool struct {

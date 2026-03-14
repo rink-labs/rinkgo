@@ -7,16 +7,16 @@ import (
 	"context"
 	"math/big"
 
-	"github.com/ava-labs/libevm/common"
-	"github.com/ava-labs/libevm/common/hexutil"
+	"github.com/rink-labs/libevm/common"
+	"github.com/rink-labs/libevm/common/hexutil"
 
 	// Force-load precompiles to trigger registration
-	_ "github.com/ava-labs/avalanchego/graft/coreth/precompile/registry"
+	_ "github.com/rink-labs/rinkgo/graft/coreth/precompile/registry"
 
-	"github.com/ava-labs/avalanchego/graft/coreth/accounts/abi/bind"
-	"github.com/ava-labs/avalanchego/graft/coreth/interfaces"
+	"github.com/rink-labs/rinkgo/graft/coreth/accounts/abi/bind"
+	"github.com/rink-labs/rinkgo/graft/coreth/interfaces"
 
-	ethereum "github.com/ava-labs/libevm"
+	ethereum "github.com/rink-labs/libevm"
 )
 
 // Verify that [Client] implements required interfaces

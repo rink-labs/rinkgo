@@ -9,18 +9,18 @@ import (
 	"math/big"
 	"time"
 
-	"github.com/ava-labs/libevm/core"
-	"github.com/ava-labs/libevm/params"
+	"github.com/rink-labs/libevm/core"
+	"github.com/rink-labs/libevm/params"
 
-	"github.com/ava-labs/avalanchego/genesis"
-	"github.com/ava-labs/avalanchego/ids"
-	"github.com/ava-labs/avalanchego/tests/fixture/stacktrace"
-	"github.com/ava-labs/avalanchego/upgrade"
-	"github.com/ava-labs/avalanchego/utils/constants"
-	"github.com/ava-labs/avalanchego/utils/crypto/secp256k1"
-	"github.com/ava-labs/avalanchego/utils/formatting/address"
-	"github.com/ava-labs/avalanchego/utils/units"
-	"github.com/ava-labs/avalanchego/vms/platformvm/reward"
+	"github.com/rink-labs/rinkgo/genesis"
+	"github.com/rink-labs/rinkgo/ids"
+	"github.com/rink-labs/rinkgo/tests/fixture/stacktrace"
+	"github.com/rink-labs/rinkgo/upgrade"
+	"github.com/rink-labs/rinkgo/utils/constants"
+	"github.com/rink-labs/rinkgo/utils/crypto/secp256k1"
+	"github.com/rink-labs/rinkgo/utils/formatting/address"
+	"github.com/rink-labs/rinkgo/utils/units"
+	"github.com/rink-labs/rinkgo/vms/platformvm/reward"
 )
 
 const (
@@ -83,7 +83,7 @@ func NewTestGenesis(
 	// The eth address is only needed to link pre-mainnet assets. Until that capability
 	// becomes necessary for testing, use a bogus address.
 	//
-	// Reference: https://github.com/ava-labs/avalanchego/issues/1365#issuecomment-1511508767
+	// Reference: https://github.com/rink-labs/rinkgo/issues/1365#issuecomment-1511508767
 	ethAddress := "0x0000000000000000000000000000000000000000"
 
 	now := time.Now()

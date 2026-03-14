@@ -9,11 +9,11 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/ava-labs/libevm/common"
+	"github.com/rink-labs/libevm/common"
 	"golang.org/x/sync/errgroup"
 
-	"github.com/ava-labs/avalanchego/graft/coreth/plugin/evm/message"
-	"github.com/ava-labs/avalanchego/graft/coreth/utils"
+	"github.com/rink-labs/rinkgo/graft/coreth/plugin/evm/message"
+	"github.com/rink-labs/rinkgo/graft/coreth/utils"
 )
 
 var ErrFailedToFetchLeafs = errors.New("failed to fetch leafs")

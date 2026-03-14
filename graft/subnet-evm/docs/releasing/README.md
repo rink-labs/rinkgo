@@ -33,7 +33,7 @@ Remember to use the appropriate versioning for your release.
 1. Ensure the AvalancheGo version used in [go.mod](../../go.mod) is [its last release](https://github.com/ava-labs/avalanchego/releases). If not, upgrade it with, for example:
 
     ```bash
-      go get github.com/ava-labs/avalanchego@v1.13.0
+      go get github.com/rink-labs/rinkgo@v1.13.0
       go mod tidy
     ```
 
@@ -48,7 +48,7 @@ Remember to use the appropriate versioning for your release.
     💁 If you are unsure about the RPC chain VM protocol version, set the version to `0`, for example `"v0.7.3": 0`, and then run:
 
     ```bash
-    go test -run ^TestCompatibility$ github.com/ava-labs/subnet-evm/plugin/evm
+    go test -run ^TestCompatibility$ github.com/rink-labs/subnet-evm/plugin/evm
     ```
 
     This will fail with an error similar to:
@@ -76,7 +76,7 @@ Remember to use the appropriate versioning for your release.
 1. Create a pull request (PR) from your branch targeting master, for example using [`gh`](https://cli.github.com/):
 
     ```bash
-    gh pr create --repo github.com/ava-labs/subnet-evm --base master --title "chore: release $VERSION_RC"
+    gh pr create --repo github.com/rink-labs/subnet-evm --base master --title "chore: release $VERSION_RC"
     ```
 
 1. Wait for the PR checks to pass with
@@ -109,7 +109,7 @@ Once the tag is created, you need to test it on the Fuji testnet both locally an
 
 #### Local deployment
 
-💁 If your machine is too low on resources (memory, disk, CPU, network), or the subnet is quite big to bootstrap (notably *dfk*, *shrapnel* and *gunzilla*), you can run an [AWS EC2 instance](https://github.com/ava-labs/eng-resources/blob/main/dev-node-setup.md) with the following steps.
+💁 If your machine is too low on resources (memory, disk, CPU, network), or the subnet is quite big to bootstrap (notably *dfk*, *shrapnel* and *gunzilla*), you can run an [AWS EC2 instance](https://github.com/rink-labs/eng-resources/blob/main/dev-node-setup.md) with the following steps.
 
 1. Find the Dispatch and Echo L1s blockchain ID and subnet ID:
     - [Dispatch L1 details](https://subnets-test.avax.network/dispatch/details). Its subnet id is `7WtoAMPhrmh5KosDUsFL9yTcvw7YSxiKHPpdfs4JsgW47oZT5`.
@@ -170,7 +170,7 @@ Once the tag is created, you need to test it on the Fuji testnet both locally an
     rm vm.bin
     ```
 
-1. Clone [AvalancheGo](https://github.com/ava-labs/avalanchego):
+1. Clone [AvalancheGo](https://github.com/rink-labs/rinkgo):
 
     ```bash
     git clone git@github.com:ava-labs/avalanchego.git
@@ -260,7 +260,7 @@ Once the tag is created, you need to test it on the Fuji testnet both locally an
 
 #### Canary deployment
 
-1. Create a branch from the `main` branch of [the externals plugin builder repository](https://github.com/ava-labs/external-plugins-builder).
+1. Create a branch from the `main` branch of [the externals plugin builder repository](https://github.com/rink-labs/external-plugins-builder).
 
     ```bash
     git checkout main
@@ -283,10 +283,10 @@ Once the tag is created, you need to test it on the Fuji testnet both locally an
 4. Open a pull request targeting `main`, for example using [`gh`](https://cli.github.com/):
 
     ```bash
-    gh pr create --repo github.com/ava-labs/external-plugins-builder --base main --title "Bump echo and dispatch to $VERSION_RC"
+    gh pr create --repo github.com/rink-labs/external-plugins-builder --base main --title "Bump echo and dispatch to $VERSION_RC"
     ```
 
-5. Once the PR checks pass, you can squash and merge it. The [Subnet EVM build Github action](https://github.com/ava-labs/external-plugins-builder/actions/workflows/subnet-evm-image-build.yaml) then creates [one or more pull requests in devops-argocd](https://github.com/ava-labs/devops-argocd/pulls), for example `Auto image update for testnet/echo` and `Auto image update for testnet/dispatch`.
+5. Once the PR checks pass, you can squash and merge it. The [Subnet EVM build Github action](https://github.com/rink-labs/external-plugins-builder/actions/workflows/subnet-evm-image-build.yaml) then creates [one or more pull requests in devops-argocd](https://github.com/rink-labs/devops-argocd/pulls), for example `Auto image update for testnet/echo` and `Auto image update for testnet/dispatch`.
 6. Once an automatically created pull request gets merged, it will be deployed, you can then monitor:
     - For Dispatch:
         - [Deployment progress](https://app.datadoghq.com/container-images?query=short_image:dispatch)
@@ -333,7 +333,7 @@ Following the previous example in the [Release candidate section](#release-candi
     ```
 
 1. Create a new release on Github, either using:
-    - the [Github web interface](https://github.com/ava-labs/subnet-evm/releases/new)
+    - the [Github web interface](https://github.com/rink-labs/subnet-evm/releases/new)
         1. In the "Choose a tag" box, select the tag previously created `$VERSION` (`v0.7.3`)
         2. Pick the previous tag, for example as `v0.7.2`.
         3. Set the "Release title" to `$VERSION` (`v0.7.3`)
@@ -376,13 +376,13 @@ Following the previous example in the [Release candidate section](#release-candi
         gh release create "$VERSION" --notes-start-tag "$PREVIOUS_VERSION" --notes-from-tag "$VERSION" --title "$VERSION" --notes "$NOTES" --verify-tag
         ```
 
-1. Monitor the [release Github workflow](https://github.com/ava-labs/subnet-evm/actions/workflows/release.yml) to ensure the GoReleaser step succeeds and check the binaries are then published to [the releases page](https://github.com/ava-labs/subnet-evm/releases). In case this fails, you can trigger the workflow manually:
-    1. Go to [github.com/ava-labs/subnet-evm/actions/workflows/release.yml](https://github.com/ava-labs/subnet-evm/actions/workflows/release.yml)
+1. Monitor the [release Github workflow](https://github.com/rink-labs/subnet-evm/actions/workflows/release.yml) to ensure the GoReleaser step succeeds and check the binaries are then published to [the releases page](https://github.com/rink-labs/subnet-evm/releases). In case this fails, you can trigger the workflow manually:
+    1. Go to [github.com/rink-labs/subnet-evm/actions/workflows/release.yml](https://github.com/rink-labs/subnet-evm/actions/workflows/release.yml)
     1. Click on the "Run workflow" button
     1. Enter the branch name, usually with goreleaser related fixes
     1. Enter the tag name `$VERSION` (i.e. `v0.7.3`)
-1. Monitor the [Publish Docker image workflow](https://github.com/ava-labs/subnet-evm/actions/workflows/publish_docker.yml) succeeds. Note this workflow is triggered when pushing the tag, unlike Goreleaser which triggers when publishing the release.
-1. Finally, [create a release for precompile-evm](https://github.com/ava-labs/precompile-evm/blob/main/docs/releasing/README.md)
+1. Monitor the [Publish Docker image workflow](https://github.com/rink-labs/subnet-evm/actions/workflows/publish_docker.yml) succeeds. Note this workflow is triggered when pushing the tag, unlike Goreleaser which triggers when publishing the release.
+1. Finally, [create a release for precompile-evm](https://github.com/rink-labs/precompile-evm/blob/main/docs/releasing/README.md)
 
 ### Post-release
 
@@ -412,7 +412,7 @@ export P_VERSION=v0.7.4
     💁 If you are unsure about the RPC chain VM protocol version, set the version to `0`, for example `"v0.7.4": 0`, and then run:
 
     ```bash
-    go test -run ^TestCompatibility$ github.com/ava-labs/subnet-evm/plugin/evm
+    go test -run ^TestCompatibility$ github.com/rink-labs/subnet-evm/plugin/evm
     ```
 
     This will fail with an error similar to:
@@ -433,7 +433,7 @@ export P_VERSION=v0.7.4
 1. Create a pull request (PR) from your branch targeting master, for example using [`gh`](https://cli.github.com/):
 
     ```bash
-    gh pr create --repo github.com/ava-labs/subnet-evm --base master --title "chore: prep next release $P_VERSION"
+    gh pr create --repo github.com/rink-labs/subnet-evm --base master --title "chore: prep next release $P_VERSION"
     ```
 
 1. Wait for the PR checks to pass with

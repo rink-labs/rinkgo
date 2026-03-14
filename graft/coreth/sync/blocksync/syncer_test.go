@@ -10,23 +10,23 @@ import (
 	"os"
 	"testing"
 
-	"github.com/ava-labs/libevm/common"
-	"github.com/ava-labs/libevm/core/rawdb"
-	"github.com/ava-labs/libevm/core/types"
-	"github.com/ava-labs/libevm/crypto"
-	"github.com/ava-labs/libevm/ethdb"
+	"github.com/rink-labs/libevm/common"
+	"github.com/rink-labs/libevm/core/rawdb"
+	"github.com/rink-labs/libevm/core/types"
+	"github.com/rink-labs/libevm/crypto"
+	"github.com/rink-labs/libevm/ethdb"
 	"github.com/stretchr/testify/require"
 
-	"github.com/ava-labs/avalanchego/graft/coreth/consensus/dummy"
-	"github.com/ava-labs/avalanchego/graft/coreth/core"
-	"github.com/ava-labs/avalanchego/graft/coreth/params"
-	"github.com/ava-labs/avalanchego/graft/coreth/plugin/evm/customtypes"
-	"github.com/ava-labs/avalanchego/graft/coreth/plugin/evm/message"
-	"github.com/ava-labs/avalanchego/graft/coreth/sync/handlers"
+	"github.com/rink-labs/rinkgo/graft/coreth/consensus/dummy"
+	"github.com/rink-labs/rinkgo/graft/coreth/core"
+	"github.com/rink-labs/rinkgo/graft/coreth/params"
+	"github.com/rink-labs/rinkgo/graft/coreth/plugin/evm/customtypes"
+	"github.com/rink-labs/rinkgo/graft/coreth/plugin/evm/message"
+	"github.com/rink-labs/rinkgo/graft/coreth/sync/handlers"
 
-	syncclient "github.com/ava-labs/avalanchego/graft/coreth/sync/client"
-	handlerstats "github.com/ava-labs/avalanchego/graft/coreth/sync/handlers/stats"
-	ethparams "github.com/ava-labs/libevm/params"
+	syncclient "github.com/rink-labs/rinkgo/graft/coreth/sync/client"
+	handlerstats "github.com/rink-labs/rinkgo/graft/coreth/sync/handlers/stats"
+	ethparams "github.com/rink-labs/libevm/params"
 )
 
 func TestMain(m *testing.M) {

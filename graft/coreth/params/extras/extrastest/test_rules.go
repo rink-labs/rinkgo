@@ -6,13 +6,13 @@ package extrastest
 import (
 	"fmt"
 
-	"github.com/ava-labs/libevm/common"
+	"github.com/rink-labs/libevm/common"
 
-	"github.com/ava-labs/avalanchego/graft/coreth/params"
-	"github.com/ava-labs/avalanchego/graft/coreth/params/extras"
-	"github.com/ava-labs/avalanchego/graft/coreth/params/paramstest"
-	"github.com/ava-labs/avalanchego/upgrade"
-	"github.com/ava-labs/avalanchego/upgrade/upgradetest"
+	"github.com/rink-labs/rinkgo/graft/coreth/params"
+	"github.com/rink-labs/rinkgo/graft/coreth/params/extras"
+	"github.com/rink-labs/rinkgo/graft/coreth/params/paramstest"
+	"github.com/rink-labs/rinkgo/upgrade"
+	"github.com/rink-labs/rinkgo/upgrade/upgradetest"
 )
 
 func ForkToRules(fork upgradetest.Fork) *extras.Rules {

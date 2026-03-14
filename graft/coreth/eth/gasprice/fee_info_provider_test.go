@@ -8,10 +8,10 @@ import (
 	"sync"
 	"testing"
 
-	"github.com/ava-labs/libevm/core/types"
+	"github.com/rink-labs/libevm/core/types"
 	"github.com/stretchr/testify/require"
 
-	"github.com/ava-labs/avalanchego/graft/coreth/core"
+	"github.com/rink-labs/rinkgo/graft/coreth/core"
 )
 
 func TestFeeInfoProvider(t *testing.T) {

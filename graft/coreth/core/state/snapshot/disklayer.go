@@ -32,13 +32,13 @@ import (
 	"sync"
 	"time"
 
-	"github.com/ava-labs/avalanchego/graft/coreth/utils"
-	"github.com/ava-labs/libevm/common"
-	"github.com/ava-labs/libevm/core/rawdb"
-	"github.com/ava-labs/libevm/core/types"
-	"github.com/ava-labs/libevm/ethdb"
-	"github.com/ava-labs/libevm/rlp"
-	"github.com/ava-labs/libevm/triedb"
+	"github.com/rink-labs/rinkgo/graft/coreth/utils"
+	"github.com/rink-labs/libevm/common"
+	"github.com/rink-labs/libevm/core/rawdb"
+	"github.com/rink-labs/libevm/core/types"
+	"github.com/rink-labs/libevm/ethdb"
+	"github.com/rink-labs/libevm/rlp"
+	"github.com/rink-labs/libevm/triedb"
 )
 
 // diskLayer is a low level persistent snapshot built on top of a key-value store.

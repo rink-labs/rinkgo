@@ -6,7 +6,7 @@ package simplex
 import (
 	"testing"
 
-	"github.com/ava-labs/simplex"
+	"github.com/rink-labs/simplex"
 	"github.com/stretchr/testify/require"
 
 	"github.com/ava-labs/avalanchego/ids"

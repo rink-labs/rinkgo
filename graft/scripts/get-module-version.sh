@@ -6,7 +6,7 @@ set -euo pipefail
 # This script outputs ONLY the version string to stdout for use in shell command substitution.
 #
 # Usage: get-module-version.sh <module-path>
-# Example: get-module-version.sh github.com/ava-labs/coreth
+# Example: get-module-version.sh github.com/rink-labs/coreth
 #
 # Output format:
 #   - If module uses a pseudo-version (vX.Y.Z-YYYYMMDDHHMMSS-abcdef123456):
@@ -17,7 +17,7 @@ set -euo pipefail
 if [ $# -ne 1 ]; then
   echo "Error: exactly one argument required" >&2
   echo "Usage: $0 <module-path>" >&2
-  echo "Example: $0 github.com/ava-labs/coreth" >&2
+  echo "Example: $0 github.com/rink-labs/coreth" >&2
   exit 1
 fi
 

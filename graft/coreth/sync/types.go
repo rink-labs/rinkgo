@@ -6,13 +6,13 @@ package sync
 import (
 	"context"
 
-	"github.com/ava-labs/libevm/core/types"
+	"github.com/rink-labs/libevm/core/types"
 
-	"github.com/ava-labs/avalanchego/database/versiondb"
-	"github.com/ava-labs/avalanchego/graft/coreth/plugin/evm/message"
-	"github.com/ava-labs/avalanchego/snow/engine/snowman/block"
+	"github.com/rink-labs/rinkgo/database/versiondb"
+	"github.com/rink-labs/rinkgo/graft/coreth/plugin/evm/message"
+	"github.com/rink-labs/rinkgo/snow/engine/snowman/block"
 
-	syncclient "github.com/ava-labs/avalanchego/graft/coreth/sync/client"
+	syncclient "github.com/rink-labs/rinkgo/graft/coreth/sync/client"
 )
 
 // Syncer is the common interface for all sync operations.

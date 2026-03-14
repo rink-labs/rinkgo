@@ -6,24 +6,24 @@ set -euo pipefail
 # This script modifies the working tree and commits the changes.
 #
 # Usage: rewrite-imports.sh <original-module-import-path>
-# Example: rewrite-imports.sh github.com/ava-labs/coreth
-#   Will rewrite: github.com/ava-labs/coreth -> github.com/ava-labs/avalanchego/graft/coreth
-# Example: rewrite-imports.sh github.com/ava-labs/coreth github.com/ava-labs/avalanchego/coreth
-#   Will rewrite: github.com/ava-labs/coreth -> github.com/ava-labs/avalanchego/coreth
+# Example: rewrite-imports.sh github.com/rink-labs/coreth
+#   Will rewrite: github.com/rink-labs/coreth -> github.com/ava-labs/avalanchego/graft/coreth
+# Example: rewrite-imports.sh github.com/rink-labs/coreth github.com/ava-labs/avalanchego/coreth
+#   Will rewrite: github.com/rink-labs/coreth -> github.com/ava-labs/avalanchego/coreth
 #
 
 if [ $# -lt 1 ] || [ $# -gt 2 ]; then
   echo "Error: one or two arguments required"
   echo "Usage: $0 <original-module-import-path> [new-module-import-path]"
-  echo "Example: $0 github.com/ava-labs/coreth"
-  echo "Example: $0 github.com/ava-labs/coreth github.com/ava-labs/avalanchego/coreth"
+  echo "Example: $0 github.com/rink-labs/coreth"
+  echo "Example: $0 github.com/rink-labs/coreth github.com/ava-labs/avalanchego/coreth"
   exit 1
 fi
 
 ORIGINAL_IMPORT="$1"
 
 # Extract the last component of the import path
-# e.g., github.com/ava-labs/coreth -> coreth
+# e.g., github.com/rink-labs/coreth -> coreth
 PACKAGE_NAME="${ORIGINAL_IMPORT##*/}"
 
 # Determine target import path

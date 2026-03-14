@@ -9,12 +9,12 @@ import (
 	"math/big"
 	"time"
 
-	"github.com/ava-labs/libevm/ethclient"
+	"github.com/rink-labs/libevm/ethclient"
 	"github.com/prometheus/client_golang/prometheus"
 	"golang.org/x/sync/errgroup"
 
-	"github.com/ava-labs/avalanchego/tests"
-	"github.com/ava-labs/avalanchego/utils/logging"
+	"github.com/rink-labs/rinkgo/tests"
+	"github.com/rink-labs/rinkgo/utils/logging"
 )
 
 type Test interface {

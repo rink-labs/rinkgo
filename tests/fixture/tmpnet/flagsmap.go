@@ -7,8 +7,8 @@ import (
 	"encoding/json"
 	"os"
 
-	"github.com/ava-labs/avalanchego/tests/fixture/stacktrace"
-	"github.com/ava-labs/avalanchego/utils/perms"
+	"github.com/rink-labs/rinkgo/tests/fixture/stacktrace"
+	"github.com/rink-labs/rinkgo/utils/perms"
 )
 
 // Defines a mapping of flag keys to values intended to be supplied to

@@ -125,4 +125,4 @@ Mocks are auto-generated using [mockgen](https://pkg.go.dev/go.uber.org/mock/moc
 
 ### Do you want to contribute to the Avalanche documentation?
 
-- Please check out the `avalanche-docs` repository [here](https://github.com/ava-labs/avalanche-docs).
+- Please check out the `avalanche-docs` repository [here](https://github.com/rink-labs/avalanche-docs).

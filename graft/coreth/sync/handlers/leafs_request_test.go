@@ -9,20 +9,20 @@ import (
 	"math/rand"
 	"testing"
 
-	"github.com/ava-labs/libevm/common"
-	"github.com/ava-labs/libevm/core/rawdb"
-	"github.com/ava-labs/libevm/core/types"
-	"github.com/ava-labs/libevm/crypto"
-	"github.com/ava-labs/libevm/ethdb"
-	"github.com/ava-labs/libevm/trie"
-	"github.com/ava-labs/libevm/triedb"
+	"github.com/rink-labs/libevm/common"
+	"github.com/rink-labs/libevm/core/rawdb"
+	"github.com/rink-labs/libevm/core/types"
+	"github.com/rink-labs/libevm/crypto"
+	"github.com/rink-labs/libevm/ethdb"
+	"github.com/rink-labs/libevm/trie"
+	"github.com/rink-labs/libevm/triedb"
 	"github.com/stretchr/testify/require"
 
-	"github.com/ava-labs/avalanchego/graft/coreth/core/state/snapshot"
-	"github.com/ava-labs/avalanchego/graft/coreth/plugin/evm/message"
-	"github.com/ava-labs/avalanchego/graft/coreth/sync/handlers/stats/statstest"
-	"github.com/ava-labs/avalanchego/graft/coreth/sync/statesync/statesynctest"
-	"github.com/ava-labs/avalanchego/ids"
+	"github.com/rink-labs/rinkgo/graft/coreth/core/state/snapshot"
+	"github.com/rink-labs/rinkgo/graft/coreth/plugin/evm/message"
+	"github.com/rink-labs/rinkgo/graft/coreth/sync/handlers/stats/statstest"
+	"github.com/rink-labs/rinkgo/graft/coreth/sync/statesync/statesynctest"
+	"github.com/rink-labs/rinkgo/ids"
 )
 
 func TestLeafsRequestHandler_OnLeafsRequest(t *testing.T) {

@@ -29,15 +29,15 @@
 package miner
 
 import (
-	"github.com/ava-labs/avalanchego/graft/coreth/consensus"
-	"github.com/ava-labs/avalanchego/graft/coreth/core"
-	"github.com/ava-labs/avalanchego/graft/coreth/core/txpool"
-	"github.com/ava-labs/avalanchego/graft/coreth/params"
-	"github.com/ava-labs/avalanchego/graft/coreth/precompile/precompileconfig"
-	"github.com/ava-labs/avalanchego/utils/timer/mockable"
-	"github.com/ava-labs/libevm/common"
-	"github.com/ava-labs/libevm/core/types"
-	"github.com/ava-labs/libevm/event"
+	"github.com/rink-labs/rinkgo/graft/coreth/consensus"
+	"github.com/rink-labs/rinkgo/graft/coreth/core"
+	"github.com/rink-labs/rinkgo/graft/coreth/core/txpool"
+	"github.com/rink-labs/rinkgo/graft/coreth/params"
+	"github.com/rink-labs/rinkgo/graft/coreth/precompile/precompileconfig"
+	"github.com/rink-labs/rinkgo/utils/timer/mockable"
+	"github.com/rink-labs/libevm/common"
+	"github.com/rink-labs/libevm/core/types"
+	"github.com/rink-labs/libevm/event"
 )
 
 // Backend wraps all methods required for mining.

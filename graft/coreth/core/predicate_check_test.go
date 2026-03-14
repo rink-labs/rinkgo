@@ -9,16 +9,16 @@ import (
 	"slices"
 	"testing"
 
-	"github.com/ava-labs/libevm/common"
-	"github.com/ava-labs/libevm/core/types"
+	"github.com/rink-labs/libevm/common"
+	"github.com/rink-labs/libevm/core/types"
 	"github.com/stretchr/testify/require"
 	"go.uber.org/mock/gomock"
 
-	"github.com/ava-labs/avalanchego/graft/coreth/params"
-	"github.com/ava-labs/avalanchego/graft/coreth/precompile/precompileconfig"
-	"github.com/ava-labs/avalanchego/snow/engine/snowman/block"
-	"github.com/ava-labs/avalanchego/utils/set"
-	"github.com/ava-labs/avalanchego/vms/evm/predicate"
+	"github.com/rink-labs/rinkgo/graft/coreth/params"
+	"github.com/rink-labs/rinkgo/graft/coreth/precompile/precompileconfig"
+	"github.com/rink-labs/rinkgo/snow/engine/snowman/block"
+	"github.com/rink-labs/rinkgo/utils/set"
+	"github.com/rink-labs/rinkgo/vms/evm/predicate"
 )
 
 var (

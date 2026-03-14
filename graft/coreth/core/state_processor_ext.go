@@ -8,13 +8,13 @@ import (
 	"fmt"
 	"math/big"
 
-	"github.com/ava-labs/libevm/core/state"
-	"github.com/ava-labs/libevm/log"
+	"github.com/rink-labs/libevm/core/state"
+	"github.com/rink-labs/libevm/log"
 
-	"github.com/ava-labs/avalanchego/graft/coreth/core/extstate"
-	"github.com/ava-labs/avalanchego/graft/coreth/params"
-	"github.com/ava-labs/avalanchego/graft/coreth/precompile/contract"
-	"github.com/ava-labs/avalanchego/graft/coreth/precompile/modules"
+	"github.com/rink-labs/rinkgo/graft/coreth/core/extstate"
+	"github.com/rink-labs/rinkgo/graft/coreth/params"
+	"github.com/rink-labs/rinkgo/graft/coreth/precompile/contract"
+	"github.com/rink-labs/rinkgo/graft/coreth/precompile/modules"
 )
 
 // ApplyPrecompileActivations checks if any of the precompiles specified by the chain config are enabled or disabled by the block
