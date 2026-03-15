@@ -74,7 +74,7 @@ const (
 	// into the mempool.
 	maxAtomicTxMempoolGas   = ap5.AtomicGasLimit
 	atomicTxGossipNamespace = "atomic_tx_gossip"
-	avaxEndpoint            = "/avax"
+	avaxEndpoint            = "/rink"
 )
 
 type VM struct {
@@ -363,7 +363,7 @@ func (vm *VM) CreateHandlers(ctx context.Context) (map[string]http.Handler, erro
 	if err != nil {
 		return nil, err
 	}
-	avaxAPI, err := rpc.NewHandler("avax", &AvaxAPI{
+	avaxAPI, err := rpc.NewHandler("rink", &AvaxAPI{
 		bc:           vm.InnerVM.Ethereum().BlockChain(),
 		Context:      vm.Ctx,
 		Mempool:      vm.AtomicMempool,
@@ -371,9 +371,9 @@ func (vm *VM) CreateHandlers(ctx context.Context) (map[string]http.Handler, erro
 		AcceptedTxs:  vm.AtomicTxRepository,
 	})
 	if err != nil {
-		return nil, fmt.Errorf("failed to register service for AVAX API due to %w", err)
+		return nil, fmt.Errorf("failed to register service for RINK API due to %w", err)
 	}
-	log.Info("AVAX API enabled")
+	log.Info("RINK API enabled")
 	apis[avaxEndpoint] = avaxAPI
 	return apis, nil
 }

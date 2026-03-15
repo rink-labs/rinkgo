@@ -246,7 +246,7 @@ func FromFile(networkID uint32, filepath string, stakingCfg *StakingConfig) ([]b
 
 // FromFlag returns the genesis data of the Platform Chain.
 //
-// Since an Avalanche network has exactly one Platform Chain, and the Platform
+// Since an Rink network has exactly one Platform Chain, and the Platform
 // Chain defines the genesis state of the network (who is staking, which chains
 // exist, etc.), defining the genesis state of the Platform Chain is the same as
 // defining the genesis state of the network.
@@ -263,7 +263,7 @@ func FromFile(networkID uint32, filepath string, stakingCfg *StakingConfig) ([]b
 //
 //  1. The byte representation of the genesis state of the platform chain
 //     (ie the genesis state of the network)
-//  2. The asset ID of AVAX
+//  2. The asset ID of RINK
 func FromFlag(networkID uint32, genesisContent string, stakingCfg *StakingConfig) ([]byte, ids.ID, error) {
 	switch networkID {
 	case constants.RinkID, constants.TestnetID, constants.LocalID:
@@ -296,8 +296,8 @@ func FromConfig(config *Config) ([]byte, ids.ID, error) {
 
 	// Specify the genesis state of the AVM
 	avax := avm.AssetDefinition{
-		Name:         "Avalanche",
-		Symbol:       "AVAX",
+		Name:         "Rink",
+		Symbol:       "RINK",
 		Denomination: 9,
 		InitialState: avm.AssetInitialState{},
 	}
@@ -327,7 +327,7 @@ func FromConfig(config *Config) ([]byte, ids.ID, error) {
 	avmGenesis, err := avm.NewGenesis(
 		config.NetworkID,
 		map[string]avm.AssetDefinition{
-			"AVAX": avax, // The AVM starts out with one asset: AVAX
+			"RINK": avax, // The AVM starts out with one asset: RINK
 		},
 	)
 	if err != nil {
@@ -340,7 +340,7 @@ func FromConfig(config *Config) ([]byte, ids.ID, error) {
 
 	avaxAssetID, err := AVAXAssetID(avmGenesisBytes)
 	if err != nil {
-		return nil, ids.Empty, fmt.Errorf("couldn't generate AVAX asset ID: %w", err)
+		return nil, ids.Empty, fmt.Errorf("couldn't generate RINK asset ID: %w", err)
 	}
 
 	genesisTime := time.Unix(int64(config.StartTime), 0)

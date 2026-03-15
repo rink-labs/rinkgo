@@ -1,14 +1,8 @@
 {
     "rink": [
-        {
-            "id": "NodeID-E4mDEfhBvPBRdrNydYGrGLfi9MXwb8bKf",
-            "ip": "127.0.0.1:9651"
-        }
+        
     ],
     "chennai": [
-        {
-            "id": "NodeID-E4mDEfhBvPBRdrNydYGrGLfi9MXwb8bKf",
-            "ip": "127.0.0.1:9651"
-        }
+        
     ]
 }
