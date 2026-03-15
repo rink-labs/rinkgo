@@ -1,15 +1,9 @@
-<div align="center">
-  <img src="resources/AvalancheLogoRed.png?raw=true">
-</div>
-
----
-
-Node implementation for the [Avalanche](https://avax.network) network -
+Node implementation for the [Rink] network -
 a blockchains platform with high throughput, and blazing fast transactions.
 
 ## Installation
 
-Avalanche is an incredibly lightweight protocol, so the minimum computer requirements are quite modest.
+Rink is an incredibly lightweight protocol, so the minimum computer requirements are quite modest.
 Note that as network usage increases, hardware requirements may change.
 
 The minimum recommended hardware specification for nodes connected to Mainnet is:
@@ -23,7 +17,7 @@ The minimum recommended hardware specification for nodes connected to Mainnet is
 
 If you plan to build AvalancheGo from source, you will also need the following software:
 
-- [Go](https://golang.org/doc/install) version >= 1.24.11
+- [Go](https://golang.org/doc/install) version >= 1.24.9
 - [gcc](https://gcc.gnu.org/)
 - g++
 
@@ -34,29 +28,29 @@ If you plan to build AvalancheGo from source, you will also need the following s
 Clone the AvalancheGo repository:
 
 ```sh
-git clone git@github.com:ava-labs/avalanchego.git
-cd avalanchego
+git clone git@github.com:rink-labs/rinkgo.git
+cd rinkgo
 ```
 
 This will clone and checkout the `master` branch.
 
-#### Building AvalancheGo
+#### Building RinkGo
 
-Build AvalancheGo by running the build task:
+Build RinkGo by running the build task:
 
 ```sh
 ./scripts/run_task.sh build
 ```
 
-The `avalanchego` binary is now in the `build` directory. To run:
+The `rinkgo` binary is now in the `build` directory. To run:
 
 ```sh
-./build/avalanchego
+./build/rinkgo
 ```
 
 ### Binary Repository
 
-Install AvalancheGo using an `apt` repository.
+Install RinkGo using an `apt` repository.
 
 #### Adding the APT Repository
 
@@ -66,31 +60,31 @@ To add the repository on Ubuntu, run:
 
 ```sh
 sudo su -
-wget -qO - https://downloads.avax.network/avalanchego.gpg.key | tee /etc/apt/trusted.gpg.d/avalanchego.asc
-source /etc/os-release && echo "deb https://downloads.avax.network/apt $UBUNTU_CODENAME main" > /etc/apt/sources.list.d/avalanche.list
+wget -qO -  | tee /etc/apt/trusted.gpg.d/avalanchego.asc
+source /etc/os-release && echo "deb  $UBUNTU_CODENAME main" > /etc/apt/sources.list.d/avalanche.list
 exit
 ```
 
 #### Installing the Latest Version
 
-After adding the APT repository, install `avalanchego` by running:
+After adding the APT repository, install `rinkgo` by running:
 
 ```sh
 sudo apt update
-sudo apt install avalanchego
+sudo apt install rinkgo
 ```
 
 ### Binary Install
 
-Download the [latest build](https://github.com/ava-labs/avalanchego/releases/latest) for your operating system and architecture.
+Download the [latest build]for your operating system and architecture.
 
-The Avalanche binary to be executed is named `avalanchego`.
+The Avalanche binary to be executed is named `rinkgogo`.
 
 ### Docker Install
 
 Make sure Docker is installed on the machine - so commands like `docker run` etc. are available.
 
-Building the Docker image of latest `avalanchego` branch can be done by running:
+Building the Docker image of latest `rinkgo` branch can be done by running:
 
 ```sh
 ./scripts/run-task.sh build-image
@@ -108,14 +102,14 @@ The image should be tagged as `avaplatform/avalanchego:xxxxxxxx`, where `xxxxxxx
 docker run -ti -p 9650:9650 -p 9651:9651 avaplatform/avalanchego:xxxxxxxx /avalanchego/build/avalanchego
 ```
 
-## Running Rink
+## Running Avalanche
 
 ### Connecting to Mainnet
 
-To connect to the Rink Mainnet, run:
+To connect to the Avalanche Mainnet, run:
 
 ```sh
-./build/avalanchego
+./build/rinkgo
 ```
 
 You should see some pretty ASCII art and log messages.
@@ -127,23 +121,15 @@ You can use `Ctrl+C` to kill the node.
 To connect to the Chennai Testnet, run:
 
 ```sh
-./build/avalanchego --network-id=chennai
+./build/rinkgo --network-id=chennai
 ```
 
-### Creating a Local Testnet
-
-The [avalanche-cli](https://github.com/ava-labs/avalanche-cli) is the easiest way to start a local network.
-
-```sh
-avalanche network start
-avalanche network status
-```
 
 ## Bootstrapping
 
 A node needs to catch up to the latest network state before it can participate in consensus and serve API calls. This process (called bootstrapping) currently takes several days for a new node connected to Mainnet.
 
-A node will not [report healthy](https://build.avax.network/docs/api-reference/health-api) until it is done bootstrapping.
+
 
 Improvements that reduce the amount of time it takes to bootstrap are under development.
 
@@ -210,7 +196,7 @@ APIs exposed when running AvalancheGo will maintain backwards compatibility, unl
 
 ## Supported Platforms
 
-AvalancheGo can run on different platforms, with different support tiers:
+RinkGo can run on different platforms, with different support tiers:
 
 - **Tier 1**: Fully supported by the maintainers, guaranteed to pass all tests including e2e and stress tests.
 - **Tier 2**: Passes all unit and integration tests but not necessarily e2e tests.
@@ -223,7 +209,7 @@ AvalancheGo support tiers:
 | Architecture | Operating system | Support tier  |
 | :----------: | :--------------: | :-----------: |
 |    amd64     |      Linux       |       1       |
-|    arm64     |      Linux       |       1       |
+|    arm64     |      Linux       |       2       |
 |    arm64     |      Darwin      |       2       |
 |    amd64     |      Darwin      | Not supported |
 |    amd64     |     Windows      | Not supported |
@@ -243,8 +229,3 @@ To officially support a new platform, one must satisfy the following requirement
 **We and our community welcome responsible disclosures.**
 
 Please refer to our [Security Policy](SECURITY.md) and [Security Advisories](https://github.com/ava-labs/avalanchego/security/advisories).
-
-## Licenses
-
-Unless otherwise stated, all code in this repository is licensed under BSD-3. See our [licensing](LICENSE) for more details. Specifically, [grafted repositories](graft/) may use
-a different license, and one must refer to that project's README and LICENSE for more details
