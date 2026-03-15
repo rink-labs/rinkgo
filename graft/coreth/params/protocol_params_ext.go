@@ -4,7 +4,7 @@
 package params
 
 const (
-	// Avalanche Stateful Precompile Params
+	// Rink Stateful Precompile Params
 	// Gas price for native asset balance lookup. Based on the cost of an SLOAD operation since native
 	// asset balances are kept in state storage.
 	AssetBalanceApricot uint64 = 2100

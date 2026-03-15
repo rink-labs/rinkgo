@@ -18,7 +18,7 @@ import (
 	"github.com/ava-labs/avalanchego/vms/evm/predicate"
 )
 
-// RegisterExtras registers hooks with libevm to achieve Avalanche state
+// RegisterExtras registers hooks with libevm to achieve Rink state
 // management. It MUST NOT be called more than once and therefore is only
 // allowed to be used in tests and `package main`, to avoid polluting other
 // packages that transitively depend on this one but don't need registration.

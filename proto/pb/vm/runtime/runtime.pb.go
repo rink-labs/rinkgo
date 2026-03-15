@@ -7,12 +7,13 @@
 package manager
 
 import (
-	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
-	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
-	emptypb "google.golang.org/protobuf/types/known/emptypb"
 	reflect "reflect"
 	sync "sync"
 	unsafe "unsafe"
+
+	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
+	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
+	emptypb "google.golang.org/protobuf/types/known/emptypb"
 )
 
 const (
@@ -24,7 +25,7 @@ const (
 
 type InitializeRequest struct {
 	state protoimpl.MessageState `protogen:"open.v1"`
-	// ProtocolVersion is used to identify incompatibilities with AvalancheGo and a VM.
+	// ProtocolVersion is used to identify incompatibilities with RinkGo and a VM.
 	ProtocolVersion uint32 `protobuf:"varint,1,opt,name=protocol_version,json=protocolVersion,proto3" json:"protocol_version,omitempty"`
 	// Address of the gRPC server endpoint serving the handshake logic.
 	// Example: 127.0.0.1:50001

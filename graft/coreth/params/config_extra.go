@@ -30,7 +30,7 @@ var (
 )
 
 // SetEthUpgrades enables Ethereum network upgrades using the same time as
-// the Avalanche network upgrade that enables them.
+// the Rink network upgrade that enables them.
 func SetEthUpgrades(c *ChainConfig) error {
 	// Set Ethereum block upgrades to initially activated as they were already
 	// activated on launch.

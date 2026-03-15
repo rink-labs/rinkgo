@@ -151,7 +151,7 @@ func NewTestGenesis(
 	cChainGenesis := &core.Genesis{
 		Config:     &params.ChainConfig{ChainID: chainID},      // The rest of the config is set in coreth on VM initialization
 		Difficulty: big.NewInt(0),                              // Difficulty is a mandatory field
-		Timestamp:  uint64(upgrade.InitiallyActiveTime.Unix()), // This time enables Avalanche upgrades by default
+		Timestamp:  uint64(upgrade.InitiallyActiveTime.Unix()), // This time enables Rink upgrades by default
 		GasLimit:   defaultGasLimit,
 		Alloc:      cChainBalances,
 	}

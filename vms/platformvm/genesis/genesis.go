@@ -20,7 +20,7 @@ import (
 	"github.com/ava-labs/avalanchego/vms/secp256k1fx"
 )
 
-// Note that since an Avalanche network has exactly one Platform Chain,
+// Note that since a Rink network has exactly one Platform Chain,
 // and the Platform Chain defines the genesis state of the network
 // (who is staking, which chains exist, etc.), defining the genesis
 // state of the Platform Chain is the same as defining the genesis
@@ -148,7 +148,7 @@ func bech32ToID(addrStr string) (ids.ShortID, error) {
 	return ids.ToShortID(addrBytes)
 }
 
-// New builds the genesis state of the P-Chain (and thereby the Avalanche network.)
+// New builds the genesis state of the P-Chain (and thereby the Rink network.)
 // [avaxAssetID] is the ID of the AVAX asset
 // [networkID] is the ID of the network
 // [allocations] are the UTXOs on the Platform Chain that exist at genesis.

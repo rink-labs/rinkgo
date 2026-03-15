@@ -5,33 +5,19 @@
 [![CodeQL](https://github.com/ava-labs/subnet-evm/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/ava-labs/subnet-evm/actions/workflows/codeql-analysis.yml)
 [![License](https://img.shields.io/github/license/ava-labs/subnet-evm)](https://github.com/ava-labs/subnet-evm/blob/master/LICENSE)
 
-[Avalanche](https://build.avax.network/docs/avalanche-l1s) is a network composed of multiple blockchains.
+[Rink]is a network composed of multiple blockchains.
 Each blockchain is an instance of a Virtual Machine (VM), much like an object in an object-oriented language is an instance of a class.
 That is, the VM defines the behavior of the blockchain.
 
-Subnet EVM is the [Virtual Machine (VM)](https://build.avax.network/docs/quick-start/virtual-machines) that defines the Subnet Contract Chains. Subnet EVM is a simplified version of [Coreth VM (C-Chain)](https://github.com/ava-labs/coreth).
+Subnet EVM is the [Virtual Machine (VM)] that defines the Subnet Contract Chains. Subnet EVM is a simplified version of [Coreth VM (C-Chain)]
 
 This chain implements the Ethereum Virtual Machine and supports Solidity smart contracts as well as most other Ethereum client functionality.
 
 ## Building
 
-The Subnet EVM runs in a separate process from the main AvalancheGo process and communicates with it over a local gRPC connection.
+The Subnet EVM runs in a separate process from the main RinkGo process and communicates with it over a local gRPC connection.
 
-### AvalancheGo Compatibility
 
-```text
-[v0.7.0] AvalancheGo@v1.12.0-v1.12.1 (Protocol Version: 38)
-[v0.7.1] AvalancheGo@v1.12.2 (Protocol Version: 39)
-[v0.7.2] AvalancheGo@v1.12.2/1.13.0-fuji (Protocol Version: 39)
-[v0.7.3] AvalancheGo@v1.12.2/1.13.0 (Protocol Version: 39)
-[v0.7.4] AvalancheGo@v1.13.1 (Protocol Version: 40)
-[v0.7.5] AvalancheGo@v1.13.2 (Protocol Version: 41)
-[v0.7.6] AvalancheGo@v1.13.3-rc.2 (Protocol Version: 42)
-[v0.7.7] AvalancheGo@v1.13.3 (Protocol Version: 42)
-[v0.7.8] AvalancheGo@v1.13.4 (Protocol Version: 43)
-[v0.7.9] AvalancheGo@v1.13.5 (Protocol Version: 43)
-[v0.8.0] AvalancheGo@v1.14.0 (Protocol Version: 44)
-```
 
 ## API
 
@@ -50,13 +36,13 @@ Full documentation for the C-Chain's API can be found in the [builder docs](http
 
 Subnet-EVM is compatible with almost all Ethereum tooling, including [Foundry](https://build.avax.network/academy/blockchain/solidity-foundry/03-smart-contracts/03-foundry-quickstart) and [Remix](https://build.avax.network/docs/avalanche-l1s/add-utility/deploy-smart-contract#using-remix).
 
-**Note:** Subnet-EVM and Avalanche C-Chain currently implement the Ethereum Cancun fork and do not yet support newer hardforks (such as Pectra). Since Solidity v0.8.30 switched its default target EVM version to Pectra, contracts compiled with default settings may emit bytecode using instructions/features that Avalanche does not support.
+**Note:** Subnet-EVM and Rink C-Chain currently implement the Ethereum Cancun fork and do not yet support newer hardforks (such as Pectra). Since Solidity v0.8.30 switched its default target EVM version to Pectra, contracts compiled with default settings may emit bytecode using instructions/features that Rink does not support.
 To avoid this mismatch, explicitly set the Solidity compiler’s `evmVersion` to `cancun` when deploying to Subnet-EVM or the C-Chain.
 
 ## Differences Between Subnet EVM and Coreth
 
 - Added configurable fees and gas limits in genesis
-- Merged Avalanche hardforks into the single "Subnet EVM" hardfork
+- Merged Rink hardforks into the single "Subnet EVM" hardfork
 - Removed Atomic Txs and Shared Memory
 - Removed Multicoin Contract and State
 
@@ -93,9 +79,9 @@ This will clone and checkout to `master` branch.
 
 ### Run Local Network
 
-To run a local network, it is recommended to use the [avalanche-cli](https://github.com/ava-labs/avalanche-cli#avalanche-cli) to set up an instance of Subnet-EVM on a local Avalanche Network.
+To run a local network, it is recommended to use the [avalanche-cli](https://github.com/ava-labs/avalanche-cli#avalanche-cli) to set up an instance of Subnet-EVM on a local Rink Network.
 
-There are two options when using the Avalanche-CLI:
+There are two options when using the Rink-CLI:
 
 1. Use an official Subnet-EVM release: <https://build.avax.network/docs/tooling/avalanche-cli/create-avalanche-l1>
 1. Build and deploy a locally built (and optionally modified) version of Subnet-EVM: <https://build.avax.network/docs/tooling/avalanche-cli/create-deploy-avalanche-l1s/deploy-with-custom-vm>

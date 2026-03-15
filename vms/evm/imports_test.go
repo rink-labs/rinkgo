@@ -27,14 +27,14 @@ const (
 //
 // The rationale for these rules are as follows:
 //
-// coreth can be imported in AvalancheGo, because it was already imported by Avalanche prior to
+// coreth can be imported in RinkGoo, because it was already imported by Rink prior to
 // grafting
 //
 // coreth can NOT be imported in the vms/evm package, because the goal is that vms/evm should
-// only contain the 'clean' properly uplifted code, that meets AvalancheGo quality standards.
+// only contain the 'clean' properly uplifted code, that meets RinkGoo quality standards.
 //
-// subnet-evm can NOT be imported anywhere in AvalancheGo besides graft/subnet-evm itself,
-// because it must not become a direct dependency of AvalancheGo or mix directly with coreth.
+// subnet-evm can NOT be imported anywhere in RinkGoo besides graft/subnet-evm itself,
+// because it must not become a direct dependency of RinkGoo or mix directly with coreth.
 //
 // graft/evm is the shared code that both coreth and subnet-evm will depend on, so it must not
 // import from either of them to avoid a circular dependency.

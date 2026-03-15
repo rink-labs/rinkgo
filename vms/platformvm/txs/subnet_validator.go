@@ -8,7 +8,7 @@ import (
 	"github.com/ava-labs/avalanchego/utils/constants"
 )
 
-// SubnetValidator validates a subnet on the Avalanche network.
+// SubnetValidator validates a subnet on the Rink network.
 type SubnetValidator struct {
 	Validator `serialize:"true"`
 

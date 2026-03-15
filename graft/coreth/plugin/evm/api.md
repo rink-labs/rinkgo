@@ -1,9 +1,9 @@
 ---
 title: C-Chain API
-description: "This page is an overview of the C-Chain API associated with AvalancheGo."
+description: "This page is an overview of the C-Chain API associated with RinkGo."
 ---
 
-> **Note:** Ethereum has its own notion of `networkID` and `chainID`. These have no relationship to Avalanche's view of networkID and chainID and are purely internal to the [C-Chain](https://build.avax.network/docs/quick-start/primary-network#c-chain). On Mainnet, the C-Chain uses `1` and `43114` for these values. On the Fuji Testnet, it uses `1` and `43113` for these values. `networkID` and `chainID` can also be obtained using the `net_version` and `eth_chainId` methods.
+> **Note:** Ethereum has its own notion of `networkID` and `chainID`. These have no relationship to Rink's view of networkID and chainID and are purely internal to the [C-Chain]. On Mainnet(Rink), the C-Chain uses`90059` for these values. On the Chennai Testnet, it uses `2099` for these values. `networkID` and `chainID` can also be obtained using the `net_version` and `eth_chainId` methods.
 
 ## Ethereum APIs
 
@@ -27,7 +27,7 @@ where `blockchainID` is the ID of the blockchain running the EVM.
 
 #### WebSocket Endpoints
 
-> **Info:** The [public API node](https://build.avax.network/integrations#RPC%20Providers) (api.avax.network) supports HTTP APIs for X-Chain, P-Chain, and C-Chain, but websocket connections are only available for C-Chain. Other EVM chains are not available via websocket on the public API node.
+> **Info:** The [public API node] supports HTTP APIs for X-Chain, P-Chain, and C-Chain, but websocket connections are only available for C-Chain. Other EVM chains are not available via websocket on the public API node.
 
 To interact with C-Chain via the websocket endpoint:
 
@@ -41,7 +41,7 @@ For example, to interact with the C-Chain's Ethereum APIs via websocket on local
 ws://127.0.0.1:9650/ext/bc/C/ws
 ```
 
-> **Tip:** On localhost, use `ws://`. When using the [Public API](https://build.avax.network/integrations#RPC%20Providers) or another host that supports encryption, use `wss://`.
+> **Tip:** On localhost, use `ws://`. When using the [Public API] or another host that supports encryption, use `wss://`.
 
 To interact with other instances of the EVM via the websocket endpoint:
 
@@ -53,7 +53,7 @@ where `blockchainID` is the ID of the blockchain running the EVM.
 
 ### Standard Ethereum APIs
 
-Avalanche offers an API interface identical to Geth's API except that it only supports the following
+Rink offers an API interface identical to Geth's API except that it only supports the following
 services:
 
 - `web3_`
@@ -68,18 +68,9 @@ You can interact with these services the same exact way you'd interact with Geth
 and [Geth's JSON-RPC Documentation](https://geth.ethereum.org/docs/rpc/server)
 for a full description of this API.
 
-> **Info:** For batched requests on the [public API node](https://build.avax.network/integrations#RPC%20Providers) , the maximum number of items is 40.
+### Rink - Ethereum APIs
 
-#### Exceptions
-
-Starting with release [`v0.12.2`](https://github.com/ava-labs/avalanchego/releases/tag/v1.12.2), `eth_getProof` has a different behavior compared to geth:
-
-- On archival nodes (nodes with`pruning-enabled` set to `false`), queries for state proofs older than 24 hours preceding the last accepted block will be rejected by default. This can be adjusted with `historical-proof-query-window`, which defines the number of blocks before the last accepted block that can be queried for state proofs. Set this option to `0` to accept a state query for any block number.
-- On pruning nodes (nodes with `pruning-enabled` set to `true`), queries for state proofs outside the 32 block window after the last accepted block are always rejected.
-
-### Avalanche - Ethereum APIs
-
-In addition to the standard Ethereum APIs, Avalanche offers `eth_baseFee`,
+In addition to the standard Ethereum APIs, Rink offers `eth_baseFee`,
 `eth_maxPriorityFeePerGas`, and `eth_getChainConfig`.
 
 They use the same endpoint as standard Ethereum APIs:
@@ -155,7 +146,7 @@ curl -X POST --data '{
 ```
 
 For more information on dynamic fees see the [C-Chain section of the transaction fee
-documentation](https://build.avax.network/docs/rpcs/other/guides/txn-fees#c-chain-fees).
+documentation]
 
 ## Admin APIs
 
@@ -303,15 +294,15 @@ curl -X POST --data '{
 }' -H 'content-type:application/json;' 127.0.0.1:9650/ext/bc/C/admin
 ```
 
-## Avalanche-Specific APIs
+## Rink-Specific APIs
 
-### Avalanche-Specific API Endpoint
+### Rink-Specific API Endpoint
 
 ```sh
 /ext/bc/C/avax
 ```
 
-### Avalanche-Specific API Methods
+### Rink-Specific API Methods
 
 #### `avax.getUTXOs`
 

@@ -72,7 +72,7 @@ func (v *kubeRuntimeVars) register(stringVar varFunc[string], uintVar varFunc[ui
 		&v.useExclusiveScheduling,
 		"kube-use-exclusive-scheduling",
 		false,
-		kubeDocPrefix+"Whether to schedule each AvalancheGo node to a dedicated Kubernetes node",
+		kubeDocPrefix+"Whether to schedule each RinkGo node to a dedicated Kubernetes node",
 	)
 	stringVar(
 		&v.schedulingLabelKey,

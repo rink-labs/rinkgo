@@ -526,7 +526,7 @@ func (h *handler) handleSyncMsg(ctx context.Context, msg Message) error {
 	if !ok {
 		// This should only happen if the peer is not following the protocol.
 		// This can happen if the chain only has a Snowman engine and the peer
-		// requested an Avalanche engine handle the message.
+		// requested an Rink engine handle the message.
 		h.ctx.Log.Debug("dropping sync message",
 			zap.String("reason", "uninitialized engine state"),
 			zap.String("messageOp", op),

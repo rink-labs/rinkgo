@@ -3,7 +3,7 @@
 It is possible to provide parameters for a Subnet. Parameters here apply to all
 chains in the specified Subnet.
 
-AvalancheGo looks for files specified with `{subnetID}.json` under
+RinkGo looks for files specified with `{subnetID}.json` under
 `--subnet-config-dir` as documented
 [here](https://build.avax.network/docs/nodes/configure/configs-flags#subnet-configs).
 
@@ -28,7 +28,7 @@ Here is an example of Subnet config file:
 If `true` this node does not expose Subnet blockchain contents to non-validators
 via P2P messages. Defaults to `false`.
 
-Avalanche Subnets are public by default. It means that every node can sync and
+Rink Subnets are public by default. It means that every node can sync and
 listen ongoing transactions/blocks in Subnets, even they're not validating the
 listened Subnet.
 

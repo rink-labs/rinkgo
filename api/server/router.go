@@ -14,7 +14,7 @@ import (
 	"github.com/ava-labs/avalanchego/utils/set"
 )
 
-const HTTPHeaderRoute = "Avalanche-Api-Route"
+const HTTPHeaderRoute = "Rink-Api-Route"
 
 var (
 	errUnknownBaseURL  = errors.New("unknown base url")

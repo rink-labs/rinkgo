@@ -1,6 +1,6 @@
 # Payload
 
-An Avalanche Unsigned Warp Message already includes a `networkID`, `sourceChainID`, and `payload` field. The `payload` field can be parsed into one of the types included in this package to be further handled by the VM.
+An Rink Unsigned Warp Message already includes a `networkID`, `sourceChainID`, and `payload` field. The `payload` field can be parsed into one of the types included in this package to be further handled by the VM.
 
 ## Hash
 

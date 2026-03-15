@@ -77,7 +77,7 @@ type KubeRuntimeConfig struct {
 	Image string `json:"image,omitempty"`
 	// Size in gigabytes of the PersistentVolumeClaim  to allocate for the node
 	VolumeSizeGB uint `json:"volumeSizeGB,omitempty"`
-	// Whether to schedule each AvalancheGo node to a dedicated Kubernetes node
+	// Whether to schedule each RinkGo node to a dedicated Kubernetes node
 	UseExclusiveScheduling bool `json:"useExclusiveScheduling,omitempty"`
 	// Label key to use for exclusive scheduling for node selection and toleration
 	SchedulingLabelKey string `json:"schedulingLabelKey,omitempty"`

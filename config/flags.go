@@ -33,8 +33,8 @@ const (
 	DefaultHTTPPort    = 9650
 	DefaultStakingPort = 9651
 
-	AvalancheGoDataDirVar    = "AVALANCHEGO_DATA_DIR"
-	defaultUnexpandedDataDir = "$" + AvalancheGoDataDirVar
+	RinkGoDataDirVar         = "AVALANCHEGO_DATA_DIR"
+	defaultUnexpandedDataDir = "$" + RinkGoDataDirVar
 
 	DefaultProcessContextFilename = "process.json"
 )
@@ -391,14 +391,14 @@ func BuildFlagSet() *pflag.FlagSet {
 }
 
 // getExpandedArg gets the string in viper corresponding to [key] and expands
-// any variables using the OS env. If the [AvalancheGoDataDirVar] var is used,
+// any variables using the OS env. If the [RinkGoDataDirVar] var is used,
 // we expand the value of the variable with the string in viper corresponding to
 // [DataDirKey].
 func getExpandedArg(v *viper.Viper, key string) string {
 	return os.Expand(
 		v.GetString(key),
 		func(strVar string) string {
-			if strVar == AvalancheGoDataDirVar {
+			if strVar == RinkGoDataDirVar {
 				return os.ExpandEnv(v.GetString(DataDirKey))
 			}
 			return os.Getenv(strVar)
