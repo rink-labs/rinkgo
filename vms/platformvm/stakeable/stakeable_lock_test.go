@@ -10,8 +10,8 @@ import (
 	"github.com/stretchr/testify/require"
 	"go.uber.org/mock/gomock"
 
-	"github.com/ava-labs/avalanchego/vms/components/avax"
-	"github.com/ava-labs/avalanchego/vms/components/avax/avaxmock"
+	"github.com/rink-labs/rinkgo/vms/components/avax"
+	"github.com/rink-labs/rinkgo/vms/components/avax/avaxmock"
 )
 
 var errTest = errors.New("hi mom")

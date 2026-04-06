@@ -11,11 +11,11 @@ import (
 	"github.com/stretchr/testify/require"
 	"go.uber.org/mock/gomock"
 
-	"github.com/ava-labs/avalanchego/ids"
-	"github.com/ava-labs/avalanchego/utils/crypto/bls/signer/localsigner"
-	"github.com/ava-labs/avalanchego/vms/platformvm/signer"
-	"github.com/ava-labs/avalanchego/vms/platformvm/signer/signermock"
-	"github.com/ava-labs/avalanchego/vms/platformvm/txs"
+	"github.com/rink-labs/rinkgo/ids"
+	"github.com/rink-labs/rinkgo/utils/crypto/bls/signer/localsigner"
+	"github.com/rink-labs/rinkgo/vms/platformvm/signer"
+	"github.com/rink-labs/rinkgo/vms/platformvm/signer/signermock"
+	"github.com/rink-labs/rinkgo/vms/platformvm/txs"
 )
 
 var errCustom = errors.New("custom")

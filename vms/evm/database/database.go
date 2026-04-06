@@ -8,7 +8,7 @@ import (
 
 	"github.com/ava-labs/libevm/ethdb"
 
-	avalanchegodb "github.com/ava-labs/avalanchego/database"
+	avalanchegodb "github.com/rink-labs/rinkgo/database"
 )
 
 var (

@@ -16,8 +16,8 @@ import (
 	"github.com/stretchr/testify/require"
 	"go.uber.org/goleak"
 
-	"github.com/ava-labs/avalanchego/utils/set"
-	"github.com/ava-labs/avalanchego/vms/evm/sync/customrawdb"
+	"github.com/rink-labs/rinkgo/utils/set"
+	"github.com/rink-labs/rinkgo/vms/evm/sync/customrawdb"
 )
 
 func TestCodeQueue(t *testing.T) {

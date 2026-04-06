@@ -9,12 +9,12 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/ava-labs/avalanchego/codec/linearcodec"
-	"github.com/ava-labs/avalanchego/ids"
-	"github.com/ava-labs/avalanchego/utils/crypto/secp256k1"
-	"github.com/ava-labs/avalanchego/utils/hashing"
-	"github.com/ava-labs/avalanchego/utils/logging"
-	"github.com/ava-labs/avalanchego/vms/secp256k1fx"
+	"github.com/rink-labs/rinkgo/codec/linearcodec"
+	"github.com/rink-labs/rinkgo/ids"
+	"github.com/rink-labs/rinkgo/utils/crypto/secp256k1"
+	"github.com/rink-labs/rinkgo/utils/hashing"
+	"github.com/rink-labs/rinkgo/utils/logging"
+	"github.com/rink-labs/rinkgo/vms/secp256k1fx"
 )
 
 var (

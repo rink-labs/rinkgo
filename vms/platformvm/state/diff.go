@@ -8,14 +8,14 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/ava-labs/avalanchego/database"
-	"github.com/ava-labs/avalanchego/ids"
-	"github.com/ava-labs/avalanchego/utils/iterator"
-	"github.com/ava-labs/avalanchego/vms/components/avax"
-	"github.com/ava-labs/avalanchego/vms/components/gas"
-	"github.com/ava-labs/avalanchego/vms/platformvm/fx"
-	"github.com/ava-labs/avalanchego/vms/platformvm/status"
-	"github.com/ava-labs/avalanchego/vms/platformvm/txs"
+	"github.com/rink-labs/rinkgo/database"
+	"github.com/rink-labs/rinkgo/ids"
+	"github.com/rink-labs/rinkgo/utils/iterator"
+	"github.com/rink-labs/rinkgo/vms/components/avax"
+	"github.com/rink-labs/rinkgo/vms/components/gas"
+	"github.com/rink-labs/rinkgo/vms/platformvm/fx"
+	"github.com/rink-labs/rinkgo/vms/platformvm/status"
+	"github.com/rink-labs/rinkgo/vms/platformvm/txs"
 )
 
 var (

@@ -12,13 +12,13 @@ import (
 	"github.com/stretchr/testify/require"
 	"go.uber.org/mock/gomock"
 
-	"github.com/ava-labs/avalanchego/ids"
-	"github.com/ava-labs/avalanchego/message"
-	"github.com/ava-labs/avalanchego/snow/consensus/snowman/snowmantest"
-	"github.com/ava-labs/avalanchego/snow/engine/common"
-	"github.com/ava-labs/avalanchego/snow/networking/sender/sendermock"
-	"github.com/ava-labs/avalanchego/utils/constants"
-	"github.com/ava-labs/avalanchego/utils/set"
+	"github.com/rink-labs/rinkgo/ids"
+	"github.com/rink-labs/rinkgo/message"
+	"github.com/rink-labs/rinkgo/snow/consensus/snowman/snowmantest"
+	"github.com/rink-labs/rinkgo/snow/engine/common"
+	"github.com/rink-labs/rinkgo/snow/networking/sender/sendermock"
+	"github.com/rink-labs/rinkgo/utils/constants"
+	"github.com/rink-labs/rinkgo/utils/set"
 )
 
 var testSimplexMessage = simplex.Message{

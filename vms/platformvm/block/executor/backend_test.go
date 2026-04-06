@@ -10,10 +10,10 @@ import (
 	"github.com/stretchr/testify/require"
 	"go.uber.org/mock/gomock"
 
-	"github.com/ava-labs/avalanchego/database"
-	"github.com/ava-labs/avalanchego/ids"
-	"github.com/ava-labs/avalanchego/vms/platformvm/block"
-	"github.com/ava-labs/avalanchego/vms/platformvm/state"
+	"github.com/rink-labs/rinkgo/database"
+	"github.com/rink-labs/rinkgo/ids"
+	"github.com/rink-labs/rinkgo/vms/platformvm/block"
+	"github.com/rink-labs/rinkgo/vms/platformvm/state"
 )
 
 func TestGetState(t *testing.T) {

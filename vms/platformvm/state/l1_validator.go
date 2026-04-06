@@ -10,16 +10,16 @@ import (
 
 	"github.com/google/btree"
 
-	"github.com/ava-labs/avalanchego/cache"
-	"github.com/ava-labs/avalanchego/database"
-	"github.com/ava-labs/avalanchego/ids"
-	"github.com/ava-labs/avalanchego/snow/validators"
-	"github.com/ava-labs/avalanchego/utils"
-	"github.com/ava-labs/avalanchego/utils/crypto/bls"
-	"github.com/ava-labs/avalanchego/utils/iterator"
-	"github.com/ava-labs/avalanchego/utils/math"
-	"github.com/ava-labs/avalanchego/utils/maybe"
-	"github.com/ava-labs/avalanchego/vms/platformvm/block"
+	"github.com/rink-labs/rinkgo/cache"
+	"github.com/rink-labs/rinkgo/database"
+	"github.com/rink-labs/rinkgo/ids"
+	"github.com/rink-labs/rinkgo/snow/validators"
+	"github.com/rink-labs/rinkgo/utils"
+	"github.com/rink-labs/rinkgo/utils/crypto/bls"
+	"github.com/rink-labs/rinkgo/utils/iterator"
+	"github.com/rink-labs/rinkgo/utils/math"
+	"github.com/rink-labs/rinkgo/utils/maybe"
+	"github.com/rink-labs/rinkgo/vms/platformvm/block"
 )
 
 var (

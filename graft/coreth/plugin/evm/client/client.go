@@ -10,14 +10,14 @@ import (
 
 	"golang.org/x/exp/slog"
 
-	"github.com/ava-labs/avalanchego/api"
-	"github.com/ava-labs/avalanchego/graft/coreth/plugin/evm/atomic"
-	"github.com/ava-labs/avalanchego/graft/coreth/plugin/evm/config"
-	"github.com/ava-labs/avalanchego/ids"
-	"github.com/ava-labs/avalanchego/utils/formatting"
-	"github.com/ava-labs/avalanchego/utils/formatting/address"
-	"github.com/ava-labs/avalanchego/utils/json"
-	"github.com/ava-labs/avalanchego/utils/rpc"
+	"github.com/rink-labs/rinkgo/api"
+	"github.com/rink-labs/rinkgo/graft/coreth/plugin/evm/atomic"
+	"github.com/rink-labs/rinkgo/graft/coreth/plugin/evm/config"
+	"github.com/rink-labs/rinkgo/ids"
+	"github.com/rink-labs/rinkgo/utils/formatting"
+	"github.com/rink-labs/rinkgo/utils/formatting/address"
+	"github.com/rink-labs/rinkgo/utils/json"
+	"github.com/rink-labs/rinkgo/utils/rpc"
 )
 
 // Interface compliance

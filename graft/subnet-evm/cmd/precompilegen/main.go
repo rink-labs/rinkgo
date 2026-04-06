@@ -36,9 +36,9 @@ import (
 
 	_ "embed"
 
-	"github.com/ava-labs/avalanchego/graft/subnet-evm/accounts/abi/bind"
-	"github.com/ava-labs/avalanchego/graft/subnet-evm/accounts/abi/bind/precompilebind"
-	"github.com/ava-labs/avalanchego/graft/subnet-evm/internal/flags"
+	"github.com/rink-labs/rinkgo/graft/subnet-evm/accounts/abi/bind"
+	"github.com/rink-labs/rinkgo/graft/subnet-evm/accounts/abi/bind/precompilebind"
+	"github.com/rink-labs/rinkgo/graft/subnet-evm/internal/flags"
 	"github.com/ava-labs/libevm/cmd/utils"
 	"github.com/ava-labs/libevm/log"
 	"github.com/urfave/cli/v2"

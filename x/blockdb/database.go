@@ -19,12 +19,12 @@ import (
 	"github.com/cespare/xxhash/v2"
 	"go.uber.org/zap"
 
-	"github.com/ava-labs/avalanchego/cache/lru"
-	"github.com/ava-labs/avalanchego/database"
-	"github.com/ava-labs/avalanchego/utils/compression"
-	"github.com/ava-labs/avalanchego/utils/logging"
+	"github.com/rink-labs/rinkgo/cache/lru"
+	"github.com/rink-labs/rinkgo/database"
+	"github.com/rink-labs/rinkgo/utils/compression"
+	"github.com/rink-labs/rinkgo/utils/logging"
 
-	safemath "github.com/ava-labs/avalanchego/utils/math"
+	safemath "github.com/rink-labs/rinkgo/utils/math"
 )
 
 const (

@@ -9,12 +9,12 @@ import (
 	"github.com/holiman/uint256"
 	"github.com/stretchr/testify/require"
 
-	"github.com/ava-labs/avalanchego/graft/coreth/plugin/evm/upgrade/ap5"
-	"github.com/ava-labs/avalanchego/ids"
-	"github.com/ava-labs/avalanchego/utils/math"
-	"github.com/ava-labs/avalanchego/utils/units"
-	"github.com/ava-labs/avalanchego/vms/components/avax"
-	"github.com/ava-labs/avalanchego/vms/secp256k1fx"
+	"github.com/rink-labs/rinkgo/graft/coreth/plugin/evm/upgrade/ap5"
+	"github.com/rink-labs/rinkgo/ids"
+	"github.com/rink-labs/rinkgo/utils/math"
+	"github.com/rink-labs/rinkgo/utils/units"
+	"github.com/rink-labs/rinkgo/vms/components/avax"
+	"github.com/rink-labs/rinkgo/vms/secp256k1fx"
 )
 
 func TestEffectiveGasPrice(t *testing.T) {

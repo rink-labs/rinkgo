@@ -4,11 +4,11 @@
 package txstest
 
 import (
-	"github.com/ava-labs/avalanchego/snow"
-	"github.com/ava-labs/avalanchego/vms/components/gas"
-	"github.com/ava-labs/avalanchego/vms/platformvm/config"
-	"github.com/ava-labs/avalanchego/vms/platformvm/state"
-	"github.com/ava-labs/avalanchego/wallet/chain/p/builder"
+	"github.com/rink-labs/rinkgo/snow"
+	"github.com/rink-labs/rinkgo/vms/components/gas"
+	"github.com/rink-labs/rinkgo/vms/platformvm/config"
+	"github.com/rink-labs/rinkgo/vms/platformvm/state"
+	"github.com/rink-labs/rinkgo/wallet/chain/p/builder"
 )
 
 func newContext(

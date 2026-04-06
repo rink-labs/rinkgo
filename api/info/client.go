@@ -8,10 +8,10 @@ import (
 	"net/netip"
 	"time"
 
-	"github.com/ava-labs/avalanchego/ids"
-	"github.com/ava-labs/avalanchego/upgrade"
-	"github.com/ava-labs/avalanchego/utils/rpc"
-	"github.com/ava-labs/avalanchego/vms/platformvm/signer"
+	"github.com/rink-labs/rinkgo/ids"
+	"github.com/rink-labs/rinkgo/upgrade"
+	"github.com/rink-labs/rinkgo/utils/rpc"
+	"github.com/rink-labs/rinkgo/vms/platformvm/signer"
 )
 
 type Client struct {

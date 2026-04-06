@@ -6,9 +6,9 @@ package gossip
 import (
 	"google.golang.org/protobuf/proto"
 
-	"github.com/ava-labs/avalanchego/ids"
-	"github.com/ava-labs/avalanchego/proto/pb/sdk"
-	"github.com/ava-labs/avalanchego/utils/bloom"
+	"github.com/rink-labs/rinkgo/ids"
+	"github.com/rink-labs/rinkgo/proto/pb/sdk"
+	"github.com/rink-labs/rinkgo/utils/bloom"
 )
 
 func MarshalAppRequest(filter, salt []byte) ([]byte, error) {

@@ -8,19 +8,19 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/ava-labs/avalanchego/ids"
-	"github.com/ava-labs/avalanchego/snow/consensus/snowman"
-	"github.com/ava-labs/avalanchego/utils/set"
-	"github.com/ava-labs/avalanchego/vms/platformvm/block"
-	"github.com/ava-labs/avalanchego/vms/platformvm/metrics"
-	"github.com/ava-labs/avalanchego/vms/platformvm/state"
-	"github.com/ava-labs/avalanchego/vms/platformvm/txs"
-	"github.com/ava-labs/avalanchego/vms/platformvm/txs/executor"
-	"github.com/ava-labs/avalanchego/vms/platformvm/txs/fee"
-	"github.com/ava-labs/avalanchego/vms/platformvm/txs/mempool"
-	"github.com/ava-labs/avalanchego/vms/platformvm/validators"
+	"github.com/rink-labs/rinkgo/ids"
+	"github.com/rink-labs/rinkgo/snow/consensus/snowman"
+	"github.com/rink-labs/rinkgo/utils/set"
+	"github.com/rink-labs/rinkgo/vms/platformvm/block"
+	"github.com/rink-labs/rinkgo/vms/platformvm/metrics"
+	"github.com/rink-labs/rinkgo/vms/platformvm/state"
+	"github.com/rink-labs/rinkgo/vms/platformvm/txs"
+	"github.com/rink-labs/rinkgo/vms/platformvm/txs/executor"
+	"github.com/rink-labs/rinkgo/vms/platformvm/txs/fee"
+	"github.com/rink-labs/rinkgo/vms/platformvm/txs/mempool"
+	"github.com/rink-labs/rinkgo/vms/platformvm/validators"
 
-	snowmanblock "github.com/ava-labs/avalanchego/snow/engine/snowman/block"
+	snowmanblock "github.com/rink-labs/rinkgo/snow/engine/snowman/block"
 )
 
 var (

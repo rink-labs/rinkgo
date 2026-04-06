@@ -12,14 +12,14 @@ import (
 	"go.uber.org/zap"
 	"google.golang.org/protobuf/proto"
 
-	"github.com/ava-labs/avalanchego/ids"
-	"github.com/ava-labs/avalanchego/network/p2p"
-	"github.com/ava-labs/avalanchego/proto/pb/sdk"
-	"github.com/ava-labs/avalanchego/snow/validators"
-	"github.com/ava-labs/avalanchego/utils/crypto/bls"
-	"github.com/ava-labs/avalanchego/utils/logging"
-	"github.com/ava-labs/avalanchego/utils/set"
-	"github.com/ava-labs/avalanchego/vms/platformvm/warp"
+	"github.com/rink-labs/rinkgo/ids"
+	"github.com/rink-labs/rinkgo/network/p2p"
+	"github.com/rink-labs/rinkgo/proto/pb/sdk"
+	"github.com/rink-labs/rinkgo/snow/validators"
+	"github.com/rink-labs/rinkgo/utils/crypto/bls"
+	"github.com/rink-labs/rinkgo/utils/logging"
+	"github.com/rink-labs/rinkgo/utils/set"
+	"github.com/rink-labs/rinkgo/vms/platformvm/warp"
 )
 
 var errFailedVerification = errors.New("failed verification")

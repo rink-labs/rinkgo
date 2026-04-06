@@ -7,9 +7,9 @@ import (
 	"sync"
 	"time"
 
-	"github.com/ava-labs/avalanchego/utils"
-	"github.com/ava-labs/avalanchego/utils/buffer"
-	"github.com/ava-labs/avalanchego/utils/timer/mockable"
+	"github.com/rink-labs/rinkgo/utils"
+	"github.com/rink-labs/rinkgo/utils/buffer"
+	"github.com/rink-labs/rinkgo/utils/timer/mockable"
 )
 
 var _ Window[struct{}] = (*window[struct{}])(nil)

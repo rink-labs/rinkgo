@@ -8,14 +8,14 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/ava-labs/avalanchego/database/memdb"
-	"github.com/ava-labs/avalanchego/database/versiondb"
-	"github.com/ava-labs/avalanchego/ids"
-	"github.com/ava-labs/avalanchego/snow/snowtest"
-	"github.com/ava-labs/avalanchego/utils"
-	"github.com/ava-labs/avalanchego/utils/logging"
-	"github.com/ava-labs/avalanchego/utils/set"
-	"github.com/ava-labs/avalanchego/utils/timer/mockable"
+	"github.com/rink-labs/rinkgo/database/memdb"
+	"github.com/rink-labs/rinkgo/database/versiondb"
+	"github.com/rink-labs/rinkgo/ids"
+	"github.com/rink-labs/rinkgo/snow/snowtest"
+	"github.com/rink-labs/rinkgo/utils"
+	"github.com/rink-labs/rinkgo/utils/logging"
+	"github.com/rink-labs/rinkgo/utils/set"
+	"github.com/rink-labs/rinkgo/utils/timer/mockable"
 )
 
 func TestIndex(t *testing.T) {

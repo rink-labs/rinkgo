@@ -12,19 +12,19 @@ import (
 	"github.com/prometheus/client_golang/prometheus"
 	"google.golang.org/protobuf/proto"
 
-	"github.com/ava-labs/avalanchego/api/info"
-	"github.com/ava-labs/avalanchego/graft/subnet-evm/warp/messages"
-	"github.com/ava-labs/avalanchego/ids"
-	"github.com/ava-labs/avalanchego/network/p2p"
-	"github.com/ava-labs/avalanchego/network/peer"
-	"github.com/ava-labs/avalanchego/proto/pb/sdk"
-	"github.com/ava-labs/avalanchego/snow/networking/router"
-	"github.com/ava-labs/avalanchego/utils/compression"
-	"github.com/ava-labs/avalanchego/vms/platformvm/warp"
-	"github.com/ava-labs/avalanchego/vms/platformvm/warp/payload"
-	"github.com/ava-labs/avalanchego/wallet/subnet/primary"
+	"github.com/rink-labs/rinkgo/api/info"
+	"github.com/rink-labs/rinkgo/graft/subnet-evm/warp/messages"
+	"github.com/rink-labs/rinkgo/ids"
+	"github.com/rink-labs/rinkgo/network/p2p"
+	"github.com/rink-labs/rinkgo/network/peer"
+	"github.com/rink-labs/rinkgo/proto/pb/sdk"
+	"github.com/rink-labs/rinkgo/snow/networking/router"
+	"github.com/rink-labs/rinkgo/utils/compression"
+	"github.com/rink-labs/rinkgo/vms/platformvm/warp"
+	"github.com/rink-labs/rinkgo/vms/platformvm/warp/payload"
+	"github.com/rink-labs/rinkgo/wallet/subnet/primary"
 
-	p2pmessage "github.com/ava-labs/avalanchego/message"
+	p2pmessage "github.com/rink-labs/rinkgo/message"
 )
 
 // An example application demonstrating how to request a signature for

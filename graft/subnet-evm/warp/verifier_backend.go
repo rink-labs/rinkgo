@@ -7,12 +7,12 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/ava-labs/avalanchego/database"
-	"github.com/ava-labs/avalanchego/graft/subnet-evm/warp/messages"
-	"github.com/ava-labs/avalanchego/snow/engine/common"
-	"github.com/ava-labs/avalanchego/vms/platformvm/warp/payload"
+	"github.com/rink-labs/rinkgo/database"
+	"github.com/rink-labs/rinkgo/graft/subnet-evm/warp/messages"
+	"github.com/rink-labs/rinkgo/snow/engine/common"
+	"github.com/rink-labs/rinkgo/vms/platformvm/warp/payload"
 
-	avalancheWarp "github.com/ava-labs/avalanchego/vms/platformvm/warp"
+	avalancheWarp "github.com/rink-labs/rinkgo/vms/platformvm/warp"
 )
 
 const (

@@ -10,9 +10,9 @@ import (
 	"github.com/ava-labs/libevm/common/math"
 	"github.com/ava-labs/libevm/core/vm"
 
-	"github.com/ava-labs/avalanchego/graft/subnet-evm/precompile/contract"
-	"github.com/ava-labs/avalanchego/vms/platformvm/warp"
-	"github.com/ava-labs/avalanchego/vms/platformvm/warp/payload"
+	"github.com/rink-labs/rinkgo/graft/subnet-evm/precompile/contract"
+	"github.com/rink-labs/rinkgo/vms/platformvm/warp"
+	"github.com/rink-labs/rinkgo/vms/platformvm/warp/payload"
 )
 
 var (

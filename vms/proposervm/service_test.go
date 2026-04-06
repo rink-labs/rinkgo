@@ -12,11 +12,11 @@ import (
 	"connectrpc.com/connect"
 	"github.com/stretchr/testify/require"
 
-	"github.com/ava-labs/avalanchego/api"
-	"github.com/ava-labs/avalanchego/api/connectclient"
-	"github.com/ava-labs/avalanchego/connectproto/pb/proposervm"
-	"github.com/ava-labs/avalanchego/connectproto/pb/proposervm/proposervmconnect"
-	"github.com/ava-labs/avalanchego/upgrade/upgradetest"
+	"github.com/rink-labs/rinkgo/api"
+	"github.com/rink-labs/rinkgo/api/connectclient"
+	"github.com/rink-labs/rinkgo/connectproto/pb/proposervm"
+	"github.com/rink-labs/rinkgo/connectproto/pb/proposervm/proposervmconnect"
+	"github.com/rink-labs/rinkgo/upgrade/upgradetest"
 )
 
 func TestConnectRPCService_GetProposedHeight(t *testing.T) {

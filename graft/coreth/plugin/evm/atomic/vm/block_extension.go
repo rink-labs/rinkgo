@@ -10,15 +10,15 @@ import (
 	"github.com/ava-labs/libevm/common"
 	"github.com/ava-labs/libevm/log"
 
-	"github.com/ava-labs/avalanchego/database"
-	"github.com/ava-labs/avalanchego/graft/coreth/params/extras"
-	"github.com/ava-labs/avalanchego/graft/coreth/plugin/evm/atomic"
-	"github.com/ava-labs/avalanchego/graft/coreth/plugin/evm/customtypes"
-	"github.com/ava-labs/avalanchego/graft/coreth/plugin/evm/extension"
-	"github.com/ava-labs/avalanchego/graft/coreth/plugin/evm/upgrade/ap5"
-	"github.com/ava-labs/avalanchego/graft/coreth/utils"
+	"github.com/rink-labs/rinkgo/database"
+	"github.com/rink-labs/rinkgo/graft/coreth/params/extras"
+	"github.com/rink-labs/rinkgo/graft/coreth/plugin/evm/atomic"
+	"github.com/rink-labs/rinkgo/graft/coreth/plugin/evm/customtypes"
+	"github.com/rink-labs/rinkgo/graft/coreth/plugin/evm/extension"
+	"github.com/rink-labs/rinkgo/graft/coreth/plugin/evm/upgrade/ap5"
+	"github.com/rink-labs/rinkgo/graft/coreth/utils"
 
-	safemath "github.com/ava-labs/avalanchego/utils/math"
+	safemath "github.com/rink-labs/rinkgo/utils/math"
 )
 
 var (

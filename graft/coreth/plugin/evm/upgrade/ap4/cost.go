@@ -8,9 +8,9 @@ package ap4
 import (
 	"math"
 
-	"github.com/ava-labs/avalanchego/graft/coreth/utils"
+	"github.com/rink-labs/rinkgo/graft/coreth/utils"
 
-	safemath "github.com/ava-labs/avalanchego/utils/math"
+	safemath "github.com/rink-labs/rinkgo/utils/math"
 )
 
 const (

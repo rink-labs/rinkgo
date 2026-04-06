@@ -15,13 +15,13 @@ import (
 	"github.com/ava-labs/libevm/log"
 	"github.com/prometheus/client_golang/prometheus"
 
-	"github.com/ava-labs/avalanchego/graft/subnet-evm/core"
-	"github.com/ava-labs/avalanchego/graft/subnet-evm/core/txpool"
-	"github.com/ava-labs/avalanchego/graft/subnet-evm/eth"
-	"github.com/ava-labs/avalanchego/graft/subnet-evm/plugin/evm/config"
-	"github.com/ava-labs/avalanchego/ids"
-	"github.com/ava-labs/avalanchego/network/p2p/gossip"
-	"github.com/ava-labs/avalanchego/utils/bloom"
+	"github.com/rink-labs/rinkgo/graft/subnet-evm/core"
+	"github.com/rink-labs/rinkgo/graft/subnet-evm/core/txpool"
+	"github.com/rink-labs/rinkgo/graft/subnet-evm/eth"
+	"github.com/rink-labs/rinkgo/graft/subnet-evm/plugin/evm/config"
+	"github.com/rink-labs/rinkgo/ids"
+	"github.com/rink-labs/rinkgo/network/p2p/gossip"
+	"github.com/rink-labs/rinkgo/utils/bloom"
 
 	ethcommon "github.com/ava-labs/libevm/common"
 )

@@ -10,12 +10,12 @@ import (
 
 	"golang.org/x/exp/maps"
 
-	"github.com/ava-labs/avalanchego/ids"
-	"github.com/ava-labs/avalanchego/utils/buffer"
-	"github.com/ava-labs/avalanchego/utils/heap"
-	"github.com/ava-labs/avalanchego/utils/maybe"
+	"github.com/rink-labs/rinkgo/ids"
+	"github.com/rink-labs/rinkgo/utils/buffer"
+	"github.com/rink-labs/rinkgo/utils/heap"
+	"github.com/rink-labs/rinkgo/utils/maybe"
 
-	xsync "github.com/ava-labs/avalanchego/x/sync"
+	xsync "github.com/rink-labs/rinkgo/x/sync"
 )
 
 // stores previous trie states

@@ -9,9 +9,9 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/ava-labs/avalanchego/ids"
-	"github.com/ava-labs/avalanchego/utils/iterator"
-	"github.com/ava-labs/avalanchego/vms/platformvm/txs"
+	"github.com/rink-labs/rinkgo/ids"
+	"github.com/rink-labs/rinkgo/utils/iterator"
+	"github.com/rink-labs/rinkgo/vms/platformvm/txs"
 )
 
 func TestStakerDiffIterator(t *testing.T) {

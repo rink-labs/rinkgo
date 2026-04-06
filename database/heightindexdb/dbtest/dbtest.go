@@ -9,7 +9,7 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/ava-labs/avalanchego/database"
+	"github.com/rink-labs/rinkgo/database"
 )
 
 // Tests is a list of all database tests

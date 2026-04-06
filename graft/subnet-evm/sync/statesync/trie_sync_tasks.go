@@ -14,7 +14,7 @@ import (
 	"github.com/ava-labs/libevm/rlp"
 	"github.com/ava-labs/libevm/trie"
 
-	"github.com/ava-labs/avalanchego/graft/subnet-evm/sync/syncutils"
+	"github.com/rink-labs/rinkgo/graft/subnet-evm/sync/syncutils"
 )
 
 var (

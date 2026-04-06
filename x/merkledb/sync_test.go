@@ -14,15 +14,15 @@ import (
 	"github.com/prometheus/client_golang/prometheus"
 	"github.com/stretchr/testify/require"
 
-	"github.com/ava-labs/avalanchego/database/memdb"
-	"github.com/ava-labs/avalanchego/ids"
-	"github.com/ava-labs/avalanchego/network/p2p"
-	"github.com/ava-labs/avalanchego/network/p2p/p2ptest"
-	"github.com/ava-labs/avalanchego/snow/engine/common"
-	"github.com/ava-labs/avalanchego/utils/logging"
-	"github.com/ava-labs/avalanchego/utils/maybe"
+	"github.com/rink-labs/rinkgo/database/memdb"
+	"github.com/rink-labs/rinkgo/ids"
+	"github.com/rink-labs/rinkgo/network/p2p"
+	"github.com/rink-labs/rinkgo/network/p2p/p2ptest"
+	"github.com/rink-labs/rinkgo/snow/engine/common"
+	"github.com/rink-labs/rinkgo/utils/logging"
+	"github.com/rink-labs/rinkgo/utils/maybe"
 
-	xsync "github.com/ava-labs/avalanchego/x/sync"
+	xsync "github.com/rink-labs/rinkgo/x/sync"
 )
 
 var (

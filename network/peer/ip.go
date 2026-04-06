@@ -12,10 +12,10 @@ import (
 	"net/netip"
 	"time"
 
-	"github.com/ava-labs/avalanchego/staking"
-	"github.com/ava-labs/avalanchego/utils/crypto/bls"
-	"github.com/ava-labs/avalanchego/utils/hashing"
-	"github.com/ava-labs/avalanchego/utils/wrappers"
+	"github.com/rink-labs/rinkgo/staking"
+	"github.com/rink-labs/rinkgo/utils/crypto/bls"
+	"github.com/rink-labs/rinkgo/utils/hashing"
+	"github.com/rink-labs/rinkgo/utils/wrappers"
 )
 
 var (

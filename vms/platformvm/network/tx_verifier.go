@@ -6,7 +6,7 @@ package network
 import (
 	"sync"
 
-	"github.com/ava-labs/avalanchego/vms/platformvm/txs"
+	"github.com/rink-labs/rinkgo/vms/platformvm/txs"
 )
 
 var _ TxVerifier = (*LockedTxVerifier)(nil)

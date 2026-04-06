@@ -9,14 +9,14 @@ import (
 
 	"github.com/prometheus/client_golang/prometheus"
 
-	"github.com/ava-labs/avalanchego/database/versiondb"
-	"github.com/ava-labs/avalanchego/graft/coreth/eth"
-	"github.com/ava-labs/avalanchego/graft/coreth/params"
-	"github.com/ava-labs/avalanchego/graft/coreth/plugin/evm/config"
-	"github.com/ava-labs/avalanchego/graft/coreth/plugin/evm/extension"
-	"github.com/ava-labs/avalanchego/graft/coreth/plugin/evm/vmsync"
-	"github.com/ava-labs/avalanchego/ids"
-	"github.com/ava-labs/avalanchego/network/p2p"
+	"github.com/rink-labs/rinkgo/database/versiondb"
+	"github.com/rink-labs/rinkgo/graft/coreth/eth"
+	"github.com/rink-labs/rinkgo/graft/coreth/params"
+	"github.com/rink-labs/rinkgo/graft/coreth/plugin/evm/config"
+	"github.com/rink-labs/rinkgo/graft/coreth/plugin/evm/extension"
+	"github.com/rink-labs/rinkgo/graft/coreth/plugin/evm/vmsync"
+	"github.com/rink-labs/rinkgo/ids"
+	"github.com/rink-labs/rinkgo/network/p2p"
 )
 
 var _ extension.InnerVM = (*VM)(nil)

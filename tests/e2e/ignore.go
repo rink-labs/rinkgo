@@ -9,5 +9,5 @@ package e2e
 // ```
 // Failed to compile e2e:
 //
-// github.com/ava-labs/avalanchego/tests/e2e: no non-test Go files in /path/to/avalanchego/tests/e2e
+// github.com/rink-labs/rinkgo/tests/e2e: no non-test Go files in /path/to/avalanchego/tests/e2e
 // ```

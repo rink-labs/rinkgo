@@ -12,19 +12,19 @@ import (
 
 	"go.uber.org/zap"
 
-	"github.com/ava-labs/avalanchego/api"
-	"github.com/ava-labs/avalanchego/database"
-	"github.com/ava-labs/avalanchego/ids"
-	"github.com/ava-labs/avalanchego/snow/choices"
-	"github.com/ava-labs/avalanchego/utils/formatting"
-	"github.com/ava-labs/avalanchego/utils/logging"
-	"github.com/ava-labs/avalanchego/utils/set"
-	"github.com/ava-labs/avalanchego/vms/avm/txs"
-	"github.com/ava-labs/avalanchego/vms/components/avax"
-	"github.com/ava-labs/avalanchego/vms/secp256k1fx"
+	"github.com/rink-labs/rinkgo/api"
+	"github.com/rink-labs/rinkgo/database"
+	"github.com/rink-labs/rinkgo/ids"
+	"github.com/rink-labs/rinkgo/snow/choices"
+	"github.com/rink-labs/rinkgo/utils/formatting"
+	"github.com/rink-labs/rinkgo/utils/logging"
+	"github.com/rink-labs/rinkgo/utils/set"
+	"github.com/rink-labs/rinkgo/vms/avm/txs"
+	"github.com/rink-labs/rinkgo/vms/components/avax"
+	"github.com/rink-labs/rinkgo/vms/secp256k1fx"
 
-	avajson "github.com/ava-labs/avalanchego/utils/json"
-	safemath "github.com/ava-labs/avalanchego/utils/math"
+	avajson "github.com/rink-labs/rinkgo/utils/json"
+	safemath "github.com/rink-labs/rinkgo/utils/math"
 )
 
 const (

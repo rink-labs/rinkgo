@@ -9,7 +9,7 @@ import (
 	"net"
 	"net/netip"
 
-	"github.com/ava-labs/avalanchego/network/dialer"
+	"github.com/rink-labs/rinkgo/network/dialer"
 )
 
 var (

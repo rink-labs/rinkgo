@@ -6,17 +6,17 @@ package atomictest
 import (
 	"math/rand"
 
-	"github.com/ava-labs/avalanchego/codec"
-	"github.com/ava-labs/avalanchego/codec/linearcodec"
-	"github.com/ava-labs/avalanchego/graft/coreth/params/extras"
-	"github.com/ava-labs/avalanchego/graft/coreth/plugin/evm/atomic"
-	"github.com/ava-labs/avalanchego/ids"
-	"github.com/ava-labs/avalanchego/snow"
-	"github.com/ava-labs/avalanchego/utils"
-	"github.com/ava-labs/avalanchego/utils/set"
-	"github.com/ava-labs/avalanchego/utils/wrappers"
+	"github.com/rink-labs/rinkgo/codec"
+	"github.com/rink-labs/rinkgo/codec/linearcodec"
+	"github.com/rink-labs/rinkgo/graft/coreth/params/extras"
+	"github.com/rink-labs/rinkgo/graft/coreth/plugin/evm/atomic"
+	"github.com/rink-labs/rinkgo/ids"
+	"github.com/rink-labs/rinkgo/snow"
+	"github.com/rink-labs/rinkgo/utils"
+	"github.com/rink-labs/rinkgo/utils/set"
+	"github.com/rink-labs/rinkgo/utils/wrappers"
 
-	avalancheatomic "github.com/ava-labs/avalanchego/chains/atomic"
+	avalancheatomic "github.com/rink-labs/rinkgo/chains/atomic"
 )
 
 // TODO: Remove this and use actual codec and transactions (export, import)

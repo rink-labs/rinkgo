@@ -6,7 +6,7 @@ package lru
 import (
 	"sync"
 
-	"github.com/ava-labs/avalanchego/utils/linked"
+	"github.com/rink-labs/rinkgo/utils/linked"
 )
 
 // Evictable allows the object to be notified when it is evicted

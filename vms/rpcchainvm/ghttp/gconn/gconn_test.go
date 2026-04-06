@@ -15,9 +15,9 @@ import (
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/test/bufconn"
 
-	"github.com/ava-labs/avalanchego/vms/rpcchainvm/grpcutils"
+	"github.com/rink-labs/rinkgo/vms/rpcchainvm/grpcutils"
 
-	connpb "github.com/ava-labs/avalanchego/proto/pb/net/conn"
+	connpb "github.com/rink-labs/rinkgo/proto/pb/net/conn"
 )
 
 // TestErrIOEOF tests that if a net.Conn returns an io.EOF, it propagates that

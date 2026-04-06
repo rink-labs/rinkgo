@@ -11,9 +11,9 @@ import (
 	"reflect"
 	"slices"
 
-	"github.com/ava-labs/avalanchego/codec"
-	"github.com/ava-labs/avalanchego/utils/set"
-	"github.com/ava-labs/avalanchego/utils/wrappers"
+	"github.com/rink-labs/rinkgo/codec"
+	"github.com/rink-labs/rinkgo/utils/set"
+	"github.com/rink-labs/rinkgo/utils/wrappers"
 )
 
 const (

@@ -10,17 +10,17 @@ import (
 	"github.com/prometheus/client_golang/prometheus"
 	"go.uber.org/zap"
 
-	"github.com/ava-labs/avalanchego/ids"
-	"github.com/ava-labs/avalanchego/message"
-	"github.com/ava-labs/avalanchego/snow/choices"
-	"github.com/ava-labs/avalanchego/snow/consensus/avalanche"
-	"github.com/ava-labs/avalanchego/snow/engine/avalanche/vertex"
-	"github.com/ava-labs/avalanchego/snow/engine/common"
-	"github.com/ava-labs/avalanchego/utils/constants"
-	"github.com/ava-labs/avalanchego/utils/logging"
-	"github.com/ava-labs/avalanchego/utils/metric"
-	"github.com/ava-labs/avalanchego/utils/set"
-	"github.com/ava-labs/avalanchego/utils/wrappers"
+	"github.com/rink-labs/rinkgo/ids"
+	"github.com/rink-labs/rinkgo/message"
+	"github.com/rink-labs/rinkgo/snow/choices"
+	"github.com/rink-labs/rinkgo/snow/consensus/avalanche"
+	"github.com/rink-labs/rinkgo/snow/engine/avalanche/vertex"
+	"github.com/rink-labs/rinkgo/snow/engine/common"
+	"github.com/rink-labs/rinkgo/utils/constants"
+	"github.com/rink-labs/rinkgo/utils/logging"
+	"github.com/rink-labs/rinkgo/utils/metric"
+	"github.com/rink-labs/rinkgo/utils/set"
+	"github.com/rink-labs/rinkgo/utils/wrappers"
 )
 
 // Get requests are always served, regardless node state (bootstrapping or normal operations).

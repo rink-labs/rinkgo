@@ -6,8 +6,8 @@ package validators
 import (
 	"context"
 
-	"github.com/ava-labs/avalanchego/ids"
-	"github.com/ava-labs/avalanchego/version"
+	"github.com/rink-labs/rinkgo/ids"
+	"github.com/rink-labs/rinkgo/version"
 )
 
 // Connector represents a handler that is called when a connection is marked as

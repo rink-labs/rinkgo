@@ -7,9 +7,9 @@ import (
 	"context"
 	"sync"
 
-	"github.com/ava-labs/avalanchego/ids"
-	"github.com/ava-labs/avalanchego/utils/crypto/bls"
-	"github.com/ava-labs/avalanchego/version"
+	"github.com/rink-labs/rinkgo/ids"
+	"github.com/rink-labs/rinkgo/utils/crypto/bls"
+	"github.com/rink-labs/rinkgo/version"
 )
 
 var _ Startup = (*startup)(nil)

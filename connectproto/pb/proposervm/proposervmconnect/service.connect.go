@@ -8,7 +8,7 @@ import (
 	connect "connectrpc.com/connect"
 	context "context"
 	errors "errors"
-	proposervm "github.com/ava-labs/avalanchego/connectproto/pb/proposervm"
+	proposervm "github.com/rink-labs/rinkgo/connectproto/pb/proposervm"
 	http "net/http"
 	strings "strings"
 )

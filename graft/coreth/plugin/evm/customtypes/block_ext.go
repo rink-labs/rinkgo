@@ -11,7 +11,7 @@ import (
 	"github.com/ava-labs/libevm/common"
 	"github.com/ava-labs/libevm/rlp"
 
-	"github.com/ava-labs/avalanchego/vms/evm/acp226"
+	"github.com/rink-labs/rinkgo/vms/evm/acp226"
 
 	ethtypes "github.com/ava-labs/libevm/core/types"
 )

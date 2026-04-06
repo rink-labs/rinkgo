@@ -13,16 +13,16 @@ import (
 	"github.com/ava-labs/libevm/core/types"
 	"github.com/stretchr/testify/require"
 
-	"github.com/ava-labs/avalanchego/api/metrics"
-	"github.com/ava-labs/avalanchego/database/prefixdb"
-	"github.com/ava-labs/avalanchego/graft/coreth/plugin/evm/extension"
-	"github.com/ava-labs/avalanchego/snow"
-	"github.com/ava-labs/avalanchego/snow/consensus/snowman"
-	"github.com/ava-labs/avalanchego/snow/engine/enginetest"
-	"github.com/ava-labs/avalanchego/upgrade/upgradetest"
+	"github.com/rink-labs/rinkgo/api/metrics"
+	"github.com/rink-labs/rinkgo/database/prefixdb"
+	"github.com/rink-labs/rinkgo/graft/coreth/plugin/evm/extension"
+	"github.com/rink-labs/rinkgo/snow"
+	"github.com/rink-labs/rinkgo/snow/consensus/snowman"
+	"github.com/rink-labs/rinkgo/snow/engine/enginetest"
+	"github.com/rink-labs/rinkgo/upgrade/upgradetest"
 
-	avalancheatomic "github.com/ava-labs/avalanchego/chains/atomic"
-	commoneng "github.com/ava-labs/avalanchego/snow/engine/common"
+	avalancheatomic "github.com/rink-labs/rinkgo/chains/atomic"
+	commoneng "github.com/rink-labs/rinkgo/snow/engine/common"
 )
 
 var Schemes = []string{rawdb.HashScheme}

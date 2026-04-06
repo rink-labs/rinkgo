@@ -14,10 +14,10 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/ava-labs/avalanchego/database"
-	"github.com/ava-labs/avalanchego/utils/compression"
+	"github.com/rink-labs/rinkgo/database"
+	"github.com/rink-labs/rinkgo/utils/compression"
 
-	safemath "github.com/ava-labs/avalanchego/utils/math"
+	safemath "github.com/rink-labs/rinkgo/utils/math"
 )
 
 func TestPutGet(t *testing.T) {

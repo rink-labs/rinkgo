@@ -7,11 +7,11 @@ package precompileconfig
 import (
 	"github.com/ava-labs/libevm/common"
 
-	"github.com/ava-labs/avalanchego/graft/subnet-evm/commontype"
-	"github.com/ava-labs/avalanchego/snow"
-	"github.com/ava-labs/avalanchego/snow/engine/snowman/block"
-	"github.com/ava-labs/avalanchego/vms/evm/predicate"
-	"github.com/ava-labs/avalanchego/vms/platformvm/warp"
+	"github.com/rink-labs/rinkgo/graft/subnet-evm/commontype"
+	"github.com/rink-labs/rinkgo/snow"
+	"github.com/rink-labs/rinkgo/snow/engine/snowman/block"
+	"github.com/rink-labs/rinkgo/vms/evm/predicate"
+	"github.com/rink-labs/rinkgo/vms/platformvm/warp"
 )
 
 // StatefulPrecompileConfig defines the interface for a stateful precompile to

@@ -32,8 +32,8 @@ import (
 	"math"
 	"math/big"
 
-	"github.com/ava-labs/avalanchego/graft/coreth/params"
-	"github.com/ava-labs/avalanchego/vms/evm/predicate"
+	"github.com/rink-labs/rinkgo/graft/coreth/params"
+	"github.com/rink-labs/rinkgo/vms/evm/predicate"
 	"github.com/ava-labs/libevm/common"
 	cmath "github.com/ava-labs/libevm/common/math"
 	"github.com/ava-labs/libevm/core/types"

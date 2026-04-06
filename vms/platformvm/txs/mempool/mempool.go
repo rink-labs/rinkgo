@@ -12,19 +12,19 @@ import (
 	"github.com/google/btree"
 	"github.com/prometheus/client_golang/prometheus"
 
-	"github.com/ava-labs/avalanchego/cache/lru"
-	"github.com/ava-labs/avalanchego/ids"
-	"github.com/ava-labs/avalanchego/snow/engine/common"
-	"github.com/ava-labs/avalanchego/utils/lock"
-	"github.com/ava-labs/avalanchego/utils/math"
-	"github.com/ava-labs/avalanchego/utils/set"
-	"github.com/ava-labs/avalanchego/utils/setmap"
-	"github.com/ava-labs/avalanchego/vms/components/gas"
-	"github.com/ava-labs/avalanchego/vms/platformvm/txs"
-	"github.com/ava-labs/avalanchego/vms/platformvm/txs/fee"
-	"github.com/ava-labs/avalanchego/vms/platformvm/utxo"
+	"github.com/rink-labs/rinkgo/cache/lru"
+	"github.com/rink-labs/rinkgo/ids"
+	"github.com/rink-labs/rinkgo/snow/engine/common"
+	"github.com/rink-labs/rinkgo/utils/lock"
+	"github.com/rink-labs/rinkgo/utils/math"
+	"github.com/rink-labs/rinkgo/utils/set"
+	"github.com/rink-labs/rinkgo/utils/setmap"
+	"github.com/rink-labs/rinkgo/vms/components/gas"
+	"github.com/rink-labs/rinkgo/vms/platformvm/txs"
+	"github.com/rink-labs/rinkgo/vms/platformvm/txs/fee"
+	"github.com/rink-labs/rinkgo/vms/platformvm/utxo"
 
-	txmempool "github.com/ava-labs/avalanchego/vms/txs/mempool"
+	txmempool "github.com/rink-labs/rinkgo/vms/txs/mempool"
 )
 
 var (

@@ -17,15 +17,15 @@ import (
 	"github.com/ava-labs/libevm/ethdb"
 	"github.com/stretchr/testify/require"
 
-	"github.com/ava-labs/avalanchego/graft/coreth/consensus/dummy"
-	"github.com/ava-labs/avalanchego/graft/coreth/core"
-	"github.com/ava-labs/avalanchego/graft/coreth/params"
-	"github.com/ava-labs/avalanchego/graft/coreth/plugin/evm/customtypes"
-	"github.com/ava-labs/avalanchego/graft/coreth/plugin/evm/message"
-	"github.com/ava-labs/avalanchego/graft/coreth/sync/handlers"
+	"github.com/rink-labs/rinkgo/graft/coreth/consensus/dummy"
+	"github.com/rink-labs/rinkgo/graft/coreth/core"
+	"github.com/rink-labs/rinkgo/graft/coreth/params"
+	"github.com/rink-labs/rinkgo/graft/coreth/plugin/evm/customtypes"
+	"github.com/rink-labs/rinkgo/graft/coreth/plugin/evm/message"
+	"github.com/rink-labs/rinkgo/graft/coreth/sync/handlers"
 
-	syncclient "github.com/ava-labs/avalanchego/graft/coreth/sync/client"
-	handlerstats "github.com/ava-labs/avalanchego/graft/coreth/sync/handlers/stats"
+	syncclient "github.com/rink-labs/rinkgo/graft/coreth/sync/client"
+	handlerstats "github.com/rink-labs/rinkgo/graft/coreth/sync/handlers/stats"
 	ethparams "github.com/ava-labs/libevm/params"
 )
 

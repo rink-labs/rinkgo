@@ -9,11 +9,11 @@ import (
 	"github.com/ava-labs/simplex"
 	"github.com/stretchr/testify/require"
 
-	"github.com/ava-labs/avalanchego/database"
-	"github.com/ava-labs/avalanchego/database/memdb"
-	"github.com/ava-labs/avalanchego/snow/consensus/snowman/snowmantest"
-	"github.com/ava-labs/avalanchego/snow/engine/snowman/block"
-	"github.com/ava-labs/avalanchego/snow/snowtest"
+	"github.com/rink-labs/rinkgo/database"
+	"github.com/rink-labs/rinkgo/database/memdb"
+	"github.com/rink-labs/rinkgo/snow/consensus/snowman/snowmantest"
+	"github.com/rink-labs/rinkgo/snow/engine/snowman/block"
+	"github.com/rink-labs/rinkgo/snow/snowtest"
 )
 
 func TestStorageNew(t *testing.T) {

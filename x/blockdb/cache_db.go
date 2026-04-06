@@ -8,8 +8,8 @@ import (
 
 	"go.uber.org/zap"
 
-	"github.com/ava-labs/avalanchego/cache/lru"
-	"github.com/ava-labs/avalanchego/database"
+	"github.com/rink-labs/rinkgo/cache/lru"
+	"github.com/rink-labs/rinkgo/database"
 )
 
 var _ database.HeightIndex = (*cacheDB)(nil)

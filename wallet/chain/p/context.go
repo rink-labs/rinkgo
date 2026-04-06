@@ -6,10 +6,10 @@ package p
 import (
 	"context"
 
-	"github.com/ava-labs/avalanchego/api/info"
-	"github.com/ava-labs/avalanchego/utils/constants"
-	"github.com/ava-labs/avalanchego/vms/platformvm"
-	"github.com/ava-labs/avalanchego/wallet/chain/p/builder"
+	"github.com/rink-labs/rinkgo/api/info"
+	"github.com/rink-labs/rinkgo/utils/constants"
+	"github.com/rink-labs/rinkgo/vms/platformvm"
+	"github.com/rink-labs/rinkgo/wallet/chain/p/builder"
 )
 
 // gasPriceMultiplier increases the gas price to support multiple transactions

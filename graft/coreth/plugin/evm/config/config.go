@@ -13,8 +13,8 @@ import (
 	"github.com/ava-labs/libevm/common/hexutil"
 	"github.com/spf13/cast"
 
-	"github.com/ava-labs/avalanchego/utils/constants"
-	"github.com/ava-labs/avalanchego/vms/components/gas"
+	"github.com/rink-labs/rinkgo/utils/constants"
+	"github.com/rink-labs/rinkgo/vms/components/gas"
 )
 
 type Duration struct {
@@ -170,7 +170,7 @@ type Config struct {
 	// WarpOffChainMessages encodes off-chain messages (unrelated to any on-chain event ie. block or AddressedCall)
 	// that the node should be willing to sign.
 	// Note: only supports AddressedCall payloads as defined here:
-	// https://github.com/ava-labs/avalanchego/tree/7623ffd4be915a5185c9ed5e11fa9be15a6e1f00/vms/platformvm/warp/payload#addressedcall
+	// https://github.com/rink-labs/rinkgo/tree/7623ffd4be915a5185c9ed5e11fa9be15a6e1f00/vms/platformvm/warp/payload#addressedcall
 	WarpOffChainMessages []hexutil.Bytes `json:"warp-off-chain-messages"`
 
 	// RPC settings

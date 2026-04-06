@@ -15,11 +15,11 @@ import (
 	"github.com/ava-labs/libevm/log"
 	"github.com/stretchr/testify/require"
 
-	"github.com/ava-labs/avalanchego/graft/subnet-evm/tests/utils"
-	"github.com/ava-labs/avalanchego/ids"
-	"github.com/ava-labs/avalanchego/tests/fixture/e2e"
-	"github.com/ava-labs/avalanchego/tests/fixture/tmpnet"
-	"github.com/ava-labs/avalanchego/utils/set"
+	"github.com/rink-labs/rinkgo/graft/subnet-evm/tests/utils"
+	"github.com/rink-labs/rinkgo/ids"
+	"github.com/rink-labs/rinkgo/tests/fixture/e2e"
+	"github.com/rink-labs/rinkgo/tests/fixture/tmpnet"
+	"github.com/rink-labs/rinkgo/utils/set"
 
 	ginkgo "github.com/onsi/ginkgo/v2"
 )

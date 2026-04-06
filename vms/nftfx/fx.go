@@ -7,8 +7,8 @@ import (
 	"bytes"
 	"errors"
 
-	"github.com/ava-labs/avalanchego/vms/components/verify"
-	"github.com/ava-labs/avalanchego/vms/secp256k1fx"
+	"github.com/rink-labs/rinkgo/vms/components/verify"
+	"github.com/rink-labs/rinkgo/vms/secp256k1fx"
 )
 
 var (

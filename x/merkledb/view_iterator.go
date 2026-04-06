@@ -7,7 +7,7 @@ import (
 	"bytes"
 	"slices"
 
-	"github.com/ava-labs/avalanchego/database"
+	"github.com/rink-labs/rinkgo/database"
 )
 
 func (v *view) NewIterator() database.Iterator {

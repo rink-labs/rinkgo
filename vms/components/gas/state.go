@@ -8,7 +8,7 @@ import (
 	"fmt"
 	"math"
 
-	safemath "github.com/ava-labs/avalanchego/utils/math"
+	safemath "github.com/rink-labs/rinkgo/utils/math"
 )
 
 var ErrInsufficientCapacity = errors.New("insufficient capacity")

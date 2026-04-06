@@ -10,15 +10,15 @@ import (
 
 	"github.com/prometheus/client_golang/prometheus"
 
-	"github.com/ava-labs/avalanchego/cache"
-	"github.com/ava-labs/avalanchego/cache/lru"
-	"github.com/ava-labs/avalanchego/cache/metercacher"
-	"github.com/ava-labs/avalanchego/database"
-	"github.com/ava-labs/avalanchego/database/linkeddb"
-	"github.com/ava-labs/avalanchego/database/prefixdb"
-	"github.com/ava-labs/avalanchego/ids"
-	"github.com/ava-labs/avalanchego/utils/metric"
-	"github.com/ava-labs/avalanchego/utils/set"
+	"github.com/rink-labs/rinkgo/cache"
+	"github.com/rink-labs/rinkgo/cache/lru"
+	"github.com/rink-labs/rinkgo/cache/metercacher"
+	"github.com/rink-labs/rinkgo/database"
+	"github.com/rink-labs/rinkgo/database/linkeddb"
+	"github.com/rink-labs/rinkgo/database/prefixdb"
+	"github.com/rink-labs/rinkgo/ids"
+	"github.com/rink-labs/rinkgo/utils/metric"
+	"github.com/rink-labs/rinkgo/utils/set"
 )
 
 const (

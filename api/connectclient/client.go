@@ -12,7 +12,7 @@ import (
 	"connectrpc.com/connect"
 	"golang.org/x/net/http2"
 
-	"github.com/ava-labs/avalanchego/api/server"
+	"github.com/rink-labs/rinkgo/api/server"
 )
 
 var _ connect.Interceptor = (*SetRouteHeaderInterceptor)(nil)

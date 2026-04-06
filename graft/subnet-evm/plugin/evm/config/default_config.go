@@ -8,7 +8,7 @@ import (
 
 	"github.com/ava-labs/libevm/common"
 
-	"github.com/ava-labs/avalanchego/database/pebbledb"
+	"github.com/rink-labs/rinkgo/database/pebbledb"
 )
 
 const defaultCommitInterval = 4096

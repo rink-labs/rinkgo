@@ -35,9 +35,9 @@ import (
 	"sync"
 	"time"
 
-	"github.com/ava-labs/avalanchego/graft/subnet-evm/core"
-	"github.com/ava-labs/avalanchego/graft/subnet-evm/params"
-	"github.com/ava-labs/avalanchego/graft/subnet-evm/rpc"
+	"github.com/rink-labs/rinkgo/graft/subnet-evm/core"
+	"github.com/rink-labs/rinkgo/graft/subnet-evm/params"
+	"github.com/rink-labs/rinkgo/graft/subnet-evm/rpc"
 	ethereum "github.com/ava-labs/libevm"
 	"github.com/ava-labs/libevm/common"
 	"github.com/ava-labs/libevm/core/bloombits"

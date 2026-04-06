@@ -8,7 +8,7 @@ import (
 	"reflect"
 	"sync"
 
-	"github.com/ava-labs/avalanchego/codec"
+	"github.com/rink-labs/rinkgo/codec"
 )
 
 // TagValue is the value the tag must have to be serialized.

@@ -31,8 +31,8 @@ import (
 	"fmt"
 	"math/big"
 
-	"github.com/ava-labs/avalanchego/graft/coreth/consensus"
-	"github.com/ava-labs/avalanchego/graft/coreth/params"
+	"github.com/rink-labs/rinkgo/graft/coreth/consensus"
+	"github.com/rink-labs/rinkgo/graft/coreth/params"
 	"github.com/ava-labs/libevm/common"
 	"github.com/ava-labs/libevm/core/state"
 	"github.com/ava-labs/libevm/core/types"

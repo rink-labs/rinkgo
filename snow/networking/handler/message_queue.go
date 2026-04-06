@@ -10,14 +10,14 @@ import (
 	"github.com/prometheus/client_golang/prometheus"
 	"go.uber.org/zap"
 
-	"github.com/ava-labs/avalanchego/ids"
-	"github.com/ava-labs/avalanchego/message"
-	"github.com/ava-labs/avalanchego/proto/pb/p2p"
-	"github.com/ava-labs/avalanchego/snow/networking/tracker"
-	"github.com/ava-labs/avalanchego/snow/validators"
-	"github.com/ava-labs/avalanchego/utils/buffer"
-	"github.com/ava-labs/avalanchego/utils/logging"
-	"github.com/ava-labs/avalanchego/utils/timer/mockable"
+	"github.com/rink-labs/rinkgo/ids"
+	"github.com/rink-labs/rinkgo/message"
+	"github.com/rink-labs/rinkgo/proto/pb/p2p"
+	"github.com/rink-labs/rinkgo/snow/networking/tracker"
+	"github.com/rink-labs/rinkgo/snow/validators"
+	"github.com/rink-labs/rinkgo/utils/buffer"
+	"github.com/rink-labs/rinkgo/utils/logging"
+	"github.com/rink-labs/rinkgo/utils/timer/mockable"
 )
 
 var _ MessageQueue = (*messageQueue)(nil)

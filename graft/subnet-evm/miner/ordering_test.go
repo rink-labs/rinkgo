@@ -34,7 +34,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/ava-labs/avalanchego/graft/subnet-evm/core/txpool"
+	"github.com/rink-labs/rinkgo/graft/subnet-evm/core/txpool"
 	"github.com/ava-labs/libevm/common"
 	"github.com/ava-labs/libevm/core/types"
 	"github.com/ava-labs/libevm/crypto"

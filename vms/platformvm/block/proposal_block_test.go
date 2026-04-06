@@ -9,8 +9,8 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/ava-labs/avalanchego/ids"
-	"github.com/ava-labs/avalanchego/vms/platformvm/txs"
+	"github.com/rink-labs/rinkgo/ids"
+	"github.com/rink-labs/rinkgo/vms/platformvm/txs"
 )
 
 func TestNewBanffProposalBlock(t *testing.T) {

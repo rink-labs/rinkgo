@@ -6,9 +6,9 @@ package simplex
 import (
 	"math"
 
-	"github.com/ava-labs/avalanchego/codec"
-	"github.com/ava-labs/avalanchego/codec/linearcodec"
-	"github.com/ava-labs/avalanchego/vms/platformvm/warp"
+	"github.com/rink-labs/rinkgo/codec"
+	"github.com/rink-labs/rinkgo/codec/linearcodec"
+	"github.com/rink-labs/rinkgo/vms/platformvm/warp"
 )
 
 const CodecVersion = warp.CodecVersion + 1

@@ -12,7 +12,7 @@ import (
 	"github.com/prometheus/client_golang/prometheus/testutil"
 	"github.com/stretchr/testify/require"
 
-	"github.com/ava-labs/avalanchego/vms/evm/metrics/metricstest"
+	"github.com/rink-labs/rinkgo/vms/evm/metrics/metricstest"
 )
 
 const expectedMetrics = `

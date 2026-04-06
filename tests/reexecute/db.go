@@ -10,10 +10,10 @@ import (
 	"github.com/prometheus/client_golang/prometheus"
 	"github.com/stretchr/testify/require"
 
-	"github.com/ava-labs/avalanchego/database"
-	"github.com/ava-labs/avalanchego/database/leveldb"
-	"github.com/ava-labs/avalanchego/tests"
-	"github.com/ava-labs/avalanchego/utils/logging"
+	"github.com/rink-labs/rinkgo/database"
+	"github.com/rink-labs/rinkgo/database/leveldb"
+	"github.com/rink-labs/rinkgo/tests"
+	"github.com/rink-labs/rinkgo/utils/logging"
 )
 
 // BlockResult represents the result of reading a block from the database.

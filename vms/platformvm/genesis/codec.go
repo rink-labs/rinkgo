@@ -3,7 +3,7 @@
 
 package genesis
 
-import "github.com/ava-labs/avalanchego/vms/platformvm/block"
+import "github.com/rink-labs/rinkgo/vms/platformvm/block"
 
 const CodecVersion = block.CodecVersion
 

@@ -6,7 +6,7 @@ package config
 import (
 	"time"
 
-	"github.com/ava-labs/avalanchego/utils/units"
+	"github.com/rink-labs/rinkgo/utils/units"
 )
 
 const (

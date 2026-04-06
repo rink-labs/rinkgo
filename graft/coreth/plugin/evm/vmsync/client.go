@@ -13,20 +13,20 @@ import (
 	"github.com/ava-labs/libevm/ethdb"
 	"github.com/ava-labs/libevm/log"
 
-	"github.com/ava-labs/avalanchego/database"
-	"github.com/ava-labs/avalanchego/database/versiondb"
-	"github.com/ava-labs/avalanchego/graft/coreth/core/state/snapshot"
-	"github.com/ava-labs/avalanchego/graft/coreth/eth"
-	"github.com/ava-labs/avalanchego/graft/coreth/params"
-	"github.com/ava-labs/avalanchego/graft/coreth/plugin/evm/message"
-	"github.com/ava-labs/avalanchego/graft/coreth/sync/blocksync"
-	"github.com/ava-labs/avalanchego/graft/coreth/sync/statesync"
-	"github.com/ava-labs/avalanchego/ids"
-	"github.com/ava-labs/avalanchego/snow/engine/snowman/block"
-	"github.com/ava-labs/avalanchego/vms/components/chain"
+	"github.com/rink-labs/rinkgo/database"
+	"github.com/rink-labs/rinkgo/database/versiondb"
+	"github.com/rink-labs/rinkgo/graft/coreth/core/state/snapshot"
+	"github.com/rink-labs/rinkgo/graft/coreth/eth"
+	"github.com/rink-labs/rinkgo/graft/coreth/params"
+	"github.com/rink-labs/rinkgo/graft/coreth/plugin/evm/message"
+	"github.com/rink-labs/rinkgo/graft/coreth/sync/blocksync"
+	"github.com/rink-labs/rinkgo/graft/coreth/sync/statesync"
+	"github.com/rink-labs/rinkgo/ids"
+	"github.com/rink-labs/rinkgo/snow/engine/snowman/block"
+	"github.com/rink-labs/rinkgo/vms/components/chain"
 
-	syncpkg "github.com/ava-labs/avalanchego/graft/coreth/sync"
-	syncclient "github.com/ava-labs/avalanchego/graft/coreth/sync/client"
+	syncpkg "github.com/rink-labs/rinkgo/graft/coreth/sync"
+	syncclient "github.com/rink-labs/rinkgo/graft/coreth/sync/client"
 )
 
 // BlocksToFetch is the number of the block parents the state syncs to.

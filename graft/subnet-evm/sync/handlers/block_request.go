@@ -11,11 +11,11 @@ import (
 	"github.com/ava-labs/libevm/common"
 	"github.com/ava-labs/libevm/log"
 
-	"github.com/ava-labs/avalanchego/codec"
-	"github.com/ava-labs/avalanchego/graft/subnet-evm/plugin/evm/message"
-	"github.com/ava-labs/avalanchego/graft/subnet-evm/sync/handlers/stats"
-	"github.com/ava-labs/avalanchego/ids"
-	"github.com/ava-labs/avalanchego/utils/units"
+	"github.com/rink-labs/rinkgo/codec"
+	"github.com/rink-labs/rinkgo/graft/subnet-evm/plugin/evm/message"
+	"github.com/rink-labs/rinkgo/graft/subnet-evm/sync/handlers/stats"
+	"github.com/rink-labs/rinkgo/ids"
+	"github.com/rink-labs/rinkgo/utils/units"
 )
 
 const (

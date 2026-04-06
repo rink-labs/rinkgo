@@ -7,14 +7,14 @@ import (
 	"context"
 	"errors"
 
-	"github.com/ava-labs/avalanchego/ids"
-	"github.com/ava-labs/avalanchego/utils/constants"
-	"github.com/ava-labs/avalanchego/vms/components/avax"
-	"github.com/ava-labs/avalanchego/vms/platformvm/txs"
-	"github.com/ava-labs/avalanchego/vms/platformvm/warp"
-	"github.com/ava-labs/avalanchego/vms/platformvm/warp/message"
-	"github.com/ava-labs/avalanchego/vms/platformvm/warp/payload"
-	"github.com/ava-labs/avalanchego/vms/secp256k1fx"
+	"github.com/rink-labs/rinkgo/ids"
+	"github.com/rink-labs/rinkgo/utils/constants"
+	"github.com/rink-labs/rinkgo/vms/components/avax"
+	"github.com/rink-labs/rinkgo/vms/platformvm/txs"
+	"github.com/rink-labs/rinkgo/vms/platformvm/warp"
+	"github.com/rink-labs/rinkgo/vms/platformvm/warp/message"
+	"github.com/rink-labs/rinkgo/vms/platformvm/warp/payload"
+	"github.com/rink-labs/rinkgo/vms/secp256k1fx"
 )
 
 var (

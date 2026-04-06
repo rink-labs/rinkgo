@@ -10,11 +10,11 @@ import (
 	"math/big"
 	"sync"
 
-	"github.com/ava-labs/avalanchego/database"
-	"github.com/ava-labs/avalanchego/graft/coreth/plugin/evm/atomic"
-	"github.com/ava-labs/avalanchego/utils/math"
-	"github.com/ava-labs/avalanchego/vms/components/avax"
-	"github.com/ava-labs/avalanchego/wallet/subnet/primary/common"
+	"github.com/rink-labs/rinkgo/database"
+	"github.com/rink-labs/rinkgo/graft/coreth/plugin/evm/atomic"
+	"github.com/rink-labs/rinkgo/utils/math"
+	"github.com/rink-labs/rinkgo/vms/components/avax"
+	"github.com/rink-labs/rinkgo/wallet/subnet/primary/common"
 
 	ethcommon "github.com/ava-labs/libevm/common"
 )

@@ -35,7 +35,7 @@ import (
 	"os"
 	"strings"
 
-	"github.com/ava-labs/avalanchego/graft/subnet-evm/core"
+	"github.com/rink-labs/rinkgo/graft/subnet-evm/core"
 	"github.com/ava-labs/libevm/core/types"
 	"github.com/ava-labs/libevm/rlp"
 )

@@ -9,10 +9,10 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/ava-labs/avalanchego/upgrade"
-	"github.com/ava-labs/avalanchego/upgrade/upgradetest"
+	"github.com/rink-labs/rinkgo/upgrade"
+	"github.com/rink-labs/rinkgo/upgrade/upgradetest"
 
-	statelessblock "github.com/ava-labs/avalanchego/vms/proposervm/block"
+	statelessblock "github.com/rink-labs/rinkgo/vms/proposervm/block"
 )
 
 func TestNewEpoch(t *testing.T) {

@@ -13,7 +13,7 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/ava-labs/avalanchego/database"
+	"github.com/rink-labs/rinkgo/database"
 )
 
 func TestReadOperations(t *testing.T) {

@@ -9,7 +9,7 @@ import (
 
 	"github.com/ava-labs/libevm/metrics"
 
-	"github.com/ava-labs/avalanchego/graft/subnet-evm/plugin/evm/message"
+	"github.com/rink-labs/rinkgo/graft/subnet-evm/plugin/evm/message"
 )
 
 var (

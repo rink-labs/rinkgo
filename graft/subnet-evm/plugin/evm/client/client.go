@@ -9,10 +9,10 @@ import (
 
 	"golang.org/x/exp/slog"
 
-	"github.com/ava-labs/avalanchego/api"
-	"github.com/ava-labs/avalanchego/graft/subnet-evm/plugin/evm/config"
-	"github.com/ava-labs/avalanchego/ids"
-	"github.com/ava-labs/avalanchego/utils/rpc"
+	"github.com/rink-labs/rinkgo/api"
+	"github.com/rink-labs/rinkgo/graft/subnet-evm/plugin/evm/config"
+	"github.com/rink-labs/rinkgo/ids"
+	"github.com/rink-labs/rinkgo/utils/rpc"
 )
 
 // Interface compliance

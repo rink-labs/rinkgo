@@ -8,7 +8,7 @@ import (
 
 	"github.com/ava-labs/libevm/crypto"
 
-	"github.com/ava-labs/avalanchego/ids"
+	"github.com/rink-labs/rinkgo/ids"
 )
 
 type BlockSyncSummaryParser struct{}

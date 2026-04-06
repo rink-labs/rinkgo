@@ -10,11 +10,11 @@ import (
 	"github.com/ava-labs/libevm/core/types"
 	"github.com/stretchr/testify/require"
 
-	"github.com/ava-labs/avalanchego/graft/coreth/consensus/dummy"
-	"github.com/ava-labs/avalanchego/graft/coreth/core"
-	"github.com/ava-labs/avalanchego/graft/coreth/plugin/evm/extension"
-	"github.com/ava-labs/avalanchego/graft/coreth/plugin/evm/vmtest"
-	"github.com/ava-labs/avalanchego/vms/evm/predicate"
+	"github.com/rink-labs/rinkgo/graft/coreth/consensus/dummy"
+	"github.com/rink-labs/rinkgo/graft/coreth/core"
+	"github.com/rink-labs/rinkgo/graft/coreth/plugin/evm/extension"
+	"github.com/rink-labs/rinkgo/graft/coreth/plugin/evm/vmtest"
+	"github.com/rink-labs/rinkgo/vms/evm/predicate"
 
 	ethparams "github.com/ava-labs/libevm/params"
 )

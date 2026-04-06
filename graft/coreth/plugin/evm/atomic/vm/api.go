@@ -10,22 +10,22 @@ import (
 
 	"go.uber.org/zap"
 
-	"github.com/ava-labs/avalanchego/api"
-	"github.com/ava-labs/avalanchego/database"
-	"github.com/ava-labs/avalanchego/graft/coreth/core"
-	"github.com/ava-labs/avalanchego/graft/coreth/plugin/evm/atomic"
-	"github.com/ava-labs/avalanchego/graft/coreth/plugin/evm/atomic/txpool"
-	"github.com/ava-labs/avalanchego/graft/coreth/plugin/evm/client"
-	"github.com/ava-labs/avalanchego/ids"
-	"github.com/ava-labs/avalanchego/snow"
-	"github.com/ava-labs/avalanchego/utils/formatting"
-	"github.com/ava-labs/avalanchego/utils/json"
-	"github.com/ava-labs/avalanchego/utils/logging"
-	"github.com/ava-labs/avalanchego/utils/set"
-	"github.com/ava-labs/avalanchego/vms/components/avax"
+	"github.com/rink-labs/rinkgo/api"
+	"github.com/rink-labs/rinkgo/database"
+	"github.com/rink-labs/rinkgo/graft/coreth/core"
+	"github.com/rink-labs/rinkgo/graft/coreth/plugin/evm/atomic"
+	"github.com/rink-labs/rinkgo/graft/coreth/plugin/evm/atomic/txpool"
+	"github.com/rink-labs/rinkgo/graft/coreth/plugin/evm/client"
+	"github.com/rink-labs/rinkgo/ids"
+	"github.com/rink-labs/rinkgo/snow"
+	"github.com/rink-labs/rinkgo/utils/formatting"
+	"github.com/rink-labs/rinkgo/utils/json"
+	"github.com/rink-labs/rinkgo/utils/logging"
+	"github.com/rink-labs/rinkgo/utils/set"
+	"github.com/rink-labs/rinkgo/vms/components/avax"
 
-	atomicstate "github.com/ava-labs/avalanchego/graft/coreth/plugin/evm/atomic/state"
-	avalanchegossip "github.com/ava-labs/avalanchego/network/p2p/gossip"
+	atomicstate "github.com/rink-labs/rinkgo/graft/coreth/plugin/evm/atomic/state"
+	avalanchegossip "github.com/rink-labs/rinkgo/network/p2p/gossip"
 )
 
 const (

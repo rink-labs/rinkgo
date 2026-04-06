@@ -11,10 +11,10 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/ava-labs/avalanchego/graft/evm/constants"
-	"github.com/ava-labs/avalanchego/graft/subnet-evm/accounts/abi"
-	"github.com/ava-labs/avalanchego/graft/subnet-evm/precompile/allowlist"
-	"github.com/ava-labs/avalanchego/graft/subnet-evm/precompile/contract"
+	"github.com/rink-labs/rinkgo/graft/evm/constants"
+	"github.com/rink-labs/rinkgo/graft/subnet-evm/accounts/abi"
+	"github.com/rink-labs/rinkgo/graft/subnet-evm/precompile/allowlist"
+	"github.com/rink-labs/rinkgo/graft/subnet-evm/precompile/contract"
 	"github.com/ava-labs/libevm/core/types"
 
 	"github.com/ava-labs/libevm/common"

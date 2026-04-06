@@ -11,17 +11,17 @@ import (
 	"github.com/prometheus/client_golang/prometheus"
 	"go.uber.org/zap"
 
-	"github.com/ava-labs/avalanchego/cache/lru"
-	"github.com/ava-labs/avalanchego/ids"
-	"github.com/ava-labs/avalanchego/proto/pb/p2p"
-	"github.com/ava-labs/avalanchego/snow"
-	"github.com/ava-labs/avalanchego/snow/choices"
-	"github.com/ava-labs/avalanchego/snow/consensus/avalanche"
-	"github.com/ava-labs/avalanchego/snow/engine/common"
-	"github.com/ava-labs/avalanchego/utils/bimap"
-	"github.com/ava-labs/avalanchego/utils/heap"
-	"github.com/ava-labs/avalanchego/utils/set"
-	"github.com/ava-labs/avalanchego/version"
+	"github.com/rink-labs/rinkgo/cache/lru"
+	"github.com/rink-labs/rinkgo/ids"
+	"github.com/rink-labs/rinkgo/proto/pb/p2p"
+	"github.com/rink-labs/rinkgo/snow"
+	"github.com/rink-labs/rinkgo/snow/choices"
+	"github.com/rink-labs/rinkgo/snow/consensus/avalanche"
+	"github.com/rink-labs/rinkgo/snow/engine/common"
+	"github.com/rink-labs/rinkgo/utils/bimap"
+	"github.com/rink-labs/rinkgo/utils/heap"
+	"github.com/rink-labs/rinkgo/utils/set"
+	"github.com/rink-labs/rinkgo/version"
 )
 
 const (

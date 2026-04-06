@@ -13,7 +13,7 @@ import (
 	"github.com/ava-labs/libevm/ethdb/dbtest"
 	"github.com/stretchr/testify/require"
 
-	"github.com/ava-labs/avalanchego/database/memdb"
+	"github.com/rink-labs/rinkgo/database/memdb"
 )
 
 // testDatabase wraps the production database with test-only snapshot functionality

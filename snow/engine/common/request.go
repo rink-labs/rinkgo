@@ -6,7 +6,7 @@ package common
 import (
 	"fmt"
 
-	"github.com/ava-labs/avalanchego/ids"
+	"github.com/rink-labs/rinkgo/ids"
 )
 
 type Request struct {

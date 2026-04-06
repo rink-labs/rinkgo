@@ -6,9 +6,9 @@ package tmpnet
 import (
 	"time"
 
-	"github.com/ava-labs/avalanchego/config"
-	"github.com/ava-labs/avalanchego/utils/logging"
-	"github.com/ava-labs/avalanchego/vms/platformvm/txs/executor"
+	"github.com/rink-labs/rinkgo/config"
+	"github.com/rink-labs/rinkgo/utils/logging"
+	"github.com/rink-labs/rinkgo/vms/platformvm/txs/executor"
 )
 
 const (
@@ -65,7 +65,7 @@ func DefaultChainConfigs() map[string]ConfigMap {
 	return map[string]ConfigMap{
 		// Supply only non-default configuration to ensure that default
 		// values will be used. Available C-Chain configuration options are
-		// defined in the `github.com/ava-labs/avalanchego/graft/coreth/evm` package.
+		// defined in the `github.com/rink-labs/rinkgo/graft/coreth/evm` package.
 		"C": {
 			"warp-api-enabled": true,
 			"log-level":        logging.Trace.String(),

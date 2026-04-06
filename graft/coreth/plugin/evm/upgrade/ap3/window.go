@@ -10,8 +10,8 @@ import (
 	"fmt"
 	"math"
 
-	"github.com/ava-labs/avalanchego/graft/coreth/utils"
-	"github.com/ava-labs/avalanchego/utils/wrappers"
+	"github.com/rink-labs/rinkgo/graft/coreth/utils"
+	"github.com/rink-labs/rinkgo/utils/wrappers"
 
 	safemath "github.com/ava-labs/libevm/common/math"
 )

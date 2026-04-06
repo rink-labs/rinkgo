@@ -6,20 +6,20 @@ package primary
 import (
 	"context"
 
-	"github.com/ava-labs/avalanchego/ids"
-	"github.com/ava-labs/avalanchego/utils/constants"
-	"github.com/ava-labs/avalanchego/utils/crypto/keychain"
-	"github.com/ava-labs/avalanchego/vms/platformvm"
-	"github.com/ava-labs/avalanchego/wallet/chain/c"
-	"github.com/ava-labs/avalanchego/wallet/chain/p"
-	"github.com/ava-labs/avalanchego/wallet/chain/x"
-	"github.com/ava-labs/avalanchego/wallet/subnet/primary/common"
+	"github.com/rink-labs/rinkgo/ids"
+	"github.com/rink-labs/rinkgo/utils/constants"
+	"github.com/rink-labs/rinkgo/utils/crypto/keychain"
+	"github.com/rink-labs/rinkgo/vms/platformvm"
+	"github.com/rink-labs/rinkgo/wallet/chain/c"
+	"github.com/rink-labs/rinkgo/wallet/chain/p"
+	"github.com/rink-labs/rinkgo/wallet/chain/x"
+	"github.com/rink-labs/rinkgo/wallet/subnet/primary/common"
 
-	pbuilder "github.com/ava-labs/avalanchego/wallet/chain/p/builder"
-	psigner "github.com/ava-labs/avalanchego/wallet/chain/p/signer"
-	pwallet "github.com/ava-labs/avalanchego/wallet/chain/p/wallet"
-	xbuilder "github.com/ava-labs/avalanchego/wallet/chain/x/builder"
-	xsigner "github.com/ava-labs/avalanchego/wallet/chain/x/signer"
+	pbuilder "github.com/rink-labs/rinkgo/wallet/chain/p/builder"
+	psigner "github.com/rink-labs/rinkgo/wallet/chain/p/signer"
+	pwallet "github.com/rink-labs/rinkgo/wallet/chain/p/wallet"
+	xbuilder "github.com/rink-labs/rinkgo/wallet/chain/x/builder"
+	xsigner "github.com/rink-labs/rinkgo/wallet/chain/x/signer"
 )
 
 // Wallet provides chain wallets for the primary network.

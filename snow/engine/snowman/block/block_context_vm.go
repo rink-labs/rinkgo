@@ -8,8 +8,8 @@ package block
 import (
 	"context"
 
-	"github.com/ava-labs/avalanchego/ids"
-	"github.com/ava-labs/avalanchego/snow/consensus/snowman"
+	"github.com/rink-labs/rinkgo/ids"
+	"github.com/rink-labs/rinkgo/snow/consensus/snowman"
 )
 
 // Context defines the block context that will be optionally provided by the

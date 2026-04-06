@@ -6,12 +6,12 @@ package sync
 import (
 	"fmt"
 
-	"github.com/ava-labs/avalanchego/database/versiondb"
-	"github.com/ava-labs/avalanchego/graft/coreth/plugin/evm/atomic/state"
-	"github.com/ava-labs/avalanchego/graft/coreth/plugin/evm/message"
-	"github.com/ava-labs/avalanchego/graft/coreth/sync"
+	"github.com/rink-labs/rinkgo/database/versiondb"
+	"github.com/rink-labs/rinkgo/graft/coreth/plugin/evm/atomic/state"
+	"github.com/rink-labs/rinkgo/graft/coreth/plugin/evm/message"
+	"github.com/rink-labs/rinkgo/graft/coreth/sync"
 
-	syncclient "github.com/ava-labs/avalanchego/graft/coreth/sync/client"
+	syncclient "github.com/rink-labs/rinkgo/graft/coreth/sync/client"
 )
 
 // Extender is the sync extender for the atomic VM.

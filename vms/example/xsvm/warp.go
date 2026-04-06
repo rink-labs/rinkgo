@@ -6,9 +6,9 @@ package xsvm
 import (
 	"context"
 
-	"github.com/ava-labs/avalanchego/network/p2p/acp118"
-	"github.com/ava-labs/avalanchego/snow/engine/common"
-	"github.com/ava-labs/avalanchego/vms/platformvm/warp"
+	"github.com/rink-labs/rinkgo/network/p2p/acp118"
+	"github.com/rink-labs/rinkgo/snow/engine/common"
+	"github.com/rink-labs/rinkgo/vms/platformvm/warp"
 )
 
 var _ acp118.Verifier = (*acp118Verifier)(nil)

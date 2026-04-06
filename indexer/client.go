@@ -7,10 +7,10 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/ava-labs/avalanchego/ids"
-	"github.com/ava-labs/avalanchego/utils/formatting"
-	"github.com/ava-labs/avalanchego/utils/json"
-	"github.com/ava-labs/avalanchego/utils/rpc"
+	"github.com/rink-labs/rinkgo/ids"
+	"github.com/rink-labs/rinkgo/utils/formatting"
+	"github.com/rink-labs/rinkgo/utils/json"
+	"github.com/rink-labs/rinkgo/utils/rpc"
 )
 
 type Client struct {

@@ -6,8 +6,8 @@ package mempool
 import (
 	"github.com/prometheus/client_golang/prometheus"
 
-	"github.com/ava-labs/avalanchego/vms/avm/txs"
-	"github.com/ava-labs/avalanchego/vms/txs/mempool"
+	"github.com/rink-labs/rinkgo/vms/avm/txs"
+	"github.com/rink-labs/rinkgo/vms/txs/mempool"
 )
 
 func New(

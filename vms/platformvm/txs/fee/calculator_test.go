@@ -4,8 +4,8 @@
 package fee
 
 import (
-	"github.com/ava-labs/avalanchego/utils/units"
-	"github.com/ava-labs/avalanchego/vms/components/gas"
+	"github.com/rink-labs/rinkgo/utils/units"
+	"github.com/rink-labs/rinkgo/vms/components/gas"
 )
 
 const testDynamicPrice = gas.Price(units.NanoAvax)

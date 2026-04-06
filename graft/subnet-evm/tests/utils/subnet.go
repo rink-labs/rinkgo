@@ -18,15 +18,15 @@ import (
 	"github.com/onsi/ginkgo/v2"
 	"github.com/stretchr/testify/require"
 
-	"github.com/ava-labs/avalanchego/api/health"
-	"github.com/ava-labs/avalanchego/api/info"
-	"github.com/ava-labs/avalanchego/genesis"
-	"github.com/ava-labs/avalanchego/graft/subnet-evm/core"
-	"github.com/ava-labs/avalanchego/graft/subnet-evm/plugin/evm"
-	"github.com/ava-labs/avalanchego/ids"
-	"github.com/ava-labs/avalanchego/vms/secp256k1fx"
+	"github.com/rink-labs/rinkgo/api/health"
+	"github.com/rink-labs/rinkgo/api/info"
+	"github.com/rink-labs/rinkgo/genesis"
+	"github.com/rink-labs/rinkgo/graft/subnet-evm/core"
+	"github.com/rink-labs/rinkgo/graft/subnet-evm/plugin/evm"
+	"github.com/rink-labs/rinkgo/ids"
+	"github.com/rink-labs/rinkgo/vms/secp256k1fx"
 
-	wallet "github.com/ava-labs/avalanchego/wallet/subnet/primary"
+	wallet "github.com/rink-labs/rinkgo/wallet/subnet/primary"
 )
 
 type SubnetSuite struct {

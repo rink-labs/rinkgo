@@ -16,12 +16,12 @@ import (
 	"github.com/spf13/viper"
 	"github.com/stretchr/testify/require"
 
-	"github.com/ava-labs/avalanchego/chains"
-	"github.com/ava-labs/avalanchego/config/node"
-	"github.com/ava-labs/avalanchego/ids"
-	"github.com/ava-labs/avalanchego/snow/consensus/snowball"
-	"github.com/ava-labs/avalanchego/subnets"
-	"github.com/ava-labs/avalanchego/utils/constants"
+	"github.com/rink-labs/rinkgo/chains"
+	"github.com/rink-labs/rinkgo/config/node"
+	"github.com/rink-labs/rinkgo/ids"
+	"github.com/rink-labs/rinkgo/snow/consensus/snowball"
+	"github.com/rink-labs/rinkgo/subnets"
+	"github.com/rink-labs/rinkgo/utils/constants"
 )
 
 const chainConfigFilenameExtension = ".ex"

@@ -19,13 +19,13 @@ import (
 	"github.com/prometheus/client_golang/prometheus"
 	"github.com/stretchr/testify/require"
 
-	"github.com/ava-labs/avalanchego/graft/coreth/consensus/dummy"
-	"github.com/ava-labs/avalanchego/graft/coreth/core"
-	"github.com/ava-labs/avalanchego/graft/coreth/core/txpool"
-	"github.com/ava-labs/avalanchego/graft/coreth/core/txpool/legacypool"
-	"github.com/ava-labs/avalanchego/graft/coreth/params"
-	"github.com/ava-labs/avalanchego/graft/coreth/utils"
-	"github.com/ava-labs/avalanchego/network/p2p/gossip"
+	"github.com/rink-labs/rinkgo/graft/coreth/consensus/dummy"
+	"github.com/rink-labs/rinkgo/graft/coreth/core"
+	"github.com/rink-labs/rinkgo/graft/coreth/core/txpool"
+	"github.com/rink-labs/rinkgo/graft/coreth/core/txpool/legacypool"
+	"github.com/rink-labs/rinkgo/graft/coreth/params"
+	"github.com/rink-labs/rinkgo/graft/coreth/utils"
+	"github.com/rink-labs/rinkgo/network/p2p/gossip"
 )
 
 func TestGossipEthTxMarshaller(t *testing.T) {

@@ -18,20 +18,20 @@ import (
 	"github.com/holiman/uint256"
 	"github.com/stretchr/testify/require"
 
-	"github.com/ava-labs/avalanchego/api/metrics"
-	"github.com/ava-labs/avalanchego/graft/subnet-evm/core"
-	"github.com/ava-labs/avalanchego/graft/subnet-evm/params"
-	"github.com/ava-labs/avalanchego/graft/subnet-evm/params/extras"
-	"github.com/ava-labs/avalanchego/graft/subnet-evm/params/paramstest"
-	"github.com/ava-labs/avalanchego/graft/subnet-evm/plugin/evm/vmerrors"
-	"github.com/ava-labs/avalanchego/graft/subnet-evm/precompile/contracts/txallowlist"
-	"github.com/ava-labs/avalanchego/graft/subnet-evm/utils"
-	"github.com/ava-labs/avalanchego/snow"
-	"github.com/ava-labs/avalanchego/upgrade"
-	"github.com/ava-labs/avalanchego/upgrade/upgradetest"
-	"github.com/ava-labs/avalanchego/vms/components/chain"
+	"github.com/rink-labs/rinkgo/api/metrics"
+	"github.com/rink-labs/rinkgo/graft/subnet-evm/core"
+	"github.com/rink-labs/rinkgo/graft/subnet-evm/params"
+	"github.com/rink-labs/rinkgo/graft/subnet-evm/params/extras"
+	"github.com/rink-labs/rinkgo/graft/subnet-evm/params/paramstest"
+	"github.com/rink-labs/rinkgo/graft/subnet-evm/plugin/evm/vmerrors"
+	"github.com/rink-labs/rinkgo/graft/subnet-evm/precompile/contracts/txallowlist"
+	"github.com/rink-labs/rinkgo/graft/subnet-evm/utils"
+	"github.com/rink-labs/rinkgo/snow"
+	"github.com/rink-labs/rinkgo/upgrade"
+	"github.com/rink-labs/rinkgo/upgrade/upgradetest"
+	"github.com/rink-labs/rinkgo/vms/components/chain"
 
-	commonEng "github.com/ava-labs/avalanchego/snow/engine/common"
+	commonEng "github.com/rink-labs/rinkgo/snow/engine/common"
 )
 
 func TestVMUpgradeBytesPrecompile(t *testing.T) {

@@ -10,11 +10,11 @@ import (
 
 	"github.com/ava-labs/libevm/common"
 
-	"github.com/ava-labs/avalanchego/graft/subnet-evm/commontype"
-	"github.com/ava-labs/avalanchego/graft/subnet-evm/utils"
-	"github.com/ava-labs/avalanchego/snow"
-	"github.com/ava-labs/avalanchego/upgrade"
-	"github.com/ava-labs/avalanchego/utils/constants"
+	"github.com/rink-labs/rinkgo/graft/subnet-evm/commontype"
+	"github.com/rink-labs/rinkgo/graft/subnet-evm/utils"
+	"github.com/rink-labs/rinkgo/snow"
+	"github.com/rink-labs/rinkgo/upgrade"
+	"github.com/rink-labs/rinkgo/utils/constants"
 
 	ethparams "github.com/ava-labs/libevm/params"
 )

@@ -13,10 +13,10 @@ import (
 	"github.com/stretchr/testify/require"
 	"google.golang.org/protobuf/proto"
 
-	"github.com/ava-labs/avalanchego/ids"
-	"github.com/ava-labs/avalanchego/proto/pb/p2p"
-	"github.com/ava-labs/avalanchego/staking"
-	"github.com/ava-labs/avalanchego/utils/compression"
+	"github.com/rink-labs/rinkgo/ids"
+	"github.com/rink-labs/rinkgo/proto/pb/p2p"
+	"github.com/rink-labs/rinkgo/staking"
+	"github.com/rink-labs/rinkgo/utils/compression"
 )
 
 func TestMessage(t *testing.T) {

@@ -7,10 +7,10 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/ava-labs/avalanchego/api"
-	"github.com/ava-labs/avalanchego/utils/constants"
-	"github.com/ava-labs/avalanchego/utils/rpc"
-	"github.com/ava-labs/avalanchego/vms/proposervm/block"
+	"github.com/rink-labs/rinkgo/api"
+	"github.com/rink-labs/rinkgo/utils/constants"
+	"github.com/rink-labs/rinkgo/utils/rpc"
+	"github.com/rink-labs/rinkgo/vms/proposervm/block"
 )
 
 // JSONRPCClient for interacting with the jsonrpc API.

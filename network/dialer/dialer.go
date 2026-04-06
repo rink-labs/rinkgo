@@ -12,8 +12,8 @@ import (
 
 	"go.uber.org/zap"
 
-	"github.com/ava-labs/avalanchego/network/throttling"
-	"github.com/ava-labs/avalanchego/utils/logging"
+	"github.com/rink-labs/rinkgo/network/throttling"
+	"github.com/rink-labs/rinkgo/utils/logging"
 )
 
 var _ Dialer = (*dialer)(nil)

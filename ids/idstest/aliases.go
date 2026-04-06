@@ -10,7 +10,7 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/ava-labs/avalanchego/ids"
+	"github.com/rink-labs/rinkgo/ids"
 )
 
 // An AliasTest couples a test in the Aliaser suite with a human-readable name.

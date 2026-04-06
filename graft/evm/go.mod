@@ -1,4 +1,4 @@
-module github.com/ava-labs/avalanchego/graft/evm
+module github.com/rink-labs/rinkgo/graft/evm
 
 go 1.24.11
 
@@ -10,4 +10,4 @@ require (
 	golang.org/x/sys v0.38.0 // indirect
 )
 
-replace github.com/ava-labs/avalanchego => ../../
+replace github.com/rink-labs/rinkgo => ../../

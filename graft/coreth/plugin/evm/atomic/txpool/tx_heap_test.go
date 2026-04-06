@@ -9,7 +9,7 @@ import (
 	"github.com/holiman/uint256"
 	"github.com/stretchr/testify/require"
 
-	"github.com/ava-labs/avalanchego/graft/coreth/plugin/evm/atomic"
+	"github.com/rink-labs/rinkgo/graft/coreth/plugin/evm/atomic"
 )
 
 func TestTxHeap(t *testing.T) {

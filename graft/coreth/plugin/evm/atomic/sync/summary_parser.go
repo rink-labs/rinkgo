@@ -8,8 +8,8 @@ import (
 
 	"github.com/ava-labs/libevm/crypto"
 
-	"github.com/ava-labs/avalanchego/graft/coreth/plugin/evm/message"
-	"github.com/ava-labs/avalanchego/ids"
+	"github.com/rink-labs/rinkgo/graft/coreth/plugin/evm/message"
+	"github.com/rink-labs/rinkgo/ids"
 )
 
 var _ message.SyncableParser = (*summaryParser)(nil)

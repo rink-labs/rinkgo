@@ -8,7 +8,7 @@ import (
 	"fmt"
 	"math"
 
-	"github.com/ava-labs/avalanchego/ids"
+	"github.com/rink-labs/rinkgo/ids"
 )
 
 var ErrNonceReservedForRemoval = errors.New("maxUint64 nonce is reserved for removal")

@@ -12,9 +12,9 @@ const tmplSourcePrecompileConfigGo = `
 package {{.Package}}
 
 import (
-	"github.com/ava-labs/avalanchego/graft/subnet-evm/precompile/precompileconfig"
+	"github.com/rink-labs/rinkgo/graft/subnet-evm/precompile/precompileconfig"
 	{{- if .Contract.AllowList}}
-	"github.com/ava-labs/avalanchego/graft/subnet-evm/precompile/allowlist"
+	"github.com/rink-labs/rinkgo/graft/subnet-evm/precompile/allowlist"
 
 	"github.com/ava-labs/libevm/common"
 	{{- end}}

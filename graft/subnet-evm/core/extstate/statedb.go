@@ -8,8 +8,8 @@ import (
 	"github.com/ava-labs/libevm/core/state"
 	"github.com/ava-labs/libevm/core/types"
 
-	"github.com/ava-labs/avalanchego/graft/subnet-evm/params"
-	"github.com/ava-labs/avalanchego/vms/evm/predicate"
+	"github.com/rink-labs/rinkgo/graft/subnet-evm/params"
+	"github.com/rink-labs/rinkgo/vms/evm/predicate"
 )
 
 type StateDB struct {

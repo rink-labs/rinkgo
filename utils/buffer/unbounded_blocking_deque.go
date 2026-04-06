@@ -6,7 +6,7 @@ package buffer
 import (
 	"sync"
 
-	"github.com/ava-labs/avalanchego/utils"
+	"github.com/rink-labs/rinkgo/utils"
 )
 
 var _ BlockingDeque[int] = (*unboundedBlockingDeque[int])(nil)

@@ -13,20 +13,20 @@ import (
 	"github.com/ava-labs/libevm/crypto"
 	"github.com/stretchr/testify/require"
 
-	"github.com/ava-labs/avalanchego/graft/subnet-evm/accounts/abi/bind"
-	"github.com/ava-labs/avalanchego/graft/subnet-evm/commontype"
-	"github.com/ava-labs/avalanchego/graft/subnet-evm/core"
-	"github.com/ava-labs/avalanchego/graft/subnet-evm/core/txpool"
-	"github.com/ava-labs/avalanchego/graft/subnet-evm/params"
-	"github.com/ava-labs/avalanchego/graft/subnet-evm/plugin/evm/customtypes"
-	"github.com/ava-labs/avalanchego/graft/subnet-evm/precompile/allowlist"
-	"github.com/ava-labs/avalanchego/graft/subnet-evm/precompile/allowlist/allowlisttest"
-	"github.com/ava-labs/avalanchego/graft/subnet-evm/precompile/contracts/feemanager"
-	"github.com/ava-labs/avalanchego/graft/subnet-evm/precompile/contracts/utilstest"
-	"github.com/ava-labs/avalanchego/graft/subnet-evm/utils"
+	"github.com/rink-labs/rinkgo/graft/subnet-evm/accounts/abi/bind"
+	"github.com/rink-labs/rinkgo/graft/subnet-evm/commontype"
+	"github.com/rink-labs/rinkgo/graft/subnet-evm/core"
+	"github.com/rink-labs/rinkgo/graft/subnet-evm/core/txpool"
+	"github.com/rink-labs/rinkgo/graft/subnet-evm/params"
+	"github.com/rink-labs/rinkgo/graft/subnet-evm/plugin/evm/customtypes"
+	"github.com/rink-labs/rinkgo/graft/subnet-evm/precompile/allowlist"
+	"github.com/rink-labs/rinkgo/graft/subnet-evm/precompile/allowlist/allowlisttest"
+	"github.com/rink-labs/rinkgo/graft/subnet-evm/precompile/contracts/feemanager"
+	"github.com/rink-labs/rinkgo/graft/subnet-evm/precompile/contracts/utilstest"
+	"github.com/rink-labs/rinkgo/graft/subnet-evm/utils"
 
-	sim "github.com/ava-labs/avalanchego/graft/subnet-evm/ethclient/simulated"
-	feemanagerbindings "github.com/ava-labs/avalanchego/graft/subnet-evm/precompile/contracts/feemanager/feemanagertest/bindings"
+	sim "github.com/rink-labs/rinkgo/graft/subnet-evm/ethclient/simulated"
+	feemanagerbindings "github.com/rink-labs/rinkgo/graft/subnet-evm/precompile/contracts/feemanager/feemanagertest/bindings"
 )
 
 var (

@@ -8,11 +8,11 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/ava-labs/avalanchego/graft/coreth/plugin/evm"
-	"github.com/ava-labs/avalanchego/graft/coreth/plugin/factory"
-	"github.com/ava-labs/avalanchego/utils/logging"
-	"github.com/ava-labs/avalanchego/utils/ulimit"
-	"github.com/ava-labs/avalanchego/vms/rpcchainvm"
+	"github.com/rink-labs/rinkgo/graft/coreth/plugin/evm"
+	"github.com/rink-labs/rinkgo/graft/coreth/plugin/factory"
+	"github.com/rink-labs/rinkgo/utils/logging"
+	"github.com/rink-labs/rinkgo/utils/ulimit"
+	"github.com/rink-labs/rinkgo/vms/rpcchainvm"
 )
 
 func main() {

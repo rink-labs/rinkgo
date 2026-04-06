@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package sync;
 
-option go_package = "github.com/ava-labs/avalanchego/proto/pb/sync";
+option go_package = "github.com/rink-labs/rinkgo/proto/pb/sync";
 
 message GetChangeProofRequest {
   bytes start_root_hash = 1;

@@ -30,10 +30,10 @@ package tests
 import (
 	"os"
 
-	"github.com/ava-labs/avalanchego/graft/subnet-evm/core/extstate"
-	"github.com/ava-labs/avalanchego/graft/subnet-evm/core/state/snapshot"
-	"github.com/ava-labs/avalanchego/graft/subnet-evm/triedb/hashdb"
-	"github.com/ava-labs/avalanchego/graft/subnet-evm/triedb/pathdb"
+	"github.com/rink-labs/rinkgo/graft/subnet-evm/core/extstate"
+	"github.com/rink-labs/rinkgo/graft/subnet-evm/core/state/snapshot"
+	"github.com/rink-labs/rinkgo/graft/subnet-evm/triedb/hashdb"
+	"github.com/rink-labs/rinkgo/graft/subnet-evm/triedb/pathdb"
 	"github.com/ava-labs/libevm/common"
 	"github.com/ava-labs/libevm/core/rawdb"
 	"github.com/ava-labs/libevm/core/state"

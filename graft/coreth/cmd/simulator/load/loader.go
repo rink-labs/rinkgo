@@ -19,12 +19,12 @@ import (
 	"github.com/ava-labs/libevm/log"
 	"golang.org/x/sync/errgroup"
 
-	"github.com/ava-labs/avalanchego/graft/coreth/cmd/simulator/config"
-	"github.com/ava-labs/avalanchego/graft/coreth/cmd/simulator/key"
-	"github.com/ava-labs/avalanchego/graft/coreth/cmd/simulator/metrics"
-	"github.com/ava-labs/avalanchego/graft/coreth/cmd/simulator/txs"
-	"github.com/ava-labs/avalanchego/graft/coreth/ethclient"
-	"github.com/ava-labs/avalanchego/graft/coreth/params"
+	"github.com/rink-labs/rinkgo/graft/coreth/cmd/simulator/config"
+	"github.com/rink-labs/rinkgo/graft/coreth/cmd/simulator/key"
+	"github.com/rink-labs/rinkgo/graft/coreth/cmd/simulator/metrics"
+	"github.com/rink-labs/rinkgo/graft/coreth/cmd/simulator/txs"
+	"github.com/rink-labs/rinkgo/graft/coreth/ethclient"
+	"github.com/rink-labs/rinkgo/graft/coreth/params"
 
 	ethcrypto "github.com/ava-labs/libevm/crypto"
 	ethparams "github.com/ava-labs/libevm/params"

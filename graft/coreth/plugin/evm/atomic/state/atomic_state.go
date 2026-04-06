@@ -9,11 +9,11 @@ import (
 	"github.com/ava-labs/libevm/common"
 	"github.com/ava-labs/libevm/log"
 
-	"github.com/ava-labs/avalanchego/database"
-	"github.com/ava-labs/avalanchego/graft/coreth/plugin/evm/atomic"
-	"github.com/ava-labs/avalanchego/ids"
+	"github.com/rink-labs/rinkgo/database"
+	"github.com/rink-labs/rinkgo/graft/coreth/plugin/evm/atomic"
+	"github.com/rink-labs/rinkgo/ids"
 
-	avalancheatomic "github.com/ava-labs/avalanchego/chains/atomic"
+	avalancheatomic "github.com/rink-labs/rinkgo/chains/atomic"
 )
 
 // atomicState implements the AtomicState interface using

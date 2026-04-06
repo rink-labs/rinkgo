@@ -4,10 +4,10 @@
 package atomictest
 
 import (
-	"github.com/ava-labs/avalanchego/graft/coreth/plugin/evm/atomic"
-	"github.com/ava-labs/avalanchego/ids"
+	"github.com/rink-labs/rinkgo/graft/coreth/plugin/evm/atomic"
+	"github.com/rink-labs/rinkgo/ids"
 
-	avalancheatomic "github.com/ava-labs/avalanchego/chains/atomic"
+	avalancheatomic "github.com/rink-labs/rinkgo/chains/atomic"
 )
 
 func ConvertToAtomicOps(tx *atomic.Tx) (map[ids.ID]*avalancheatomic.Requests, error) {

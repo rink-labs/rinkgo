@@ -6,13 +6,13 @@ package snowman
 import (
 	"testing"
 
-	"github.com/ava-labs/avalanchego/snow/consensus/snowball"
-	"github.com/ava-labs/avalanchego/snow/consensus/snowman"
-	"github.com/ava-labs/avalanchego/snow/engine/common/tracker"
-	"github.com/ava-labs/avalanchego/snow/engine/enginetest"
-	"github.com/ava-labs/avalanchego/snow/engine/snowman/block/blocktest"
-	"github.com/ava-labs/avalanchego/snow/snowtest"
-	"github.com/ava-labs/avalanchego/snow/validators"
+	"github.com/rink-labs/rinkgo/snow/consensus/snowball"
+	"github.com/rink-labs/rinkgo/snow/consensus/snowman"
+	"github.com/rink-labs/rinkgo/snow/engine/common/tracker"
+	"github.com/rink-labs/rinkgo/snow/engine/enginetest"
+	"github.com/rink-labs/rinkgo/snow/engine/snowman/block/blocktest"
+	"github.com/rink-labs/rinkgo/snow/snowtest"
+	"github.com/rink-labs/rinkgo/snow/validators"
 )
 
 func DefaultConfig(t testing.TB) Config {

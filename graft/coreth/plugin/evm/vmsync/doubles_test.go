@@ -9,7 +9,7 @@ import (
 	"sync"
 	"time"
 
-	syncpkg "github.com/ava-labs/avalanchego/graft/coreth/sync"
+	syncpkg "github.com/rink-labs/rinkgo/graft/coreth/sync"
 )
 
 // FuncSyncer adapts a function to the simple Syncer shape used in tests. It is

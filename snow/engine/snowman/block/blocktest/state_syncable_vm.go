@@ -10,7 +10,7 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/ava-labs/avalanchego/snow/engine/snowman/block"
+	"github.com/rink-labs/rinkgo/snow/engine/snowman/block"
 )
 
 var (

@@ -8,9 +8,9 @@ import (
 
 	"go.uber.org/mock/gomock"
 
-	"github.com/ava-labs/avalanchego/graft/subnet-evm/precompile/precompileconfig"
-	"github.com/ava-labs/avalanchego/graft/subnet-evm/precompile/precompiletest"
-	"github.com/ava-labs/avalanchego/graft/subnet-evm/utils"
+	"github.com/rink-labs/rinkgo/graft/subnet-evm/precompile/precompileconfig"
+	"github.com/rink-labs/rinkgo/graft/subnet-evm/precompile/precompiletest"
+	"github.com/rink-labs/rinkgo/graft/subnet-evm/utils"
 )
 
 func TestVerify(t *testing.T) {

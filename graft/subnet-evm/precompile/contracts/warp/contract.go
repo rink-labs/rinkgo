@@ -14,11 +14,11 @@ import (
 
 	_ "embed"
 
-	"github.com/ava-labs/avalanchego/graft/subnet-evm/accounts/abi"
-	"github.com/ava-labs/avalanchego/graft/subnet-evm/precompile/contract"
-	"github.com/ava-labs/avalanchego/graft/subnet-evm/precompile/precompileconfig"
-	"github.com/ava-labs/avalanchego/vms/platformvm/warp"
-	"github.com/ava-labs/avalanchego/vms/platformvm/warp/payload"
+	"github.com/rink-labs/rinkgo/graft/subnet-evm/accounts/abi"
+	"github.com/rink-labs/rinkgo/graft/subnet-evm/precompile/contract"
+	"github.com/rink-labs/rinkgo/graft/subnet-evm/precompile/precompileconfig"
+	"github.com/rink-labs/rinkgo/vms/platformvm/warp"
+	"github.com/rink-labs/rinkgo/vms/platformvm/warp/payload"
 )
 
 const addWarpMessageBaseGasCost uint64 = 20_000 // Cost of producing and serving a BLS Signature

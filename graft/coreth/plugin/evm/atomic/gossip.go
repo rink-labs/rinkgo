@@ -3,7 +3,7 @@
 
 package atomic
 
-import "github.com/ava-labs/avalanchego/network/p2p/gossip"
+import "github.com/rink-labs/rinkgo/network/p2p/gossip"
 
 var _ gossip.Marshaller[*Tx] = (*TxMarshaller)(nil)
 

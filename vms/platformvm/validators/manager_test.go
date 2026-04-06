@@ -11,21 +11,21 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/ava-labs/avalanchego/ids"
-	"github.com/ava-labs/avalanchego/snow/validators"
-	"github.com/ava-labs/avalanchego/upgrade/upgradetest"
-	"github.com/ava-labs/avalanchego/utils/constants"
-	"github.com/ava-labs/avalanchego/utils/crypto/bls"
-	"github.com/ava-labs/avalanchego/utils/crypto/bls/signer/localsigner"
-	"github.com/ava-labs/avalanchego/utils/timer/mockable"
-	"github.com/ava-labs/avalanchego/vms/platformvm/block"
-	"github.com/ava-labs/avalanchego/vms/platformvm/config"
-	"github.com/ava-labs/avalanchego/vms/platformvm/genesis/genesistest"
-	"github.com/ava-labs/avalanchego/vms/platformvm/metrics"
-	"github.com/ava-labs/avalanchego/vms/platformvm/state"
-	"github.com/ava-labs/avalanchego/vms/platformvm/state/statetest"
+	"github.com/rink-labs/rinkgo/ids"
+	"github.com/rink-labs/rinkgo/snow/validators"
+	"github.com/rink-labs/rinkgo/upgrade/upgradetest"
+	"github.com/rink-labs/rinkgo/utils/constants"
+	"github.com/rink-labs/rinkgo/utils/crypto/bls"
+	"github.com/rink-labs/rinkgo/utils/crypto/bls/signer/localsigner"
+	"github.com/rink-labs/rinkgo/utils/timer/mockable"
+	"github.com/rink-labs/rinkgo/vms/platformvm/block"
+	"github.com/rink-labs/rinkgo/vms/platformvm/config"
+	"github.com/rink-labs/rinkgo/vms/platformvm/genesis/genesistest"
+	"github.com/rink-labs/rinkgo/vms/platformvm/metrics"
+	"github.com/rink-labs/rinkgo/vms/platformvm/state"
+	"github.com/rink-labs/rinkgo/vms/platformvm/state/statetest"
 
-	. "github.com/ava-labs/avalanchego/vms/platformvm/validators"
+	. "github.com/rink-labs/rinkgo/vms/platformvm/validators"
 )
 
 func newPublicKey(t *testing.T) *bls.PublicKey {

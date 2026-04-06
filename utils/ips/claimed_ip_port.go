@@ -7,10 +7,10 @@ import (
 	"net"
 	"net/netip"
 
-	"github.com/ava-labs/avalanchego/ids"
-	"github.com/ava-labs/avalanchego/staking"
-	"github.com/ava-labs/avalanchego/utils/hashing"
-	"github.com/ava-labs/avalanchego/utils/wrappers"
+	"github.com/rink-labs/rinkgo/ids"
+	"github.com/rink-labs/rinkgo/staking"
+	"github.com/rink-labs/rinkgo/utils/hashing"
+	"github.com/rink-labs/rinkgo/utils/wrappers"
 )
 
 const (

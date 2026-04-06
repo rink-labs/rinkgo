@@ -13,13 +13,13 @@ import (
 	"github.com/ava-labs/libevm/libevm/options"
 	"github.com/ava-labs/libevm/trie"
 
-	"github.com/ava-labs/avalanchego/database/versiondb"
-	"github.com/ava-labs/avalanchego/graft/coreth/plugin/evm/message"
-	"github.com/ava-labs/avalanchego/graft/coreth/sync"
-	"github.com/ava-labs/avalanchego/utils/wrappers"
+	"github.com/rink-labs/rinkgo/database/versiondb"
+	"github.com/rink-labs/rinkgo/graft/coreth/plugin/evm/message"
+	"github.com/rink-labs/rinkgo/graft/coreth/sync"
+	"github.com/rink-labs/rinkgo/utils/wrappers"
 
-	atomicstate "github.com/ava-labs/avalanchego/graft/coreth/plugin/evm/atomic/state"
-	syncclient "github.com/ava-labs/avalanchego/graft/coreth/sync/client"
+	atomicstate "github.com/rink-labs/rinkgo/graft/coreth/plugin/evm/atomic/state"
+	syncclient "github.com/rink-labs/rinkgo/graft/coreth/sync/client"
 )
 
 const (

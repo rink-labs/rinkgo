@@ -8,8 +8,8 @@ package acp181
 import (
 	"time"
 
-	"github.com/ava-labs/avalanchego/upgrade"
-	"github.com/ava-labs/avalanchego/vms/proposervm/block"
+	"github.com/rink-labs/rinkgo/upgrade"
+	"github.com/rink-labs/rinkgo/vms/proposervm/block"
 )
 
 // NewEpoch returns a child block's epoch based on its parent.

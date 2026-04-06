@@ -10,16 +10,16 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/ava-labs/avalanchego/ids"
-	"github.com/ava-labs/avalanchego/snow"
-	"github.com/ava-labs/avalanchego/snow/engine/enginetest"
-	"github.com/ava-labs/avalanchego/snow/validators/validatorstest"
-	"github.com/ava-labs/avalanchego/upgrade/upgradetest"
-	"github.com/ava-labs/avalanchego/version"
-	"github.com/ava-labs/avalanchego/vms/evm/uptimetracker"
+	"github.com/rink-labs/rinkgo/ids"
+	"github.com/rink-labs/rinkgo/snow"
+	"github.com/rink-labs/rinkgo/snow/engine/enginetest"
+	"github.com/rink-labs/rinkgo/snow/validators/validatorstest"
+	"github.com/rink-labs/rinkgo/upgrade/upgradetest"
+	"github.com/rink-labs/rinkgo/version"
+	"github.com/rink-labs/rinkgo/vms/evm/uptimetracker"
 
-	commonEng "github.com/ava-labs/avalanchego/snow/engine/common"
-	avagovalidators "github.com/ava-labs/avalanchego/snow/validators"
+	commonEng "github.com/rink-labs/rinkgo/snow/engine/common"
+	avagovalidators "github.com/rink-labs/rinkgo/snow/validators"
 )
 
 func TestUptimeTracker(t *testing.T) {

@@ -10,8 +10,8 @@ import (
 
 	"github.com/ava-labs/libevm/common"
 
-	"github.com/ava-labs/avalanchego/graft/coreth/utils"
-	"github.com/ava-labs/avalanchego/snow"
+	"github.com/rink-labs/rinkgo/graft/coreth/utils"
+	"github.com/rink-labs/rinkgo/snow"
 
 	ethparams "github.com/ava-labs/libevm/params"
 )

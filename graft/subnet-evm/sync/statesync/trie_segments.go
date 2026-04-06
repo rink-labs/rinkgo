@@ -16,11 +16,11 @@ import (
 	"github.com/ava-labs/libevm/log"
 	"github.com/ava-labs/libevm/trie"
 
-	"github.com/ava-labs/avalanchego/graft/subnet-evm/plugin/evm/customrawdb"
-	"github.com/ava-labs/avalanchego/graft/subnet-evm/utils"
-	"github.com/ava-labs/avalanchego/utils/wrappers"
+	"github.com/rink-labs/rinkgo/graft/subnet-evm/plugin/evm/customrawdb"
+	"github.com/rink-labs/rinkgo/graft/subnet-evm/utils"
+	"github.com/rink-labs/rinkgo/utils/wrappers"
 
-	syncclient "github.com/ava-labs/avalanchego/graft/subnet-evm/sync/client"
+	syncclient "github.com/rink-labs/rinkgo/graft/subnet-evm/sync/client"
 )
 
 var (

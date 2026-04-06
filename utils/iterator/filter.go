@@ -3,7 +3,7 @@
 
 package iterator
 
-import "github.com/ava-labs/avalanchego/utils/set"
+import "github.com/rink-labs/rinkgo/utils/set"
 
 var _ Iterator[any] = (*filtered[any])(nil)
 

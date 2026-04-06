@@ -12,14 +12,14 @@ import (
 	"connectrpc.com/connect"
 	"go.uber.org/zap"
 
-	"github.com/ava-labs/avalanchego/api"
-	"github.com/ava-labs/avalanchego/api/server"
-	"github.com/ava-labs/avalanchego/connectproto/pb/proposervm/proposervmconnect"
-	"github.com/ava-labs/avalanchego/vms/proposervm/acp181"
-	"github.com/ava-labs/avalanchego/vms/proposervm/block"
+	"github.com/rink-labs/rinkgo/api"
+	"github.com/rink-labs/rinkgo/api/server"
+	"github.com/rink-labs/rinkgo/connectproto/pb/proposervm/proposervmconnect"
+	"github.com/rink-labs/rinkgo/vms/proposervm/acp181"
+	"github.com/rink-labs/rinkgo/vms/proposervm/block"
 
-	pb "github.com/ava-labs/avalanchego/connectproto/pb/proposervm"
-	avajson "github.com/ava-labs/avalanchego/utils/json"
+	pb "github.com/rink-labs/rinkgo/connectproto/pb/proposervm"
+	avajson "github.com/rink-labs/rinkgo/utils/json"
 )
 
 var _ proposervmconnect.ProposerVMHandler = (*connectrpcService)(nil)

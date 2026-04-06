@@ -7,9 +7,9 @@ import (
 	"context"
 	"errors"
 
-	"github.com/ava-labs/avalanchego/graft/subnet-evm/network"
-	"github.com/ava-labs/avalanchego/ids"
-	"github.com/ava-labs/avalanchego/version"
+	"github.com/rink-labs/rinkgo/graft/subnet-evm/network"
+	"github.com/rink-labs/rinkgo/ids"
+	"github.com/rink-labs/rinkgo/version"
 )
 
 var _ network.SyncedNetworkClient = (*mockNetwork)(nil)

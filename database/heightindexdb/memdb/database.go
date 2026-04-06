@@ -6,7 +6,7 @@ package memdb
 import (
 	"sync"
 
-	"github.com/ava-labs/avalanchego/database"
+	"github.com/rink-labs/rinkgo/database"
 )
 
 var _ database.HeightIndex = (*Database)(nil)

@@ -6,7 +6,7 @@ package beacon
 import (
 	"net/netip"
 
-	"github.com/ava-labs/avalanchego/ids"
+	"github.com/rink-labs/rinkgo/ids"
 )
 
 var _ Beacon = (*beacon)(nil)

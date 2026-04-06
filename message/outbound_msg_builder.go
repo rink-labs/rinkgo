@@ -7,10 +7,10 @@ import (
 	"net/netip"
 	"time"
 
-	"github.com/ava-labs/avalanchego/ids"
-	"github.com/ava-labs/avalanchego/proto/pb/p2p"
-	"github.com/ava-labs/avalanchego/utils/compression"
-	"github.com/ava-labs/avalanchego/utils/ips"
+	"github.com/rink-labs/rinkgo/ids"
+	"github.com/rink-labs/rinkgo/proto/pb/p2p"
+	"github.com/rink-labs/rinkgo/utils/compression"
+	"github.com/rink-labs/rinkgo/utils/ips"
 )
 
 var _ OutboundMsgBuilder = (*outMsgBuilder)(nil)

@@ -6,7 +6,7 @@ package types
 import (
 	"encoding/json"
 
-	"github.com/ava-labs/avalanchego/utils/formatting"
+	"github.com/rink-labs/rinkgo/utils/formatting"
 )
 
 const nullStr = "null"

@@ -6,7 +6,7 @@ package version
 import (
 	"time"
 
-	"github.com/ava-labs/avalanchego/utils/timer/mockable"
+	"github.com/rink-labs/rinkgo/utils/timer/mockable"
 )
 
 // Compatibility is a utility for checking whether a peers version is

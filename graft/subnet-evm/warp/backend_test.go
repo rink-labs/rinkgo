@@ -8,16 +8,16 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/ava-labs/avalanchego/cache/lru"
-	"github.com/ava-labs/avalanchego/database"
-	"github.com/ava-labs/avalanchego/database/memdb"
-	"github.com/ava-labs/avalanchego/graft/subnet-evm/warp/warptest"
-	"github.com/ava-labs/avalanchego/ids"
-	"github.com/ava-labs/avalanchego/utils"
-	"github.com/ava-labs/avalanchego/utils/crypto/bls/signer/localsigner"
-	"github.com/ava-labs/avalanchego/vms/platformvm/warp/payload"
+	"github.com/rink-labs/rinkgo/cache/lru"
+	"github.com/rink-labs/rinkgo/database"
+	"github.com/rink-labs/rinkgo/database/memdb"
+	"github.com/rink-labs/rinkgo/graft/subnet-evm/warp/warptest"
+	"github.com/rink-labs/rinkgo/ids"
+	"github.com/rink-labs/rinkgo/utils"
+	"github.com/rink-labs/rinkgo/utils/crypto/bls/signer/localsigner"
+	"github.com/rink-labs/rinkgo/vms/platformvm/warp/payload"
 
-	avalancheWarp "github.com/ava-labs/avalanchego/vms/platformvm/warp"
+	avalancheWarp "github.com/rink-labs/rinkgo/vms/platformvm/warp"
 )
 
 var (

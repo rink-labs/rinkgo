@@ -10,10 +10,10 @@ import (
 
 	"github.com/ava-labs/libevm/trie"
 
-	"github.com/ava-labs/avalanchego/chains/atomic"
-	"github.com/ava-labs/avalanchego/codec"
-	"github.com/ava-labs/avalanchego/ids"
-	"github.com/ava-labs/avalanchego/utils/wrappers"
+	"github.com/rink-labs/rinkgo/chains/atomic"
+	"github.com/rink-labs/rinkgo/codec"
+	"github.com/rink-labs/rinkgo/ids"
+	"github.com/rink-labs/rinkgo/utils/wrappers"
 )
 
 var errKeyLength = errors.New("atomic trie key length invalid")

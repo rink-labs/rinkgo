@@ -9,8 +9,8 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/ava-labs/avalanchego/database/dbtest"
-	"github.com/ava-labs/avalanchego/database/memdb"
+	"github.com/rink-labs/rinkgo/database/dbtest"
+	"github.com/rink-labs/rinkgo/database/memdb"
 )
 
 func TestInterface(t *testing.T) {

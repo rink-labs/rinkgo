@@ -6,11 +6,11 @@ package p
 import (
 	"time"
 
-	"github.com/ava-labs/avalanchego/vms/platformvm"
-	"github.com/ava-labs/avalanchego/vms/platformvm/txs"
-	"github.com/ava-labs/avalanchego/wallet/chain/p/builder"
-	"github.com/ava-labs/avalanchego/wallet/chain/p/wallet"
-	"github.com/ava-labs/avalanchego/wallet/subnet/primary/common"
+	"github.com/rink-labs/rinkgo/vms/platformvm"
+	"github.com/rink-labs/rinkgo/vms/platformvm/txs"
+	"github.com/rink-labs/rinkgo/wallet/chain/p/builder"
+	"github.com/rink-labs/rinkgo/wallet/chain/p/wallet"
+	"github.com/rink-labs/rinkgo/wallet/subnet/primary/common"
 )
 
 var _ wallet.Client = (*Client)(nil)

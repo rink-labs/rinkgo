@@ -14,15 +14,15 @@ import (
 	"github.com/ava-labs/libevm/crypto"
 	"github.com/stretchr/testify/require"
 
-	"github.com/ava-labs/avalanchego/graft/coreth/accounts/abi"
-	"github.com/ava-labs/avalanchego/graft/coreth/accounts/abi/bind"
-	"github.com/ava-labs/avalanchego/graft/coreth/accounts/abi/bind/backends"
-	"github.com/ava-labs/avalanchego/graft/coreth/core"
-	"github.com/ava-labs/avalanchego/graft/coreth/eth/ethconfig"
-	"github.com/ava-labs/avalanchego/graft/coreth/ethclient/simulated"
-	"github.com/ava-labs/avalanchego/graft/coreth/node"
-	"github.com/ava-labs/avalanchego/graft/coreth/params"
-	"github.com/ava-labs/avalanchego/graft/coreth/plugin/evm/customtypes"
+	"github.com/rink-labs/rinkgo/graft/coreth/accounts/abi"
+	"github.com/rink-labs/rinkgo/graft/coreth/accounts/abi/bind"
+	"github.com/rink-labs/rinkgo/graft/coreth/accounts/abi/bind/backends"
+	"github.com/rink-labs/rinkgo/graft/coreth/core"
+	"github.com/rink-labs/rinkgo/graft/coreth/eth/ethconfig"
+	"github.com/rink-labs/rinkgo/graft/coreth/ethclient/simulated"
+	"github.com/rink-labs/rinkgo/graft/coreth/node"
+	"github.com/rink-labs/rinkgo/graft/coreth/params"
+	"github.com/rink-labs/rinkgo/graft/coreth/plugin/evm/customtypes"
 )
 
 func TestMain(m *testing.M) {

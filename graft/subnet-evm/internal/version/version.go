@@ -34,10 +34,10 @@ import (
 	"runtime/debug"
 	"strings"
 
-	"github.com/ava-labs/avalanchego/graft/subnet-evm/params"
+	"github.com/rink-labs/rinkgo/graft/subnet-evm/params"
 )
 
-const ourPath = "github.com/ava-labs/avalanchego/graft/subnet-evm" // Path to our module
+const ourPath = "github.com/rink-labs/rinkgo/graft/subnet-evm" // Path to our module
 
 // These variables are set at build-time by the linker when the build is
 // done by build/ci.go.

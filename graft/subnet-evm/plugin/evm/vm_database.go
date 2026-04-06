@@ -15,18 +15,18 @@ import (
 	"github.com/ava-labs/libevm/core/rawdb"
 	"github.com/ava-labs/libevm/log"
 
-	"github.com/ava-labs/avalanchego/api/metrics"
-	"github.com/ava-labs/avalanchego/database/factory"
-	"github.com/ava-labs/avalanchego/database/meterdb"
-	"github.com/ava-labs/avalanchego/database/pebbledb"
-	"github.com/ava-labs/avalanchego/database/prefixdb"
-	"github.com/ava-labs/avalanchego/database/versiondb"
-	"github.com/ava-labs/avalanchego/graft/subnet-evm/plugin/evm/config"
-	"github.com/ava-labs/avalanchego/utils/constants"
-	"github.com/ava-labs/avalanchego/utils/logging"
-	"github.com/ava-labs/avalanchego/vms/evm/database"
+	"github.com/rink-labs/rinkgo/api/metrics"
+	"github.com/rink-labs/rinkgo/database/factory"
+	"github.com/rink-labs/rinkgo/database/meterdb"
+	"github.com/rink-labs/rinkgo/database/pebbledb"
+	"github.com/rink-labs/rinkgo/database/prefixdb"
+	"github.com/rink-labs/rinkgo/database/versiondb"
+	"github.com/rink-labs/rinkgo/graft/subnet-evm/plugin/evm/config"
+	"github.com/rink-labs/rinkgo/utils/constants"
+	"github.com/rink-labs/rinkgo/utils/logging"
+	"github.com/rink-labs/rinkgo/vms/evm/database"
 
-	avalanchedatabase "github.com/ava-labs/avalanchego/database"
+	avalanchedatabase "github.com/rink-labs/rinkgo/database"
 )
 
 const (

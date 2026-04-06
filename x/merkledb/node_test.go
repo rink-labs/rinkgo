@@ -9,7 +9,7 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/ava-labs/avalanchego/utils/maybe"
+	"github.com/rink-labs/rinkgo/utils/maybe"
 )
 
 func Test_Node_Marshal(t *testing.T) {

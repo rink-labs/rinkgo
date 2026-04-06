@@ -19,9 +19,9 @@ import (
 	"github.com/ava-labs/libevm/params"
 	"github.com/stretchr/testify/require"
 
-	"github.com/ava-labs/avalanchego/tests"
-	"github.com/ava-labs/avalanchego/tests/load/contracts"
-	"github.com/ava-labs/avalanchego/utils/sampler"
+	"github.com/rink-labs/rinkgo/tests"
+	"github.com/rink-labs/rinkgo/tests/load/contracts"
+	"github.com/rink-labs/rinkgo/utils/sampler"
 )
 
 var maxFeeCap = big.NewInt(300000000000)

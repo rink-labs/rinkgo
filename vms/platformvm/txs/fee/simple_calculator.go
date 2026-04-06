@@ -3,7 +3,7 @@
 
 package fee
 
-import "github.com/ava-labs/avalanchego/vms/platformvm/txs"
+import "github.com/rink-labs/rinkgo/vms/platformvm/txs"
 
 var _ Calculator = (*SimpleCalculator)(nil)
 

@@ -8,20 +8,20 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/ava-labs/avalanchego/ids"
-	"github.com/ava-labs/avalanchego/utils"
-	"github.com/ava-labs/avalanchego/utils/constants"
-	"github.com/ava-labs/avalanchego/utils/formatting/address"
-	"github.com/ava-labs/avalanchego/utils/set"
-	"github.com/ava-labs/avalanchego/vms/avm"
-	"github.com/ava-labs/avalanchego/vms/avm/fxs"
-	"github.com/ava-labs/avalanchego/vms/nftfx"
-	"github.com/ava-labs/avalanchego/vms/platformvm/genesis"
-	"github.com/ava-labs/avalanchego/vms/propertyfx"
-	"github.com/ava-labs/avalanchego/vms/secp256k1fx"
+	"github.com/rink-labs/rinkgo/ids"
+	"github.com/rink-labs/rinkgo/utils"
+	"github.com/rink-labs/rinkgo/utils/constants"
+	"github.com/rink-labs/rinkgo/utils/formatting/address"
+	"github.com/rink-labs/rinkgo/utils/set"
+	"github.com/rink-labs/rinkgo/vms/avm"
+	"github.com/rink-labs/rinkgo/vms/avm/fxs"
+	"github.com/rink-labs/rinkgo/vms/nftfx"
+	"github.com/rink-labs/rinkgo/vms/platformvm/genesis"
+	"github.com/rink-labs/rinkgo/vms/propertyfx"
+	"github.com/rink-labs/rinkgo/vms/secp256k1fx"
 
-	xchaintxs "github.com/ava-labs/avalanchego/vms/avm/txs"
-	pchaintxs "github.com/ava-labs/avalanchego/vms/platformvm/txs"
+	xchaintxs "github.com/rink-labs/rinkgo/vms/avm/txs"
+	pchaintxs "github.com/rink-labs/rinkgo/vms/platformvm/txs"
 )
 
 const (

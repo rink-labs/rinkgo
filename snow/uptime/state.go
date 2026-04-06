@@ -6,7 +6,7 @@ package uptime
 import (
 	"time"
 
-	"github.com/ava-labs/avalanchego/ids"
+	"github.com/rink-labs/rinkgo/ids"
 )
 
 type State interface {

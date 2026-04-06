@@ -7,19 +7,19 @@ import (
 	"context"
 	"errors"
 
-	"github.com/ava-labs/avalanchego/ids"
-	"github.com/ava-labs/avalanchego/snow/consensus/snowman"
-	"github.com/ava-labs/avalanchego/snow/engine/common"
-	"github.com/ava-labs/avalanchego/utils/set"
-	"github.com/ava-labs/avalanchego/utils/timer/mockable"
-	"github.com/ava-labs/avalanchego/utils/units"
-	"github.com/ava-labs/avalanchego/vms/avm/block"
-	"github.com/ava-labs/avalanchego/vms/avm/state"
-	"github.com/ava-labs/avalanchego/vms/avm/txs"
-	"github.com/ava-labs/avalanchego/vms/txs/mempool"
+	"github.com/rink-labs/rinkgo/ids"
+	"github.com/rink-labs/rinkgo/snow/consensus/snowman"
+	"github.com/rink-labs/rinkgo/snow/engine/common"
+	"github.com/rink-labs/rinkgo/utils/set"
+	"github.com/rink-labs/rinkgo/utils/timer/mockable"
+	"github.com/rink-labs/rinkgo/utils/units"
+	"github.com/rink-labs/rinkgo/vms/avm/block"
+	"github.com/rink-labs/rinkgo/vms/avm/state"
+	"github.com/rink-labs/rinkgo/vms/avm/txs"
+	"github.com/rink-labs/rinkgo/vms/txs/mempool"
 
-	blockexecutor "github.com/ava-labs/avalanchego/vms/avm/block/executor"
-	txexecutor "github.com/ava-labs/avalanchego/vms/avm/txs/executor"
+	blockexecutor "github.com/rink-labs/rinkgo/vms/avm/block/executor"
+	txexecutor "github.com/rink-labs/rinkgo/vms/avm/txs/executor"
 )
 
 // targetBlockSize is the max block size we aim to produce

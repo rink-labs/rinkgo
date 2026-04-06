@@ -7,7 +7,7 @@ import (
 	"errors"
 	"math"
 
-	"github.com/ava-labs/avalanchego/utils/json"
+	"github.com/rink-labs/rinkgo/utils/json"
 )
 
 type Height json.Uint64

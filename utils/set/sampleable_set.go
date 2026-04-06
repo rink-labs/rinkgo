@@ -8,11 +8,11 @@ import (
 	"encoding/json"
 	"slices"
 
-	"github.com/ava-labs/avalanchego/utils"
-	"github.com/ava-labs/avalanchego/utils/sampler"
-	"github.com/ava-labs/avalanchego/utils/wrappers"
+	"github.com/rink-labs/rinkgo/utils"
+	"github.com/rink-labs/rinkgo/utils/sampler"
+	"github.com/rink-labs/rinkgo/utils/wrappers"
 
-	avajson "github.com/ava-labs/avalanchego/utils/json"
+	avajson "github.com/rink-labs/rinkgo/utils/json"
 )
 
 var _ json.Marshaler = (*Set[int])(nil)

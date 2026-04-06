@@ -4,9 +4,9 @@
 package state
 
 import (
-	"github.com/ava-labs/avalanchego/utils/heap"
-	"github.com/ava-labs/avalanchego/utils/iterator"
-	"github.com/ava-labs/avalanchego/vms/platformvm/txs"
+	"github.com/rink-labs/rinkgo/utils/heap"
+	"github.com/rink-labs/rinkgo/utils/iterator"
+	"github.com/rink-labs/rinkgo/vms/platformvm/txs"
 )
 
 var (

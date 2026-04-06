@@ -12,8 +12,8 @@ import (
 	"path/filepath"
 	"runtime"
 
-	"github.com/ava-labs/avalanchego/utils/crypto/bls"
-	"github.com/ava-labs/avalanchego/utils/perms"
+	"github.com/rink-labs/rinkgo/utils/crypto/bls"
+	"github.com/rink-labs/rinkgo/utils/perms"
 
 	blst "github.com/supranational/blst/bindings/go"
 )

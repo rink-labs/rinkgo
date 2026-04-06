@@ -30,8 +30,8 @@ package blobpool
 import (
 	"math/big"
 
-	"github.com/ava-labs/avalanchego/graft/subnet-evm/commontype"
-	"github.com/ava-labs/avalanchego/graft/subnet-evm/params"
+	"github.com/rink-labs/rinkgo/graft/subnet-evm/commontype"
+	"github.com/rink-labs/rinkgo/graft/subnet-evm/params"
 	"github.com/ava-labs/libevm/common"
 	"github.com/ava-labs/libevm/core/state"
 	"github.com/ava-labs/libevm/core/types"

@@ -4,10 +4,10 @@
 package api
 
 import (
-	"github.com/ava-labs/avalanchego/ids"
-	"github.com/ava-labs/avalanchego/utils/json"
-	"github.com/ava-labs/avalanchego/vms/platformvm/signer"
-	"github.com/ava-labs/avalanchego/vms/types"
+	"github.com/rink-labs/rinkgo/ids"
+	"github.com/rink-labs/rinkgo/utils/json"
+	"github.com/rink-labs/rinkgo/vms/platformvm/signer"
+	"github.com/rink-labs/rinkgo/vms/types"
 )
 
 // Staker is the representation of a staker sent via APIs.

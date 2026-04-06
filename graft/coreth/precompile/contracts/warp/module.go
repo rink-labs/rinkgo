@@ -8,9 +8,9 @@ import (
 
 	"github.com/ava-labs/libevm/common"
 
-	"github.com/ava-labs/avalanchego/graft/coreth/precompile/contract"
-	"github.com/ava-labs/avalanchego/graft/coreth/precompile/modules"
-	"github.com/ava-labs/avalanchego/graft/coreth/precompile/precompileconfig"
+	"github.com/rink-labs/rinkgo/graft/coreth/precompile/contract"
+	"github.com/rink-labs/rinkgo/graft/coreth/precompile/modules"
+	"github.com/rink-labs/rinkgo/graft/coreth/precompile/precompileconfig"
 )
 
 var _ contract.Configurator = (*configurator)(nil)

@@ -11,13 +11,13 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/ava-labs/avalanchego/database"
-	"github.com/ava-labs/avalanchego/ids"
-	"github.com/ava-labs/avalanchego/snow/consensus/snowman"
-	"github.com/ava-labs/avalanchego/snow/engine/snowman/block/blocktest"
-	"github.com/ava-labs/avalanchego/utils/logging"
+	"github.com/rink-labs/rinkgo/database"
+	"github.com/rink-labs/rinkgo/ids"
+	"github.com/rink-labs/rinkgo/snow/consensus/snowman"
+	"github.com/rink-labs/rinkgo/snow/engine/snowman/block/blocktest"
+	"github.com/rink-labs/rinkgo/utils/logging"
 
-	. "github.com/ava-labs/avalanchego/snow/engine/snowman/block"
+	. "github.com/rink-labs/rinkgo/snow/engine/snowman/block"
 )
 
 var errTest = errors.New("non-nil error")

@@ -6,7 +6,7 @@ package messages
 import (
 	"fmt"
 
-	"github.com/ava-labs/avalanchego/ids"
+	"github.com/rink-labs/rinkgo/ids"
 )
 
 // ValidatorUptime is signed when the ValidationID is known and the validator

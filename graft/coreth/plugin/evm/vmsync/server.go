@@ -10,11 +10,11 @@ import (
 
 	"github.com/ava-labs/libevm/log"
 
-	"github.com/ava-labs/avalanchego/database"
-	"github.com/ava-labs/avalanchego/graft/coreth/core"
-	"github.com/ava-labs/avalanchego/snow/engine/snowman/block"
+	"github.com/rink-labs/rinkgo/database"
+	"github.com/rink-labs/rinkgo/graft/coreth/core"
+	"github.com/rink-labs/rinkgo/snow/engine/snowman/block"
 
-	synccommon "github.com/ava-labs/avalanchego/graft/coreth/sync"
+	synccommon "github.com/rink-labs/rinkgo/graft/coreth/sync"
 )
 
 var errProviderNotSet = errors.New("provider not set")

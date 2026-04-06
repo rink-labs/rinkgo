@@ -11,8 +11,8 @@ import (
 	"net/netip"
 	"strings"
 
-	"github.com/ava-labs/avalanchego/utils/ips"
-	"github.com/ava-labs/avalanchego/utils/rpc"
+	"github.com/rink-labs/rinkgo/utils/ips"
+	"github.com/rink-labs/rinkgo/utils/rpc"
 )
 
 var _ Resolver = (*ifConfigResolver)(nil)

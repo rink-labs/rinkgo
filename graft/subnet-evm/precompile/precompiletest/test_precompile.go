@@ -14,14 +14,14 @@ import (
 	"github.com/stretchr/testify/require"
 	"go.uber.org/mock/gomock"
 
-	"github.com/ava-labs/avalanchego/graft/subnet-evm/commontype"
-	"github.com/ava-labs/avalanchego/graft/subnet-evm/core/extstate"
-	"github.com/ava-labs/avalanchego/graft/subnet-evm/params/extras"
-	"github.com/ava-labs/avalanchego/graft/subnet-evm/precompile/contract"
-	"github.com/ava-labs/avalanchego/graft/subnet-evm/precompile/modules"
-	"github.com/ava-labs/avalanchego/graft/subnet-evm/precompile/precompileconfig"
-	"github.com/ava-labs/avalanchego/graft/subnet-evm/utils/utilstest"
-	"github.com/ava-labs/avalanchego/vms/evm/predicate"
+	"github.com/rink-labs/rinkgo/graft/subnet-evm/commontype"
+	"github.com/rink-labs/rinkgo/graft/subnet-evm/core/extstate"
+	"github.com/rink-labs/rinkgo/graft/subnet-evm/params/extras"
+	"github.com/rink-labs/rinkgo/graft/subnet-evm/precompile/contract"
+	"github.com/rink-labs/rinkgo/graft/subnet-evm/precompile/modules"
+	"github.com/rink-labs/rinkgo/graft/subnet-evm/precompile/precompileconfig"
+	"github.com/rink-labs/rinkgo/graft/subnet-evm/utils/utilstest"
+	"github.com/rink-labs/rinkgo/vms/evm/predicate"
 )
 
 // PrecompileTest is a test case for a precompile

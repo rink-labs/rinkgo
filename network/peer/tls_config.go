@@ -11,7 +11,7 @@ import (
 	"errors"
 	"io"
 
-	"github.com/ava-labs/avalanchego/staking"
+	"github.com/rink-labs/rinkgo/staking"
 )
 
 var (

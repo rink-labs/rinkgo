@@ -16,12 +16,12 @@ import (
 	"github.com/ava-labs/libevm/log"
 	"github.com/ava-labs/libevm/trie"
 
-	"github.com/ava-labs/avalanchego/graft/coreth/plugin/evm/message"
-	"github.com/ava-labs/avalanchego/graft/coreth/utils"
-	"github.com/ava-labs/avalanchego/utils/wrappers"
-	"github.com/ava-labs/avalanchego/vms/evm/sync/customrawdb"
+	"github.com/rink-labs/rinkgo/graft/coreth/plugin/evm/message"
+	"github.com/rink-labs/rinkgo/graft/coreth/utils"
+	"github.com/rink-labs/rinkgo/utils/wrappers"
+	"github.com/rink-labs/rinkgo/vms/evm/sync/customrawdb"
 
-	syncclient "github.com/ava-labs/avalanchego/graft/coreth/sync/client"
+	syncclient "github.com/rink-labs/rinkgo/graft/coreth/sync/client"
 )
 
 var (

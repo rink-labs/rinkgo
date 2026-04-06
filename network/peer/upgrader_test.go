@@ -20,8 +20,8 @@ import (
 
 	_ "embed"
 
-	"github.com/ava-labs/avalanchego/network/peer"
-	"github.com/ava-labs/avalanchego/staking"
+	"github.com/rink-labs/rinkgo/network/peer"
+	"github.com/rink-labs/rinkgo/staking"
 )
 
 // 8192RSA_test.pem is used here because it's too expensive

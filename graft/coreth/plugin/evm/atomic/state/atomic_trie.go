@@ -15,16 +15,16 @@ import (
 	"github.com/ava-labs/libevm/trie/trienode"
 	"github.com/ava-labs/libevm/triedb"
 
-	"github.com/ava-labs/avalanchego/codec"
-	"github.com/ava-labs/avalanchego/graft/coreth/plugin/evm/atomic"
-	"github.com/ava-labs/avalanchego/graft/coreth/triedb/hashdb"
-	"github.com/ava-labs/avalanchego/ids"
-	"github.com/ava-labs/avalanchego/utils/units"
-	"github.com/ava-labs/avalanchego/utils/wrappers"
-	"github.com/ava-labs/avalanchego/vms/evm/database"
+	"github.com/rink-labs/rinkgo/codec"
+	"github.com/rink-labs/rinkgo/graft/coreth/plugin/evm/atomic"
+	"github.com/rink-labs/rinkgo/graft/coreth/triedb/hashdb"
+	"github.com/rink-labs/rinkgo/ids"
+	"github.com/rink-labs/rinkgo/utils/units"
+	"github.com/rink-labs/rinkgo/utils/wrappers"
+	"github.com/rink-labs/rinkgo/vms/evm/database"
 
-	avalancheatomic "github.com/ava-labs/avalanchego/chains/atomic"
-	avalanchedatabase "github.com/ava-labs/avalanchego/database"
+	avalancheatomic "github.com/rink-labs/rinkgo/chains/atomic"
+	avalanchedatabase "github.com/rink-labs/rinkgo/database"
 )
 
 const (

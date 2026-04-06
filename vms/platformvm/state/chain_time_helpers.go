@@ -7,14 +7,14 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/ava-labs/avalanchego/utils/iterator"
-	"github.com/ava-labs/avalanchego/utils/math"
-	"github.com/ava-labs/avalanchego/utils/timer/mockable"
-	"github.com/ava-labs/avalanchego/vms/components/gas"
-	"github.com/ava-labs/avalanchego/vms/platformvm/config"
+	"github.com/rink-labs/rinkgo/utils/iterator"
+	"github.com/rink-labs/rinkgo/utils/math"
+	"github.com/rink-labs/rinkgo/utils/timer/mockable"
+	"github.com/rink-labs/rinkgo/vms/components/gas"
+	"github.com/rink-labs/rinkgo/vms/platformvm/config"
 
-	txfee "github.com/ava-labs/avalanchego/vms/platformvm/txs/fee"
-	validatorfee "github.com/ava-labs/avalanchego/vms/platformvm/validators/fee"
+	txfee "github.com/rink-labs/rinkgo/vms/platformvm/txs/fee"
+	validatorfee "github.com/rink-labs/rinkgo/vms/platformvm/validators/fee"
 )
 
 func NextBlockTime(

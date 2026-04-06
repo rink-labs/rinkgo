@@ -3,7 +3,7 @@
 
 package verify
 
-import "github.com/ava-labs/avalanchego/snow"
+import "github.com/rink-labs/rinkgo/snow"
 
 type Verifiable interface {
 	Verify() error

@@ -8,11 +8,11 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/ava-labs/avalanchego/ids"
-	"github.com/ava-labs/avalanchego/ids/idstest"
-	"github.com/ava-labs/avalanchego/vms/rpcchainvm/grpcutils"
+	"github.com/rink-labs/rinkgo/ids"
+	"github.com/rink-labs/rinkgo/ids/idstest"
+	"github.com/rink-labs/rinkgo/vms/rpcchainvm/grpcutils"
 
-	aliasreaderpb "github.com/ava-labs/avalanchego/proto/pb/aliasreader"
+	aliasreaderpb "github.com/rink-labs/rinkgo/proto/pb/aliasreader"
 )
 
 func TestInterface(t *testing.T) {

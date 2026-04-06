@@ -12,9 +12,9 @@ import (
 	"connectrpc.com/connect"
 	"go.uber.org/zap"
 
-	"github.com/ava-labs/avalanchego/connectproto/pb/xsvm"
-	"github.com/ava-labs/avalanchego/connectproto/pb/xsvm/xsvmconnect"
-	"github.com/ava-labs/avalanchego/utils/logging"
+	"github.com/rink-labs/rinkgo/connectproto/pb/xsvm"
+	"github.com/rink-labs/rinkgo/connectproto/pb/xsvm/xsvmconnect"
+	"github.com/rink-labs/rinkgo/utils/logging"
 )
 
 var _ xsvmconnect.PingHandler = (*PingService)(nil)

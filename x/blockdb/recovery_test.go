@@ -12,7 +12,7 @@ import (
 	"github.com/DataDog/zstd"
 	"github.com/stretchr/testify/require"
 
-	"github.com/ava-labs/avalanchego/utils/compression"
+	"github.com/rink-labs/rinkgo/utils/compression"
 )
 
 func getCompressedBlockSize(block []byte) (uint32, error) {

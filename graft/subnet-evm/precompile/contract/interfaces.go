@@ -11,10 +11,10 @@ import (
 	"github.com/ava-labs/libevm/libevm/stateconf"
 	"github.com/holiman/uint256"
 
-	"github.com/ava-labs/avalanchego/graft/subnet-evm/precompile/precompileconfig"
-	"github.com/ava-labs/avalanchego/snow"
-	"github.com/ava-labs/avalanchego/utils/set"
-	"github.com/ava-labs/avalanchego/vms/evm/predicate"
+	"github.com/rink-labs/rinkgo/graft/subnet-evm/precompile/precompileconfig"
+	"github.com/rink-labs/rinkgo/snow"
+	"github.com/rink-labs/rinkgo/utils/set"
+	"github.com/rink-labs/rinkgo/vms/evm/predicate"
 
 	ethtypes "github.com/ava-labs/libevm/core/types"
 )

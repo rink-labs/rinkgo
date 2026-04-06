@@ -4,8 +4,8 @@
 package paramstest
 
 import (
-	"github.com/ava-labs/avalanchego/graft/subnet-evm/params"
-	"github.com/ava-labs/avalanchego/upgrade/upgradetest"
+	"github.com/rink-labs/rinkgo/graft/subnet-evm/params"
+	"github.com/rink-labs/rinkgo/upgrade/upgradetest"
 )
 
 // ForkToChainConfig maps a fork to a chain config

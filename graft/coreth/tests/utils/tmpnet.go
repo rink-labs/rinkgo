@@ -4,8 +4,8 @@
 package utils
 
 import (
-	"github.com/ava-labs/avalanchego/config"
-	"github.com/ava-labs/avalanchego/tests/fixture/tmpnet"
+	"github.com/rink-labs/rinkgo/config"
+	"github.com/rink-labs/rinkgo/tests/fixture/tmpnet"
 )
 
 var DefaultChainConfig = map[string]any{

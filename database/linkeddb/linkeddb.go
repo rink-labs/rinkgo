@@ -7,9 +7,9 @@ import (
 	"slices"
 	"sync"
 
-	"github.com/ava-labs/avalanchego/cache"
-	"github.com/ava-labs/avalanchego/cache/lru"
-	"github.com/ava-labs/avalanchego/database"
+	"github.com/rink-labs/rinkgo/cache"
+	"github.com/rink-labs/rinkgo/cache/lru"
+	"github.com/rink-labs/rinkgo/database"
 )
 
 const (

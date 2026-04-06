@@ -10,11 +10,11 @@ import (
 	"github.com/ava-labs/libevm/core/rawdb"
 	"github.com/ava-labs/libevm/log"
 
-	"github.com/ava-labs/avalanchego/database/prefixdb"
-	"github.com/ava-labs/avalanchego/database/versiondb"
-	"github.com/ava-labs/avalanchego/vms/evm/database"
+	"github.com/rink-labs/rinkgo/database/prefixdb"
+	"github.com/rink-labs/rinkgo/database/versiondb"
+	"github.com/rink-labs/rinkgo/vms/evm/database"
 
-	avalanchedatabase "github.com/ava-labs/avalanchego/database"
+	avalanchedatabase "github.com/rink-labs/rinkgo/database"
 )
 
 // initializeDBs initializes the databases used by the VM.

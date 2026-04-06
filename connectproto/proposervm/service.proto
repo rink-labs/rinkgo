@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package proposervm;
 
-option go_package = "github.com/ava-labs/avalanchego/connectproto/pb/proposervm";
+option go_package = "github.com/rink-labs/rinkgo/connectproto/pb/proposervm";
 
 // ProposerVM service provides RPCs for querying ProposerVM state.
 service ProposerVM {

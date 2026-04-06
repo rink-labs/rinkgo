@@ -8,9 +8,9 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/ava-labs/avalanchego/graft/subnet-evm/plugin/evm/client"
-	"github.com/ava-labs/avalanchego/ids"
-	"github.com/ava-labs/avalanchego/utils/set"
+	"github.com/rink-labs/rinkgo/graft/subnet-evm/plugin/evm/client"
+	"github.com/rink-labs/rinkgo/ids"
+	"github.com/rink-labs/rinkgo/utils/set"
 )
 
 type ValidatorsAPI struct {

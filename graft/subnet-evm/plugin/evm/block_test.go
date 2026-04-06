@@ -14,10 +14,10 @@ import (
 	"github.com/stretchr/testify/require"
 	"go.uber.org/mock/gomock"
 
-	"github.com/ava-labs/avalanchego/graft/subnet-evm/params"
-	"github.com/ava-labs/avalanchego/graft/subnet-evm/params/extras"
-	"github.com/ava-labs/avalanchego/graft/subnet-evm/plugin/evm/extension"
-	"github.com/ava-labs/avalanchego/graft/subnet-evm/precompile/precompileconfig"
+	"github.com/rink-labs/rinkgo/graft/subnet-evm/params"
+	"github.com/rink-labs/rinkgo/graft/subnet-evm/params/extras"
+	"github.com/rink-labs/rinkgo/graft/subnet-evm/plugin/evm/extension"
+	"github.com/rink-labs/rinkgo/graft/subnet-evm/precompile/precompileconfig"
 )
 
 func TestHandlePrecompileAccept(t *testing.T) {

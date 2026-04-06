@@ -15,7 +15,7 @@ import (
 
 	"golang.org/x/crypto/cryptobyte"
 
-	"github.com/ava-labs/avalanchego/utils/units"
+	"github.com/rink-labs/rinkgo/utils/units"
 
 	cryptobyte_asn1 "golang.org/x/crypto/cryptobyte/asn1"
 )

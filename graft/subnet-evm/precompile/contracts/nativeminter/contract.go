@@ -15,8 +15,8 @@ import (
 
 	_ "embed"
 
-	"github.com/ava-labs/avalanchego/graft/subnet-evm/precompile/allowlist"
-	"github.com/ava-labs/avalanchego/graft/subnet-evm/precompile/contract"
+	"github.com/rink-labs/rinkgo/graft/subnet-evm/precompile/allowlist"
+	"github.com/rink-labs/rinkgo/graft/subnet-evm/precompile/contract"
 )
 
 const (

@@ -11,13 +11,13 @@ import (
 	"github.com/stretchr/testify/require"
 	"go.uber.org/mock/gomock"
 
-	"github.com/ava-labs/avalanchego/graft/evm/constants"
-	"github.com/ava-labs/avalanchego/graft/subnet-evm/commontype"
-	"github.com/ava-labs/avalanchego/graft/subnet-evm/core/extstate"
-	"github.com/ava-labs/avalanchego/graft/subnet-evm/precompile/allowlist/allowlisttest"
-	"github.com/ava-labs/avalanchego/graft/subnet-evm/precompile/contracts/rewardmanager"
-	"github.com/ava-labs/avalanchego/graft/subnet-evm/precompile/precompileconfig"
-	"github.com/ava-labs/avalanchego/graft/subnet-evm/precompile/precompiletest"
+	"github.com/rink-labs/rinkgo/graft/evm/constants"
+	"github.com/rink-labs/rinkgo/graft/subnet-evm/commontype"
+	"github.com/rink-labs/rinkgo/graft/subnet-evm/core/extstate"
+	"github.com/rink-labs/rinkgo/graft/subnet-evm/precompile/allowlist/allowlisttest"
+	"github.com/rink-labs/rinkgo/graft/subnet-evm/precompile/contracts/rewardmanager"
+	"github.com/rink-labs/rinkgo/graft/subnet-evm/precompile/precompileconfig"
+	"github.com/rink-labs/rinkgo/graft/subnet-evm/precompile/precompiletest"
 
 	ethtypes "github.com/ava-labs/libevm/core/types"
 )

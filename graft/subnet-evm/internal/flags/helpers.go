@@ -34,8 +34,8 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/ava-labs/avalanchego/graft/subnet-evm/internal/version"
-	"github.com/ava-labs/avalanchego/graft/subnet-evm/params"
+	"github.com/rink-labs/rinkgo/graft/subnet-evm/internal/version"
+	"github.com/rink-labs/rinkgo/graft/subnet-evm/params"
 	"github.com/ava-labs/libevm/log"
 	"github.com/mattn/go-isatty"
 	"github.com/urfave/cli/v2"

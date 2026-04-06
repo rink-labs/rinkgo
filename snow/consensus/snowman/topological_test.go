@@ -6,7 +6,7 @@ package snowman
 import (
 	"testing"
 
-	"github.com/ava-labs/avalanchego/snow/consensus/snowball"
+	"github.com/rink-labs/rinkgo/snow/consensus/snowball"
 )
 
 func TestTopological(t *testing.T) {

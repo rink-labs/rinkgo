@@ -30,10 +30,10 @@ package tests
 import (
 	"os"
 
-	"github.com/ava-labs/avalanchego/graft/coreth/core/extstate"
-	"github.com/ava-labs/avalanchego/graft/coreth/core/state/snapshot"
-	"github.com/ava-labs/avalanchego/graft/coreth/triedb/hashdb"
-	"github.com/ava-labs/avalanchego/graft/coreth/triedb/pathdb"
+	"github.com/rink-labs/rinkgo/graft/coreth/core/extstate"
+	"github.com/rink-labs/rinkgo/graft/coreth/core/state/snapshot"
+	"github.com/rink-labs/rinkgo/graft/coreth/triedb/hashdb"
+	"github.com/rink-labs/rinkgo/graft/coreth/triedb/pathdb"
 	"github.com/ava-labs/libevm/common"
 	"github.com/ava-labs/libevm/core/rawdb"
 	"github.com/ava-labs/libevm/core/state"

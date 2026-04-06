@@ -6,9 +6,9 @@ package vertex
 import (
 	"context"
 
-	"github.com/ava-labs/avalanchego/ids"
-	"github.com/ava-labs/avalanchego/snow/consensus/snowstorm"
-	"github.com/ava-labs/avalanchego/snow/engine/snowman/block"
+	"github.com/rink-labs/rinkgo/ids"
+	"github.com/rink-labs/rinkgo/snow/consensus/snowstorm"
+	"github.com/rink-labs/rinkgo/snow/engine/snowman/block"
 )
 
 type LinearizableVMWithEngine interface {

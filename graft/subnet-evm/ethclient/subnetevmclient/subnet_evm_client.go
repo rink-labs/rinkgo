@@ -34,8 +34,8 @@ import (
 	"runtime"
 	"runtime/debug"
 
-	"github.com/ava-labs/avalanchego/graft/subnet-evm/ethclient"
-	"github.com/ava-labs/avalanchego/graft/subnet-evm/rpc"
+	"github.com/rink-labs/rinkgo/graft/subnet-evm/ethclient"
+	"github.com/rink-labs/rinkgo/graft/subnet-evm/rpc"
 	ethereum "github.com/ava-labs/libevm"
 	"github.com/ava-labs/libevm/common"
 	"github.com/ava-labs/libevm/common/hexutil"

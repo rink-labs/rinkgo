@@ -33,7 +33,7 @@ import (
 	"os"
 	"testing"
 
-	"github.com/ava-labs/avalanchego/upgrade"
+	"github.com/rink-labs/rinkgo/upgrade"
 	"github.com/ava-labs/libevm/common"
 	"github.com/ava-labs/libevm/core/rawdb"
 	"github.com/ava-labs/libevm/core/types"
@@ -42,12 +42,12 @@ import (
 	"github.com/ava-labs/libevm/eth/tracers/logger"
 	"github.com/ava-labs/libevm/ethdb"
 
-	"github.com/ava-labs/avalanchego/graft/subnet-evm/consensus/dummy"
-	"github.com/ava-labs/avalanchego/graft/subnet-evm/core/state/pruner"
-	"github.com/ava-labs/avalanchego/graft/subnet-evm/params"
-	"github.com/ava-labs/avalanchego/graft/subnet-evm/params/extras"
-	"github.com/ava-labs/avalanchego/graft/subnet-evm/plugin/evm/customrawdb"
-	"github.com/ava-labs/avalanchego/graft/subnet-evm/plugin/evm/upgrade/legacy"
+	"github.com/rink-labs/rinkgo/graft/subnet-evm/consensus/dummy"
+	"github.com/rink-labs/rinkgo/graft/subnet-evm/core/state/pruner"
+	"github.com/rink-labs/rinkgo/graft/subnet-evm/params"
+	"github.com/rink-labs/rinkgo/graft/subnet-evm/params/extras"
+	"github.com/rink-labs/rinkgo/graft/subnet-evm/plugin/evm/customrawdb"
+	"github.com/rink-labs/rinkgo/graft/subnet-evm/plugin/evm/upgrade/legacy"
 
 	ethparams "github.com/ava-labs/libevm/params"
 )

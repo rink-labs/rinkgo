@@ -8,9 +8,9 @@ package acp226
 import (
 	"sort"
 
-	"github.com/ava-labs/avalanchego/vms/components/gas"
+	"github.com/rink-labs/rinkgo/vms/components/gas"
 
-	safemath "github.com/ava-labs/avalanchego/utils/math"
+	safemath "github.com/rink-labs/rinkgo/utils/math"
 )
 
 const (

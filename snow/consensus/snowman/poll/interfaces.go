@@ -6,9 +6,9 @@ package poll
 import (
 	"fmt"
 
-	"github.com/ava-labs/avalanchego/ids"
-	"github.com/ava-labs/avalanchego/utils/bag"
-	"github.com/ava-labs/avalanchego/utils/formatting"
+	"github.com/rink-labs/rinkgo/ids"
+	"github.com/rink-labs/rinkgo/utils/bag"
+	"github.com/rink-labs/rinkgo/utils/formatting"
 )
 
 // Set is a collection of polls

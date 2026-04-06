@@ -12,8 +12,8 @@ import (
 	"github.com/ava-labs/libevm/common/hexutil"
 	"github.com/stretchr/testify/require"
 
-	"github.com/ava-labs/avalanchego/graft/coreth/params"
-	"github.com/ava-labs/avalanchego/vms/evm/acp176"
+	"github.com/rink-labs/rinkgo/graft/coreth/params"
+	"github.com/rink-labs/rinkgo/vms/evm/acp176"
 )
 
 type testSuggestPriceOptionsBackend struct {

@@ -6,9 +6,9 @@ package lru
 import (
 	"sync"
 
-	"github.com/ava-labs/avalanchego/cache"
-	"github.com/ava-labs/avalanchego/utils"
-	"github.com/ava-labs/avalanchego/utils/linked"
+	"github.com/rink-labs/rinkgo/cache"
+	"github.com/rink-labs/rinkgo/utils"
+	"github.com/rink-labs/rinkgo/utils/linked"
 )
 
 var _ cache.Cacher[struct{}, struct{}] = (*Cache[struct{}, struct{}])(nil)

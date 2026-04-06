@@ -12,7 +12,7 @@ import (
 
 	"github.com/prometheus/common/expfmt"
 
-	"github.com/ava-labs/avalanchego/utils/rpc"
+	"github.com/rink-labs/rinkgo/utils/rpc"
 
 	dto "github.com/prometheus/client_model/go"
 )

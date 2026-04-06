@@ -12,15 +12,15 @@ import (
 
 	"google.golang.org/protobuf/proto"
 
-	"github.com/ava-labs/avalanchego/database"
-	"github.com/ava-labs/avalanchego/database/memdb"
-	"github.com/ava-labs/avalanchego/ids"
-	"github.com/ava-labs/avalanchego/trace"
-	"github.com/ava-labs/avalanchego/utils/maybe"
-	"github.com/ava-labs/avalanchego/x/sync/protoutils"
+	"github.com/rink-labs/rinkgo/database"
+	"github.com/rink-labs/rinkgo/database/memdb"
+	"github.com/rink-labs/rinkgo/ids"
+	"github.com/rink-labs/rinkgo/trace"
+	"github.com/rink-labs/rinkgo/utils/maybe"
+	"github.com/rink-labs/rinkgo/x/sync/protoutils"
 
-	pb "github.com/ava-labs/avalanchego/proto/pb/sync"
-	xsync "github.com/ava-labs/avalanchego/x/sync"
+	pb "github.com/rink-labs/rinkgo/proto/pb/sync"
+	xsync "github.com/rink-labs/rinkgo/x/sync"
 )
 
 const verificationCacheSize = math.MaxUint16

@@ -8,8 +8,8 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/ava-labs/avalanchego/cache/cachetest"
-	"github.com/ava-labs/avalanchego/ids"
+	"github.com/rink-labs/rinkgo/cache/cachetest"
+	"github.com/rink-labs/rinkgo/ids"
 )
 
 func TestCache(t *testing.T) {

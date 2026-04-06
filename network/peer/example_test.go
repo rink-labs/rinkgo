@@ -9,9 +9,9 @@ import (
 	"net/netip"
 	"time"
 
-	"github.com/ava-labs/avalanchego/message"
-	"github.com/ava-labs/avalanchego/snow/networking/router"
-	"github.com/ava-labs/avalanchego/utils/constants"
+	"github.com/rink-labs/rinkgo/message"
+	"github.com/rink-labs/rinkgo/snow/networking/router"
+	"github.com/rink-labs/rinkgo/utils/constants"
 )
 
 func ExampleStartTestPeer() {

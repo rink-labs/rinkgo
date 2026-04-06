@@ -9,8 +9,8 @@ import (
 	"reflect"
 	"strconv"
 
-	"github.com/ava-labs/avalanchego/graft/subnet-evm/utils"
-	"github.com/ava-labs/avalanchego/upgrade"
+	"github.com/rink-labs/rinkgo/graft/subnet-evm/utils"
+	"github.com/rink-labs/rinkgo/upgrade"
 
 	ethparams "github.com/ava-labs/libevm/params"
 )
@@ -194,11 +194,11 @@ func (n *NetworkUpgrades) IsHelicon(time uint64) bool {
 
 func (n *NetworkUpgrades) Description() string {
 	var banner string
-	banner += fmt.Sprintf(" - SubnetEVM Timestamp:          @%-10v (https://github.com/ava-labs/avalanchego/releases/tag/v1.10.0)\n", ptrToString(n.SubnetEVMTimestamp))
-	banner += fmt.Sprintf(" - Durango Timestamp:            @%-10v (https://github.com/ava-labs/avalanchego/releases/tag/v1.11.0)\n", ptrToString(n.DurangoTimestamp))
-	banner += fmt.Sprintf(" - Etna Timestamp:               @%-10v (https://github.com/ava-labs/avalanchego/releases/tag/v1.12.0)\n", ptrToString(n.EtnaTimestamp))
-	banner += fmt.Sprintf(" - Fortuna Timestamp:            @%-10v (https://github.com/ava-labs/avalanchego/releases/tag/v1.13.0)\n", ptrToString(n.FortunaTimestamp))
-	banner += fmt.Sprintf(" - Granite Timestamp:            @%-10v (https://github.com/ava-labs/avalanchego/releases/tag/v1.14.0)\n", ptrToString(n.GraniteTimestamp))
+	banner += fmt.Sprintf(" - SubnetEVM Timestamp:          @%-10v (https://github.com/rink-labs/rinkgo/releases/tag/v1.10.0)\n", ptrToString(n.SubnetEVMTimestamp))
+	banner += fmt.Sprintf(" - Durango Timestamp:            @%-10v (https://github.com/rink-labs/rinkgo/releases/tag/v1.11.0)\n", ptrToString(n.DurangoTimestamp))
+	banner += fmt.Sprintf(" - Etna Timestamp:               @%-10v (https://github.com/rink-labs/rinkgo/releases/tag/v1.12.0)\n", ptrToString(n.EtnaTimestamp))
+	banner += fmt.Sprintf(" - Fortuna Timestamp:            @%-10v (https://github.com/rink-labs/rinkgo/releases/tag/v1.13.0)\n", ptrToString(n.FortunaTimestamp))
+	banner += fmt.Sprintf(" - Granite Timestamp:            @%-10v (https://github.com/rink-labs/rinkgo/releases/tag/v1.14.0)\n", ptrToString(n.GraniteTimestamp))
 	banner += fmt.Sprintf(" - Helicon Timestamp:            @%-10v (Unscheduled)\n", ptrToString(n.HeliconTimestamp))
 	return banner
 }

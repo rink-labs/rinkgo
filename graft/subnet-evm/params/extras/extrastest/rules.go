@@ -4,9 +4,9 @@
 package extrastest
 
 import (
-	"github.com/ava-labs/avalanchego/graft/subnet-evm/params/extras"
-	"github.com/ava-labs/avalanchego/upgrade"
-	"github.com/ava-labs/avalanchego/upgrade/upgradetest"
+	"github.com/rink-labs/rinkgo/graft/subnet-evm/params/extras"
+	"github.com/rink-labs/rinkgo/upgrade"
+	"github.com/rink-labs/rinkgo/upgrade/upgradetest"
 )
 
 func ForkToAvalancheRules(fork upgradetest.Fork) extras.AvalancheRules {

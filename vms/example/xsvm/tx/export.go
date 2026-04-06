@@ -3,7 +3,7 @@
 
 package tx
 
-import "github.com/ava-labs/avalanchego/ids"
+import "github.com/rink-labs/rinkgo/ids"
 
 var _ Unsigned = (*Export)(nil)
 

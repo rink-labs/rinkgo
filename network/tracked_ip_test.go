@@ -10,8 +10,8 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/ava-labs/avalanchego/staking"
-	"github.com/ava-labs/avalanchego/utils/ips"
+	"github.com/rink-labs/rinkgo/staking"
+	"github.com/rink-labs/rinkgo/utils/ips"
 )
 
 var (

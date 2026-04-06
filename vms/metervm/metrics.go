@@ -6,8 +6,8 @@ package metervm
 import (
 	"github.com/prometheus/client_golang/prometheus"
 
-	"github.com/ava-labs/avalanchego/utils/metric"
-	"github.com/ava-labs/avalanchego/utils/wrappers"
+	"github.com/rink-labs/rinkgo/utils/metric"
+	"github.com/rink-labs/rinkgo/utils/wrappers"
 )
 
 func newAverager(name string, reg prometheus.Registerer, errs *wrappers.Errs) metric.Averager {

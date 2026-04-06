@@ -9,8 +9,8 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/ava-labs/avalanchego/message"
-	"github.com/ava-labs/avalanchego/utils/logging"
+	"github.com/rink-labs/rinkgo/message"
+	"github.com/rink-labs/rinkgo/utils/logging"
 )
 
 func TestMessageQueue(t *testing.T) {

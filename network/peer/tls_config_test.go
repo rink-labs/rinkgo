@@ -15,8 +15,8 @@ import (
 	"github.com/stretchr/testify/require"
 	"golang.org/x/crypto/ed25519"
 
-	"github.com/ava-labs/avalanchego/network/peer"
-	"github.com/ava-labs/avalanchego/staking"
+	"github.com/rink-labs/rinkgo/network/peer"
+	"github.com/rink-labs/rinkgo/staking"
 )
 
 func TestValidateCertificate(t *testing.T) {

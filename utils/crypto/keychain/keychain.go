@@ -4,8 +4,8 @@
 package keychain
 
 import (
-	"github.com/ava-labs/avalanchego/ids"
-	"github.com/ava-labs/avalanchego/utils/set"
+	"github.com/rink-labs/rinkgo/ids"
+	"github.com/rink-labs/rinkgo/utils/set"
 )
 
 // Signer implements functions for a keychain to return its main address and

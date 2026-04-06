@@ -4,8 +4,8 @@
 package txs
 
 import (
-	"github.com/ava-labs/avalanchego/snow"
-	"github.com/ava-labs/avalanchego/vms/types"
+	"github.com/rink-labs/rinkgo/snow"
+	"github.com/rink-labs/rinkgo/vms/types"
 )
 
 var _ UnsignedTx = (*SetL1ValidatorWeightTx)(nil)

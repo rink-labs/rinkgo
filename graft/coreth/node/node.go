@@ -28,7 +28,7 @@
 package node
 
 import (
-	"github.com/ava-labs/avalanchego/graft/coreth/rpc"
+	"github.com/rink-labs/rinkgo/graft/coreth/rpc"
 	"github.com/ava-labs/libevm/accounts"
 )
 

@@ -12,11 +12,11 @@ import (
 
 	"github.com/prometheus/client_golang/prometheus"
 
-	"github.com/ava-labs/avalanchego/ids"
-	"github.com/ava-labs/avalanchego/snow/networking/tracker"
-	"github.com/ava-labs/avalanchego/utils/timer/mockable"
+	"github.com/rink-labs/rinkgo/ids"
+	"github.com/rink-labs/rinkgo/snow/networking/tracker"
+	"github.com/rink-labs/rinkgo/utils/timer/mockable"
 
-	timerpkg "github.com/ava-labs/avalanchego/utils/timer"
+	timerpkg "github.com/rink-labs/rinkgo/utils/timer"
 )
 
 const epsilon = time.Millisecond

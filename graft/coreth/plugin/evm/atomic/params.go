@@ -3,7 +3,7 @@
 
 package atomic
 
-import "github.com/ava-labs/avalanchego/utils/units"
+import "github.com/rink-labs/rinkgo/utils/units"
 
 const (
 	RinkAtomicTxFee = units.MilliAvax

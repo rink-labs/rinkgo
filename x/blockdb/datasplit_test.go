@@ -11,7 +11,7 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/ava-labs/avalanchego/utils/compression"
+	"github.com/rink-labs/rinkgo/utils/compression"
 )
 
 func TestDataSplitting(t *testing.T) {

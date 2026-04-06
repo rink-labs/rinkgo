@@ -10,8 +10,8 @@ import (
 
 	"go.uber.org/zap"
 
-	"github.com/ava-labs/avalanchego/api/health"
-	"github.com/ava-labs/avalanchego/utils/logging"
+	"github.com/rink-labs/rinkgo/api/health"
+	"github.com/rink-labs/rinkgo/utils/logging"
 )
 
 // Waits for the nodes at the provided URIs to report healthy.

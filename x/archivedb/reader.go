@@ -3,7 +3,7 @@
 
 package archivedb
 
-import "github.com/ava-labs/avalanchego/database"
+import "github.com/rink-labs/rinkgo/database"
 
 var _ database.KeyValueReader = (*Reader)(nil)
 

@@ -9,9 +9,9 @@ import (
 
 	"github.com/ava-labs/libevm/log"
 
-	"github.com/ava-labs/avalanchego/api"
-	"github.com/ava-labs/avalanchego/graft/coreth/plugin/evm/client"
-	"github.com/ava-labs/avalanchego/utils/profiler"
+	"github.com/rink-labs/rinkgo/api"
+	"github.com/rink-labs/rinkgo/graft/coreth/plugin/evm/client"
+	"github.com/rink-labs/rinkgo/utils/profiler"
 )
 
 // Admin is the API service for admin API calls

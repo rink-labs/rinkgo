@@ -14,17 +14,17 @@ import (
 	"github.com/prometheus/client_golang/prometheus"
 	"golang.org/x/sync/semaphore"
 
-	"github.com/ava-labs/avalanchego/codec"
-	"github.com/ava-labs/avalanchego/graft/coreth/network/stats"
-	"github.com/ava-labs/avalanchego/graft/coreth/plugin/evm/message"
-	"github.com/ava-labs/avalanchego/ids"
-	"github.com/ava-labs/avalanchego/network/p2p"
-	"github.com/ava-labs/avalanchego/snow"
-	"github.com/ava-labs/avalanchego/snow/engine/common"
-	"github.com/ava-labs/avalanchego/snow/validators"
-	"github.com/ava-labs/avalanchego/utils"
-	"github.com/ava-labs/avalanchego/utils/set"
-	"github.com/ava-labs/avalanchego/version"
+	"github.com/rink-labs/rinkgo/codec"
+	"github.com/rink-labs/rinkgo/graft/coreth/network/stats"
+	"github.com/rink-labs/rinkgo/graft/coreth/plugin/evm/message"
+	"github.com/rink-labs/rinkgo/ids"
+	"github.com/rink-labs/rinkgo/network/p2p"
+	"github.com/rink-labs/rinkgo/snow"
+	"github.com/rink-labs/rinkgo/snow/engine/common"
+	"github.com/rink-labs/rinkgo/snow/validators"
+	"github.com/rink-labs/rinkgo/utils"
+	"github.com/rink-labs/rinkgo/utils/set"
+	"github.com/rink-labs/rinkgo/version"
 )
 
 // Minimum amount of time to handle a request
@@ -523,7 +523,7 @@ func (n *network) nextRequestID() uint32 {
 
 // IsNetworkRequest checks if the given requestID is a request for this network handler (even-numbered requestIDs)
 // SDK requests are odd-numbered requestIDs
-// (see invariant: https://github.com/ava-labs/avalanchego/blob/v1.13.0/network/p2p/router.go#L83)
+// (see invariant: https://github.com/rink-labs/rinkgo/blob/v1.13.0/network/p2p/router.go#L83)
 func IsNetworkRequest(requestID uint32) bool {
 	return requestID%2 == 0
 }

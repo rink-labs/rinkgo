@@ -16,17 +16,17 @@ import (
 	"github.com/ava-labs/libevm/triedb"
 	"github.com/stretchr/testify/require"
 
-	"github.com/ava-labs/avalanchego/database"
-	"github.com/ava-labs/avalanchego/database/memdb"
-	"github.com/ava-labs/avalanchego/database/versiondb"
-	"github.com/ava-labs/avalanchego/graft/coreth/plugin/evm/atomic/atomictest"
-	"github.com/ava-labs/avalanchego/graft/coreth/plugin/evm/atomic/state"
-	"github.com/ava-labs/avalanchego/graft/coreth/plugin/evm/message"
-	"github.com/ava-labs/avalanchego/graft/coreth/sync/handlers"
-	"github.com/ava-labs/avalanchego/graft/coreth/sync/statesync/statesynctest"
+	"github.com/rink-labs/rinkgo/database"
+	"github.com/rink-labs/rinkgo/database/memdb"
+	"github.com/rink-labs/rinkgo/database/versiondb"
+	"github.com/rink-labs/rinkgo/graft/coreth/plugin/evm/atomic/atomictest"
+	"github.com/rink-labs/rinkgo/graft/coreth/plugin/evm/atomic/state"
+	"github.com/rink-labs/rinkgo/graft/coreth/plugin/evm/message"
+	"github.com/rink-labs/rinkgo/graft/coreth/sync/handlers"
+	"github.com/rink-labs/rinkgo/graft/coreth/sync/statesync/statesynctest"
 
-	syncclient "github.com/ava-labs/avalanchego/graft/coreth/sync/client"
-	handlerstats "github.com/ava-labs/avalanchego/graft/coreth/sync/handlers/stats"
+	syncclient "github.com/rink-labs/rinkgo/graft/coreth/sync/client"
+	handlerstats "github.com/rink-labs/rinkgo/graft/coreth/sync/handlers/stats"
 )
 
 const (

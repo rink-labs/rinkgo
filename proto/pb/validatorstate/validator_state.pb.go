@@ -870,7 +870,7 @@ const file_validatorstate_validator_state_proto_rawDesc = "" +
 	"\x14GetWarpValidatorSets\x12+.validatorstate.GetWarpValidatorSetsRequest\x1a,.validatorstate.GetWarpValidatorSetsResponse\x12n\n" +
 	"\x13GetWarpValidatorSet\x12*.validatorstate.GetWarpValidatorSetRequest\x1a+.validatorstate.GetWarpValidatorSetResponse\x12b\n" +
 	"\x0fGetValidatorSet\x12&.validatorstate.GetValidatorSetRequest\x1a'.validatorstate.GetValidatorSetResponse\x12w\n" +
-	"\x16GetCurrentValidatorSet\x12-.validatorstate.GetCurrentValidatorSetRequest\x1a..validatorstate.GetCurrentValidatorSetResponseB9Z7github.com/ava-labs/avalanchego/proto/pb/validatorstateb\x06proto3"
+	"\x16GetCurrentValidatorSet\x12-.validatorstate.GetCurrentValidatorSetRequest\x1a..validatorstate.GetCurrentValidatorSetResponseB5Z3github.com/rink-labs/rinkgo/proto/pb/validatorstateb\x06proto3"
 
 var (
 	file_validatorstate_validator_state_proto_rawDescOnce sync.Once

@@ -7,9 +7,9 @@ package blockgascost
 import (
 	"math"
 
-	"github.com/ava-labs/avalanchego/graft/subnet-evm/commontype"
+	"github.com/rink-labs/rinkgo/graft/subnet-evm/commontype"
 
-	safemath "github.com/ava-labs/avalanchego/utils/math"
+	safemath "github.com/rink-labs/rinkgo/utils/math"
 )
 
 // BlockGasCost calculates the required block gas cost.

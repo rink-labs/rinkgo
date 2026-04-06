@@ -7,8 +7,8 @@ import (
 	"errors"
 	"sync"
 
-	"github.com/ava-labs/avalanchego/utils/linked"
-	"github.com/ava-labs/avalanchego/utils/wrappers"
+	"github.com/rink-labs/rinkgo/utils/linked"
+	"github.com/rink-labs/rinkgo/utils/wrappers"
 )
 
 var errEmptyCacheTooLarge = errors.New("cache is empty yet still too large")

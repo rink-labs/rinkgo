@@ -30,9 +30,9 @@ package simulated
 import (
 	"math/big"
 
-	"github.com/ava-labs/avalanchego/graft/subnet-evm/eth/ethconfig"
-	"github.com/ava-labs/avalanchego/graft/subnet-evm/node"
-	"github.com/ava-labs/avalanchego/graft/subnet-evm/params"
+	"github.com/rink-labs/rinkgo/graft/subnet-evm/eth/ethconfig"
+	"github.com/rink-labs/rinkgo/graft/subnet-evm/node"
+	"github.com/rink-labs/rinkgo/graft/subnet-evm/params"
 	"github.com/ava-labs/libevm/common"
 )
 

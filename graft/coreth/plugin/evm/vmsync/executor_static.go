@@ -6,7 +6,7 @@ package vmsync
 import (
 	"context"
 
-	"github.com/ava-labs/avalanchego/graft/coreth/plugin/evm/message"
+	"github.com/rink-labs/rinkgo/graft/coreth/plugin/evm/message"
 )
 
 var _ Executor = (*staticExecutor)(nil)

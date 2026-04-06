@@ -12,19 +12,19 @@ import (
 	"github.com/ava-labs/libevm/core/vm"
 	"github.com/stretchr/testify/require"
 
-	"github.com/ava-labs/avalanchego/graft/coreth/params/extras"
-	"github.com/ava-labs/avalanchego/graft/coreth/params/extras/extrastest"
-	"github.com/ava-labs/avalanchego/graft/coreth/precompile/contract"
-	"github.com/ava-labs/avalanchego/graft/coreth/precompile/precompiletest"
-	"github.com/ava-labs/avalanchego/ids"
-	"github.com/ava-labs/avalanchego/snow/snowtest"
-	"github.com/ava-labs/avalanchego/upgrade/upgradetest"
-	"github.com/ava-labs/avalanchego/utils/set"
-	"github.com/ava-labs/avalanchego/vms/evm/predicate"
-	"github.com/ava-labs/avalanchego/vms/platformvm/warp/payload"
+	"github.com/rink-labs/rinkgo/graft/coreth/params/extras"
+	"github.com/rink-labs/rinkgo/graft/coreth/params/extras/extrastest"
+	"github.com/rink-labs/rinkgo/graft/coreth/precompile/contract"
+	"github.com/rink-labs/rinkgo/graft/coreth/precompile/precompiletest"
+	"github.com/rink-labs/rinkgo/ids"
+	"github.com/rink-labs/rinkgo/snow/snowtest"
+	"github.com/rink-labs/rinkgo/upgrade/upgradetest"
+	"github.com/rink-labs/rinkgo/utils/set"
+	"github.com/rink-labs/rinkgo/vms/evm/predicate"
+	"github.com/rink-labs/rinkgo/vms/platformvm/warp/payload"
 
-	agoUtils "github.com/ava-labs/avalanchego/utils"
-	avalancheWarp "github.com/ava-labs/avalanchego/vms/platformvm/warp"
+	agoUtils "github.com/rink-labs/rinkgo/utils"
+	avalancheWarp "github.com/rink-labs/rinkgo/vms/platformvm/warp"
 )
 
 var forks = []upgradetest.Fork{

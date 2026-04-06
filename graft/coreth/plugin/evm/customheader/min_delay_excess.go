@@ -9,9 +9,9 @@ import (
 
 	"github.com/ava-labs/libevm/core/types"
 
-	"github.com/ava-labs/avalanchego/graft/coreth/params/extras"
-	"github.com/ava-labs/avalanchego/graft/coreth/plugin/evm/customtypes"
-	"github.com/ava-labs/avalanchego/vms/evm/acp226"
+	"github.com/rink-labs/rinkgo/graft/coreth/params/extras"
+	"github.com/rink-labs/rinkgo/graft/coreth/plugin/evm/customtypes"
+	"github.com/rink-labs/rinkgo/vms/evm/acp226"
 )
 
 var (
@@ -77,7 +77,7 @@ func VerifyMinDelayExcess(
 		}
 	default:
 		// Prior to Granite there was no expected min delay excess.
-		// TODO (ceyonur): this can be removed after Granite is activated. (See https://github.com/ava-labs/avalanchego/graft/coreth/issues/1318)
+		// TODO (ceyonur): this can be removed after Granite is activated. (See https://github.com/rink-labs/rinkgo/graft/coreth/issues/1318)
 		if customtypes.GetHeaderExtra(header).MinDelayExcess != nil {
 			return fmt.Errorf("%w: %s", errRemoteMinDelayExcessSet, header.Hash())
 		}

@@ -11,10 +11,10 @@ import (
 	"github.com/stretchr/testify/require"
 	"go.uber.org/mock/gomock"
 
-	"github.com/ava-labs/avalanchego/ids"
-	"github.com/ava-labs/avalanchego/utils/math/meter"
-	"github.com/ava-labs/avalanchego/utils/resource"
-	"github.com/ava-labs/avalanchego/utils/resource/resourcemock"
+	"github.com/rink-labs/rinkgo/ids"
+	"github.com/rink-labs/rinkgo/utils/math/meter"
+	"github.com/rink-labs/rinkgo/utils/resource"
+	"github.com/rink-labs/rinkgo/utils/resource/resourcemock"
 )
 
 func TestNewCPUTracker(t *testing.T) {

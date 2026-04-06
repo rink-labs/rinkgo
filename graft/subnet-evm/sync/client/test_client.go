@@ -12,10 +12,10 @@ import (
 	"github.com/ava-labs/libevm/core/types"
 	"github.com/ava-labs/libevm/rlp"
 
-	"github.com/ava-labs/avalanchego/codec"
-	"github.com/ava-labs/avalanchego/graft/subnet-evm/plugin/evm/message"
-	"github.com/ava-labs/avalanchego/graft/subnet-evm/sync/handlers"
-	"github.com/ava-labs/avalanchego/ids"
+	"github.com/rink-labs/rinkgo/codec"
+	"github.com/rink-labs/rinkgo/graft/subnet-evm/plugin/evm/message"
+	"github.com/rink-labs/rinkgo/graft/subnet-evm/sync/handlers"
+	"github.com/rink-labs/rinkgo/ids"
 )
 
 var (

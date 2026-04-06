@@ -11,15 +11,15 @@ import (
 	"github.com/ava-labs/libevm/common"
 	"github.com/stretchr/testify/require"
 
-	"github.com/ava-labs/avalanchego/graft/subnet-evm/commontype"
-	"github.com/ava-labs/avalanchego/graft/subnet-evm/precompile/allowlist"
-	"github.com/ava-labs/avalanchego/graft/subnet-evm/precompile/contracts/deployerallowlist"
-	"github.com/ava-labs/avalanchego/graft/subnet-evm/precompile/contracts/feemanager"
-	"github.com/ava-labs/avalanchego/graft/subnet-evm/precompile/contracts/nativeminter"
-	"github.com/ava-labs/avalanchego/graft/subnet-evm/precompile/contracts/rewardmanager"
-	"github.com/ava-labs/avalanchego/graft/subnet-evm/precompile/contracts/txallowlist"
-	"github.com/ava-labs/avalanchego/graft/subnet-evm/utils"
-	"github.com/ava-labs/avalanchego/graft/subnet-evm/utils/utilstest"
+	"github.com/rink-labs/rinkgo/graft/subnet-evm/commontype"
+	"github.com/rink-labs/rinkgo/graft/subnet-evm/precompile/allowlist"
+	"github.com/rink-labs/rinkgo/graft/subnet-evm/precompile/contracts/deployerallowlist"
+	"github.com/rink-labs/rinkgo/graft/subnet-evm/precompile/contracts/feemanager"
+	"github.com/rink-labs/rinkgo/graft/subnet-evm/precompile/contracts/nativeminter"
+	"github.com/rink-labs/rinkgo/graft/subnet-evm/precompile/contracts/rewardmanager"
+	"github.com/rink-labs/rinkgo/graft/subnet-evm/precompile/contracts/txallowlist"
+	"github.com/rink-labs/rinkgo/graft/subnet-evm/utils"
+	"github.com/rink-labs/rinkgo/graft/subnet-evm/utils/utilstest"
 )
 
 func TestVerifyWithChainConfig(t *testing.T) {

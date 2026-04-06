@@ -13,9 +13,9 @@ import (
 	"github.com/ava-labs/libevm/ethdb/memorydb"
 	"github.com/stretchr/testify/require"
 
-	"github.com/ava-labs/avalanchego/graft/subnet-evm/plugin/evm/message"
-	"github.com/ava-labs/avalanchego/graft/subnet-evm/sync/handlers/stats/statstest"
-	"github.com/ava-labs/avalanchego/ids"
+	"github.com/rink-labs/rinkgo/graft/subnet-evm/plugin/evm/message"
+	"github.com/rink-labs/rinkgo/graft/subnet-evm/sync/handlers/stats/statstest"
+	"github.com/rink-labs/rinkgo/ids"
 
 	ethparams "github.com/ava-labs/libevm/params"
 )

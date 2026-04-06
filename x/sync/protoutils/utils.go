@@ -4,9 +4,9 @@
 package protoutils
 
 import (
-	"github.com/ava-labs/avalanchego/utils/maybe"
+	"github.com/rink-labs/rinkgo/utils/maybe"
 
-	pb "github.com/ava-labs/avalanchego/proto/pb/sync"
+	pb "github.com/rink-labs/rinkgo/proto/pb/sync"
 )
 
 func MaybeToProto(m maybe.Maybe[[]byte]) *pb.MaybeBytes {

@@ -6,8 +6,8 @@ package memdb
 import (
 	"testing"
 
-	"github.com/ava-labs/avalanchego/database"
-	"github.com/ava-labs/avalanchego/database/heightindexdb/dbtest"
+	"github.com/rink-labs/rinkgo/database"
+	"github.com/rink-labs/rinkgo/database/heightindexdb/dbtest"
 )
 
 func TestInterface(t *testing.T) {

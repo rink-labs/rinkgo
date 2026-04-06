@@ -12,10 +12,10 @@ import (
 	"github.com/spf13/pflag"
 	"golang.org/x/term"
 
-	"github.com/ava-labs/avalanchego/app"
-	"github.com/ava-labs/avalanchego/config"
-	"github.com/ava-labs/avalanchego/graft/coreth/plugin/evm"
-	"github.com/ava-labs/avalanchego/version"
+	"github.com/rink-labs/rinkgo/app"
+	"github.com/rink-labs/rinkgo/config"
+	"github.com/rink-labs/rinkgo/graft/coreth/plugin/evm"
+	"github.com/rink-labs/rinkgo/version"
 )
 
 func main() {

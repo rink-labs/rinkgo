@@ -10,7 +10,7 @@ import (
 	"github.com/ava-labs/libevm/ethdb"
 	"github.com/ava-labs/libevm/log"
 
-	"github.com/ava-labs/avalanchego/utils/wrappers"
+	"github.com/rink-labs/rinkgo/utils/wrappers"
 
 	ethrawdb "github.com/ava-labs/libevm/core/rawdb"
 )

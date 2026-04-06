@@ -9,8 +9,8 @@ import (
 
 	"github.com/ava-labs/libevm/common/hexutil"
 
-	"github.com/ava-labs/avalanchego/graft/subnet-evm/rpc"
-	"github.com/ava-labs/avalanchego/ids"
+	"github.com/rink-labs/rinkgo/graft/subnet-evm/rpc"
+	"github.com/rink-labs/rinkgo/ids"
 )
 
 var _ Client = (*client)(nil)

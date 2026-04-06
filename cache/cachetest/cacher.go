@@ -8,8 +8,8 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/ava-labs/avalanchego/cache"
-	"github.com/ava-labs/avalanchego/ids"
+	"github.com/rink-labs/rinkgo/cache"
+	"github.com/rink-labs/rinkgo/ids"
 )
 
 const IntSize = ids.IDLen + 8

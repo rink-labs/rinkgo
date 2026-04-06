@@ -20,13 +20,13 @@ import (
 	"github.com/ava-labs/libevm/eth/tracers/logger"
 	"github.com/stretchr/testify/require"
 
-	"github.com/ava-labs/avalanchego/graft/subnet-evm/core"
-	"github.com/ava-labs/avalanchego/graft/subnet-evm/internal/ethapi"
-	"github.com/ava-labs/avalanchego/graft/subnet-evm/params"
-	"github.com/ava-labs/avalanchego/graft/subnet-evm/params/extras"
-	"github.com/ava-labs/avalanchego/graft/subnet-evm/plugin/evm/customtypes"
-	"github.com/ava-labs/avalanchego/graft/subnet-evm/precompile/contracts/txallowlist"
-	"github.com/ava-labs/avalanchego/graft/subnet-evm/rpc"
+	"github.com/rink-labs/rinkgo/graft/subnet-evm/core"
+	"github.com/rink-labs/rinkgo/graft/subnet-evm/internal/ethapi"
+	"github.com/rink-labs/rinkgo/graft/subnet-evm/params"
+	"github.com/rink-labs/rinkgo/graft/subnet-evm/params/extras"
+	"github.com/rink-labs/rinkgo/graft/subnet-evm/plugin/evm/customtypes"
+	"github.com/rink-labs/rinkgo/graft/subnet-evm/precompile/contracts/txallowlist"
+	"github.com/rink-labs/rinkgo/graft/subnet-evm/rpc"
 
 	ethparams "github.com/ava-labs/libevm/params"
 )

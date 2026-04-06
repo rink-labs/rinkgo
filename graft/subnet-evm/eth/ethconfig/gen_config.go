@@ -5,11 +5,11 @@ package ethconfig
 import (
 	"time"
 
-	"github.com/ava-labs/avalanchego/graft/subnet-evm/core"
-	"github.com/ava-labs/avalanchego/graft/subnet-evm/core/txpool/blobpool"
-	"github.com/ava-labs/avalanchego/graft/subnet-evm/core/txpool/legacypool"
-	"github.com/ava-labs/avalanchego/graft/subnet-evm/eth/gasprice"
-	"github.com/ava-labs/avalanchego/graft/subnet-evm/miner"
+	"github.com/rink-labs/rinkgo/graft/subnet-evm/core"
+	"github.com/rink-labs/rinkgo/graft/subnet-evm/core/txpool/blobpool"
+	"github.com/rink-labs/rinkgo/graft/subnet-evm/core/txpool/legacypool"
+	"github.com/rink-labs/rinkgo/graft/subnet-evm/eth/gasprice"
+	"github.com/rink-labs/rinkgo/graft/subnet-evm/miner"
 	"github.com/ava-labs/libevm/common"
 )
 

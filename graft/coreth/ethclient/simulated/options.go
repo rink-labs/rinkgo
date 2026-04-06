@@ -28,8 +28,8 @@
 package simulated
 
 import (
-	"github.com/ava-labs/avalanchego/graft/coreth/eth/ethconfig"
-	"github.com/ava-labs/avalanchego/graft/coreth/node"
+	"github.com/rink-labs/rinkgo/graft/coreth/eth/ethconfig"
+	"github.com/rink-labs/rinkgo/graft/coreth/node"
 )
 
 // WithBlockGasLimit configures the simulated backend to target a specific gas limit

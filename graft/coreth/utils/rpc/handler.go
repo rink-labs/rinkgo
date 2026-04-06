@@ -6,7 +6,7 @@ package rpc
 import (
 	"net/http"
 
-	"github.com/ava-labs/avalanchego/utils/json"
+	"github.com/rink-labs/rinkgo/utils/json"
 	"github.com/gorilla/rpc/v2"
 )
 

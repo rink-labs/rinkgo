@@ -10,12 +10,12 @@ import (
 
 	"github.com/spf13/cobra"
 
-	"github.com/ava-labs/avalanchego/vms/example/xsvm/cmd/account"
-	"github.com/ava-labs/avalanchego/vms/example/xsvm/cmd/chain"
-	"github.com/ava-labs/avalanchego/vms/example/xsvm/cmd/issue"
-	"github.com/ava-labs/avalanchego/vms/example/xsvm/cmd/run"
-	"github.com/ava-labs/avalanchego/vms/example/xsvm/cmd/version"
-	"github.com/ava-labs/avalanchego/vms/example/xsvm/cmd/versionjson"
+	"github.com/rink-labs/rinkgo/vms/example/xsvm/cmd/account"
+	"github.com/rink-labs/rinkgo/vms/example/xsvm/cmd/chain"
+	"github.com/rink-labs/rinkgo/vms/example/xsvm/cmd/issue"
+	"github.com/rink-labs/rinkgo/vms/example/xsvm/cmd/run"
+	"github.com/rink-labs/rinkgo/vms/example/xsvm/cmd/version"
+	"github.com/rink-labs/rinkgo/vms/example/xsvm/cmd/versionjson"
 )
 
 func init() {

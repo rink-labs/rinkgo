@@ -12,9 +12,9 @@ import (
 	"github.com/ava-labs/libevm/log"
 	"github.com/ava-labs/libevm/metrics"
 
-	"github.com/ava-labs/avalanchego/utils/timer"
+	"github.com/rink-labs/rinkgo/utils/timer"
 
-	safemath "github.com/ava-labs/avalanchego/utils/math"
+	safemath "github.com/rink-labs/rinkgo/utils/math"
 )
 
 const (

@@ -22,9 +22,9 @@ import (
 	"github.com/prometheus/common/model"
 	"go.uber.org/zap"
 
-	"github.com/ava-labs/avalanchego/tests/fixture/stacktrace"
-	"github.com/ava-labs/avalanchego/utils/logging"
-	"github.com/ava-labs/avalanchego/utils/rpc"
+	"github.com/rink-labs/rinkgo/tests/fixture/stacktrace"
+	"github.com/rink-labs/rinkgo/utils/logging"
+	"github.com/rink-labs/rinkgo/utils/rpc"
 )
 
 type getCountFunc func() (int, error)

@@ -8,8 +8,8 @@ import (
 
 	"github.com/ava-labs/simplex"
 
-	"github.com/ava-labs/avalanchego/ids"
-	"github.com/ava-labs/avalanchego/proto/pb/p2p"
+	"github.com/rink-labs/rinkgo/ids"
+	"github.com/rink-labs/rinkgo/proto/pb/p2p"
 )
 
 func newBlockProposal(

@@ -1,4 +1,4 @@
-module github.com/ava-labs/avalanchego/graft/subnet-evm
+module github.com/rink-labs/rinkgo/graft/subnet-evm
 
 // CLI tools intended for invocation with `go tool` should be added to
 // tools/go.mod to avoid polluting the main module's dependencies. See
@@ -16,8 +16,8 @@ go 1.24.11
 require (
 	github.com/VictoriaMetrics/fastcache v1.12.1
 	github.com/antithesishq/antithesis-sdk-go v0.3.8
-	github.com/ava-labs/avalanchego v1.14.1-antithesis-docker-image-fix
-	github.com/ava-labs/avalanchego/graft/evm v0.0.0-00010101000000-000000000000
+	github.com/rink-labs/rinkgo v1.14.1-antithesis-docker-image-fix
+	github.com/rink-labs/rinkgo/graft/evm v0.0.0-00010101000000-000000000000
 	github.com/ava-labs/libevm v1.13.15-0.20251210210615-b8e76562a300
 	github.com/davecgh/go-spew v1.1.2-0.20180830191138-d8f796af33cc
 	github.com/deckarep/golang-set/v2 v2.1.0
@@ -56,7 +56,7 @@ require (
 	github.com/DataDog/zstd v1.5.2 // indirect
 	github.com/Microsoft/go-winio v0.6.1 // indirect
 	github.com/StephenButtolph/canoto v0.17.3 // indirect
-	github.com/ava-labs/avalanchego/graft/coreth v0.0.0-20251203215505-70148edc6eca // indirect
+	github.com/rink-labs/rinkgo/graft/coreth v0.0.0-20251203215505-70148edc6eca // indirect
 	github.com/beorn7/perks v1.0.1 // indirect
 	github.com/bits-and-blooms/bitset v1.20.0 // indirect
 	github.com/btcsuite/btcd/btcec/v2 v2.3.5 // indirect
@@ -206,6 +206,6 @@ tool (
 	github.com/onsi/ginkgo/v2/ginkgo
 )
 
-replace github.com/ava-labs/avalanchego => ../../
+replace github.com/rink-labs/rinkgo => ../../
 
-replace github.com/ava-labs/avalanchego/graft/evm => ../evm
+replace github.com/rink-labs/rinkgo/graft/evm => ../evm

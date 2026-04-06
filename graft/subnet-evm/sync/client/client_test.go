@@ -18,17 +18,17 @@ import (
 	"github.com/ava-labs/libevm/triedb"
 	"github.com/stretchr/testify/require"
 
-	"github.com/ava-labs/avalanchego/graft/subnet-evm/consensus/dummy"
-	"github.com/ava-labs/avalanchego/graft/subnet-evm/core"
-	"github.com/ava-labs/avalanchego/graft/subnet-evm/params"
-	"github.com/ava-labs/avalanchego/graft/subnet-evm/plugin/evm/customtypes"
-	"github.com/ava-labs/avalanchego/graft/subnet-evm/plugin/evm/message"
-	"github.com/ava-labs/avalanchego/graft/subnet-evm/sync/handlers"
-	"github.com/ava-labs/avalanchego/graft/subnet-evm/sync/statesync/statesynctest"
-	"github.com/ava-labs/avalanchego/ids"
+	"github.com/rink-labs/rinkgo/graft/subnet-evm/consensus/dummy"
+	"github.com/rink-labs/rinkgo/graft/subnet-evm/core"
+	"github.com/rink-labs/rinkgo/graft/subnet-evm/params"
+	"github.com/rink-labs/rinkgo/graft/subnet-evm/plugin/evm/customtypes"
+	"github.com/rink-labs/rinkgo/graft/subnet-evm/plugin/evm/message"
+	"github.com/rink-labs/rinkgo/graft/subnet-evm/sync/handlers"
+	"github.com/rink-labs/rinkgo/graft/subnet-evm/sync/statesync/statesynctest"
+	"github.com/rink-labs/rinkgo/ids"
 
-	clientstats "github.com/ava-labs/avalanchego/graft/subnet-evm/sync/client/stats"
-	handlerstats "github.com/ava-labs/avalanchego/graft/subnet-evm/sync/handlers/stats"
+	clientstats "github.com/rink-labs/rinkgo/graft/subnet-evm/sync/client/stats"
+	handlerstats "github.com/rink-labs/rinkgo/graft/subnet-evm/sync/handlers/stats"
 	ethparams "github.com/ava-labs/libevm/params"
 )
 

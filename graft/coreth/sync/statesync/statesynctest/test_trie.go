@@ -18,8 +18,8 @@ import (
 	"github.com/holiman/uint256"
 	"github.com/stretchr/testify/require"
 
-	"github.com/ava-labs/avalanchego/graft/coreth/utils/utilstest"
-	"github.com/ava-labs/avalanchego/utils/wrappers"
+	"github.com/rink-labs/rinkgo/graft/coreth/utils/utilstest"
+	"github.com/rink-labs/rinkgo/utils/wrappers"
 )
 
 // GenerateTrie creates a trie with [numKeys] random key-value pairs inside of [trieDB].

@@ -13,12 +13,12 @@ import (
 	"github.com/ava-labs/libevm/core/rawdb"
 	"github.com/ava-labs/libevm/ethdb"
 
-	"github.com/ava-labs/avalanchego/graft/subnet-evm/plugin/evm/customrawdb"
-	"github.com/ava-labs/avalanchego/graft/subnet-evm/plugin/evm/message"
-	"github.com/ava-labs/avalanchego/ids"
-	"github.com/ava-labs/avalanchego/utils/set"
+	"github.com/rink-labs/rinkgo/graft/subnet-evm/plugin/evm/customrawdb"
+	"github.com/rink-labs/rinkgo/graft/subnet-evm/plugin/evm/message"
+	"github.com/rink-labs/rinkgo/ids"
+	"github.com/rink-labs/rinkgo/utils/set"
 
-	statesyncclient "github.com/ava-labs/avalanchego/graft/subnet-evm/sync/client"
+	statesyncclient "github.com/rink-labs/rinkgo/graft/subnet-evm/sync/client"
 )
 
 const (

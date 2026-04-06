@@ -6,10 +6,10 @@ package validatorstest
 import (
 	"context"
 
-	"github.com/ava-labs/avalanchego/ids"
+	"github.com/rink-labs/rinkgo/ids"
 
-	snowvalidators "github.com/ava-labs/avalanchego/snow/validators"
-	vmvalidators "github.com/ava-labs/avalanchego/vms/platformvm/validators"
+	snowvalidators "github.com/rink-labs/rinkgo/snow/validators"
+	vmvalidators "github.com/rink-labs/rinkgo/vms/platformvm/validators"
 )
 
 var Manager vmvalidators.Manager = manager{}

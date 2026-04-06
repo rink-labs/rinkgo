@@ -14,8 +14,8 @@ import (
 
 	_ "embed"
 
-	"github.com/ava-labs/avalanchego/utils"
-	"github.com/ava-labs/avalanchego/utils/units"
+	"github.com/rink-labs/rinkgo/utils"
+	"github.com/rink-labs/rinkgo/utils/units"
 )
 
 const maxMessageSize = 2 * units.MiB // Max message size. Can't import due to cycle.

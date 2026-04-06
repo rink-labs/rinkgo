@@ -10,7 +10,7 @@ import (
 	"github.com/stretchr/testify/require"
 	"gonum.org/v1/gonum/mathext/prng"
 
-	"github.com/ava-labs/avalanchego/snow/consensus/snowball"
+	"github.com/rink-labs/rinkgo/snow/consensus/snowball"
 )
 
 func TestConvergenceSnowFlakeSnowBall(t *testing.T) {

@@ -32,8 +32,8 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/ava-labs/avalanchego/graft/subnet-evm/plugin/evm/customrawdb"
-	"github.com/ava-labs/avalanchego/graft/subnet-evm/utils"
+	"github.com/rink-labs/rinkgo/graft/subnet-evm/plugin/evm/customrawdb"
+	"github.com/rink-labs/rinkgo/graft/subnet-evm/utils"
 	"github.com/ava-labs/libevm/common"
 	"github.com/ava-labs/libevm/core/rawdb"
 	"github.com/ava-labs/libevm/core/types"

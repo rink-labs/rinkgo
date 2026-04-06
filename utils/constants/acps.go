@@ -3,7 +3,7 @@
 
 package constants
 
-import "github.com/ava-labs/avalanchego/utils/set"
+import "github.com/rink-labs/rinkgo/utils/set"
 
 var (
 	// ActivatedACPs is the set of ACPs that are activated.

@@ -9,8 +9,8 @@ import (
 
 	"github.com/ava-labs/libevm/core/types"
 
-	"github.com/ava-labs/avalanchego/graft/coreth/params/extras"
-	"github.com/ava-labs/avalanchego/graft/coreth/plugin/evm/customtypes"
+	"github.com/rink-labs/rinkgo/graft/coreth/params/extras"
+	"github.com/rink-labs/rinkgo/graft/coreth/plugin/evm/customtypes"
 )
 
 // BaseFee takes the previous header and the timestamp of its child block and

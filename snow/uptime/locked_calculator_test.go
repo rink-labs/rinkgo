@@ -11,9 +11,9 @@ import (
 	"github.com/stretchr/testify/require"
 	"go.uber.org/mock/gomock"
 
-	"github.com/ava-labs/avalanchego/ids"
-	"github.com/ava-labs/avalanchego/snow/uptime/uptimemock"
-	"github.com/ava-labs/avalanchego/utils"
+	"github.com/rink-labs/rinkgo/ids"
+	"github.com/rink-labs/rinkgo/snow/uptime/uptimemock"
+	"github.com/rink-labs/rinkgo/utils"
 )
 
 func TestLockedCalculator(t *testing.T) {

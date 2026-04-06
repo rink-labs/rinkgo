@@ -10,13 +10,13 @@ import (
 	"github.com/ava-labs/libevm/crypto"
 	"github.com/stretchr/testify/require"
 
-	"github.com/ava-labs/avalanchego/graft/subnet-evm/accounts/abi/bind"
-	"github.com/ava-labs/avalanchego/graft/subnet-evm/precompile/allowlist"
-	"github.com/ava-labs/avalanchego/graft/subnet-evm/precompile/contracts/utilstest"
-	"github.com/ava-labs/avalanchego/graft/subnet-evm/precompile/precompileconfig"
+	"github.com/rink-labs/rinkgo/graft/subnet-evm/accounts/abi/bind"
+	"github.com/rink-labs/rinkgo/graft/subnet-evm/precompile/allowlist"
+	"github.com/rink-labs/rinkgo/graft/subnet-evm/precompile/contracts/utilstest"
+	"github.com/rink-labs/rinkgo/graft/subnet-evm/precompile/precompileconfig"
 
-	sim "github.com/ava-labs/avalanchego/graft/subnet-evm/ethclient/simulated"
-	allowlistbindings "github.com/ava-labs/avalanchego/graft/subnet-evm/precompile/allowlist/allowlisttest/bindings"
+	sim "github.com/rink-labs/rinkgo/graft/subnet-evm/ethclient/simulated"
+	allowlistbindings "github.com/rink-labs/rinkgo/graft/subnet-evm/precompile/allowlist/allowlisttest/bindings"
 )
 
 // RunAllowListEventTests runs the standard AllowList event emission tests.

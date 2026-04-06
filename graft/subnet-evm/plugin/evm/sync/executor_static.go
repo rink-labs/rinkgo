@@ -6,7 +6,7 @@ package sync
 import (
 	"context"
 
-	"github.com/ava-labs/avalanchego/graft/subnet-evm/plugin/evm/message"
+	"github.com/rink-labs/rinkgo/graft/subnet-evm/plugin/evm/message"
 )
 
 var _ Executor = (*staticExecutor)(nil)

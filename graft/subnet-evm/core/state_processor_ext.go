@@ -11,11 +11,11 @@ import (
 	"github.com/ava-labs/libevm/core/state"
 	"github.com/ava-labs/libevm/log"
 
-	"github.com/ava-labs/avalanchego/graft/subnet-evm/core/extstate"
-	"github.com/ava-labs/avalanchego/graft/subnet-evm/params"
-	"github.com/ava-labs/avalanchego/graft/subnet-evm/precompile/contract"
-	"github.com/ava-labs/avalanchego/graft/subnet-evm/precompile/modules"
-	"github.com/ava-labs/avalanchego/graft/subnet-evm/stateupgrade"
+	"github.com/rink-labs/rinkgo/graft/subnet-evm/core/extstate"
+	"github.com/rink-labs/rinkgo/graft/subnet-evm/params"
+	"github.com/rink-labs/rinkgo/graft/subnet-evm/precompile/contract"
+	"github.com/rink-labs/rinkgo/graft/subnet-evm/precompile/modules"
+	"github.com/rink-labs/rinkgo/graft/subnet-evm/stateupgrade"
 )
 
 // ApplyPrecompileActivations checks if any of the precompiles specified by the chain config are enabled or disabled by the block

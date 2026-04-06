@@ -10,8 +10,8 @@ import (
 	"github.com/ava-labs/libevm/common"
 	"github.com/stretchr/testify/require"
 
-	"github.com/ava-labs/avalanchego/codec"
-	"github.com/ava-labs/avalanchego/utils/set"
+	"github.com/rink-labs/rinkgo/codec"
+	"github.com/rink-labs/rinkgo/utils/set"
 )
 
 // Valid result parsing is tested by [TestBlockResultsBytes]

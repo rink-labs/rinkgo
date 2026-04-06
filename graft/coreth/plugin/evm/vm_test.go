@@ -25,41 +25,41 @@ import (
 	"github.com/holiman/uint256"
 	"github.com/stretchr/testify/require"
 
-	"github.com/ava-labs/avalanchego/database"
-	"github.com/ava-labs/avalanchego/database/memdb"
-	"github.com/ava-labs/avalanchego/graft/coreth/consensus/dummy"
-	"github.com/ava-labs/avalanchego/graft/coreth/core"
-	"github.com/ava-labs/avalanchego/graft/coreth/eth"
-	"github.com/ava-labs/avalanchego/graft/coreth/miner"
-	"github.com/ava-labs/avalanchego/graft/coreth/node"
-	"github.com/ava-labs/avalanchego/graft/coreth/params"
-	"github.com/ava-labs/avalanchego/graft/coreth/params/paramstest"
-	"github.com/ava-labs/avalanchego/graft/coreth/plugin/evm/customheader"
-	"github.com/ava-labs/avalanchego/graft/coreth/plugin/evm/customtypes"
-	"github.com/ava-labs/avalanchego/graft/coreth/plugin/evm/extension"
-	"github.com/ava-labs/avalanchego/graft/coreth/plugin/evm/message"
-	"github.com/ava-labs/avalanchego/graft/coreth/plugin/evm/upgrade/ap0"
-	"github.com/ava-labs/avalanchego/graft/coreth/plugin/evm/upgrade/ap1"
-	"github.com/ava-labs/avalanchego/graft/coreth/plugin/evm/vmtest"
-	"github.com/ava-labs/avalanchego/graft/coreth/rpc"
-	"github.com/ava-labs/avalanchego/graft/coreth/utils"
-	"github.com/ava-labs/avalanchego/graft/coreth/utils/utilstest"
-	"github.com/ava-labs/avalanchego/graft/evm/constants"
-	"github.com/ava-labs/avalanchego/ids"
-	"github.com/ava-labs/avalanchego/snow/snowtest"
-	"github.com/ava-labs/avalanchego/upgrade"
-	"github.com/ava-labs/avalanchego/upgrade/upgradetest"
-	"github.com/ava-labs/avalanchego/utils/set"
-	"github.com/ava-labs/avalanchego/utils/timer/mockable"
-	"github.com/ava-labs/avalanchego/vms/components/chain"
-	"github.com/ava-labs/avalanchego/vms/evm/acp176"
-	"github.com/ava-labs/avalanchego/vms/evm/acp226"
-	"github.com/ava-labs/avalanchego/vms/evm/predicate"
-	"github.com/ava-labs/avalanchego/vms/platformvm/warp/payload"
+	"github.com/rink-labs/rinkgo/database"
+	"github.com/rink-labs/rinkgo/database/memdb"
+	"github.com/rink-labs/rinkgo/graft/coreth/consensus/dummy"
+	"github.com/rink-labs/rinkgo/graft/coreth/core"
+	"github.com/rink-labs/rinkgo/graft/coreth/eth"
+	"github.com/rink-labs/rinkgo/graft/coreth/miner"
+	"github.com/rink-labs/rinkgo/graft/coreth/node"
+	"github.com/rink-labs/rinkgo/graft/coreth/params"
+	"github.com/rink-labs/rinkgo/graft/coreth/params/paramstest"
+	"github.com/rink-labs/rinkgo/graft/coreth/plugin/evm/customheader"
+	"github.com/rink-labs/rinkgo/graft/coreth/plugin/evm/customtypes"
+	"github.com/rink-labs/rinkgo/graft/coreth/plugin/evm/extension"
+	"github.com/rink-labs/rinkgo/graft/coreth/plugin/evm/message"
+	"github.com/rink-labs/rinkgo/graft/coreth/plugin/evm/upgrade/ap0"
+	"github.com/rink-labs/rinkgo/graft/coreth/plugin/evm/upgrade/ap1"
+	"github.com/rink-labs/rinkgo/graft/coreth/plugin/evm/vmtest"
+	"github.com/rink-labs/rinkgo/graft/coreth/rpc"
+	"github.com/rink-labs/rinkgo/graft/coreth/utils"
+	"github.com/rink-labs/rinkgo/graft/coreth/utils/utilstest"
+	"github.com/rink-labs/rinkgo/graft/evm/constants"
+	"github.com/rink-labs/rinkgo/ids"
+	"github.com/rink-labs/rinkgo/snow/snowtest"
+	"github.com/rink-labs/rinkgo/upgrade"
+	"github.com/rink-labs/rinkgo/upgrade/upgradetest"
+	"github.com/rink-labs/rinkgo/utils/set"
+	"github.com/rink-labs/rinkgo/utils/timer/mockable"
+	"github.com/rink-labs/rinkgo/vms/components/chain"
+	"github.com/rink-labs/rinkgo/vms/evm/acp176"
+	"github.com/rink-labs/rinkgo/vms/evm/acp226"
+	"github.com/rink-labs/rinkgo/vms/evm/predicate"
+	"github.com/rink-labs/rinkgo/vms/platformvm/warp/payload"
 
-	warpcontract "github.com/ava-labs/avalanchego/graft/coreth/precompile/contracts/warp"
-	commonEng "github.com/ava-labs/avalanchego/snow/engine/common"
-	avalancheWarp "github.com/ava-labs/avalanchego/vms/platformvm/warp"
+	warpcontract "github.com/rink-labs/rinkgo/graft/coreth/precompile/contracts/warp"
+	commonEng "github.com/rink-labs/rinkgo/snow/engine/common"
+	avalancheWarp "github.com/rink-labs/rinkgo/vms/platformvm/warp"
 	ethparams "github.com/ava-labs/libevm/params"
 )
 
@@ -1709,7 +1709,7 @@ func TestWaitForEvent(t *testing.T) {
 				require.Equal(t, commonEng.PendingTxs, res.msg)
 			},
 		},
-		// TODO (ceyonur): remove this test after Granite is activated. (See https://github.com/ava-labs/avalanchego/graft/coreth/issues/1318)
+		// TODO (ceyonur): remove this test after Granite is activated. (See https://github.com/rink-labs/rinkgo/graft/coreth/issues/1318)
 		{
 			name: "WaitForEvent does not wait for new block to be built in fortuna",
 			Fork: &fortunaFork,
@@ -1730,7 +1730,7 @@ func TestWaitForEvent(t *testing.T) {
 				require.Equal(t, commonEng.PendingTxs, msg)
 			},
 		},
-		// TODO (ceyonur): remove this test after Granite is activated. (See https://github.com/ava-labs/avalanchego/graft/coreth/issues/1318)
+		// TODO (ceyonur): remove this test after Granite is activated. (See https://github.com/rink-labs/rinkgo/graft/coreth/issues/1318)
 		{
 			name: "WaitForEvent waits for a delay with a retry in fortuna",
 			Fork: &fortunaFork,

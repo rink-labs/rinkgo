@@ -37,10 +37,10 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/ava-labs/avalanchego/graft/subnet-evm/accounts/abi"
-	"github.com/ava-labs/avalanchego/graft/subnet-evm/accounts/abi/bind"
-	"github.com/ava-labs/avalanchego/graft/subnet-evm/accounts/abi/bind/precompilebind/templatetest"
-	"github.com/ava-labs/avalanchego/graft/subnet-evm/precompile/allowlist"
+	"github.com/rink-labs/rinkgo/graft/subnet-evm/accounts/abi"
+	"github.com/rink-labs/rinkgo/graft/subnet-evm/accounts/abi/bind"
+	"github.com/rink-labs/rinkgo/graft/subnet-evm/accounts/abi/bind/precompilebind/templatetest"
+	"github.com/rink-labs/rinkgo/graft/subnet-evm/precompile/allowlist"
 )
 
 var errNoAnonymousEvent = errors.New("event type must not be anonymous")

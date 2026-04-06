@@ -7,10 +7,10 @@ import (
 	"encoding/json"
 	"os"
 
-	"github.com/ava-labs/avalanchego/config"
-	"github.com/ava-labs/avalanchego/graft/subnet-evm/plugin/evm"
-	"github.com/ava-labs/avalanchego/ids"
-	"github.com/ava-labs/avalanchego/tests/fixture/tmpnet"
+	"github.com/rink-labs/rinkgo/config"
+	"github.com/rink-labs/rinkgo/graft/subnet-evm/plugin/evm"
+	"github.com/rink-labs/rinkgo/ids"
+	"github.com/rink-labs/rinkgo/tests/fixture/tmpnet"
 )
 
 var DefaultChainConfig = map[string]any{

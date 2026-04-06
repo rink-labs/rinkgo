@@ -9,10 +9,10 @@ import (
 	"github.com/stretchr/testify/require"
 	"go.uber.org/mock/gomock"
 
-	"github.com/ava-labs/avalanchego/ids"
-	"github.com/ava-labs/avalanchego/vms"
-	"github.com/ava-labs/avalanchego/vms/registry/registrymock"
-	"github.com/ava-labs/avalanchego/vms/vmsmock"
+	"github.com/rink-labs/rinkgo/ids"
+	"github.com/rink-labs/rinkgo/vms"
+	"github.com/rink-labs/rinkgo/vms/registry/registrymock"
+	"github.com/rink-labs/rinkgo/vms/vmsmock"
 )
 
 var (

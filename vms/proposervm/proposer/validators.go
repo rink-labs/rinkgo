@@ -4,8 +4,8 @@
 package proposer
 
 import (
-	"github.com/ava-labs/avalanchego/ids"
-	"github.com/ava-labs/avalanchego/utils"
+	"github.com/rink-labs/rinkgo/ids"
+	"github.com/rink-labs/rinkgo/utils"
 )
 
 var _ utils.Sortable[validatorData] = validatorData{}

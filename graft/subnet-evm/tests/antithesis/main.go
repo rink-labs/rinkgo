@@ -21,16 +21,16 @@ import (
 	"github.com/stretchr/testify/require"
 	"go.uber.org/zap"
 
-	"github.com/ava-labs/avalanchego/graft/subnet-evm/accounts/abi/bind"
-	"github.com/ava-labs/avalanchego/graft/subnet-evm/ethclient"
-	"github.com/ava-labs/avalanchego/graft/subnet-evm/tests/utils"
-	"github.com/ava-labs/avalanchego/ids"
-	"github.com/ava-labs/avalanchego/tests/antithesis"
-	"github.com/ava-labs/avalanchego/tests/fixture/tmpnet"
-	"github.com/ava-labs/avalanchego/utils/logging"
+	"github.com/rink-labs/rinkgo/graft/subnet-evm/accounts/abi/bind"
+	"github.com/rink-labs/rinkgo/graft/subnet-evm/ethclient"
+	"github.com/rink-labs/rinkgo/graft/subnet-evm/tests/utils"
+	"github.com/rink-labs/rinkgo/ids"
+	"github.com/rink-labs/rinkgo/tests/antithesis"
+	"github.com/rink-labs/rinkgo/tests/fixture/tmpnet"
+	"github.com/rink-labs/rinkgo/utils/logging"
 
-	ago_tests "github.com/ava-labs/avalanchego/tests"
-	timerpkg "github.com/ava-labs/avalanchego/utils/timer"
+	ago_tests "github.com/rink-labs/rinkgo/tests"
+	timerpkg "github.com/rink-labs/rinkgo/utils/timer"
 	ethparams "github.com/ava-labs/libevm/params"
 )
 

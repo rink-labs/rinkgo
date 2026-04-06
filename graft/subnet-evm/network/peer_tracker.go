@@ -10,12 +10,12 @@ import (
 	"github.com/ava-labs/libevm/log"
 	"github.com/ava-labs/libevm/metrics"
 
-	"github.com/ava-labs/avalanchego/graft/subnet-evm/utils/rand"
-	"github.com/ava-labs/avalanchego/ids"
-	"github.com/ava-labs/avalanchego/utils/set"
-	"github.com/ava-labs/avalanchego/version"
+	"github.com/rink-labs/rinkgo/graft/subnet-evm/utils/rand"
+	"github.com/rink-labs/rinkgo/ids"
+	"github.com/rink-labs/rinkgo/utils/set"
+	"github.com/rink-labs/rinkgo/version"
 
-	safemath "github.com/ava-labs/avalanchego/utils/math"
+	safemath "github.com/rink-labs/rinkgo/utils/math"
 )
 
 const (

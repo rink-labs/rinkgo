@@ -8,9 +8,9 @@ import (
 
 	"go.opentelemetry.io/otel/attribute"
 
-	"github.com/ava-labs/avalanchego/ids"
-	"github.com/ava-labs/avalanchego/trace"
-	"github.com/ava-labs/avalanchego/utils/bag"
+	"github.com/rink-labs/rinkgo/ids"
+	"github.com/rink-labs/rinkgo/trace"
+	"github.com/rink-labs/rinkgo/utils/bag"
 
 	oteltrace "go.opentelemetry.io/otel/trace"
 )

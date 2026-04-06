@@ -3,7 +3,7 @@
 
 package vm
 
-import "github.com/ava-labs/avalanchego/ids"
+import "github.com/rink-labs/rinkgo/ids"
 
 // readMainnetBonusBlocks returns maps of bonus block numbers to block IDs.
 // Note bonus blocks are indexed in the atomic trie.

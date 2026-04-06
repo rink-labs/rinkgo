@@ -4,10 +4,10 @@
 package rpcchainvm
 
 import (
-	"github.com/ava-labs/avalanchego/database"
-	"github.com/ava-labs/avalanchego/snow/engine/snowman/block"
+	"github.com/rink-labs/rinkgo/database"
+	"github.com/rink-labs/rinkgo/snow/engine/snowman/block"
 
-	vmpb "github.com/ava-labs/avalanchego/proto/pb/vm"
+	vmpb "github.com/rink-labs/rinkgo/proto/pb/vm"
 )
 
 var (

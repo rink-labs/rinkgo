@@ -16,8 +16,8 @@ import (
 )
 
 const (
-	corethImport    = "github.com/ava-labs/avalanchego/graft/coreth"
-	subnetEVMImport = "github.com/ava-labs/avalanchego/graft/subnet-evm"
+	corethImport    = "github.com/rink-labs/rinkgo/graft/coreth"
+	subnetEVMImport = "github.com/rink-labs/rinkgo/graft/subnet-evm"
 )
 
 // TestImportViolations ensures proper import rules:

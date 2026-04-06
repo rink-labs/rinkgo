@@ -7,7 +7,7 @@ import (
 	"context"
 	"time"
 
-	"github.com/ava-labs/avalanchego/snow/engine/snowman/block"
+	"github.com/rink-labs/rinkgo/snow/engine/snowman/block"
 )
 
 func (vm *blockVM) StateSyncEnabled(ctx context.Context) (bool, error) {

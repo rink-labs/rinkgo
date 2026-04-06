@@ -33,8 +33,8 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/ava-labs/avalanchego/graft/coreth/internal/ethapi"
-	"github.com/ava-labs/avalanchego/graft/coreth/rpc"
+	"github.com/rink-labs/rinkgo/graft/coreth/internal/ethapi"
+	"github.com/rink-labs/rinkgo/graft/coreth/rpc"
 	"github.com/ava-labs/libevm/common"
 	"github.com/ava-labs/libevm/common/hexutil"
 	"github.com/ava-labs/libevm/core/rawdb"

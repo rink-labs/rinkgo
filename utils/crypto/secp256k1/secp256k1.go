@@ -12,11 +12,11 @@ import (
 	"github.com/ava-labs/libevm/crypto"
 	"github.com/decred/dcrd/dcrec/secp256k1/v4/ecdsa"
 
-	"github.com/ava-labs/avalanchego/cache"
-	"github.com/ava-labs/avalanchego/cache/lru"
-	"github.com/ava-labs/avalanchego/ids"
-	"github.com/ava-labs/avalanchego/utils/cb58"
-	"github.com/ava-labs/avalanchego/utils/hashing"
+	"github.com/rink-labs/rinkgo/cache"
+	"github.com/rink-labs/rinkgo/cache/lru"
+	"github.com/rink-labs/rinkgo/ids"
+	"github.com/rink-labs/rinkgo/utils/cb58"
+	"github.com/rink-labs/rinkgo/utils/hashing"
 
 	stdecdsa "crypto/ecdsa"
 	secp256k1 "github.com/decred/dcrd/dcrec/secp256k1/v4"

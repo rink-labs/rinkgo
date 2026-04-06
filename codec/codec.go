@@ -6,7 +6,7 @@ package codec
 import (
 	"errors"
 
-	"github.com/ava-labs/avalanchego/utils/wrappers"
+	"github.com/rink-labs/rinkgo/utils/wrappers"
 )
 
 var (

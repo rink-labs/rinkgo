@@ -3,7 +3,7 @@
 
 package gas
 
-import "github.com/ava-labs/avalanchego/utils/math"
+import "github.com/rink-labs/rinkgo/utils/math"
 
 const (
 	Bandwidth Dimension = iota

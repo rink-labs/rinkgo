@@ -12,22 +12,22 @@ import (
 
 	"go.uber.org/zap"
 
-	"github.com/ava-labs/avalanchego/node"
-	"github.com/ava-labs/avalanchego/utils"
-	"github.com/ava-labs/avalanchego/utils/logging"
-	"github.com/ava-labs/avalanchego/utils/perms"
-	"github.com/ava-labs/avalanchego/utils/ulimit"
+	"github.com/rink-labs/rinkgo/node"
+	"github.com/rink-labs/rinkgo/utils"
+	"github.com/rink-labs/rinkgo/utils/logging"
+	"github.com/rink-labs/rinkgo/utils/perms"
+	"github.com/rink-labs/rinkgo/utils/ulimit"
 
-	nodeconfig "github.com/ava-labs/avalanchego/config/node"
+	nodeconfig "github.com/rink-labs/rinkgo/config/node"
 )
 
 const Header = `
-██████╗ ██╗███╗   ██╗██╗  ██╗██╗   ██╗██████╗ ██╗   ██╗
-██╔══██╗██║████╗  ██║██║ ██╔╝██║   ██║██╔══██╗╚██╗ ██╔╝
-██████╔╝██║██╔██╗ ██║█████╔╝ ██║   ██║██████╔╝ ╚████╔╝ 
-██╔══██╗██║██║╚██╗██║██╔═██╗ ██║   ██║██╔══██╗  ╚██╔╝  
-██║  ██║██║██║ ╚████║██║  ██╗╚██████╔╝██████╔╝   ██║   
-╚═╝  ╚═╝╚═╝╚═╝  ╚═══╝╚═╝  ╚═╝ ╚═════╝ ╚═════╝    ╚═╝  
+██████╗ ██╗███╗   ██╗██╗  ██╗
+██╔══██╗██║████╗  ██║██║ ██╔
+██████╔╝██║██╔██╗ ██║█████╔╝ 
+██╔══██╗██║██║╚██╗██║██╔═██╗ 
+██║  ██║██║██║ ╚████║██║  ██╗ 
+╚═╝  ╚═╝╚═╝╚═╝  ╚═══╝╚═╝  ╚═╝  
 `
 
 var _ App = (*app)(nil)

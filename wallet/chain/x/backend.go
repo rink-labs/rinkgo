@@ -6,10 +6,10 @@ package x
 import (
 	"context"
 
-	"github.com/ava-labs/avalanchego/vms/avm/txs"
-	"github.com/ava-labs/avalanchego/wallet/chain/x/builder"
-	"github.com/ava-labs/avalanchego/wallet/chain/x/signer"
-	"github.com/ava-labs/avalanchego/wallet/subnet/primary/common"
+	"github.com/rink-labs/rinkgo/vms/avm/txs"
+	"github.com/rink-labs/rinkgo/wallet/chain/x/builder"
+	"github.com/rink-labs/rinkgo/wallet/chain/x/signer"
+	"github.com/rink-labs/rinkgo/wallet/subnet/primary/common"
 )
 
 var _ Backend = (*backend)(nil)

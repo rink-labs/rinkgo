@@ -6,8 +6,8 @@ package common
 import (
 	"context"
 
-	"github.com/ava-labs/avalanchego/ids"
-	"github.com/ava-labs/avalanchego/utils/set"
+	"github.com/rink-labs/rinkgo/ids"
+	"github.com/rink-labs/rinkgo/utils/set"
 )
 
 // SendConfig is used to specify who to send messages to over the p2p network.

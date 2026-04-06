@@ -14,19 +14,19 @@ import (
 	"go.uber.org/zap"
 
 	// ensure test packages are scanned by ginkgo
-	_ "github.com/ava-labs/avalanchego/tests/e2e/banff"
-	_ "github.com/ava-labs/avalanchego/tests/e2e/c"
-	_ "github.com/ava-labs/avalanchego/tests/e2e/faultinjection"
-	_ "github.com/ava-labs/avalanchego/tests/e2e/p"
-	_ "github.com/ava-labs/avalanchego/tests/e2e/x"
-	_ "github.com/ava-labs/avalanchego/tests/e2e/x/transfer"
+	_ "github.com/rink-labs/rinkgo/tests/e2e/banff"
+	_ "github.com/rink-labs/rinkgo/tests/e2e/c"
+	_ "github.com/rink-labs/rinkgo/tests/e2e/faultinjection"
+	_ "github.com/rink-labs/rinkgo/tests/e2e/p"
+	_ "github.com/rink-labs/rinkgo/tests/e2e/x"
+	_ "github.com/rink-labs/rinkgo/tests/e2e/x/transfer"
 
-	"github.com/ava-labs/avalanchego/config"
-	"github.com/ava-labs/avalanchego/graft/coreth/plugin/evm"
-	"github.com/ava-labs/avalanchego/tests/e2e/vms"
-	"github.com/ava-labs/avalanchego/tests/fixture/e2e"
-	"github.com/ava-labs/avalanchego/tests/fixture/tmpnet"
-	"github.com/ava-labs/avalanchego/upgrade/upgradetest"
+	"github.com/rink-labs/rinkgo/config"
+	"github.com/rink-labs/rinkgo/graft/coreth/plugin/evm"
+	"github.com/rink-labs/rinkgo/tests/e2e/vms"
+	"github.com/rink-labs/rinkgo/tests/fixture/e2e"
+	"github.com/rink-labs/rinkgo/tests/fixture/tmpnet"
+	"github.com/rink-labs/rinkgo/upgrade/upgradetest"
 )
 
 func TestE2E(t *testing.T) {

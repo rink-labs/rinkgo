@@ -4,10 +4,10 @@
 package peer
 
 import (
-	"github.com/ava-labs/avalanchego/ids"
-	"github.com/ava-labs/avalanchego/utils/bloom"
-	"github.com/ava-labs/avalanchego/utils/ips"
-	"github.com/ava-labs/avalanchego/utils/set"
+	"github.com/rink-labs/rinkgo/ids"
+	"github.com/rink-labs/rinkgo/utils/bloom"
+	"github.com/rink-labs/rinkgo/utils/ips"
+	"github.com/rink-labs/rinkgo/utils/set"
 )
 
 // Network defines the interface that is used by a peer to help establish a well

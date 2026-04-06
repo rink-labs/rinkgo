@@ -9,8 +9,8 @@ import (
 	"github.com/ava-labs/libevm/common"
 	"github.com/ava-labs/libevm/ethdb"
 
-	"github.com/ava-labs/avalanchego/database"
-	"github.com/ava-labs/avalanchego/vms/evm/sync/customrawdb"
+	"github.com/rink-labs/rinkgo/database"
+	"github.com/rink-labs/rinkgo/vms/evm/sync/customrawdb"
 )
 
 // trieQueue persists storage trie roots with their associated

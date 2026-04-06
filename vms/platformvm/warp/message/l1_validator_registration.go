@@ -6,7 +6,7 @@ package message
 import (
 	"fmt"
 
-	"github.com/ava-labs/avalanchego/ids"
+	"github.com/rink-labs/rinkgo/ids"
 )
 
 // L1ValidatorRegistration reports if a validator is registered on the P-chain.

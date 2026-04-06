@@ -13,9 +13,9 @@ import (
 	"google.golang.org/grpc/backoff"
 	"google.golang.org/grpc/credentials/insecure"
 
-	"github.com/ava-labs/avalanchego/utils/crypto/bls"
+	"github.com/rink-labs/rinkgo/utils/crypto/bls"
 
-	pb "github.com/ava-labs/avalanchego/proto/pb/signer"
+	pb "github.com/rink-labs/rinkgo/proto/pb/signer"
 )
 
 var _ bls.Signer = (*Client)(nil)

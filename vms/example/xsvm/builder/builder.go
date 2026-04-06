@@ -8,18 +8,18 @@ import (
 	"sync"
 	"time"
 
-	"github.com/ava-labs/avalanchego/database/versiondb"
-	"github.com/ava-labs/avalanchego/ids"
-	"github.com/ava-labs/avalanchego/snow"
-	"github.com/ava-labs/avalanchego/snow/engine/common"
-	"github.com/ava-labs/avalanchego/utils/linked"
-	"github.com/ava-labs/avalanchego/utils/lock"
-	"github.com/ava-labs/avalanchego/vms/example/xsvm/chain"
-	"github.com/ava-labs/avalanchego/vms/example/xsvm/execute"
-	"github.com/ava-labs/avalanchego/vms/example/xsvm/tx"
+	"github.com/rink-labs/rinkgo/database/versiondb"
+	"github.com/rink-labs/rinkgo/ids"
+	"github.com/rink-labs/rinkgo/snow"
+	"github.com/rink-labs/rinkgo/snow/engine/common"
+	"github.com/rink-labs/rinkgo/utils/linked"
+	"github.com/rink-labs/rinkgo/utils/lock"
+	"github.com/rink-labs/rinkgo/vms/example/xsvm/chain"
+	"github.com/rink-labs/rinkgo/vms/example/xsvm/execute"
+	"github.com/rink-labs/rinkgo/vms/example/xsvm/tx"
 
-	smblock "github.com/ava-labs/avalanchego/snow/engine/snowman/block"
-	xsblock "github.com/ava-labs/avalanchego/vms/example/xsvm/block"
+	smblock "github.com/rink-labs/rinkgo/snow/engine/snowman/block"
+	xsblock "github.com/rink-labs/rinkgo/vms/example/xsvm/block"
 )
 
 const MaxTxsPerBlock = 10

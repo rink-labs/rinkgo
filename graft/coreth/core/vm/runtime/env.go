@@ -28,7 +28,7 @@
 package runtime
 
 import (
-	"github.com/ava-labs/avalanchego/graft/coreth/core"
+	"github.com/rink-labs/rinkgo/graft/coreth/core"
 	"github.com/ava-labs/libevm/core/vm"
 )
 

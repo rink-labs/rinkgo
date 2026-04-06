@@ -9,13 +9,13 @@ import (
 
 	"github.com/ava-labs/libevm/core/types"
 
-	"github.com/ava-labs/avalanchego/graft/coreth/params/extras"
-	"github.com/ava-labs/avalanchego/graft/coreth/plugin/evm/customtypes"
-	"github.com/ava-labs/avalanchego/graft/coreth/plugin/evm/upgrade/ap0"
-	"github.com/ava-labs/avalanchego/graft/coreth/plugin/evm/upgrade/ap1"
-	"github.com/ava-labs/avalanchego/graft/coreth/plugin/evm/upgrade/ap5"
-	"github.com/ava-labs/avalanchego/graft/coreth/plugin/evm/upgrade/cortina"
-	"github.com/ava-labs/avalanchego/utils/math"
+	"github.com/rink-labs/rinkgo/graft/coreth/params/extras"
+	"github.com/rink-labs/rinkgo/graft/coreth/plugin/evm/customtypes"
+	"github.com/rink-labs/rinkgo/graft/coreth/plugin/evm/upgrade/ap0"
+	"github.com/rink-labs/rinkgo/graft/coreth/plugin/evm/upgrade/ap1"
+	"github.com/rink-labs/rinkgo/graft/coreth/plugin/evm/upgrade/ap5"
+	"github.com/rink-labs/rinkgo/graft/coreth/plugin/evm/upgrade/cortina"
+	"github.com/rink-labs/rinkgo/utils/math"
 )
 
 var (
