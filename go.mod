@@ -29,8 +29,6 @@ require (
 	github.com/DataDog/zstd v1.5.2
 	github.com/StephenButtolph/canoto v0.17.3
 	github.com/antithesishq/antithesis-sdk-go v0.3.8
-	github.com/rink-labs/rinkgo/graft/coreth v0.0.0-20251203215505-70148edc6eca
-	github.com/rink-labs/rinkgo/graft/subnet-evm v0.8.1-0.20251201175023-067762d6ce7d
 	github.com/ava-labs/libevm v1.13.15-0.20251210210615-b8e76562a300
 	github.com/btcsuite/btcd/btcutil v1.1.3
 	github.com/cespare/xxhash/v2 v2.3.0
@@ -56,6 +54,8 @@ require (
 	github.com/prometheus/client_golang v1.23.0
 	github.com/prometheus/client_model v0.6.2
 	github.com/prometheus/common v0.65.0
+	github.com/rink-labs/rinkgo/graft/coreth v0.0.0-20251203215505-70148edc6eca
+	github.com/rink-labs/rinkgo/graft/subnet-evm v0.8.1-0.20251201175023-067762d6ce7d
 	github.com/rs/cors v1.7.0
 	github.com/shirou/gopsutil v3.21.11+incompatible
 	github.com/spf13/cast v1.9.2
