@@ -219,5 +219,3 @@ replace github.com/rink-labs/rinkgo/graft/coreth => ./graft/coreth
 replace github.com/rink-labs/rinkgo/graft/subnet-evm => ./graft/subnet-evm
 
 replace github.com/rink-labs/rinkgo/graft/evm => ./graft/evm
-
-replace github.com/ava-labs/libevm => ./libevm
