@@ -6,7 +6,7 @@ package sync
 import (
 	"fmt"
 
-	"github.com/ava-labs/libevm/crypto"
+	"github.com/rink-labs/libevm/crypto"
 
 	"github.com/rink-labs/rinkgo/graft/coreth/plugin/evm/message"
 	"github.com/rink-labs/rinkgo/ids"

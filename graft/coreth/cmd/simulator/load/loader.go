@@ -14,9 +14,9 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/ava-labs/libevm/common"
-	"github.com/ava-labs/libevm/core/types"
-	"github.com/ava-labs/libevm/log"
+	"github.com/rink-labs/libevm/common"
+	"github.com/rink-labs/libevm/core/types"
+	"github.com/rink-labs/libevm/log"
 	"golang.org/x/sync/errgroup"
 
 	"github.com/rink-labs/rinkgo/graft/coreth/cmd/simulator/config"
@@ -26,8 +26,8 @@ import (
 	"github.com/rink-labs/rinkgo/graft/coreth/ethclient"
 	"github.com/rink-labs/rinkgo/graft/coreth/params"
 
-	ethcrypto "github.com/ava-labs/libevm/crypto"
-	ethparams "github.com/ava-labs/libevm/params"
+	ethcrypto "github.com/rink-labs/libevm/crypto"
+	ethparams "github.com/rink-labs/libevm/params"
 )
 
 const (

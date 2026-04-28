@@ -9,8 +9,8 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/ava-labs/libevm/core/rawdb"
-	"github.com/ava-labs/libevm/core/types"
+	"github.com/rink-labs/libevm/core/rawdb"
+	"github.com/rink-labs/libevm/core/types"
 	"github.com/stretchr/testify/require"
 
 	"github.com/rink-labs/rinkgo/api/metrics"

@@ -36,7 +36,7 @@ import (
 
 	"github.com/rink-labs/rinkgo/graft/coreth/params/extras"
 	"github.com/rink-labs/rinkgo/graft/coreth/utils"
-	ethparams "github.com/ava-labs/libevm/params"
+	ethparams "github.com/rink-labs/libevm/params"
 )
 
 func TestCheckCompatible(t *testing.T) {

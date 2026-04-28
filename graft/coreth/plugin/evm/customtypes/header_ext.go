@@ -7,13 +7,13 @@ import (
 	"io"
 	"math/big"
 
-	"github.com/ava-labs/libevm/common"
-	"github.com/ava-labs/libevm/common/hexutil"
-	"github.com/ava-labs/libevm/rlp"
+	"github.com/rink-labs/libevm/common"
+	"github.com/rink-labs/libevm/common/hexutil"
+	"github.com/rink-labs/libevm/rlp"
 
 	"github.com/rink-labs/rinkgo/vms/evm/acp226"
 
-	ethtypes "github.com/ava-labs/libevm/core/types"
+	ethtypes "github.com/rink-labs/libevm/core/types"
 )
 
 // GetHeaderExtra returns the [HeaderExtra] from the given [Header].

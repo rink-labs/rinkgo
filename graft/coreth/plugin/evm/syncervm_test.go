@@ -6,8 +6,8 @@ package evm
 import (
 	"testing"
 
-	"github.com/ava-labs/libevm/common"
-	"github.com/ava-labs/libevm/core/types"
+	"github.com/rink-labs/libevm/common"
+	"github.com/rink-labs/libevm/core/types"
 	"github.com/stretchr/testify/require"
 
 	"github.com/rink-labs/rinkgo/graft/coreth/consensus/dummy"
@@ -16,7 +16,7 @@ import (
 	"github.com/rink-labs/rinkgo/graft/coreth/plugin/evm/vmtest"
 	"github.com/rink-labs/rinkgo/vms/evm/predicate"
 
-	ethparams "github.com/ava-labs/libevm/params"
+	ethparams "github.com/rink-labs/libevm/params"
 )
 
 func TestEVMSyncerVM(t *testing.T) {

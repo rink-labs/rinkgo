@@ -7,7 +7,7 @@ import (
 	"math/big"
 	"time"
 
-	"github.com/ava-labs/libevm/core/types"
+	"github.com/rink-labs/libevm/core/types"
 	"github.com/onsi/ginkgo/v2"
 	"github.com/stretchr/testify/require"
 	"go.uber.org/zap"

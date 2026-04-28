@@ -8,8 +8,8 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/ava-labs/libevm/common/hexutil"
-	"github.com/ava-labs/libevm/log"
+	"github.com/rink-labs/libevm/common/hexutil"
+	"github.com/rink-labs/libevm/log"
 
 	"github.com/rink-labs/rinkgo/ids"
 	"github.com/rink-labs/rinkgo/network/p2p/acp118"

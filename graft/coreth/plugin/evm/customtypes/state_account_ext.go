@@ -4,10 +4,10 @@
 package customtypes
 
 import (
-	"github.com/ava-labs/libevm/common"
-	"github.com/ava-labs/libevm/core/state"
+	"github.com/rink-labs/libevm/common"
+	"github.com/rink-labs/libevm/core/state"
 
-	ethtypes "github.com/ava-labs/libevm/core/types"
+	ethtypes "github.com/rink-labs/libevm/core/types"
 )
 
 type isMultiCoin bool

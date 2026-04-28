@@ -8,12 +8,12 @@ import (
 	"math/big"
 	"strings"
 
-	ethereum "github.com/ava-labs/libevm"
+	ethereum "github.com/rink-labs/libevm"
 	"github.com/rink-labs/rinkgo/graft/subnet-evm/accounts/abi"
 	"github.com/rink-labs/rinkgo/graft/subnet-evm/accounts/abi/bind"
-	"github.com/ava-labs/libevm/common"
-	"github.com/ava-labs/libevm/core/types"
-	"github.com/ava-labs/libevm/event"
+	"github.com/rink-labs/libevm/common"
+	"github.com/rink-labs/libevm/core/types"
+	"github.com/rink-labs/libevm/event"
 )
 
 // Reference imports to suppress errors if they are not otherwise used.

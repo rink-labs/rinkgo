@@ -12,7 +12,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/ava-labs/libevm/core/types"
+	"github.com/rink-labs/libevm/core/types"
 	"github.com/stretchr/testify/require"
 	"go.uber.org/zap"
 
@@ -27,7 +27,7 @@ import (
 	"github.com/rink-labs/rinkgo/wallet/subnet/primary"
 	"github.com/rink-labs/rinkgo/wallet/subnet/primary/common"
 
-	ethereum "github.com/ava-labs/libevm"
+	ethereum "github.com/rink-labs/libevm"
 )
 
 const (

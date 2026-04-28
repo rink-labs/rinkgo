@@ -31,10 +31,10 @@ import (
 	"bytes"
 	"testing"
 
-	"github.com/ava-labs/libevm/common"
-	"github.com/ava-labs/libevm/core/rawdb"
-	"github.com/ava-labs/libevm/trie/testutil"
-	"github.com/ava-labs/libevm/trie/trienode"
+	"github.com/rink-labs/libevm/common"
+	"github.com/rink-labs/libevm/core/rawdb"
+	"github.com/rink-labs/libevm/trie/testutil"
+	"github.com/rink-labs/libevm/trie/trienode"
 )
 
 func emptyLayer() *diskLayer {

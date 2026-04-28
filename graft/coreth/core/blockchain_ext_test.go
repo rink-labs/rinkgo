@@ -11,12 +11,12 @@ import (
 	"slices"
 	"testing"
 
-	"github.com/ava-labs/libevm/common"
-	"github.com/ava-labs/libevm/core/rawdb"
-	"github.com/ava-labs/libevm/core/state"
-	"github.com/ava-labs/libevm/core/types"
-	"github.com/ava-labs/libevm/crypto"
-	"github.com/ava-labs/libevm/ethdb"
+	"github.com/rink-labs/libevm/common"
+	"github.com/rink-labs/libevm/core/rawdb"
+	"github.com/rink-labs/libevm/core/state"
+	"github.com/rink-labs/libevm/core/types"
+	"github.com/rink-labs/libevm/crypto"
+	"github.com/rink-labs/libevm/ethdb"
 	"github.com/holiman/uint256"
 	"github.com/stretchr/testify/require"
 
@@ -26,7 +26,7 @@ import (
 	"github.com/rink-labs/rinkgo/graft/coreth/plugin/evm/customheader"
 	"github.com/rink-labs/rinkgo/graft/coreth/plugin/evm/upgrade/ap4"
 
-	ethparams "github.com/ava-labs/libevm/params"
+	ethparams "github.com/rink-labs/libevm/params"
 )
 
 var (

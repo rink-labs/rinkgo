@@ -8,7 +8,7 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/ava-labs/libevm/trie"
+	"github.com/rink-labs/libevm/trie"
 
 	"github.com/rink-labs/rinkgo/chains/atomic"
 	"github.com/rink-labs/rinkgo/codec"

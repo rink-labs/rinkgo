@@ -33,12 +33,12 @@ import (
 	"testing"
 	"time"
 
-	"github.com/ava-labs/libevm/common"
-	"github.com/ava-labs/libevm/common/bitutil"
-	"github.com/ava-labs/libevm/core/bloombits"
-	"github.com/ava-labs/libevm/core/rawdb"
-	"github.com/ava-labs/libevm/core/types"
-	"github.com/ava-labs/libevm/ethdb"
+	"github.com/rink-labs/libevm/common"
+	"github.com/rink-labs/libevm/common/bitutil"
+	"github.com/rink-labs/libevm/core/bloombits"
+	"github.com/rink-labs/libevm/core/rawdb"
+	"github.com/rink-labs/libevm/core/types"
+	"github.com/rink-labs/libevm/ethdb"
 )
 
 func BenchmarkBloomBits512(b *testing.B) {

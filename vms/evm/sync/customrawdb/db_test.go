@@ -6,7 +6,7 @@ package customrawdb
 import (
 	"testing"
 
-	"github.com/ava-labs/libevm/core/rawdb"
+	"github.com/rink-labs/libevm/core/rawdb"
 	"github.com/stretchr/testify/require"
 )
 

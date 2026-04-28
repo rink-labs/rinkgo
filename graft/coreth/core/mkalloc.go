@@ -44,8 +44,8 @@ import (
 	"strconv"
 
 	"github.com/rink-labs/rinkgo/graft/coreth/core"
-	"github.com/ava-labs/libevm/common"
-	"github.com/ava-labs/libevm/rlp"
+	"github.com/rink-labs/libevm/common"
+	"github.com/rink-labs/libevm/rlp"
 	"golang.org/x/exp/slices"
 )
 

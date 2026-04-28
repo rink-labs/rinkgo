@@ -31,13 +31,13 @@ import (
 	"github.com/rink-labs/rinkgo/graft/coreth/consensus"
 	"github.com/rink-labs/rinkgo/graft/coreth/core/state/snapshot"
 	"github.com/rink-labs/rinkgo/graft/coreth/params"
-	"github.com/ava-labs/libevm/common"
-	"github.com/ava-labs/libevm/core/rawdb"
-	"github.com/ava-labs/libevm/core/state"
-	"github.com/ava-labs/libevm/core/types"
-	"github.com/ava-labs/libevm/core/vm"
-	"github.com/ava-labs/libevm/event"
-	"github.com/ava-labs/libevm/triedb"
+	"github.com/rink-labs/libevm/common"
+	"github.com/rink-labs/libevm/core/rawdb"
+	"github.com/rink-labs/libevm/core/state"
+	"github.com/rink-labs/libevm/core/types"
+	"github.com/rink-labs/libevm/core/vm"
+	"github.com/rink-labs/libevm/event"
+	"github.com/rink-labs/libevm/triedb"
 )
 
 // CurrentHeader retrieves the current head header of the canonical chain. The

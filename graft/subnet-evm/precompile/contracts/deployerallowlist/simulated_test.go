@@ -6,9 +6,9 @@ package deployerallowlist_test
 import (
 	"testing"
 
-	"github.com/ava-labs/libevm/common"
-	"github.com/ava-labs/libevm/core/vm"
-	"github.com/ava-labs/libevm/crypto"
+	"github.com/rink-labs/libevm/common"
+	"github.com/rink-labs/libevm/core/vm"
+	"github.com/rink-labs/libevm/crypto"
 	"github.com/stretchr/testify/require"
 
 	"github.com/rink-labs/rinkgo/graft/subnet-evm/accounts/abi/bind"

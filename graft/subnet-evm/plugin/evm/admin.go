@@ -7,7 +7,7 @@ import (
 	"fmt"
 	"net/http"
 
-	"github.com/ava-labs/libevm/log"
+	"github.com/rink-labs/libevm/log"
 
 	"github.com/rink-labs/rinkgo/api"
 	"github.com/rink-labs/rinkgo/graft/subnet-evm/plugin/evm/client"

@@ -7,14 +7,14 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/ava-labs/libevm/core/types"
+	"github.com/rink-labs/libevm/core/types"
 
 	"github.com/rink-labs/rinkgo/graft/subnet-evm/commontype"
 	"github.com/rink-labs/rinkgo/graft/subnet-evm/params/extras"
 	"github.com/rink-labs/rinkgo/graft/subnet-evm/plugin/evm/customtypes"
 	"github.com/rink-labs/rinkgo/utils/math"
 
-	ethparams "github.com/ava-labs/libevm/params"
+	ethparams "github.com/rink-labs/libevm/params"
 )
 
 var (

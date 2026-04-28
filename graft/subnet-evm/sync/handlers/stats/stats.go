@@ -6,7 +6,7 @@ package stats
 import (
 	"time"
 
-	"github.com/ava-labs/libevm/metrics"
+	"github.com/rink-labs/libevm/metrics"
 )
 
 // HandlerStats reports prometheus metrics for the state sync handlers

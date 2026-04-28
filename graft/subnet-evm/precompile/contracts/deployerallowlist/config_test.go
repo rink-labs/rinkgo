@@ -6,7 +6,7 @@ package deployerallowlist_test
 import (
 	"testing"
 
-	"github.com/ava-labs/libevm/common"
+	"github.com/rink-labs/libevm/common"
 	"go.uber.org/mock/gomock"
 
 	"github.com/rink-labs/rinkgo/graft/subnet-evm/precompile/allowlist/allowlisttest"

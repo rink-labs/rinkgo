@@ -8,9 +8,9 @@ import (
 	"fmt"
 	"sync/atomic"
 
-	"github.com/ava-labs/libevm/common"
-	"github.com/ava-labs/libevm/core/types"
-	"github.com/ava-labs/libevm/rlp"
+	"github.com/rink-labs/libevm/common"
+	"github.com/rink-labs/libevm/core/types"
+	"github.com/rink-labs/libevm/rlp"
 
 	"github.com/rink-labs/rinkgo/codec"
 	"github.com/rink-labs/rinkgo/graft/subnet-evm/plugin/evm/message"

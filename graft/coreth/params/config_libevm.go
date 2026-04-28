@@ -6,14 +6,14 @@ package params
 import (
 	"math/big"
 
-	"github.com/ava-labs/libevm/common"
-	"github.com/ava-labs/libevm/libevm"
+	"github.com/rink-labs/libevm/common"
+	"github.com/rink-labs/libevm/libevm"
 
 	"github.com/rink-labs/rinkgo/graft/coreth/params/extras"
 	"github.com/rink-labs/rinkgo/graft/coreth/precompile/modules"
 	"github.com/rink-labs/rinkgo/graft/coreth/precompile/precompileconfig"
 
-	ethparams "github.com/ava-labs/libevm/params"
+	ethparams "github.com/rink-labs/libevm/params"
 )
 
 func extrasToRegister() ethparams.Extras[*extras.ChainConfig, RulesExtra] {

@@ -40,11 +40,11 @@ import (
 	"github.com/rink-labs/rinkgo/graft/subnet-evm/rpc"
 	"github.com/rink-labs/rinkgo/utils/timer/mockable"
 	"github.com/rink-labs/rinkgo/vms/evm/acp176"
-	"github.com/ava-labs/libevm/common"
-	"github.com/ava-labs/libevm/common/lru"
-	"github.com/ava-labs/libevm/core/types"
-	"github.com/ava-labs/libevm/event"
-	"github.com/ava-labs/libevm/log"
+	"github.com/rink-labs/libevm/common"
+	"github.com/rink-labs/libevm/common/lru"
+	"github.com/rink-labs/libevm/core/types"
+	"github.com/rink-labs/libevm/event"
+	"github.com/rink-labs/libevm/log"
 	"golang.org/x/exp/slices"
 )
 

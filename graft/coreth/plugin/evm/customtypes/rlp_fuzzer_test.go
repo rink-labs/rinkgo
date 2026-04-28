@@ -33,7 +33,7 @@ import (
 	"math/big"
 	"testing"
 
-	"github.com/ava-labs/libevm/rlp"
+	"github.com/rink-labs/libevm/rlp"
 	"github.com/holiman/uint256"
 )
 

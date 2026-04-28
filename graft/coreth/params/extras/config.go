@@ -8,12 +8,12 @@ import (
 	"fmt"
 	"math/big"
 
-	"github.com/ava-labs/libevm/common"
+	"github.com/rink-labs/libevm/common"
 
 	"github.com/rink-labs/rinkgo/graft/coreth/utils"
 	"github.com/rink-labs/rinkgo/snow"
 
-	ethparams "github.com/ava-labs/libevm/params"
+	ethparams "github.com/rink-labs/libevm/params"
 )
 
 var (

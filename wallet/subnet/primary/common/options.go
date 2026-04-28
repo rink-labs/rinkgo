@@ -12,7 +12,7 @@ import (
 	"github.com/rink-labs/rinkgo/utils/set"
 	"github.com/rink-labs/rinkgo/vms/secp256k1fx"
 
-	ethcommon "github.com/ava-labs/libevm/common"
+	ethcommon "github.com/rink-labs/libevm/common"
 )
 
 const defaultPollFrequency = 100 * time.Millisecond

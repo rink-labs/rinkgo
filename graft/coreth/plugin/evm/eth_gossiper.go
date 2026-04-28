@@ -11,8 +11,8 @@ import (
 	"sync"
 	"sync/atomic"
 
-	"github.com/ava-labs/libevm/core/types"
-	"github.com/ava-labs/libevm/log"
+	"github.com/rink-labs/libevm/core/types"
+	"github.com/rink-labs/libevm/log"
 	"github.com/prometheus/client_golang/prometheus"
 
 	"github.com/rink-labs/rinkgo/graft/coreth/core"
@@ -23,7 +23,7 @@ import (
 	"github.com/rink-labs/rinkgo/network/p2p/gossip"
 	"github.com/rink-labs/rinkgo/utils/bloom"
 
-	ethcommon "github.com/ava-labs/libevm/common"
+	ethcommon "github.com/rink-labs/libevm/common"
 )
 
 const pendingTxsBuffer = 10

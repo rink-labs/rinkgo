@@ -36,14 +36,14 @@ import (
 	"time"
 
 	"github.com/rink-labs/rinkgo/vms/evm/sync/customrawdb"
-	"github.com/ava-labs/libevm/common"
-	"github.com/ava-labs/libevm/core/rawdb"
-	ethsnapshot "github.com/ava-labs/libevm/core/state/snapshot"
-	"github.com/ava-labs/libevm/ethdb"
-	"github.com/ava-labs/libevm/libevm/stateconf"
-	"github.com/ava-labs/libevm/log"
-	"github.com/ava-labs/libevm/metrics"
-	"github.com/ava-labs/libevm/triedb"
+	"github.com/rink-labs/libevm/common"
+	"github.com/rink-labs/libevm/core/rawdb"
+	ethsnapshot "github.com/rink-labs/libevm/core/state/snapshot"
+	"github.com/rink-labs/libevm/ethdb"
+	"github.com/rink-labs/libevm/libevm/stateconf"
+	"github.com/rink-labs/libevm/log"
+	"github.com/rink-labs/libevm/metrics"
+	"github.com/rink-labs/libevm/triedb"
 )
 
 const (

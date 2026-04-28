@@ -7,8 +7,8 @@ package contract
 import (
 	"math/big"
 
-	"github.com/ava-labs/libevm/common"
-	"github.com/ava-labs/libevm/libevm/stateconf"
+	"github.com/rink-labs/libevm/common"
+	"github.com/rink-labs/libevm/libevm/stateconf"
 	"github.com/holiman/uint256"
 
 	"github.com/rink-labs/rinkgo/graft/subnet-evm/precompile/precompileconfig"
@@ -16,7 +16,7 @@ import (
 	"github.com/rink-labs/rinkgo/utils/set"
 	"github.com/rink-labs/rinkgo/vms/evm/predicate"
 
-	ethtypes "github.com/ava-labs/libevm/core/types"
+	ethtypes "github.com/rink-labs/libevm/core/types"
 )
 
 // StatefulPrecompiledContract is the interface for executing a precompiled contract

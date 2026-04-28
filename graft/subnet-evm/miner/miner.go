@@ -35,9 +35,9 @@ import (
 	"github.com/rink-labs/rinkgo/graft/subnet-evm/params"
 	"github.com/rink-labs/rinkgo/graft/subnet-evm/precompile/precompileconfig"
 	"github.com/rink-labs/rinkgo/utils/timer/mockable"
-	"github.com/ava-labs/libevm/common"
-	"github.com/ava-labs/libevm/core/types"
-	"github.com/ava-labs/libevm/event"
+	"github.com/rink-labs/libevm/common"
+	"github.com/rink-labs/libevm/core/types"
+	"github.com/rink-labs/libevm/event"
 )
 
 // Backend wraps all methods required for mining.

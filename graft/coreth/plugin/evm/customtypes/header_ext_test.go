@@ -12,8 +12,8 @@ import (
 	"testing"
 	"unsafe"
 
-	"github.com/ava-labs/libevm/common"
-	"github.com/ava-labs/libevm/rlp"
+	"github.com/rink-labs/libevm/common"
+	"github.com/rink-labs/libevm/rlp"
 	"github.com/stretchr/testify/require"
 
 	"github.com/rink-labs/rinkgo/graft/coreth/utils/utilstest"

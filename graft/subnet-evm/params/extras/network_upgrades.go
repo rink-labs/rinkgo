@@ -12,7 +12,7 @@ import (
 	"github.com/rink-labs/rinkgo/graft/subnet-evm/utils"
 	"github.com/rink-labs/rinkgo/upgrade"
 
-	ethparams "github.com/ava-labs/libevm/params"
+	ethparams "github.com/rink-labs/libevm/params"
 )
 
 var (

@@ -11,7 +11,7 @@ import (
 	"github.com/rink-labs/rinkgo/graft/coreth/eth/gasprice"
 	"github.com/rink-labs/rinkgo/graft/coreth/internal/ethapi"
 	"github.com/rink-labs/rinkgo/graft/coreth/miner"
-	"github.com/ava-labs/libevm/common"
+	"github.com/rink-labs/libevm/common"
 )
 
 // MarshalTOML marshals as TOML.

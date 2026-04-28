@@ -44,17 +44,17 @@ import (
 	"github.com/rink-labs/rinkgo/graft/subnet-evm/plugin/evm/customheader"
 	"github.com/rink-labs/rinkgo/graft/subnet-evm/precompile/contracts/feemanager"
 	"github.com/rink-labs/rinkgo/graft/subnet-evm/utils"
-	"github.com/ava-labs/libevm/common"
-	"github.com/ava-labs/libevm/common/prque"
-	"github.com/ava-labs/libevm/core/state"
-	"github.com/ava-labs/libevm/core/types"
-	"github.com/ava-labs/libevm/event"
-	"github.com/ava-labs/libevm/log"
-	"github.com/ava-labs/libevm/metrics"
+	"github.com/rink-labs/libevm/common"
+	"github.com/rink-labs/libevm/common/prque"
+	"github.com/rink-labs/libevm/core/state"
+	"github.com/rink-labs/libevm/core/types"
+	"github.com/rink-labs/libevm/event"
+	"github.com/rink-labs/libevm/log"
+	"github.com/rink-labs/libevm/metrics"
 	"github.com/holiman/uint256"
 
 	// Force libevm metrics of the same name to be registered first.
-	_ "github.com/ava-labs/libevm/core/txpool/legacypool"
+	_ "github.com/rink-labs/libevm/core/txpool/legacypool"
 )
 
 const (

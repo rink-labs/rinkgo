@@ -8,8 +8,8 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/ava-labs/libevm/common"
-	"github.com/ava-labs/libevm/crypto"
+	"github.com/rink-labs/libevm/common"
+	"github.com/rink-labs/libevm/crypto"
 	"github.com/decred/dcrd/dcrec/secp256k1/v4/ecdsa"
 
 	"github.com/rink-labs/rinkgo/cache"

@@ -6,7 +6,7 @@ package txpool
 import (
 	"sync"
 
-	"github.com/ava-labs/libevm/log"
+	"github.com/rink-labs/libevm/log"
 
 	"github.com/rink-labs/rinkgo/cache/lru"
 	"github.com/rink-labs/rinkgo/graft/coreth/plugin/evm/atomic"

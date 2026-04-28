@@ -13,7 +13,7 @@ import (
 	"github.com/rink-labs/rinkgo/graft/coreth/utils"
 	"github.com/rink-labs/rinkgo/utils/wrappers"
 
-	safemath "github.com/ava-labs/libevm/common/math"
+	safemath "github.com/rink-labs/libevm/common/math"
 )
 
 const (

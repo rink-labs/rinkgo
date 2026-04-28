@@ -34,14 +34,14 @@ import (
 
 	"github.com/rink-labs/rinkgo/graft/coreth/consensus/dummy"
 	"github.com/rink-labs/rinkgo/graft/coreth/params"
-	"github.com/ava-labs/libevm/common"
-	"github.com/ava-labs/libevm/common/math"
-	"github.com/ava-labs/libevm/core/rawdb"
-	"github.com/ava-labs/libevm/core/types"
-	"github.com/ava-labs/libevm/core/vm"
-	"github.com/ava-labs/libevm/crypto"
-	"github.com/ava-labs/libevm/ethdb"
-	ethparams "github.com/ava-labs/libevm/params"
+	"github.com/rink-labs/libevm/common"
+	"github.com/rink-labs/libevm/common/math"
+	"github.com/rink-labs/libevm/core/rawdb"
+	"github.com/rink-labs/libevm/core/types"
+	"github.com/rink-labs/libevm/core/vm"
+	"github.com/rink-labs/libevm/crypto"
+	"github.com/rink-labs/libevm/ethdb"
+	ethparams "github.com/rink-labs/libevm/params"
 )
 
 func BenchmarkInsertChain_empty_memdb(b *testing.B) {

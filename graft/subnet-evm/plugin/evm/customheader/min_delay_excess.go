@@ -7,7 +7,7 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/ava-labs/libevm/core/types"
+	"github.com/rink-labs/libevm/core/types"
 
 	"github.com/rink-labs/rinkgo/graft/subnet-evm/params/extras"
 	"github.com/rink-labs/rinkgo/graft/subnet-evm/plugin/evm/customtypes"

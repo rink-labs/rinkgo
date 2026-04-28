@@ -14,7 +14,7 @@ import (
 
 	"github.com/rink-labs/rinkgo/graft/subnet-evm/log"
 
-	ethlog "github.com/ava-labs/libevm/log"
+	ethlog "github.com/rink-labs/libevm/log"
 )
 
 type Logger struct {

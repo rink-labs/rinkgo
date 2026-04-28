@@ -37,12 +37,12 @@ import (
 
 	"github.com/rink-labs/rinkgo/graft/subnet-evm/accounts/abi"
 	"github.com/rink-labs/rinkgo/graft/subnet-evm/accounts/abi/bind"
-	ethereum "github.com/ava-labs/libevm"
-	"github.com/ava-labs/libevm/common"
-	"github.com/ava-labs/libevm/common/hexutil"
-	"github.com/ava-labs/libevm/core/types"
-	"github.com/ava-labs/libevm/crypto"
-	"github.com/ava-labs/libevm/rlp"
+	ethereum "github.com/rink-labs/libevm"
+	"github.com/rink-labs/libevm/common"
+	"github.com/rink-labs/libevm/common/hexutil"
+	"github.com/rink-labs/libevm/core/types"
+	"github.com/rink-labs/libevm/crypto"
+	"github.com/rink-labs/libevm/rlp"
 	"github.com/stretchr/testify/assert"
 )
 

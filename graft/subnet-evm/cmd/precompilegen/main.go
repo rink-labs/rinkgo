@@ -39,8 +39,8 @@ import (
 	"github.com/rink-labs/rinkgo/graft/subnet-evm/accounts/abi/bind"
 	"github.com/rink-labs/rinkgo/graft/subnet-evm/accounts/abi/bind/precompilebind"
 	"github.com/rink-labs/rinkgo/graft/subnet-evm/internal/flags"
-	"github.com/ava-labs/libevm/cmd/utils"
-	"github.com/ava-labs/libevm/log"
+	"github.com/rink-labs/libevm/cmd/utils"
+	"github.com/rink-labs/libevm/log"
 	"github.com/urfave/cli/v2"
 )
 

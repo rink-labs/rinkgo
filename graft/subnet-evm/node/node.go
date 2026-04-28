@@ -29,7 +29,7 @@ package node
 
 import (
 	"github.com/rink-labs/rinkgo/graft/subnet-evm/rpc"
-	"github.com/ava-labs/libevm/accounts"
+	"github.com/rink-labs/libevm/accounts"
 )
 
 // Node is a container on which services can be registered.

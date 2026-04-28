@@ -11,7 +11,7 @@ import (
 	"github.com/rink-labs/rinkgo/graft/coreth/utils"
 	"github.com/rink-labs/rinkgo/upgrade"
 
-	ethparams "github.com/ava-labs/libevm/params"
+	ethparams "github.com/rink-labs/libevm/params"
 )
 
 // NetworkUpgrades tracks the timestamps of all the Avalanche upgrades.

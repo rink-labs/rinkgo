@@ -9,9 +9,9 @@ import (
 	"fmt"
 	"sync"
 
-	"github.com/ava-labs/libevm/core/types"
-	"github.com/ava-labs/libevm/ethdb"
-	"github.com/ava-labs/libevm/log"
+	"github.com/rink-labs/libevm/core/types"
+	"github.com/rink-labs/libevm/ethdb"
+	"github.com/rink-labs/libevm/log"
 
 	"github.com/rink-labs/rinkgo/database"
 	"github.com/rink-labs/rinkgo/database/versiondb"

@@ -36,7 +36,7 @@ import (
 	"github.com/rink-labs/rinkgo/graft/subnet-evm/eth/gasprice"
 	"github.com/rink-labs/rinkgo/graft/subnet-evm/miner"
 	"github.com/rink-labs/rinkgo/graft/subnet-evm/params"
-	"github.com/ava-labs/libevm/common"
+	"github.com/rink-labs/libevm/common"
 )
 
 // DefaultFullGPOConfig contains default gasprice oracle settings for full node.

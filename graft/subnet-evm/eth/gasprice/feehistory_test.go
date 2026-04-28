@@ -34,13 +34,13 @@ import (
 	"testing"
 
 	"github.com/rink-labs/rinkgo/graft/subnet-evm/core"
-	"github.com/ava-labs/libevm/core/types"
-	ethparams "github.com/ava-labs/libevm/params"
+	"github.com/rink-labs/libevm/core/types"
+	ethparams "github.com/rink-labs/libevm/params"
 	"github.com/stretchr/testify/require"
 
 	"github.com/rink-labs/rinkgo/graft/subnet-evm/params"
 	"github.com/rink-labs/rinkgo/graft/subnet-evm/rpc"
-	"github.com/ava-labs/libevm/common"
+	"github.com/rink-labs/libevm/common"
 )
 
 func TestFeeHistory(t *testing.T) {

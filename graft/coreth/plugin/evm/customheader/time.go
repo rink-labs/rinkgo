@@ -8,7 +8,7 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/ava-labs/libevm/core/types"
+	"github.com/rink-labs/libevm/core/types"
 
 	"github.com/rink-labs/rinkgo/graft/coreth/params/extras"
 	"github.com/rink-labs/rinkgo/graft/coreth/plugin/evm/customtypes"

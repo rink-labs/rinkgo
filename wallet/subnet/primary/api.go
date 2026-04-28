@@ -27,7 +27,7 @@ import (
 	pbuilder "github.com/rink-labs/rinkgo/wallet/chain/p/builder"
 	xbuilder "github.com/rink-labs/rinkgo/wallet/chain/x/builder"
 	walletcommon "github.com/rink-labs/rinkgo/wallet/subnet/primary/common"
-	ethcommon "github.com/ava-labs/libevm/common"
+	ethcommon "github.com/rink-labs/libevm/common"
 )
 
 const (

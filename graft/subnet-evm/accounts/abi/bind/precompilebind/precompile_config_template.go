@@ -16,7 +16,7 @@ import (
 	{{- if .Contract.AllowList}}
 	"github.com/rink-labs/rinkgo/graft/subnet-evm/precompile/allowlist"
 
-	"github.com/ava-labs/libevm/common"
+	"github.com/rink-labs/libevm/common"
 	{{- end}}
 
 )

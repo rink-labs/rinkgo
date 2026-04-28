@@ -4,9 +4,9 @@
 package extstate
 
 import (
-	"github.com/ava-labs/libevm/common"
-	"github.com/ava-labs/libevm/core/state"
-	"github.com/ava-labs/libevm/core/types"
+	"github.com/rink-labs/libevm/common"
+	"github.com/rink-labs/libevm/core/state"
+	"github.com/rink-labs/libevm/core/types"
 
 	"github.com/rink-labs/rinkgo/graft/subnet-evm/params"
 	"github.com/rink-labs/rinkgo/vms/evm/predicate"

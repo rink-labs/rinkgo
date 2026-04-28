@@ -36,8 +36,8 @@ import (
 	"strings"
 
 	"github.com/rink-labs/rinkgo/graft/subnet-evm/core"
-	"github.com/ava-labs/libevm/core/types"
-	"github.com/ava-labs/libevm/rlp"
+	"github.com/rink-labs/libevm/core/types"
+	"github.com/rink-labs/libevm/rlp"
 )
 
 // AdminAPI is the collection of Ethereum full node related APIs for node

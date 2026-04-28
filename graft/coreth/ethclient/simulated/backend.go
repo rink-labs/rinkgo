@@ -43,10 +43,10 @@ import (
 	"github.com/rink-labs/rinkgo/graft/coreth/rpc"
 	"github.com/rink-labs/rinkgo/graft/evm/constants"
 	"github.com/rink-labs/rinkgo/utils/timer/mockable"
-	ethereum "github.com/ava-labs/libevm"
-	"github.com/ava-labs/libevm/common"
-	"github.com/ava-labs/libevm/core/rawdb"
-	"github.com/ava-labs/libevm/core/types"
+	ethereum "github.com/rink-labs/libevm"
+	"github.com/rink-labs/libevm/common"
+	"github.com/rink-labs/libevm/core/rawdb"
+	"github.com/rink-labs/libevm/core/types"
 )
 
 var _ eth.PushGossiper = (*fakePushGossiper)(nil)

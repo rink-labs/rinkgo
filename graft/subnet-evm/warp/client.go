@@ -7,7 +7,7 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/ava-labs/libevm/common/hexutil"
+	"github.com/rink-labs/libevm/common/hexutil"
 
 	"github.com/rink-labs/rinkgo/graft/subnet-evm/rpc"
 	"github.com/rink-labs/rinkgo/ids"

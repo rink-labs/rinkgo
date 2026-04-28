@@ -40,8 +40,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/ava-labs/libevm/common"
-	"github.com/ava-labs/libevm/core/types"
+	"github.com/rink-labs/libevm/common"
+	"github.com/rink-labs/libevm/core/types"
 
 	"github.com/rink-labs/rinkgo/graft/subnet-evm/plugin/evm/customtypes"
 )

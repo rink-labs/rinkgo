@@ -8,7 +8,7 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/ava-labs/libevm/log"
+	"github.com/rink-labs/libevm/log"
 
 	"github.com/rink-labs/rinkgo/cache"
 	"github.com/rink-labs/rinkgo/cache/lru"

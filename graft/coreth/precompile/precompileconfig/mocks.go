@@ -13,7 +13,7 @@ import (
 	reflect "reflect"
 
 	predicate "github.com/rink-labs/rinkgo/vms/evm/predicate"
-	common "github.com/ava-labs/libevm/common"
+	common "github.com/rink-labs/libevm/common"
 	gomock "go.uber.org/mock/gomock"
 )
 

@@ -7,8 +7,8 @@ import (
 	"context"
 	"errors"
 
-	"github.com/ava-labs/libevm/metrics"
-	"github.com/ava-labs/libevm/triedb"
+	"github.com/rink-labs/libevm/metrics"
+	"github.com/rink-labs/libevm/triedb"
 
 	"github.com/rink-labs/rinkgo/codec"
 	"github.com/rink-labs/rinkgo/graft/coreth/plugin/evm/message"

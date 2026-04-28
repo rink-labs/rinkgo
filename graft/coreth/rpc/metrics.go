@@ -31,10 +31,10 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/ava-labs/libevm/metrics"
+	"github.com/rink-labs/libevm/metrics"
 
 	// Force libevm metrics of the same name to be registered first.
-	_ "github.com/ava-labs/libevm/rpc"
+	_ "github.com/rink-labs/libevm/rpc"
 )
 
 // ====== If resolving merge conflicts ======

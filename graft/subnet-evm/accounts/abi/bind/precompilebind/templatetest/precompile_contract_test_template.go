@@ -19,8 +19,8 @@ import (
 	"github.com/rink-labs/rinkgo/graft/subnet-evm/precompile/allowlist/allowlisttest"
 	{{- end}}
 	"github.com/rink-labs/rinkgo/graft/subnet-evm/precompile/precompiletest"
-	"github.com/ava-labs/libevm/common"
-	"github.com/ava-labs/libevm/core/vm"
+	"github.com/rink-labs/libevm/common"
+	"github.com/rink-labs/libevm/core/vm"
 	"github.com/stretchr/testify/require"
 )
 

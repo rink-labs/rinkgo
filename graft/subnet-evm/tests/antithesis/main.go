@@ -15,9 +15,9 @@ import (
 
 	"github.com/antithesishq/antithesis-sdk-go/assert"
 	"github.com/antithesishq/antithesis-sdk-go/lifecycle"
-	"github.com/ava-labs/libevm/common"
-	"github.com/ava-labs/libevm/core/types"
-	"github.com/ava-labs/libevm/crypto"
+	"github.com/rink-labs/libevm/common"
+	"github.com/rink-labs/libevm/core/types"
+	"github.com/rink-labs/libevm/crypto"
 	"github.com/stretchr/testify/require"
 	"go.uber.org/zap"
 
@@ -31,7 +31,7 @@ import (
 
 	ago_tests "github.com/rink-labs/rinkgo/tests"
 	timerpkg "github.com/rink-labs/rinkgo/utils/timer"
-	ethparams "github.com/ava-labs/libevm/params"
+	ethparams "github.com/rink-labs/libevm/params"
 )
 
 const NumKeys = 5

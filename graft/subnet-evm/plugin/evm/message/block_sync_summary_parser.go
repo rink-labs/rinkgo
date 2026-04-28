@@ -6,7 +6,7 @@ package message
 import (
 	"fmt"
 
-	"github.com/ava-labs/libevm/crypto"
+	"github.com/rink-labs/libevm/crypto"
 
 	"github.com/rink-labs/rinkgo/ids"
 )

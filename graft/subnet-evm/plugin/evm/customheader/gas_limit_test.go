@@ -6,13 +6,13 @@ package customheader
 import (
 	"testing"
 
-	"github.com/ava-labs/libevm/core/types"
+	"github.com/rink-labs/libevm/core/types"
 	"github.com/stretchr/testify/require"
 
 	"github.com/rink-labs/rinkgo/graft/subnet-evm/commontype"
 	"github.com/rink-labs/rinkgo/graft/subnet-evm/params/extras"
 
-	ethparams "github.com/ava-labs/libevm/params"
+	ethparams "github.com/rink-labs/libevm/params"
 )
 
 func TestGasLimit(t *testing.T) {

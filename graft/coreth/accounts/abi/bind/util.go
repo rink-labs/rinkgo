@@ -32,10 +32,10 @@ import (
 	"errors"
 	"time"
 
-	ethereum "github.com/ava-labs/libevm"
-	"github.com/ava-labs/libevm/common"
-	"github.com/ava-labs/libevm/core/types"
-	"github.com/ava-labs/libevm/log"
+	ethereum "github.com/rink-labs/libevm"
+	"github.com/rink-labs/libevm/common"
+	"github.com/rink-labs/libevm/core/types"
+	"github.com/rink-labs/libevm/log"
 )
 
 // WaitMined waits for tx to be mined on the blockchain.

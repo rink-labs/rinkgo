@@ -7,8 +7,8 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/ava-labs/libevm/core/types"
-	"github.com/ava-labs/libevm/log"
+	"github.com/rink-labs/libevm/core/types"
+	"github.com/rink-labs/libevm/log"
 
 	"github.com/rink-labs/rinkgo/graft/subnet-evm/params"
 	"github.com/rink-labs/rinkgo/graft/subnet-evm/precompile/precompileconfig"

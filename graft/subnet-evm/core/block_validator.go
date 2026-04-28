@@ -33,10 +33,10 @@ import (
 
 	"github.com/rink-labs/rinkgo/graft/subnet-evm/consensus"
 	"github.com/rink-labs/rinkgo/graft/subnet-evm/params"
-	"github.com/ava-labs/libevm/core/state"
-	"github.com/ava-labs/libevm/core/types"
-	ethparams "github.com/ava-labs/libevm/params"
-	"github.com/ava-labs/libevm/trie"
+	"github.com/rink-labs/libevm/core/state"
+	"github.com/rink-labs/libevm/core/types"
+	ethparams "github.com/rink-labs/libevm/params"
+	"github.com/rink-labs/libevm/trie"
 )
 
 // BlockValidator is responsible for validating block headers, uncles and

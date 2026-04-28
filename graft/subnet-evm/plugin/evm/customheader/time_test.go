@@ -7,7 +7,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/ava-labs/libevm/core/types"
+	"github.com/rink-labs/libevm/core/types"
 	"github.com/stretchr/testify/require"
 
 	"github.com/rink-labs/rinkgo/graft/subnet-evm/params/extras"

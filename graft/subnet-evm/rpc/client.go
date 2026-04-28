@@ -38,7 +38,7 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/ava-labs/libevm/log"
+	"github.com/rink-labs/libevm/log"
 )
 
 var (

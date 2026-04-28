@@ -33,7 +33,7 @@ package core
 import (
 	"testing"
 
-	"github.com/ava-labs/libevm/core/types"
+	"github.com/rink-labs/libevm/core/types"
 )
 
 // verifyNoGaps checks that there are no gaps after the initial set of blocks in

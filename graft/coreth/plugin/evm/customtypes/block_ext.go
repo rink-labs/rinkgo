@@ -8,12 +8,12 @@ import (
 	"slices"
 	"time"
 
-	"github.com/ava-labs/libevm/common"
-	"github.com/ava-labs/libevm/rlp"
+	"github.com/rink-labs/libevm/common"
+	"github.com/rink-labs/libevm/rlp"
 
 	"github.com/rink-labs/rinkgo/vms/evm/acp226"
 
-	ethtypes "github.com/ava-labs/libevm/core/types"
+	ethtypes "github.com/rink-labs/libevm/core/types"
 )
 
 // SetBlockExtra sets the [BlockBodyExtra] `extra` in the [Block] `b`.

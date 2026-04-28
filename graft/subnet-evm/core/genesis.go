@@ -41,19 +41,19 @@ import (
 	"github.com/rink-labs/rinkgo/graft/subnet-evm/plugin/evm/upgrade/legacy"
 	"github.com/rink-labs/rinkgo/graft/subnet-evm/triedb/pathdb"
 	"github.com/rink-labs/rinkgo/vms/evm/acp226"
-	"github.com/ava-labs/libevm/common"
-	"github.com/ava-labs/libevm/common/hexutil"
-	"github.com/ava-labs/libevm/common/math"
-	"github.com/ava-labs/libevm/core/rawdb"
-	"github.com/ava-labs/libevm/core/state"
-	"github.com/ava-labs/libevm/core/types"
-	"github.com/ava-labs/libevm/crypto"
-	"github.com/ava-labs/libevm/ethdb"
-	"github.com/ava-labs/libevm/libevm/stateconf"
-	"github.com/ava-labs/libevm/log"
-	ethparams "github.com/ava-labs/libevm/params"
-	"github.com/ava-labs/libevm/trie"
-	"github.com/ava-labs/libevm/triedb"
+	"github.com/rink-labs/libevm/common"
+	"github.com/rink-labs/libevm/common/hexutil"
+	"github.com/rink-labs/libevm/common/math"
+	"github.com/rink-labs/libevm/core/rawdb"
+	"github.com/rink-labs/libevm/core/state"
+	"github.com/rink-labs/libevm/core/types"
+	"github.com/rink-labs/libevm/crypto"
+	"github.com/rink-labs/libevm/ethdb"
+	"github.com/rink-labs/libevm/libevm/stateconf"
+	"github.com/rink-labs/libevm/log"
+	ethparams "github.com/rink-labs/libevm/params"
+	"github.com/rink-labs/libevm/trie"
+	"github.com/rink-labs/libevm/triedb"
 	"github.com/holiman/uint256"
 )
 
@@ -194,7 +194,7 @@ func SetupGenesisBlock(
 	// Notes on the following line:
 	// - this is needed in coreth to handle the case where existing nodes do not
 	//   have the Berlin or London forks initialized by block number on disk.
-	//   See https://github.com/ava-labs/coreth/pull/667/files
+	//   See https://github.com/rink-labs/coreth/pull/667/files
 	// - this is not needed in subnet-evm but it does not impact it either
 	if err := params.SetEthUpgrades(storedcfg); err != nil {
 		return genesis.Config, common.Hash{}, err

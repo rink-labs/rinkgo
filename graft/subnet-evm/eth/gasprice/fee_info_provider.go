@@ -33,7 +33,7 @@ import (
 
 	"github.com/rink-labs/rinkgo/graft/subnet-evm/core"
 	"github.com/rink-labs/rinkgo/graft/subnet-evm/rpc"
-	"github.com/ava-labs/libevm/core/types"
+	"github.com/rink-labs/libevm/core/types"
 	lru "github.com/hashicorp/golang-lru"
 )
 

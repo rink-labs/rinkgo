@@ -6,7 +6,7 @@ package txallowlist
 import (
 	"fmt"
 
-	"github.com/ava-labs/libevm/common"
+	"github.com/rink-labs/libevm/common"
 
 	"github.com/rink-labs/rinkgo/graft/subnet-evm/precompile/contract"
 	"github.com/rink-labs/rinkgo/graft/subnet-evm/precompile/modules"

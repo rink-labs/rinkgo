@@ -9,8 +9,8 @@ import (
 	"math/big"
 	"time"
 
-	"github.com/ava-labs/libevm/core"
-	"github.com/ava-labs/libevm/params"
+	"github.com/rink-labs/libevm/core"
+	"github.com/rink-labs/libevm/params"
 
 	"github.com/rink-labs/rinkgo/genesis"
 	"github.com/rink-labs/rinkgo/ids"

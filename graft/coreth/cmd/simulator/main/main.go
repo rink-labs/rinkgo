@@ -15,7 +15,7 @@ import (
 	"github.com/rink-labs/rinkgo/graft/coreth/cmd/simulator/load"
 	"github.com/rink-labs/rinkgo/graft/coreth/log"
 
-	gethlog "github.com/ava-labs/libevm/log"
+	gethlog "github.com/rink-labs/libevm/log"
 )
 
 func main() {

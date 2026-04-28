@@ -8,7 +8,7 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/ava-labs/libevm/log"
+	"github.com/rink-labs/libevm/log"
 	"golang.org/x/sync/errgroup"
 
 	"github.com/rink-labs/rinkgo/graft/coreth/plugin/evm/message"

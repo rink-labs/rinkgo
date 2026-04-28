@@ -15,10 +15,10 @@ import (
 	"testing"
 	"time"
 
-	"github.com/ava-labs/libevm/common"
-	"github.com/ava-labs/libevm/core/types"
-	"github.com/ava-labs/libevm/crypto"
-	"github.com/ava-labs/libevm/log"
+	"github.com/rink-labs/libevm/common"
+	"github.com/rink-labs/libevm/core/types"
+	"github.com/rink-labs/libevm/crypto"
+	"github.com/rink-labs/libevm/log"
 	"github.com/stretchr/testify/require"
 
 	"github.com/rink-labs/rinkgo/api/info"
@@ -45,7 +45,7 @@ import (
 	warpBackend "github.com/rink-labs/rinkgo/graft/subnet-evm/warp"
 	avalancheWarp "github.com/rink-labs/rinkgo/vms/platformvm/warp"
 	warpPayload "github.com/rink-labs/rinkgo/vms/platformvm/warp/payload"
-	ethereum "github.com/ava-labs/libevm"
+	ethereum "github.com/rink-labs/libevm"
 	ginkgo "github.com/onsi/ginkgo/v2"
 )
 

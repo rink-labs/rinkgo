@@ -16,7 +16,7 @@ import (
 	"github.com/rink-labs/rinkgo/vms/components/avax"
 	"github.com/rink-labs/rinkgo/wallet/subnet/primary/common"
 
-	ethcommon "github.com/ava-labs/libevm/common"
+	ethcommon "github.com/rink-labs/libevm/common"
 )
 
 var (

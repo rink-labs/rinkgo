@@ -1,4 +1,4 @@
-module github.com/ava-labs/avalanchego/tools
+module github.com/rink-labs/rinkgo/tools
 
 // This module manages CLI tools intended for invocation with `go
 // tool`. Such dependencies are managed separately from the main

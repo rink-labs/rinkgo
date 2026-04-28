@@ -9,8 +9,8 @@ import (
 	"slices"
 	"testing"
 
-	"github.com/ava-labs/libevm/ethdb"
-	"github.com/ava-labs/libevm/ethdb/dbtest"
+	"github.com/rink-labs/libevm/ethdb"
+	"github.com/rink-labs/libevm/ethdb/dbtest"
 	"github.com/stretchr/testify/require"
 
 	"github.com/rink-labs/rinkgo/database/memdb"

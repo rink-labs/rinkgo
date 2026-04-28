@@ -7,8 +7,8 @@ import (
 	"math"
 	"time"
 
-	"github.com/ava-labs/libevm/log"
-	"github.com/ava-labs/libevm/metrics"
+	"github.com/rink-labs/libevm/log"
+	"github.com/rink-labs/libevm/metrics"
 
 	"github.com/rink-labs/rinkgo/graft/coreth/utils/rand"
 	"github.com/rink-labs/rinkgo/ids"

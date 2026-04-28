@@ -6,7 +6,7 @@ package prometheus_test
 import (
 	"testing"
 
-	"github.com/ava-labs/libevm/metrics"
+	"github.com/rink-labs/libevm/metrics"
 	"github.com/stretchr/testify/require"
 )
 

@@ -32,10 +32,10 @@ import (
 	"time"
 
 	"github.com/rink-labs/rinkgo/vms/evm/sync/customrawdb"
-	"github.com/ava-labs/libevm/common"
-	"github.com/ava-labs/libevm/core/rawdb"
-	"github.com/ava-labs/libevm/ethdb"
-	"github.com/ava-labs/libevm/log"
+	"github.com/rink-labs/libevm/common"
+	"github.com/rink-labs/libevm/core/rawdb"
+	"github.com/rink-labs/libevm/ethdb"
+	"github.com/rink-labs/libevm/log"
 )
 
 // WipeSnapshot starts a goroutine to iterate over the entire key-value database

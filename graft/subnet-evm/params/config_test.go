@@ -40,8 +40,8 @@ import (
 	"github.com/rink-labs/rinkgo/graft/subnet-evm/precompile/contracts/rewardmanager"
 	"github.com/rink-labs/rinkgo/graft/subnet-evm/precompile/contracts/txallowlist"
 	"github.com/rink-labs/rinkgo/graft/subnet-evm/utils"
-	"github.com/ava-labs/libevm/common"
-	ethparams "github.com/ava-labs/libevm/params"
+	"github.com/rink-labs/libevm/common"
+	ethparams "github.com/rink-labs/libevm/params"
 	"github.com/stretchr/testify/require"
 )
 

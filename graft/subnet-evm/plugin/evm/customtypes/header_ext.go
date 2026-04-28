@@ -7,13 +7,13 @@ import (
 	"io"
 	"math/big"
 
-	"github.com/ava-labs/libevm/common"
-	"github.com/ava-labs/libevm/common/hexutil"
-	"github.com/ava-labs/libevm/rlp"
+	"github.com/rink-labs/libevm/common"
+	"github.com/rink-labs/libevm/common/hexutil"
+	"github.com/rink-labs/libevm/rlp"
 
 	"github.com/rink-labs/rinkgo/vms/evm/acp226"
 
-	ethtypes "github.com/ava-labs/libevm/core/types"
+	ethtypes "github.com/rink-labs/libevm/core/types"
 )
 
 // GetHeaderExtra returns the [HeaderExtra] from the given [Header].
@@ -178,7 +178,7 @@ func (h *HeaderSerializable) updateToExtras(extras *HeaderExtra) {
 
 // NOTE: both generators currently do not support type aliases.
 // We are using custom versions of these programs for now to support type aliases,
-// see https://github.com/ava-labs/coreth/pull/746#discussion_r1969673252
+// see https://github.com/rink-labs/coreth/pull/746#discussion_r1969673252
 //go:generate go tool -modfile=../../../../../tools/go.mod gencodec -type HeaderSerializable -field-override headerMarshaling -out gen_header_serializable_json.go
 //go:generate go tool rlpgen -type HeaderSerializable -out gen_header_serializable_rlp.go
 

@@ -8,8 +8,8 @@ import (
 	"fmt"
 	"math/big"
 
-	"github.com/ava-labs/libevm/core/state"
-	"github.com/ava-labs/libevm/log"
+	"github.com/rink-labs/libevm/core/state"
+	"github.com/rink-labs/libevm/log"
 
 	"github.com/rink-labs/rinkgo/graft/coreth/core/extstate"
 	"github.com/rink-labs/rinkgo/graft/coreth/params"

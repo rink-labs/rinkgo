@@ -2,7 +2,7 @@ module github.com/rink-labs/rinkgo/graft/evm
 
 go 1.24.11
 
-require github.com/ava-labs/libevm v1.13.15-0.20251210210615-b8e76562a300
+require github.com/rink-labs/libevm v1.1.0-rink
 
 require (
 	github.com/holiman/uint256 v1.2.4 // indirect

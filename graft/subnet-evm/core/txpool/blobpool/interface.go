@@ -32,9 +32,9 @@ import (
 
 	"github.com/rink-labs/rinkgo/graft/subnet-evm/commontype"
 	"github.com/rink-labs/rinkgo/graft/subnet-evm/params"
-	"github.com/ava-labs/libevm/common"
-	"github.com/ava-labs/libevm/core/state"
-	"github.com/ava-labs/libevm/core/types"
+	"github.com/rink-labs/libevm/common"
+	"github.com/rink-labs/libevm/core/state"
+	"github.com/rink-labs/libevm/core/types"
 )
 
 // BlockChain defines the minimal set of methods needed to back a blob pool with

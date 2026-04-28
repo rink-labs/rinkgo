@@ -6,7 +6,7 @@ package database
 import (
 	"errors"
 
-	"github.com/ava-labs/libevm/ethdb"
+	"github.com/rink-labs/libevm/ethdb"
 
 	avalanchegodb "github.com/rink-labs/rinkgo/database"
 )

@@ -6,9 +6,9 @@ package evm
 import (
 	"context"
 
-	"github.com/ava-labs/libevm/ethdb"
-	"github.com/ava-labs/libevm/log"
-	"github.com/ava-labs/libevm/triedb"
+	"github.com/rink-labs/libevm/ethdb"
+	"github.com/rink-labs/libevm/log"
+	"github.com/rink-labs/libevm/triedb"
 
 	"github.com/rink-labs/rinkgo/codec"
 	"github.com/rink-labs/rinkgo/graft/subnet-evm/plugin/evm/message"

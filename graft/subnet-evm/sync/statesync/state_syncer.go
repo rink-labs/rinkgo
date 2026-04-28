@@ -9,9 +9,9 @@ import (
 	"fmt"
 	"sync"
 
-	"github.com/ava-labs/libevm/common"
-	"github.com/ava-labs/libevm/ethdb"
-	"github.com/ava-labs/libevm/triedb"
+	"github.com/rink-labs/libevm/common"
+	"github.com/rink-labs/libevm/ethdb"
+	"github.com/rink-labs/libevm/triedb"
 	"golang.org/x/sync/errgroup"
 
 	"github.com/rink-labs/rinkgo/graft/subnet-evm/core/state/snapshot"

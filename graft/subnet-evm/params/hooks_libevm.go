@@ -9,10 +9,10 @@ import (
 	"math/big"
 	"slices"
 
-	"github.com/ava-labs/libevm/common"
-	"github.com/ava-labs/libevm/core/vm"
-	"github.com/ava-labs/libevm/libevm"
-	"github.com/ava-labs/libevm/libevm/legacy"
+	"github.com/rink-labs/libevm/common"
+	"github.com/rink-labs/libevm/core/vm"
+	"github.com/rink-labs/libevm/libevm"
+	"github.com/rink-labs/libevm/libevm/legacy"
 
 	"github.com/rink-labs/rinkgo/graft/subnet-evm/params/extras"
 	"github.com/rink-labs/rinkgo/graft/subnet-evm/plugin/evm/customheader"
@@ -24,7 +24,7 @@ import (
 	"github.com/rink-labs/rinkgo/utils/set"
 	"github.com/rink-labs/rinkgo/vms/evm/predicate"
 
-	ethparams "github.com/ava-labs/libevm/params"
+	ethparams "github.com/rink-labs/libevm/params"
 )
 
 // invalidateDelegateTime is the Unix timestamp for August 2nd, 2025, midnight Eastern Time

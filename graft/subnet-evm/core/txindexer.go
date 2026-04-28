@@ -31,9 +31,9 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/ava-labs/libevm/core/rawdb"
-	"github.com/ava-labs/libevm/ethdb"
-	"github.com/ava-labs/libevm/log"
+	"github.com/rink-labs/libevm/core/rawdb"
+	"github.com/rink-labs/libevm/ethdb"
+	"github.com/rink-labs/libevm/log"
 )
 
 // txIndexer is the module responsible for maintaining transaction indexes

@@ -39,16 +39,16 @@ import (
 	"github.com/rink-labs/rinkgo/graft/subnet-evm/core"
 	"github.com/rink-labs/rinkgo/graft/subnet-evm/eth/tracers"
 	"github.com/rink-labs/rinkgo/graft/subnet-evm/params"
-	"github.com/ava-labs/libevm/common"
-	"github.com/ava-labs/libevm/core/asm"
-	"github.com/ava-labs/libevm/core/rawdb"
-	"github.com/ava-labs/libevm/core/state"
-	"github.com/ava-labs/libevm/core/types"
-	"github.com/ava-labs/libevm/core/vm"
-	"github.com/ava-labs/libevm/eth/tracers/logger"
+	"github.com/rink-labs/libevm/common"
+	"github.com/rink-labs/libevm/core/asm"
+	"github.com/rink-labs/libevm/core/rawdb"
+	"github.com/rink-labs/libevm/core/state"
+	"github.com/rink-labs/libevm/core/types"
+	"github.com/rink-labs/libevm/core/vm"
+	"github.com/rink-labs/libevm/eth/tracers/logger"
 
 	// force-load js tracers to trigger registration
-	_ "github.com/ava-labs/libevm/eth/tracers/js"
+	_ "github.com/rink-labs/libevm/eth/tracers/js"
 	"github.com/holiman/uint256"
 )
 

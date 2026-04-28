@@ -4,7 +4,7 @@
 package txpool
 
 import (
-	metricspkg "github.com/ava-labs/libevm/metrics"
+	metricspkg "github.com/rink-labs/libevm/metrics"
 )
 
 type metrics struct {

@@ -8,7 +8,7 @@ import (
 	"fmt"
 	"sort"
 
-	"github.com/ava-labs/libevm/common"
+	"github.com/rink-labs/libevm/common"
 
 	"github.com/rink-labs/rinkgo/graft/coreth/utils"
 	"github.com/rink-labs/rinkgo/graft/evm/constants"

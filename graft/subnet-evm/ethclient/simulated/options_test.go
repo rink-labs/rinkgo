@@ -34,9 +34,9 @@ import (
 	"testing"
 
 	"github.com/rink-labs/rinkgo/graft/subnet-evm/core"
-	ethereum "github.com/ava-labs/libevm"
-	"github.com/ava-labs/libevm/core/types"
-	ethparams "github.com/ava-labs/libevm/params"
+	ethereum "github.com/rink-labs/libevm"
+	"github.com/rink-labs/libevm/core/types"
+	ethparams "github.com/rink-labs/libevm/params"
 )
 
 // Tests that the simulator starts with the initial gas limit in the genesis block,

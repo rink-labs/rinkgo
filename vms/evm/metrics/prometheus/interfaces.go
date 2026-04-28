@@ -3,7 +3,7 @@
 
 package prometheus
 
-import "github.com/ava-labs/libevm/metrics"
+import "github.com/rink-labs/libevm/metrics"
 
 var _ Registry = metrics.Registry(nil)
 

@@ -6,9 +6,9 @@ package interfaces
 import (
 	"context"
 
-	"github.com/ava-labs/libevm/common"
+	"github.com/rink-labs/libevm/common"
 
-	ethereum "github.com/ava-labs/libevm"
+	ethereum "github.com/rink-labs/libevm"
 )
 
 // An AcceptedStateReceiver provides access to the accepted state ie. the state of the

@@ -13,7 +13,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/ava-labs/libevm/log"
+	"github.com/rink-labs/libevm/log"
 	"github.com/go-cmd/cmd"
 	"github.com/onsi/ginkgo/v2"
 	"github.com/stretchr/testify/require"

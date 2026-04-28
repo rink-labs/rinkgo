@@ -9,7 +9,7 @@ import (
 
 	"github.com/rink-labs/rinkgo/vms/evm/acp226"
 
-	ethtypes "github.com/ava-labs/libevm/core/types"
+	ethtypes "github.com/rink-labs/libevm/core/types"
 )
 
 func BlockGasCost(b *ethtypes.Block) *big.Int {

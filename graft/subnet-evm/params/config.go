@@ -32,8 +32,8 @@ import (
 
 	"github.com/rink-labs/rinkgo/graft/subnet-evm/params/extras"
 	"github.com/rink-labs/rinkgo/graft/subnet-evm/utils"
-	"github.com/ava-labs/libevm/libevm"
-	ethparams "github.com/ava-labs/libevm/params"
+	"github.com/rink-labs/libevm/libevm"
+	ethparams "github.com/rink-labs/libevm/params"
 )
 
 func init() {

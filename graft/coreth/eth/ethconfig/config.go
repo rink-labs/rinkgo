@@ -37,7 +37,7 @@ import (
 	"github.com/rink-labs/rinkgo/graft/coreth/internal/ethapi"
 	"github.com/rink-labs/rinkgo/graft/coreth/miner"
 	"github.com/rink-labs/rinkgo/graft/coreth/params"
-	"github.com/ava-labs/libevm/common"
+	"github.com/rink-labs/libevm/common"
 )
 
 // DefaultFullGPOConfig contains default gasprice oracle settings for full node.

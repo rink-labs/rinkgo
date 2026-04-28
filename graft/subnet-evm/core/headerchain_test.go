@@ -37,10 +37,10 @@ import (
 	"github.com/rink-labs/rinkgo/graft/subnet-evm/consensus/dummy"
 	"github.com/rink-labs/rinkgo/graft/subnet-evm/params"
 	"github.com/rink-labs/rinkgo/graft/subnet-evm/plugin/evm/upgrade/legacy"
-	"github.com/ava-labs/libevm/common"
-	"github.com/ava-labs/libevm/core/rawdb"
-	"github.com/ava-labs/libevm/core/types"
-	"github.com/ava-labs/libevm/core/vm"
+	"github.com/rink-labs/libevm/common"
+	"github.com/rink-labs/libevm/core/rawdb"
+	"github.com/rink-labs/libevm/core/types"
+	"github.com/rink-labs/libevm/core/vm"
 )
 
 func verifyUnbrokenCanonchain(bc *BlockChain) error {

@@ -8,14 +8,14 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/ava-labs/libevm/common"
-	"github.com/ava-labs/libevm/ethdb"
-	"github.com/ava-labs/libevm/log"
-	"github.com/ava-labs/libevm/rlp"
+	"github.com/rink-labs/libevm/common"
+	"github.com/rink-labs/libevm/ethdb"
+	"github.com/rink-labs/libevm/log"
+	"github.com/rink-labs/libevm/rlp"
 
 	"github.com/rink-labs/rinkgo/graft/subnet-evm/params"
 
-	ethrawdb "github.com/ava-labs/libevm/core/rawdb"
+	ethrawdb "github.com/rink-labs/libevm/core/rawdb"
 )
 
 // writeCurrentTimeMarker writes a marker of the current time in the db at `key`.

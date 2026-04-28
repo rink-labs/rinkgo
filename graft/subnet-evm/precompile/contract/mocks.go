@@ -17,9 +17,9 @@ import (
 	snow "github.com/rink-labs/rinkgo/snow"
 	set "github.com/rink-labs/rinkgo/utils/set"
 	predicate "github.com/rink-labs/rinkgo/vms/evm/predicate"
-	common "github.com/ava-labs/libevm/common"
-	types "github.com/ava-labs/libevm/core/types"
-	stateconf "github.com/ava-labs/libevm/libevm/stateconf"
+	common "github.com/rink-labs/libevm/common"
+	types "github.com/rink-labs/libevm/core/types"
+	stateconf "github.com/rink-labs/libevm/libevm/stateconf"
 	uint256 "github.com/holiman/uint256"
 	gomock "go.uber.org/mock/gomock"
 )

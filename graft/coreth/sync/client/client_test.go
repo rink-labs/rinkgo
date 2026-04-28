@@ -11,11 +11,11 @@ import (
 	"os"
 	"testing"
 
-	"github.com/ava-labs/libevm/common"
-	"github.com/ava-labs/libevm/core/rawdb"
-	"github.com/ava-labs/libevm/core/types"
-	"github.com/ava-labs/libevm/crypto"
-	"github.com/ava-labs/libevm/triedb"
+	"github.com/rink-labs/libevm/common"
+	"github.com/rink-labs/libevm/core/rawdb"
+	"github.com/rink-labs/libevm/core/types"
+	"github.com/rink-labs/libevm/crypto"
+	"github.com/rink-labs/libevm/triedb"
 	"github.com/stretchr/testify/require"
 
 	"github.com/rink-labs/rinkgo/graft/coreth/consensus/dummy"
@@ -29,7 +29,7 @@ import (
 
 	clientstats "github.com/rink-labs/rinkgo/graft/coreth/sync/client/stats"
 	handlerstats "github.com/rink-labs/rinkgo/graft/coreth/sync/handlers/stats"
-	ethparams "github.com/ava-labs/libevm/params"
+	ethparams "github.com/rink-labs/libevm/params"
 )
 
 func TestMain(m *testing.M) {

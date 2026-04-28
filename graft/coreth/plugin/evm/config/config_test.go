@@ -9,7 +9,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/ava-labs/libevm/common"
+	"github.com/rink-labs/libevm/common"
 	"github.com/stretchr/testify/require"
 
 	"github.com/rink-labs/rinkgo/utils/constants"

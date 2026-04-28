@@ -8,8 +8,8 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/ava-labs/libevm/common"
-	"github.com/ava-labs/libevm/log"
+	"github.com/rink-labs/libevm/common"
+	"github.com/rink-labs/libevm/log"
 
 	"github.com/rink-labs/rinkgo/codec"
 	"github.com/rink-labs/rinkgo/database"

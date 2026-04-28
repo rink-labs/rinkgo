@@ -7,7 +7,7 @@ import (
 	"sync"
 	"testing"
 
-	"github.com/ava-labs/libevm/metrics"
+	"github.com/rink-labs/libevm/metrics"
 )
 
 var metricsLock sync.Mutex

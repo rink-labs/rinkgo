@@ -7,7 +7,7 @@ import (
 	"os"
 	"testing"
 
-	"github.com/ava-labs/libevm/log"
+	"github.com/rink-labs/libevm/log"
 	"go.uber.org/goleak"
 
 	"github.com/rink-labs/rinkgo/graft/subnet-evm/params"
@@ -28,8 +28,8 @@ func TestMain(m *testing.M) {
 	opts := []goleak.Option{
 		// No good way to shut down these goroutines:
 		goleak.IgnoreTopFunction("github.com/rink-labs/rinkgo/graft/subnet-evm/core/state/snapshot.(*diskLayer).generate"),
-		goleak.IgnoreTopFunction("github.com/ava-labs/libevm/core.(*txSenderCacher).cache"),
-		goleak.IgnoreTopFunction("github.com/ava-labs/libevm/metrics.(*meterArbiter).tick"),
+		goleak.IgnoreTopFunction("github.com/rink-labs/libevm/core.(*txSenderCacher).cache"),
+		goleak.IgnoreTopFunction("github.com/rink-labs/libevm/metrics.(*meterArbiter).tick"),
 		goleak.IgnoreTopFunction("github.com/rink-labs/rinkgo/vms/evm/metrics.(*meterArbiter).tick"),
 		goleak.IgnoreTopFunction("github.com/syndtr/goleveldb/leveldb.(*DB).mpoolDrain"),
 	}

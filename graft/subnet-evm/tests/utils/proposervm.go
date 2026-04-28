@@ -8,15 +8,15 @@ import (
 	"crypto/ecdsa"
 	"math/big"
 
-	"github.com/ava-labs/libevm/common"
-	"github.com/ava-labs/libevm/core/types"
-	"github.com/ava-labs/libevm/crypto"
-	"github.com/ava-labs/libevm/log"
+	"github.com/rink-labs/libevm/common"
+	"github.com/rink-labs/libevm/core/types"
+	"github.com/rink-labs/libevm/crypto"
+	"github.com/rink-labs/libevm/log"
 
 	"github.com/rink-labs/rinkgo/graft/subnet-evm/ethclient"
 	"github.com/rink-labs/rinkgo/graft/subnet-evm/plugin/evm/upgrade/legacy"
 
-	ethparams "github.com/ava-labs/libevm/params"
+	ethparams "github.com/rink-labs/libevm/params"
 )
 
 const numTriggerTxs = 2 // Number of txs needed to activate the proposer VM fork

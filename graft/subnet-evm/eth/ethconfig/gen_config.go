@@ -10,7 +10,7 @@ import (
 	"github.com/rink-labs/rinkgo/graft/subnet-evm/core/txpool/legacypool"
 	"github.com/rink-labs/rinkgo/graft/subnet-evm/eth/gasprice"
 	"github.com/rink-labs/rinkgo/graft/subnet-evm/miner"
-	"github.com/ava-labs/libevm/common"
+	"github.com/rink-labs/libevm/common"
 )
 
 // MarshalTOML marshals as TOML.

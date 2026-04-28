@@ -16,9 +16,6 @@ go 1.24.11
 require (
 	github.com/VictoriaMetrics/fastcache v1.12.1
 	github.com/antithesishq/antithesis-sdk-go v0.3.8
-	github.com/rink-labs/rinkgo v1.14.1-antithesis-docker-image-fix
-	github.com/rink-labs/rinkgo/graft/evm v0.0.0-00010101000000-000000000000
-	github.com/ava-labs/libevm v1.13.15-0.20251210210615-b8e76562a300
 	github.com/davecgh/go-spew v1.1.2-0.20180830191138-d8f796af33cc
 	github.com/deckarep/golang-set/v2 v2.1.0
 	github.com/go-cmd/cmd v1.4.3
@@ -33,6 +30,9 @@ require (
 	github.com/mattn/go-isatty v0.0.17
 	github.com/onsi/ginkgo/v2 v2.13.1
 	github.com/prometheus/client_golang v1.23.0
+	github.com/rink-labs/libevm v1.1.0-rink
+	github.com/rink-labs/rinkgo v0.0.0
+	github.com/rink-labs/rinkgo/graft/evm v1.1.1
 	github.com/spf13/cast v1.9.2
 	github.com/spf13/pflag v1.0.6
 	github.com/spf13/viper v1.20.1
@@ -56,7 +56,6 @@ require (
 	github.com/DataDog/zstd v1.5.2 // indirect
 	github.com/Microsoft/go-winio v0.6.1 // indirect
 	github.com/StephenButtolph/canoto v0.17.3 // indirect
-	github.com/rink-labs/rinkgo/graft/coreth v0.0.0-20251203215505-70148edc6eca // indirect
 	github.com/beorn7/perks v1.0.1 // indirect
 	github.com/bits-and-blooms/bitset v1.20.0 // indirect
 	github.com/btcsuite/btcd/btcec/v2 v2.3.5 // indirect
@@ -147,6 +146,7 @@ require (
 	github.com/prometheus/client_model v0.6.2 // indirect
 	github.com/prometheus/common v0.65.0 // indirect
 	github.com/prometheus/procfs v0.16.1 // indirect
+	github.com/rink-labs/rinkgo/graft/coreth v0.0.0 // indirect
 	github.com/rivo/uniseg v0.2.0 // indirect
 	github.com/rogpeppe/go-internal v1.14.1 // indirect
 	github.com/rs/cors v1.7.0 // indirect
@@ -202,10 +202,12 @@ require (
 // The following tools are managed here instead of in tools/go.mod
 // because they are already direct dependencies of the main module.
 tool (
-	github.com/ava-labs/libevm/rlp/rlpgen
 	github.com/onsi/ginkgo/v2/ginkgo
+	github.com/rink-labs/libevm/rlp/rlpgen
 )
 
 replace github.com/rink-labs/rinkgo => ../../
 
 replace github.com/rink-labs/rinkgo/graft/evm => ../evm
+
+replace github.com/rink-labs/rinkgo/graft/coreth => ../coreth

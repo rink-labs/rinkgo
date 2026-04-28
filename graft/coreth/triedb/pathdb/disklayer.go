@@ -33,12 +33,12 @@ import (
 	"sync"
 
 	"github.com/VictoriaMetrics/fastcache"
-	"github.com/ava-labs/libevm/common"
-	"github.com/ava-labs/libevm/core/rawdb"
-	"github.com/ava-labs/libevm/crypto"
-	"github.com/ava-labs/libevm/log"
-	"github.com/ava-labs/libevm/trie/trienode"
-	"github.com/ava-labs/libevm/trie/triestate"
+	"github.com/rink-labs/libevm/common"
+	"github.com/rink-labs/libevm/core/rawdb"
+	"github.com/rink-labs/libevm/crypto"
+	"github.com/rink-labs/libevm/log"
+	"github.com/rink-labs/libevm/trie/trienode"
+	"github.com/rink-labs/libevm/trie/triestate"
 	"golang.org/x/crypto/sha3"
 )
 

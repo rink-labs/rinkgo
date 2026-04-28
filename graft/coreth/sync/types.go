@@ -6,7 +6,7 @@ package sync
 import (
 	"context"
 
-	"github.com/ava-labs/libevm/core/types"
+	"github.com/rink-labs/libevm/core/types"
 
 	"github.com/rink-labs/rinkgo/database/versiondb"
 	"github.com/rink-labs/rinkgo/graft/coreth/plugin/evm/message"

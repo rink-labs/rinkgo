@@ -34,11 +34,11 @@ import (
 	"testing"
 
 	"github.com/rink-labs/rinkgo/vms/evm/acp226"
-	"github.com/ava-labs/libevm/common"
-	"github.com/ava-labs/libevm/common/math"
-	"github.com/ava-labs/libevm/core/types"
-	"github.com/ava-labs/libevm/crypto"
-	"github.com/ava-labs/libevm/rlp"
+	"github.com/rink-labs/libevm/common"
+	"github.com/rink-labs/libevm/common/math"
+	"github.com/rink-labs/libevm/core/types"
+	"github.com/rink-labs/libevm/crypto"
+	"github.com/rink-labs/libevm/rlp"
 
 	"github.com/rink-labs/rinkgo/graft/subnet-evm/internal/blocktest"
 	"github.com/rink-labs/rinkgo/graft/subnet-evm/params"

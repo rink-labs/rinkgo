@@ -15,7 +15,7 @@ import (
 	"github.com/rink-labs/rinkgo/graft/subnet-evm/cmd/simulator/load"
 	"github.com/rink-labs/rinkgo/graft/subnet-evm/log"
 
-	gethlog "github.com/ava-labs/libevm/log"
+	gethlog "github.com/rink-labs/libevm/log"
 )
 
 func main() {

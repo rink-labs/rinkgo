@@ -41,14 +41,14 @@ import (
 	"github.com/rink-labs/rinkgo/graft/coreth/internal/ethapi"
 	"github.com/rink-labs/rinkgo/graft/coreth/params"
 	"github.com/rink-labs/rinkgo/graft/coreth/rpc"
-	"github.com/ava-labs/libevm/accounts"
-	"github.com/ava-labs/libevm/common"
-	"github.com/ava-labs/libevm/core/bloombits"
-	"github.com/ava-labs/libevm/core/state"
-	"github.com/ava-labs/libevm/core/types"
-	"github.com/ava-labs/libevm/core/vm"
-	"github.com/ava-labs/libevm/ethdb"
-	"github.com/ava-labs/libevm/event"
+	"github.com/rink-labs/libevm/accounts"
+	"github.com/rink-labs/libevm/common"
+	"github.com/rink-labs/libevm/core/bloombits"
+	"github.com/rink-labs/libevm/core/state"
+	"github.com/rink-labs/libevm/core/types"
+	"github.com/rink-labs/libevm/core/vm"
+	"github.com/rink-labs/libevm/ethdb"
+	"github.com/rink-labs/libevm/event"
 )
 
 var ErrUnfinalizedData = errors.New("cannot query unfinalized data")

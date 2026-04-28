@@ -4,9 +4,9 @@
 package customtypes
 
 import (
-	"github.com/ava-labs/libevm/libevm"
+	"github.com/rink-labs/libevm/libevm"
 
-	ethtypes "github.com/ava-labs/libevm/core/types"
+	ethtypes "github.com/rink-labs/libevm/core/types"
 )
 
 var extras ethtypes.ExtraPayloads[*HeaderExtra, *BlockBodyExtra, isMultiCoin]

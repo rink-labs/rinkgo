@@ -8,7 +8,7 @@ import (
 	"fmt"
 	"math/big"
 
-	"github.com/ava-labs/libevm/common"
+	"github.com/rink-labs/libevm/common"
 
 	"github.com/rink-labs/rinkgo/graft/subnet-evm/commontype"
 	"github.com/rink-labs/rinkgo/graft/subnet-evm/utils"
@@ -16,7 +16,7 @@ import (
 	"github.com/rink-labs/rinkgo/upgrade"
 	"github.com/rink-labs/rinkgo/utils/constants"
 
-	ethparams "github.com/ava-labs/libevm/params"
+	ethparams "github.com/rink-labs/libevm/params"
 )
 
 var (

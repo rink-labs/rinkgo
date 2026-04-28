@@ -18,7 +18,7 @@ import (
 	"github.com/rink-labs/rinkgo/graft/subnet-evm/precompile/contract"
 	"github.com/rink-labs/rinkgo/graft/subnet-evm/precompile/modules"
 
-	"github.com/ava-labs/libevm/common"
+	"github.com/rink-labs/libevm/common"
 )
 
 var _ contract.Configurator = (*configurator)(nil)

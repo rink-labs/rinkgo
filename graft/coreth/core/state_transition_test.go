@@ -37,12 +37,12 @@ import (
 	"github.com/rink-labs/rinkgo/graft/coreth/params"
 	"github.com/rink-labs/rinkgo/graft/coreth/plugin/evm/upgrade/ap0"
 	"github.com/rink-labs/rinkgo/graft/coreth/plugin/evm/upgrade/ap1"
-	"github.com/ava-labs/libevm/common"
-	"github.com/ava-labs/libevm/core/rawdb"
-	"github.com/ava-labs/libevm/core/state"
-	"github.com/ava-labs/libevm/core/types"
-	"github.com/ava-labs/libevm/core/vm"
-	"github.com/ava-labs/libevm/crypto"
+	"github.com/rink-labs/libevm/common"
+	"github.com/rink-labs/libevm/core/rawdb"
+	"github.com/rink-labs/libevm/core/state"
+	"github.com/rink-labs/libevm/core/types"
+	"github.com/rink-labs/libevm/core/vm"
+	"github.com/rink-labs/libevm/crypto"
 	"github.com/stretchr/testify/require"
 )
 

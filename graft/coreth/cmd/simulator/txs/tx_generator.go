@@ -8,11 +8,11 @@ import (
 	"crypto/ecdsa"
 	"fmt"
 
-	"github.com/ava-labs/libevm/core/types"
+	"github.com/rink-labs/libevm/core/types"
 
 	"github.com/rink-labs/rinkgo/graft/coreth/ethclient"
 
-	ethcrypto "github.com/ava-labs/libevm/crypto"
+	ethcrypto "github.com/rink-labs/libevm/crypto"
 )
 
 var _ TxSequence[*types.Transaction] = (*txSequence)(nil)

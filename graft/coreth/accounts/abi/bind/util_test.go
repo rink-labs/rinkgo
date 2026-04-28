@@ -37,9 +37,9 @@ import (
 	"github.com/rink-labs/rinkgo/graft/coreth/accounts/abi/bind"
 	"github.com/rink-labs/rinkgo/graft/coreth/ethclient/simulated"
 	"github.com/rink-labs/rinkgo/graft/coreth/params"
-	"github.com/ava-labs/libevm/common"
-	"github.com/ava-labs/libevm/core/types"
-	"github.com/ava-labs/libevm/crypto"
+	"github.com/rink-labs/libevm/common"
+	"github.com/rink-labs/libevm/core/types"
+	"github.com/rink-labs/libevm/crypto"
 )
 
 var (

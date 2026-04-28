@@ -6,7 +6,7 @@ package customheader
 import (
 	"testing"
 
-	"github.com/ava-labs/libevm/core/types"
+	"github.com/rink-labs/libevm/core/types"
 	"github.com/stretchr/testify/require"
 
 	"github.com/rink-labs/rinkgo/graft/coreth/params/extras"

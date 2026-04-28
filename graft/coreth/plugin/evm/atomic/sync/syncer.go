@@ -9,9 +9,9 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/ava-labs/libevm/common"
-	"github.com/ava-labs/libevm/libevm/options"
-	"github.com/ava-labs/libevm/trie"
+	"github.com/rink-labs/libevm/common"
+	"github.com/rink-labs/libevm/libevm/options"
+	"github.com/rink-labs/libevm/trie"
 
 	"github.com/rink-labs/rinkgo/database/versiondb"
 	"github.com/rink-labs/rinkgo/graft/coreth/plugin/evm/message"

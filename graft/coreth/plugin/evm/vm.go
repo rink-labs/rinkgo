@@ -16,14 +16,14 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/ava-labs/libevm/common"
-	"github.com/ava-labs/libevm/core/rawdb"
-	"github.com/ava-labs/libevm/core/types"
-	"github.com/ava-labs/libevm/ethdb"
-	"github.com/ava-labs/libevm/log"
-	"github.com/ava-labs/libevm/metrics"
-	"github.com/ava-labs/libevm/rlp"
-	"github.com/ava-labs/libevm/triedb"
+	"github.com/rink-labs/libevm/common"
+	"github.com/rink-labs/libevm/core/rawdb"
+	"github.com/rink-labs/libevm/core/types"
+	"github.com/rink-labs/libevm/ethdb"
+	"github.com/rink-labs/libevm/log"
+	"github.com/rink-labs/libevm/metrics"
+	"github.com/rink-labs/libevm/rlp"
+	"github.com/rink-labs/libevm/triedb"
 	"github.com/prometheus/client_golang/prometheus"
 
 	// Force-load precompiles to trigger registration
@@ -33,8 +33,8 @@ import (
 	// We must import this package (not referenced elsewhere) so that the native "callTracer"
 	// is added to a map of client-accessible tracers. In geth, this is done
 	// inside of cmd/geth.
-	_ "github.com/ava-labs/libevm/eth/tracers/js"
-	_ "github.com/ava-labs/libevm/eth/tracers/native"
+	_ "github.com/rink-labs/libevm/eth/tracers/js"
+	_ "github.com/rink-labs/libevm/eth/tracers/native"
 
 	"github.com/rink-labs/rinkgo/cache/lru"
 	"github.com/rink-labs/rinkgo/cache/metercacher"
@@ -87,7 +87,7 @@ import (
 	"github.com/rink-labs/rinkgo/vms/evm/acp176"
 	"github.com/rink-labs/rinkgo/vms/evm/acp226"
 	avalanchegoprometheus "github.com/rink-labs/rinkgo/vms/evm/metrics/prometheus"
-	ethparams "github.com/ava-labs/libevm/params"
+	ethparams "github.com/rink-labs/libevm/params"
 )
 
 var (

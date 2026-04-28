@@ -34,9 +34,9 @@ import (
 	"math/big"
 
 	"github.com/rink-labs/rinkgo/graft/coreth/rpc"
-	"github.com/ava-labs/libevm/common"
-	"github.com/ava-labs/libevm/core/bloombits"
-	"github.com/ava-labs/libevm/core/types"
+	"github.com/rink-labs/libevm/common"
+	"github.com/rink-labs/libevm/core/bloombits"
+	"github.com/rink-labs/libevm/core/types"
 )
 
 // Filter can be used to retrieve and filter logs.

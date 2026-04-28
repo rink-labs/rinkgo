@@ -34,12 +34,12 @@ import (
 	"github.com/rink-labs/rinkgo/graft/coreth/core/state/snapshot"
 	"github.com/rink-labs/rinkgo/graft/coreth/triedb/hashdb"
 	"github.com/rink-labs/rinkgo/graft/coreth/triedb/pathdb"
-	"github.com/ava-labs/libevm/common"
-	"github.com/ava-labs/libevm/core/rawdb"
-	"github.com/ava-labs/libevm/core/state"
-	"github.com/ava-labs/libevm/core/types"
-	"github.com/ava-labs/libevm/ethdb"
-	"github.com/ava-labs/libevm/triedb"
+	"github.com/rink-labs/libevm/common"
+	"github.com/rink-labs/libevm/core/rawdb"
+	"github.com/rink-labs/libevm/core/state"
+	"github.com/rink-labs/libevm/core/types"
+	"github.com/rink-labs/libevm/ethdb"
+	"github.com/rink-labs/libevm/triedb"
 	"github.com/holiman/uint256"
 )
 

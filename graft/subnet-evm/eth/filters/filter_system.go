@@ -38,13 +38,13 @@ import (
 	"github.com/rink-labs/rinkgo/graft/subnet-evm/core"
 	"github.com/rink-labs/rinkgo/graft/subnet-evm/params"
 	"github.com/rink-labs/rinkgo/graft/subnet-evm/rpc"
-	ethereum "github.com/ava-labs/libevm"
-	"github.com/ava-labs/libevm/common"
-	"github.com/ava-labs/libevm/core/bloombits"
-	"github.com/ava-labs/libevm/core/types"
-	"github.com/ava-labs/libevm/ethdb"
-	"github.com/ava-labs/libevm/event"
-	"github.com/ava-labs/libevm/log"
+	ethereum "github.com/rink-labs/libevm"
+	"github.com/rink-labs/libevm/common"
+	"github.com/rink-labs/libevm/core/bloombits"
+	"github.com/rink-labs/libevm/core/types"
+	"github.com/rink-labs/libevm/ethdb"
+	"github.com/rink-labs/libevm/event"
+	"github.com/rink-labs/libevm/log"
 )
 
 // Config represents the configuration of the filter system.

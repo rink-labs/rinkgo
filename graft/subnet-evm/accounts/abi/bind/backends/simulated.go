@@ -33,9 +33,9 @@ import (
 	"github.com/rink-labs/rinkgo/graft/subnet-evm/accounts/abi/bind"
 	"github.com/rink-labs/rinkgo/graft/subnet-evm/ethclient/simulated"
 	"github.com/rink-labs/rinkgo/graft/subnet-evm/interfaces"
-	ethereum "github.com/ava-labs/libevm"
-	"github.com/ava-labs/libevm/common"
-	"github.com/ava-labs/libevm/core/types"
+	ethereum "github.com/rink-labs/libevm"
+	"github.com/rink-labs/libevm/common"
+	"github.com/rink-labs/libevm/core/types"
 )
 
 // Verify that SimulatedBackend implements required interfaces

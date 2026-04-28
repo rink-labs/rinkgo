@@ -8,8 +8,8 @@ import (
 	"math/big"
 	"testing"
 
-	"github.com/ava-labs/libevm/common"
-	"github.com/ava-labs/libevm/crypto"
+	"github.com/rink-labs/libevm/common"
+	"github.com/rink-labs/libevm/crypto"
 	"github.com/stretchr/testify/require"
 
 	"github.com/rink-labs/rinkgo/graft/evm/constants"

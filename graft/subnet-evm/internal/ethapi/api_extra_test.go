@@ -9,9 +9,9 @@ import (
 	"os"
 	"testing"
 
-	"github.com/ava-labs/libevm/common"
-	"github.com/ava-labs/libevm/common/hexutil"
-	"github.com/ava-labs/libevm/core/types"
+	"github.com/rink-labs/libevm/common"
+	"github.com/rink-labs/libevm/common/hexutil"
+	"github.com/rink-labs/libevm/core/types"
 	"github.com/stretchr/testify/require"
 	"go.uber.org/mock/gomock"
 
@@ -21,7 +21,7 @@ import (
 	"github.com/rink-labs/rinkgo/graft/subnet-evm/plugin/evm/customtypes"
 	"github.com/rink-labs/rinkgo/graft/subnet-evm/rpc"
 
-	ethparams "github.com/ava-labs/libevm/params"
+	ethparams "github.com/rink-labs/libevm/params"
 )
 
 func TestMain(m *testing.M) {

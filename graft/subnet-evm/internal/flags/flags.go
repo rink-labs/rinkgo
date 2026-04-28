@@ -39,7 +39,7 @@ import (
 	"strings"
 	"syscall"
 
-	"github.com/ava-labs/libevm/common/math"
+	"github.com/rink-labs/libevm/common/math"
 	"github.com/urfave/cli/v2"
 )
 

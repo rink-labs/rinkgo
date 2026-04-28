@@ -4,8 +4,8 @@
 package customrawdb
 
 import (
-	"github.com/ava-labs/libevm/core/rawdb"
-	"github.com/ava-labs/libevm/ethdb"
+	"github.com/rink-labs/libevm/core/rawdb"
+	"github.com/rink-labs/libevm/ethdb"
 )
 
 // ParseStateScheme parses the state scheme from the provided string.

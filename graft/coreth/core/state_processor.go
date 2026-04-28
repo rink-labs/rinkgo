@@ -33,13 +33,13 @@ import (
 
 	"github.com/rink-labs/rinkgo/graft/coreth/consensus"
 	"github.com/rink-labs/rinkgo/graft/coreth/params"
-	"github.com/ava-labs/libevm/common"
-	"github.com/ava-labs/libevm/core/state"
-	"github.com/ava-labs/libevm/core/types"
-	"github.com/ava-labs/libevm/core/vm"
-	"github.com/ava-labs/libevm/crypto"
-	"github.com/ava-labs/libevm/log"
-	ethparams "github.com/ava-labs/libevm/params"
+	"github.com/rink-labs/libevm/common"
+	"github.com/rink-labs/libevm/core/state"
+	"github.com/rink-labs/libevm/core/types"
+	"github.com/rink-labs/libevm/core/vm"
+	"github.com/rink-labs/libevm/crypto"
+	"github.com/rink-labs/libevm/log"
+	ethparams "github.com/rink-labs/libevm/params"
 )
 
 // StateProcessor is a basic Processor, which takes care of transitioning

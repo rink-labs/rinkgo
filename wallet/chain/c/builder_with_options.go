@@ -11,7 +11,7 @@ import (
 	"github.com/rink-labs/rinkgo/vms/secp256k1fx"
 	"github.com/rink-labs/rinkgo/wallet/subnet/primary/common"
 
-	ethcommon "github.com/ava-labs/libevm/common"
+	ethcommon "github.com/rink-labs/libevm/common"
 )
 
 var _ Builder = (*builderWithOptions)(nil)

@@ -16,14 +16,14 @@ import (
 	"sync"
 	"time"
 
-	"github.com/ava-labs/libevm/common"
-	"github.com/ava-labs/libevm/core/rawdb"
-	"github.com/ava-labs/libevm/core/types"
-	"github.com/ava-labs/libevm/ethdb"
-	"github.com/ava-labs/libevm/log"
-	"github.com/ava-labs/libevm/metrics"
-	"github.com/ava-labs/libevm/rlp"
-	"github.com/ava-labs/libevm/triedb"
+	"github.com/rink-labs/libevm/common"
+	"github.com/rink-labs/libevm/core/rawdb"
+	"github.com/rink-labs/libevm/core/types"
+	"github.com/rink-labs/libevm/ethdb"
+	"github.com/rink-labs/libevm/log"
+	"github.com/rink-labs/libevm/metrics"
+	"github.com/rink-labs/libevm/rlp"
+	"github.com/rink-labs/libevm/triedb"
 	"github.com/prometheus/client_golang/prometheus"
 
 	// Force-load tracer engine to trigger registration
@@ -32,8 +32,8 @@ import (
 	// is added to a map of client-accessible tracers. In geth, this is done
 	// inside of cmd/geth.
 	_ "github.com/rink-labs/rinkgo/graft/subnet-evm/precompile/registry" // Force-load precompiles to trigger registration
-	_ "github.com/ava-labs/libevm/eth/tracers/js"
-	_ "github.com/ava-labs/libevm/eth/tracers/native"
+	_ "github.com/rink-labs/libevm/eth/tracers/js"
+	_ "github.com/rink-labs/libevm/eth/tracers/native"
 
 	"github.com/rink-labs/rinkgo/cache/lru"
 	"github.com/rink-labs/rinkgo/cache/metercacher"
@@ -86,7 +86,7 @@ import (
 	avalancheUtils "github.com/rink-labs/rinkgo/utils"
 	avajson "github.com/rink-labs/rinkgo/utils/json"
 	avalanchegoprometheus "github.com/rink-labs/rinkgo/vms/evm/metrics/prometheus"
-	ethparams "github.com/ava-labs/libevm/params"
+	ethparams "github.com/rink-labs/libevm/params"
 	avalancheRPC "github.com/gorilla/rpc/v2"
 )
 
