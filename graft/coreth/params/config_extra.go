@@ -50,12 +50,12 @@ func SetEthUpgrades(c *ChainConfig) error {
 	// Because Fuji and Mainnet have already accepted the Berlin and London
 	// blocks, it is assumed that they are scheduled for activation.
 	switch {
-	case c.ChainID != nil && AvalancheFujiChainID.Cmp(c.ChainID) == 0:
-		c.BerlinBlock = big.NewInt(184985) // https://testnet.snowtrace.io/block/184985?chainid=43113, AP2 activation block
-		c.LondonBlock = big.NewInt(805078) // https://testnet.snowtrace.io/block/805078?chainid=43113, AP3 activation block
-	case c.ChainID != nil && AvalancheMainnetChainID.Cmp(c.ChainID) == 0:
-		c.BerlinBlock = big.NewInt(1640340) // https://snowtrace.io/block/1640340?chainid=43114, AP2 activation block
-		c.LondonBlock = big.NewInt(3308552) // https://snowtrace.io/block/3308552?chainid=43114, AP3 activation block
+	case c.ChainID != nil && ChennaiChainID.Cmp(c.ChainID) == 0:
+		c.BerlinBlock = big.NewInt(0)
+		c.LondonBlock = big.NewInt(0)
+	case c.ChainID != nil && RinkMainnetChainID.Cmp(c.ChainID) == 0:
+		c.BerlinBlock = big.NewInt(0)
+		c.LondonBlock = big.NewInt(0)
 	default:
 		// In testing or local networks, we only support enabling Berlin and
 		// London at the initially active time. This corresponds to an intended
