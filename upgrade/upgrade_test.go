@@ -20,8 +20,8 @@ func TestValidDefaultUpgrades(t *testing.T) {
 			upgrade: Default,
 		},
 		{
-			name:    "Fuji",
-			upgrade: Fuji,
+			name:    "Chennai",
+			upgrade: Chennai,
 		},
 		{
 			name:    "Mainnet",
