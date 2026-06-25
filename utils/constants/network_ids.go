@@ -16,8 +16,8 @@ import (
 // Const variables to be exported
 const (
 	MainnetID  uint32 = 1
-	RinkID     uint32 = 90059
-	ChennaiID  uint32 = 2099
+	RinkID     uint32 = 2003
+	ChennaiID  uint32 = 2004
 	TestnetID  uint32 = ChennaiID // Deprecated: use ChennaiID
 	FujiID     uint32 = 5
 	UnitTestID uint32 = 10
@@ -32,7 +32,7 @@ const (
 
 	MainnetHRP  = "avax"
 	FujiHRP     = "fuji"
-	RinkubyHRP  = "rink"
+	RinkHRP     = "rink"
 	ChennaiHRP  = "chennai"
 	UnitTestHRP = "testing"
 	LocalHRP    = "local"
@@ -64,14 +64,14 @@ var (
 
 	NetworkIDToHRP = map[uint32]string{
 		MainnetID:  MainnetHRP,
-		RinkID:     RinkubyHRP,
+		RinkID:     RinkHRP,
 		FujiID:     FujiHRP,
 		UnitTestID: UnitTestHRP,
 		LocalID:    LocalHRP,
 	}
 	NetworkHRPToNetworkID = map[string]uint32{
 		MainnetHRP:  MainnetID,
-		RinkubyHRP:  RinkID,
+		RinkHRP:     RinkID,
 		ChennaiHRP:  ChennaiID,
 		FujiHRP:     FujiID,
 		UnitTestHRP: UnitTestID,
