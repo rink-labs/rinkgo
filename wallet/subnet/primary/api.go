@@ -31,7 +31,7 @@ import (
 )
 
 const (
-	RinkAPIURI    = "http://localhost:9650"
+	MainnetAPIURI = "http://localhost:9650"
 	ChennaiAPIURI = "http://localhost:9750"
 	LocalAPIURI   = "http://localhost:9650"
 

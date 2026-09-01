@@ -16,10 +16,10 @@ import (
 
 var (
 	//go:embed genesis_rink.json
-	rinkGenesisConfigJSON []byte
+	mainnetGenesisConfigJSON []byte
 
-	// RinkParams are the params used for mainnet
-	RinkParams = Params{
+	// MainnetParams are the params used for mainnet
+	MainnetParams = Params{
 		TxFeeConfig: TxFeeConfig{
 			CreateAssetTxFee: 10 * units.MilliAvax,
 			TxFee:            units.MilliAvax,

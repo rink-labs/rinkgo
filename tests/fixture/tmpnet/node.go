@@ -376,7 +376,7 @@ func (n *Node) composeFlags() (FlagsMap, error) {
 	// Set the bootstrap configuration only for non-public networks
 	// Public networks should use avalanchego's built-in bootstrappers
 	networkID := n.network.GetNetworkID()
-	if networkID != constants.ChennaiID && networkID != constants.RinkID {
+	if networkID != constants.ChennaiID && networkID != constants.MainnetID {
 		bootstrapIPs, bootstrapIDs := n.network.GetBootstrapIPsAndIDs(n)
 		flags.SetDefault(config.BootstrapIDsKey, strings.Join(bootstrapIDs, ","))
 		flags.SetDefault(config.BootstrapIPsKey, strings.Join(bootstrapIPs, ","))

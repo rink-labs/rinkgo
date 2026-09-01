@@ -15,7 +15,7 @@ func TestGetHRP(t *testing.T) {
 		hrp string
 	}{
 		{
-			id:  RinkID,
+			id:  MainnetID,
 			hrp: MainnetHRP,
 		},
 		{
@@ -24,7 +24,7 @@ func TestGetHRP(t *testing.T) {
 		},
 		{
 			id:  ChennaiID,
-			hrp: FujiHRP,
+			hrp: ChennaiHRP,
 		},
 		{
 			id:  LocalID,
@@ -48,8 +48,8 @@ func TestNetworkName(t *testing.T) {
 		name string
 	}{
 		{
-			id:   RinkID,
-			name: RinkName,
+			id:   MainnetID,
+			name: MainnetName,
 		},
 		{
 			id:   TestnetID,
@@ -82,12 +82,12 @@ func TestNetworkID(t *testing.T) {
 		expectedErr error
 	}{
 		{
-			name: RinkName,
-			id:   RinkID,
+			name: MainnetName,
+			id:   MainnetID,
 		},
 		{
-			name: "Rink",
-			id:   RinkID,
+			name: "Mainnet",
+			id:   MainnetID,
 		},
 		{
 			name: ChennaiName,

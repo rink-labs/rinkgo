@@ -117,17 +117,17 @@ Some blockchains allow the node operator to provide custom configurations for in
 
 | Flag | Env Var | Type | Default | Description |
 |--------|--------|------|----|--------------------|
-| `--chain-config-dir` | `AVAGO_CHAIN_CONFIG_DIR` | string | `$HOME/.rinkgo/configs/chains` | Specifies the directory that contains chain configs, as described [here](https://build.avax.network/docs/nodes/chain-configs). If this flag is not provided and the default directory does not exist, AvalancheGo will not exit since custom configs are optional. However, if the flag is set, the specified folder must exist, or AvalancheGo will exit with an error. This flag is ignored if `--chain-config-content` is specified. Network upgrades are passed in from the location: `chain-config-dir`/`blockchainID`/`upgrade.*`. The chain configs are passed in from the location `chain-config-dir`/`blockchainID`/`config.*`. See [here](https://build.avax.network/docs/nodes/chain-configs) for more information. |
+| `--chain-config-dir` | `AVAGO_CHAIN_CONFIG_DIR` | string | `$HOME/.avalanchego/configs/chains` | Specifies the directory that contains chain configs, as described [here](https://build.avax.network/docs/nodes/chain-configs). If this flag is not provided and the default directory does not exist, AvalancheGo will not exit since custom configs are optional. However, if the flag is set, the specified folder must exist, or AvalancheGo will exit with an error. This flag is ignored if `--chain-config-content` is specified. Network upgrades are passed in from the location: `chain-config-dir`/`blockchainID`/`upgrade.*`. The chain configs are passed in from the location `chain-config-dir`/`blockchainID`/`config.*`. See [here](https://build.avax.network/docs/nodes/chain-configs) for more information. |
 | `--chain-config-content` | `AVAGO_CHAIN_CONFIG_CONTENT` | string | - | As an alternative to `--chain-config-dir`, chains custom configurations can be loaded altogether from command line via `--chain-config-content` flag. Content must be base64 encoded. Example: First, encode the chain config: `echo -n '{"log-level":"trace"}' \| base64`. This will output something like `eyJsb2ctbGV2ZWwiOiJ0cmFjZSJ9`. Then create the full config JSON and encode it: `echo -n '{"C":{"Config":"eyJsb2ctbGV2ZWwiOiJ0cmFjZSJ9","Upgrade":null}}' \| base64`. Finally run: `avalanchego --chain-config-content "eyJDIjp7IkNvbmZpZyI6ImV5SnNiMmN0YkdWMlpXd2lPaUowY21GalpTSjkiLCJVcGdyYWRlIjpudWxsfX0="` |
-| `--chain-aliases-file` | `AVAGO_CHAIN_ALIASES_FILE` | string | `~/.rinkgo/configs/chains/aliases.json` | Path to JSON file that defines aliases for Blockchain IDs. This flag is ignored if `--chain-aliases-file-content` is specified. Example content: `{"q2aTwKuyzgs8pynF7UXBZCU7DejbZbZ6EUyHr3JQzYgwNPUPi": ["DFK"]}`. The above example aliases the Blockchain whose ID is `"q2aTwKuyzgs8pynF7UXBZCU7DejbZbZ6EUyHr3JQzYgwNPUPi"` to `"DFK"`. Chain aliases are added after adding primary network aliases and before any changes to the aliases via the admin API. This means that the first alias included for a Blockchain on a Subnet will be treated as the `"Primary Alias"` instead of the full blockchainID. The Primary Alias is used in all metrics and logs. |
+| `--chain-aliases-file` | `AVAGO_CHAIN_ALIASES_FILE` | string | `~/.avalanchego/configs/chains/aliases.json` | Path to JSON file that defines aliases for Blockchain IDs. This flag is ignored if `--chain-aliases-file-content` is specified. Example content: `{"q2aTwKuyzgs8pynF7UXBZCU7DejbZbZ6EUyHr3JQzYgwNPUPi": ["DFK"]}`. The above example aliases the Blockchain whose ID is `"q2aTwKuyzgs8pynF7UXBZCU7DejbZbZ6EUyHr3JQzYgwNPUPi"` to `"DFK"`. Chain aliases are added after adding primary network aliases and before any changes to the aliases via the admin API. This means that the first alias included for a Blockchain on a Subnet will be treated as the `"Primary Alias"` instead of the full blockchainID. The Primary Alias is used in all metrics and logs. |
 | `--chain-aliases-file-content` | `AVAGO_CHAIN_ALIASES_FILE_CONTENT` | string | - | As an alternative to `--chain-aliases-file`, it allows specifying base64 encoded aliases for Blockchains. |
-| `--chain-data-dir` | `AVAGO_CHAIN_DATA_DIR` | string | `$HOME/.rinkgo/chainData` | Chain specific data directory. |
+| `--chain-data-dir` | `AVAGO_CHAIN_DATA_DIR` | string | `$HOME/.avalanchego/chainData` | Chain specific data directory. |
 
 ### Config File
 
 | Flag | Env Var | Type | Default | Description |
 |--------|--------|------|----|--------------------| 
-|`--config-file` | `AVAGO_CONFIG_FILE` | string | - | Path to a JSON file that specifies this node's configuration. Command line arguments will override arguments set in the config file. This flag is ignored if `--config-file-content` is specified. Example JSON config file: `{"log-level": "debug"}`. [Install Script](https://build.avax.network/docs/tooling/avalanche-go-installer) creates the node config file at `~/.rinkgo/configs/node.json`. No default file is created if [AvalancheGo is built from source](https://build.avax.network/docs/nodes/run-a-node/from-source), you would need to create it manually if needed. |
+|`--config-file` | `AVAGO_CONFIG_FILE` | string | - | Path to a JSON file that specifies this node's configuration. Command line arguments will override arguments set in the config file. This flag is ignored if `--config-file-content` is specified. Example JSON config file: `{"log-level": "debug"}`. [Install Script](https://build.avax.network/docs/tooling/avalanche-go-installer) creates the node config file at `~/.avalanchego/configs/node.json`. No default file is created if [AvalancheGo is built from source](https://build.avax.network/docs/nodes/run-a-node/from-source), you would need to create it manually if needed. |
 | `--config-file-content` | `AVAGO_CONFIG_FILE_CONTENT` | string | - | As an alternative to `--config-file`, it allows specifying base64 encoded config content. |
 | `--config-file-content-type` | `AVAGO_CONFIG_FILE_CONTENT_TYPE` | string | `JSON` | Specifies the format of the base64 encoded config content. JSON, TOML, YAML are among currently supported file format (see [here](https://github.com/spf13/viper#reading-config-files) for full list). |
 
@@ -135,13 +135,13 @@ Some blockchains allow the node operator to provide custom configurations for in
 
 | Flag | Env Var | Type | Default | Description |
 |--------|--------|------|----|--------------------|
-| `--data-dir` | `AVAGO_DATA_DIR` | string | `$HOME/.rinkgo` | Sets the base data directory where default sub-directories will be placed unless otherwise specified. |
+| `--data-dir` | `AVAGO_DATA_DIR` | string | `$HOME/.avalanchego` | Sets the base data directory where default sub-directories will be placed unless otherwise specified. |
 
 ### Database
 
 | Flag | Env Var | Type | Default  | Description |
 |--------|--------|------|----|--------------------|
-| `--db-dir` | `AVAGO_DB_DIR` | string | `$HOME/.rinkgo/db` | Specifies the directory to which the database is persisted. |
+| `--db-dir` | `AVAGO_DB_DIR` | string | `$HOME/.avalanchego/db` | Specifies the directory to which the database is persisted. |
 | `--db-type` | `AVAGO_DB_TYPE` | string | `leveldb` | Specifies the type of database to use. Must be one of `leveldb`, `memdb`, or `pebbledb`. `memdb` is an in-memory, non-persisted database. Note: `memdb` stores everything in memory. So if you have a 900 GiB LevelDB instance, then using `memdb` you'd need 900 GiB of RAM. `memdb` is useful for fast one-off testing, not for running an actual node (on Fuji or Mainnet). Also note that `memdb` doesn't persist after restart. So any time you restart the node it would start syncing from scratch. |
 
 #### Database Config
@@ -203,7 +203,7 @@ A LevelDB config file must be JSON and may have these keys. Any keys not given w
 | `--log-format=plain` | `AVAGO_LOG_FORMAT` | string | `auto` | Plain text log format. |
 | `--log-format=colors` | `AVAGO_LOG_FORMAT` | string | `auto` | Colored log format. |
 | `--log-format=json` | `AVAGO_LOG_FORMAT` | string | `auto` | JSON log format. |
-| `--log-dir` | `AVAGO_LOG_DIR` | string | `$HOME/.rinkgo/logs` | Specifies the directory in which system logs are kept. If you are running the node as a system service (ex. using the installer script) logs will also be stored in `$HOME/var/log/syslog`. |
+| `--log-dir` | `AVAGO_LOG_DIR` | string | `$HOME/.avalanchego/logs` | Specifies the directory in which system logs are kept. If you are running the node as a system service (ex. using the installer script) logs will also be stored in `$HOME/var/log/syslog`. |
 | `--log-disable-display-plugin-logs` | `AVAGO_LOG_DISABLE_DISPLAY_PLUGIN_LOGS` | boolean | `false` | Disables displaying plugin logs in stdout. |
 | `--log-rotater-max-size` | `AVAGO_LOG_ROTATER_MAX_SIZE` | uint | `8` | The maximum file size in megabytes of the log file before it gets rotated. |
 | `--log-rotater-max-files` | `AVAGO_LOG_ROTATER_MAX_FILES` | uint | `7` | The maximum number of old log files to retain. 0 means retain all old log files. |
@@ -217,7 +217,7 @@ You can configure your node to continuously run memory/CPU profiles and save the
 | Flag | Env Var | Type | Default | Description |
 |--------|--------|------|----|--------------------|
 | `--profile-continuous-enabled` | `AVAGO_PROFILE_CONTINUOUS_ENABLED` | boolean | `false` | Whether the app should continuously produce performance profiles. |
-| `--profile-dir` | `AVAGO_PROFILE_DIR` | string | `$HOME/.rinkgo/profiles/` | If profiling is enabled, node continuously runs memory/CPU profiles and puts them at this directory. |
+| `--profile-dir` | `AVAGO_PROFILE_DIR` | string | `$HOME/.avalanchego/profiles/` | If profiling is enabled, node continuously runs memory/CPU profiles and puts them at this directory. |
 | `--profile-continuous-freq` | `AVAGO_PROFILE_CONTINUOUS_FREQ` | duration | `15m` | How often a new CPU/memory profile is created. |
 | `--profile-continuous-max-files` | `AVAGO_PROFILE_CONTINUOUS_MAX_FILES` | int | `5` | Maximum number of CPU/memory profile files to keep. |
 
@@ -270,9 +270,9 @@ Validators must know one of their public facing IP addresses so they can enable 
 | Flag | Env Var | Type | Default | Description |
 |--------|--------|------|----|--------------------|
 | `--staking-port` | `AVAGO_STAKING_PORT` | int | `9651` | The port through which the network peers will connect to this node externally. Having this port accessible from the internet is required for correct node operation. |
-| `--staking-tls-cert-file` | `AVAGO_STAKING_TLS_CERT_FILE` | string | `$HOME/.rinkgo/staking/staker.crt` | Avalanche uses two-way authenticated TLS connections to securely connect nodes. This argument specifies the location of the TLS certificate used by the node. This flag is ignored if `--staking-tls-cert-file-content` is specified. |
+| `--staking-tls-cert-file` | `AVAGO_STAKING_TLS_CERT_FILE` | string | `$HOME/.avalanchego/staking/staker.crt` | Avalanche uses two-way authenticated TLS connections to securely connect nodes. This argument specifies the location of the TLS certificate used by the node. This flag is ignored if `--staking-tls-cert-file-content` is specified. |
 | `--staking-tls-cert-file-content` | `AVAGO_STAKING_TLS_CERT_FILE_CONTENT` | string | - | As an alternative to `--staking-tls-cert-file`, it allows specifying base64 encoded content of the TLS certificate used by the node. Note that full certificate content, with the leading and trailing header, must be base64 encoded. |
-| `--staking-tls-key-file` | `AVAGO_STAKING_TLS_KEY_FILE` | string | `$HOME/.rinkgo/staking/staker.key` | Avalanche uses two-way authenticated TLS connections to securely connect nodes. This argument specifies the location of the TLS private key used by the node. This flag is ignored if `--staking-tls-key-file-content` is specified. |
+| `--staking-tls-key-file` | `AVAGO_STAKING_TLS_KEY_FILE` | string | `$HOME/.avalanchego/staking/staker.key` | Avalanche uses two-way authenticated TLS connections to securely connect nodes. This argument specifies the location of the TLS private key used by the node. This flag is ignored if `--staking-tls-key-file-content` is specified. |
 | `--staking-tls-key-file-content` | `AVAGO_STAKING_TLS_KEY_FILE_CONTENT` | string | - | As an alternative to `--staking-tls-key-file`, it allows specifying base64 encoded content of the TLS private key used by the node. Note that full private key content, with the leading and trailing header, must be base64 encoded. |
 
 ### Subnets
@@ -289,7 +289,7 @@ It is possible to provide parameters for Subnets. Parameters here apply to all c
 
 | Flag | Env Var | Type | Default | Description |
 |--------|--------|------|----|--------------------|
-| `--subnet-config-dir` | `AVAGO_SUBNET_CONFIG_DIR` | string | `$HOME/.rinkgo/configs/subnets` | Specifies the directory that contains Subnet configs, as described above. If the flag is set explicitly, the specified folder must exist, or AvalancheGo will exit with an error. This flag is ignored if `--subnet-config-content` is specified. Example: Let's say we have a Subnet with ID `p4jUwqZsA2LuSftroCd3zb4ytH8W99oXKuKVZdsty7eQ3rXD6`. We can create a config file under the default `subnet-config-dir` at `$HOME/.rinkgo/configs/subnets/p4jUwqZsA2LuSftroCd3zb4ytH8W99oXKuKVZdsty7eQ3rXD6.json`. An example config file is: `{"validatorOnly": false, "consensusParameters": {"k": 25, "alpha": 18}}`. By default, none of these directories and/or files exist. You would need to create them manually if needed. |
+| `--subnet-config-dir` | `AVAGO_SUBNET_CONFIG_DIR` | string | `$HOME/.avalanchego/configs/subnets` | Specifies the directory that contains Subnet configs, as described above. If the flag is set explicitly, the specified folder must exist, or AvalancheGo will exit with an error. This flag is ignored if `--subnet-config-content` is specified. Example: Let's say we have a Subnet with ID `p4jUwqZsA2LuSftroCd3zb4ytH8W99oXKuKVZdsty7eQ3rXD6`. We can create a config file under the default `subnet-config-dir` at `$HOME/.avalanchego/configs/subnets/p4jUwqZsA2LuSftroCd3zb4ytH8W99oXKuKVZdsty7eQ3rXD6.json`. An example config file is: `{"validatorOnly": false, "consensusParameters": {"k": 25, "alpha": 18}}`. By default, none of these directories and/or files exist. You would need to create them manually if needed. |
 | `--subnet-config-content` | `AVAGO_SUBNET_CONFIG_CONTENT` | string | - | As an alternative to `--subnet-config-dir`, it allows specifying base64 encoded parameters for a Subnet. |
 
 ### Version
@@ -523,13 +523,13 @@ Nodes gossip peers to each other so that each node can have an up-to-date peer l
 
 | Flag | Env Var | Type | Default | Description |
 |--------|--------|------|----|--------------------|
-| `--plugin-dir` | `AVAGO_PLUGIN_DIR` | string | `$HOME/.rinkgo/plugins` | Sets the directory for [VM plugins](https://build.avax.network/docs/virtual-machines). |
+| `--plugin-dir` | `AVAGO_PLUGIN_DIR` | string | `$HOME/.avalanchego/plugins` | Sets the directory for [VM plugins](https://build.avax.network/docs/virtual-machines). |
 
 ### Virtual Machine (VM) Configs
 
 | Flag | Env Var | Type | Default | Description |
 |--------|--------|------|----|--------------------|
-| `--vm-aliases-file` | `AVAGO_VM_ALIASES_FILE` | string | `~/.rinkgo/configs/vms/aliases.json` | Path to JSON file that defines aliases for Virtual Machine IDs. This flag is ignored if `--vm-aliases-file-content` is specified. Example content: `{"tGas3T58KzdjLHhBDMnH2TvrddhqTji5iZAMZ3RXs2NLpSnhH": ["timestampvm", "timerpc"]}`. The above example aliases the VM whose ID is `"tGas3T58KzdjLHhBDMnH2TvrddhqTji5iZAMZ3RXs2NLpSnhH"` to `"timestampvm"` and `"timerpc"`. |
+| `--vm-aliases-file` | `AVAGO_VM_ALIASES_FILE` | string | `~/.avalanchego/configs/vms/aliases.json` | Path to JSON file that defines aliases for Virtual Machine IDs. This flag is ignored if `--vm-aliases-file-content` is specified. Example content: `{"tGas3T58KzdjLHhBDMnH2TvrddhqTji5iZAMZ3RXs2NLpSnhH": ["timestampvm", "timerpc"]}`. The above example aliases the VM whose ID is `"tGas3T58KzdjLHhBDMnH2TvrddhqTji5iZAMZ3RXs2NLpSnhH"` to `"timestampvm"` and `"timerpc"`. |
 | `--vm-aliases-file-content` | `AVAGO_VM_ALIASES_FILE_CONTENT` | string | - | As an alternative to `--vm-aliases-file`, it allows specifying base64 encoded aliases for Virtual Machine IDs. |
 
 ### Indexing

@@ -2677,7 +2677,7 @@ func TestSelectChildPChainHeight(t *testing.T) {
 		{
 			name:                 "no override - mainnet",
 			time:                 beforeOverrideEnds,
-			networkID:            constants.RinkID,
+			networkID:            constants.MainnetID,
 			subnetID:             ids.GenerateTestID(),
 			currentPChainHeight:  fujiOverridePChainHeightUntilHeight + 2,
 			minPChainHeight:      fujiOverridePChainHeightUntilHeight - 5,

@@ -657,7 +657,7 @@ func getStakingConfig(v *viper.Viper, networkID uint32) (node.StakingConfig, err
 		return node.StakingConfig{}, errSybilProtectionDisabledStakerWeights
 	}
 
-	if !config.SybilProtectionEnabled && (networkID == constants.RinkID || networkID == constants.ChennaiID) {
+	if !config.SybilProtectionEnabled && (networkID == constants.MainnetID || networkID == constants.ChennaiID) {
 		return node.StakingConfig{}, errSybilProtectionDisabledOnPublicNetwork
 	}
 
@@ -672,7 +672,7 @@ func getStakingConfig(v *viper.Viper, networkID uint32) (node.StakingConfig, err
 		return node.StakingConfig{}, err
 	}
 
-	if networkID != constants.RinkID && networkID != constants.ChennaiID {
+	if networkID != constants.MainnetID && networkID != constants.ChennaiID {
 		config.UptimeRequirement = v.GetFloat64(UptimeRequirementKey)
 		config.MinValidatorStake = v.GetUint64(MinValidatorStakeKey)
 		config.MaxValidatorStake = v.GetUint64(MaxValidatorStakeKey)
@@ -736,7 +736,7 @@ func getStakingSignerConfig(v *viper.Viper) (node.StakingSignerConfig, error) {
 }
 
 func getTxFeeConfig(v *viper.Viper, networkID uint32) genesis.TxFeeConfig {
-	if networkID != constants.RinkID && networkID != constants.ChennaiID {
+	if networkID != constants.MainnetID && networkID != constants.ChennaiID {
 		return genesis.TxFeeConfig{
 			CreateAssetTxFee: v.GetUint64(CreateAssetTxFeeKey),
 			TxFee:            v.GetUint64(TxFeeKey),
@@ -770,7 +770,7 @@ func getUpgradeConfig(v *viper.Viper, networkID uint32) (upgrade.Config, error) 
 	}
 
 	switch networkID {
-	case constants.RinkID, constants.TestnetID, constants.LocalID:
+	case constants.MainnetID, constants.TestnetID, constants.LocalID:
 		return upgrade.Config{}, fmt.Errorf("cannot configure upgrades for networkID: %s",
 			constants.NetworkName(networkID),
 		)

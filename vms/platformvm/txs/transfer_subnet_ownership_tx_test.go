@@ -58,7 +58,7 @@ func TestTransferSubnetOwnershipTxSerialization(t *testing.T) {
 	simpleTransferSubnetOwnershipTx := &TransferSubnetOwnershipTx{
 		BaseTx: BaseTx{
 			BaseTx: avax.BaseTx{
-				NetworkID:    constants.RinkID,
+				NetworkID:    constants.MainnetID,
 				BlockchainID: constants.PlatformChainID,
 				Outs:         []*avax.TransferableOutput{},
 				Ins: []*avax.TransferableInput{
@@ -170,7 +170,7 @@ func TestTransferSubnetOwnershipTxSerialization(t *testing.T) {
 	complexTransferSubnetOwnershipTx := &TransferSubnetOwnershipTx{
 		BaseTx: BaseTx{
 			BaseTx: avax.BaseTx{
-				NetworkID:    constants.RinkID,
+				NetworkID:    constants.MainnetID,
 				BlockchainID: constants.PlatformChainID,
 				Outs: []*avax.TransferableOutput{
 					{

@@ -162,9 +162,9 @@ func (c *Config) InitialSupply() (uint64, error) {
 }
 
 var (
-	// RinkConfig is the config that should be used to generate the rink
+	// MainnetConfig is the config that should be used to generate the mainnet
 	// genesis.
-	RinkConfig Config
+	MainnetConfig Config
 
 	// ChennaiConfig is the config that should be used to generate the chennai
 	// genesis.
@@ -180,12 +180,12 @@ var (
 )
 
 func init() {
-	unparsedRinkConfig := UnparsedConfig{}
+	unparsedMainnetConfig := UnparsedConfig{}
 	unparsedChennaiConfig := UnparsedConfig{}
 	unparsedLocalConfig := UnparsedConfig{}
 
 	err := errors.Join(
-		json.Unmarshal(rinkGenesisConfigJSON, &unparsedRinkConfig),
+		json.Unmarshal(mainnetGenesisConfigJSON, &unparsedMainnetConfig),
 		json.Unmarshal(chennaiGenesisConfigJSON, &unparsedChennaiConfig),
 		json.Unmarshal(localGenesisConfigJSON, &unparsedLocalConfig),
 	)
@@ -193,7 +193,7 @@ func init() {
 		panic(err)
 	}
 
-	RinkConfig, err = unparsedRinkConfig.Parse()
+	MainnetConfig, err = unparsedMainnetConfig.Parse()
 	if err != nil {
 		panic(err)
 	}
@@ -222,8 +222,8 @@ func init() {
 
 func GetConfig(networkID uint32) *Config {
 	switch networkID {
-	case constants.RinkID:
-		return &RinkConfig
+	case constants.MainnetID:
+		return &MainnetConfig
 	case constants.ChennaiID:
 		return &ChennaiConfig
 	case constants.LocalID:

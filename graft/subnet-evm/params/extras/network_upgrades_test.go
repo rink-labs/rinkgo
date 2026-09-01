@@ -163,29 +163,29 @@ func TestCheckNetworkUpgradesCompatible(t *testing.T) {
 		{
 			name: "Incompatible_fastforward_nil_NetworkUpgrades",
 			upgrades1: func() *NetworkUpgrades {
-				upgrades := GetNetworkUpgrades(upgrade.Fuji)
+				upgrades := GetNetworkUpgrades(upgrade.Chennai)
 				return &upgrades
 			}(),
 			upgrades2: func() *NetworkUpgrades {
-				upgrades := GetNetworkUpgrades(upgrade.Fuji)
+				upgrades := GetNetworkUpgrades(upgrade.Chennai)
 				upgrades.EtnaTimestamp = nil
 				return &upgrades
 			}(),
-			time:  uint64(upgrade.Fuji.EtnaTime.Unix()),
+			time:  uint64(upgrade.Chennai.EtnaTime.Unix()),
 			valid: false,
 		},
 		{
 			name: "Compatible_Fortuna_fastforward_nil_NetworkUpgrades",
 			upgrades1: func() *NetworkUpgrades {
-				upgrades := GetNetworkUpgrades(upgrade.Fuji)
+				upgrades := GetNetworkUpgrades(upgrade.Chennai)
 				return &upgrades
 			}(),
 			upgrades2: func() *NetworkUpgrades {
-				upgrades := GetNetworkUpgrades(upgrade.Fuji)
+				upgrades := GetNetworkUpgrades(upgrade.Chennai)
 				upgrades.FortunaTimestamp = nil
 				return &upgrades
 			}(),
-			time:  uint64(upgrade.Fuji.FortunaTime.Unix()),
+			time:  uint64(upgrade.Chennai.FortunaTime.Unix()),
 			valid: true,
 		},
 	}
@@ -248,9 +248,9 @@ func TestVerifyNetworkUpgrades(t *testing.T) {
 			name: "Valid_Fuji_Durango_reconfigured_to_Mainnet",
 			upgrades: &NetworkUpgrades{
 				SubnetEVMTimestamp: utils.NewUint64(0),
-				DurangoTimestamp:   utils.TimeToNewUint64(upgrade.GetConfig(constants.RinkID).DurangoTime),
+				DurangoTimestamp:   utils.TimeToNewUint64(upgrade.GetConfig(constants.MainnetID).DurangoTime),
 			},
-			avagoUpgrades: upgrade.Fuji,
+			avagoUpgrades: upgrade.Chennai,
 			wantError:     errCannotBeNil, // Etna is required but not specified
 		},
 		{
@@ -277,10 +277,10 @@ func TestVerifyNetworkUpgrades(t *testing.T) {
 			name: "Valid_Granite_After_nil_Fortuna",
 			upgrades: &NetworkUpgrades{
 				SubnetEVMTimestamp: utils.NewUint64(0),
-				DurangoTimestamp:   utils.TimeToNewUint64(upgrade.Fuji.DurangoTime),
-				EtnaTimestamp:      utils.TimeToNewUint64(upgrade.Fuji.EtnaTime),
+				DurangoTimestamp:   utils.TimeToNewUint64(upgrade.Chennai.DurangoTime),
+				EtnaTimestamp:      utils.TimeToNewUint64(upgrade.Chennai.EtnaTime),
 				FortunaTimestamp:   nil,
-				GraniteTimestamp:   utils.TimeToNewUint64(upgrade.Fuji.GraniteTime),
+				GraniteTimestamp:   utils.TimeToNewUint64(upgrade.Chennai.GraniteTime),
 			},
 			avagoUpgrades: upgradetest.GetConfig(upgradetest.Granite),
 			wantError:     nil,

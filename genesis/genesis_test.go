@@ -49,7 +49,7 @@ func TestValidateConfig(t *testing.T) {
 	}{
 		"Rink": {
 			networkID:   90059,
-			config:      &RinkConfig,
+			config:      &MainnetConfig,
 			expectedErr: nil,
 		},
 		"Chennai": {
@@ -64,7 +64,7 @@ func TestValidateConfig(t *testing.T) {
 		},
 		"Rink (networkID mismatch)": {
 			networkID:   2,
-			config:      &RinkConfig,
+			config:      &MainnetConfig,
 			expectedErr: errConflictingNetworkIDs,
 		},
 		"invalid start time": {
@@ -184,8 +184,8 @@ func TestGenesisFromFile(t *testing.T) {
 		expectedErr     error
 		expectedHash    string
 	}{
-		"Rink": {
-			networkID:    constants.RinkID,
+		"Mainnet": {
+			networkID:    constants.MainnetID,
 			customConfig: customGenesisConfigJSON,
 			expectedErr:  errOverridesStandardNetworkConfig,
 		},
@@ -272,8 +272,8 @@ func TestGenesisFromFlag(t *testing.T) {
 		expectedErr  error
 		expectedHash string
 	}{
-		"Rink": {
-			networkID:   constants.RinkID,
+		"Mainnet": {
+			networkID:   constants.MainnetID,
 			expectedErr: errOverridesStandardNetworkConfig,
 		},
 		"Chennai": {
@@ -321,8 +321,8 @@ func TestGenesisFromFlag(t *testing.T) {
 				// try loading a default config
 				var err error
 				switch test.networkID {
-				case constants.RinkID:
-					genBytes, err = json.Marshal(&RinkConfig)
+				case constants.MainnetID:
+					genBytes, err = json.Marshal(&MainnetConfig)
 					require.NoError(err)
 				case constants.TestnetID:
 					genBytes, err = json.Marshal(&ChennaiConfig)
@@ -355,7 +355,7 @@ func TestGenesis(t *testing.T) {
 		expectedID string
 	}{
 		{
-			config:     &RinkConfig,
+			config:     &MainnetConfig,
 			expectedID: "UUvXi6j7QhVvgpbKM89MP5HdrxKm9CaJeHc187TsDNf8nZdLk",
 		},
 		{
@@ -390,7 +390,7 @@ func TestVMGenesis(t *testing.T) {
 		vmTest    []vmTest
 	}{
 		{
-			networkID: constants.RinkID,
+			networkID: constants.MainnetID,
 			vmTest: []vmTest{
 				{
 					vmID:       constants.AVMID,
@@ -464,7 +464,7 @@ func TestAVAXAssetID(t *testing.T) {
 		expectedID string
 	}{
 		{
-			networkID:  constants.RinkID,
+			networkID:  constants.MainnetID,
 			expectedID: "FvwEAhmxKfeiG8SnEvq42hc6whRyY3EFYAvebMqDNDGCgxN5Z",
 		},
 		{
@@ -501,7 +501,7 @@ func TestCChainGenesisTimestamp(t *testing.T) {
 		expectedGenesisTime uint64
 	}{
 		{
-			networkID:           constants.RinkID,
+			networkID:           constants.MainnetID,
 			expectedGenesisTime: 0,
 		},
 		{

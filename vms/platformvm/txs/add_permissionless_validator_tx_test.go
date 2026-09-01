@@ -71,7 +71,7 @@ func TestAddPermissionlessPrimaryValidator(t *testing.T) {
 	simpleAddPrimaryTx := &AddPermissionlessValidatorTx{
 		BaseTx: BaseTx{
 			BaseTx: avax.BaseTx{
-				NetworkID:    constants.RinkID,
+				NetworkID:    constants.MainnetID,
 				BlockchainID: constants.PlatformChainID,
 				Outs:         []*avax.TransferableOutput{},
 				Ins: []*avax.TransferableInput{
@@ -276,7 +276,7 @@ func TestAddPermissionlessPrimaryValidator(t *testing.T) {
 	complexAddPrimaryTx := &AddPermissionlessValidatorTx{
 		BaseTx: BaseTx{
 			BaseTx: avax.BaseTx{
-				NetworkID:    constants.RinkID,
+				NetworkID:    constants.MainnetID,
 				BlockchainID: constants.PlatformChainID,
 				Outs: []*avax.TransferableOutput{
 					{
@@ -742,7 +742,7 @@ func TestAddPermissionlessSubnetValidator(t *testing.T) {
 	simpleAddSubnetTx := &AddPermissionlessValidatorTx{
 		BaseTx: BaseTx{
 			BaseTx: avax.BaseTx{
-				NetworkID:    constants.RinkID,
+				NetworkID:    constants.MainnetID,
 				BlockchainID: constants.PlatformChainID,
 				Outs:         []*avax.TransferableOutput{},
 				Ins: []*avax.TransferableInput{
@@ -963,7 +963,7 @@ func TestAddPermissionlessSubnetValidator(t *testing.T) {
 	complexAddSubnetTx := &AddPermissionlessValidatorTx{
 		BaseTx: BaseTx{
 			BaseTx: avax.BaseTx{
-				NetworkID:    constants.RinkID,
+				NetworkID:    constants.MainnetID,
 				BlockchainID: constants.PlatformChainID,
 				Outs: []*avax.TransferableOutput{
 					{

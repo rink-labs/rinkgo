@@ -162,7 +162,7 @@ func TestBanffProposalBlockJSON(t *testing.T) {
 		{
 			Unsigned: &txs.BaseTx{
 				BaseTx: avax.BaseTx{
-					NetworkID:    constants.RinkID,
+					NetworkID:    constants.MainnetID,
 					BlockchainID: constants.PlatformChainID,
 					Outs:         []*avax.TransferableOutput{},
 					Ins:          []*avax.TransferableInput{},
@@ -173,7 +173,7 @@ func TestBanffProposalBlockJSON(t *testing.T) {
 		{
 			Unsigned: &txs.BaseTx{
 				BaseTx: avax.BaseTx{
-					NetworkID:    constants.RinkID,
+					NetworkID:    constants.MainnetID,
 					BlockchainID: constants.PlatformChainID,
 					Outs:         []*avax.TransferableOutput{},
 					Ins:          []*avax.TransferableInput{},

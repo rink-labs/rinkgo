@@ -63,7 +63,7 @@ func TestAddPermissionlessPrimaryDelegatorSerialization(t *testing.T) {
 	simpleAddPrimaryTx := &AddPermissionlessDelegatorTx{
 		BaseTx: BaseTx{
 			BaseTx: avax.BaseTx{
-				NetworkID:    constants.RinkID,
+				NetworkID:    constants.MainnetID,
 				BlockchainID: constants.PlatformChainID,
 				Outs:         []*avax.TransferableOutput{},
 				Ins: []*avax.TransferableInput{
@@ -223,7 +223,7 @@ func TestAddPermissionlessPrimaryDelegatorSerialization(t *testing.T) {
 	complexAddPrimaryTx := &AddPermissionlessDelegatorTx{
 		BaseTx: BaseTx{
 			BaseTx: avax.BaseTx{
-				NetworkID:    constants.RinkID,
+				NetworkID:    constants.MainnetID,
 				BlockchainID: constants.PlatformChainID,
 				Outs: []*avax.TransferableOutput{
 					{
@@ -783,7 +783,7 @@ func TestAddPermissionlessSubnetDelegatorSerialization(t *testing.T) {
 	simpleAddSubnetTx := &AddPermissionlessDelegatorTx{
 		BaseTx: BaseTx{
 			BaseTx: avax.BaseTx{
-				NetworkID:    constants.RinkID,
+				NetworkID:    constants.MainnetID,
 				BlockchainID: constants.PlatformChainID,
 				Outs:         []*avax.TransferableOutput{},
 				Ins: []*avax.TransferableInput{
@@ -979,7 +979,7 @@ func TestAddPermissionlessSubnetDelegatorSerialization(t *testing.T) {
 	complexAddSubnetTx := &AddPermissionlessDelegatorTx{
 		BaseTx: BaseTx{
 			BaseTx: avax.BaseTx{
-				NetworkID:    constants.RinkID,
+				NetworkID:    constants.MainnetID,
 				BlockchainID: constants.PlatformChainID,
 				Outs: []*avax.TransferableOutput{
 					{
