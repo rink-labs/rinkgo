@@ -1,4 +1,4 @@
-// Copyright (C) 2019-2026, Ava Labs, Inc. All rights reserved.
+// Copyright (C) 2019, Ava Labs, Inc. All rights reserved.
 // See the file LICENSE for licensing terms.
 //
 // This file is a derived work, based on the go-ethereum library whose original
@@ -43,12 +43,12 @@ import (
 	"github.com/ava-labs/avalanchego/database"
 	"github.com/ava-labs/avalanchego/graft/coreth/consensus"
 	"github.com/ava-labs/avalanchego/graft/coreth/core/extstate"
-	"github.com/ava-labs/avalanchego/graft/coreth/core/state/snapshot"
 	"github.com/ava-labs/avalanchego/graft/coreth/internal/version"
 	"github.com/ava-labs/avalanchego/graft/coreth/params"
 	"github.com/ava-labs/avalanchego/graft/coreth/plugin/evm/customtypes"
-	"github.com/ava-labs/avalanchego/graft/coreth/triedb/hashdb"
-	"github.com/ava-labs/avalanchego/graft/coreth/triedb/pathdb"
+	"github.com/ava-labs/avalanchego/graft/evm/core/state/snapshot"
+	"github.com/ava-labs/avalanchego/graft/evm/triedb/hashdb"
+	"github.com/ava-labs/avalanchego/graft/evm/triedb/pathdb"
 	"github.com/ava-labs/avalanchego/vms/evm/acp176"
 	"github.com/ava-labs/avalanchego/vms/evm/sync/customrawdb"
 	"github.com/ava-labs/libevm/common"
@@ -199,9 +199,8 @@ type CacheConfig struct {
 	StateHistory                    uint64  // Number of blocks from head whose state histories are reserved.
 	StateScheme                     string  // Scheme used to store ethereum states and merkle tree nodes on top
 
-	ChainDataDir    string // Directory to store chain data in.
-	SnapshotNoBuild bool   // Whether the background generation is allowed
-	SnapshotWait    bool   // Wait for snapshot construction on startup. TODO(karalabe): This is a dirty hack for testing, nuke it
+	SnapshotNoBuild bool // Whether the background generation is allowed
+	SnapshotWait    bool // Wait for snapshot construction on startup. TODO(karalabe): This is a dirty hack for testing, nuke it
 }
 
 // triedbConfig derives the configures for trie database.
@@ -976,7 +975,7 @@ func (bc *BlockChain) stopWithoutSaving() {
 func (bc *BlockChain) Stop() {
 	bc.stopWithoutSaving()
 
-	// Ensure that the entirety of the state snapshot is journaled to disk.
+	// Stop snapshot generation and release resources
 	if bc.snaps != nil {
 		bc.snaps.Release()
 	}
@@ -1816,16 +1815,6 @@ func (bc *BlockChain) reprocessState(current *types.Block, reexec uint64) error 
 	}
 	log.Info("Loaded Acceptor tip", "hash", acceptorTip)
 
-	// The acceptor tip is up to date either if it matches the current hash, or it has not been
-	// initialized (i.e., this node has not accepted any blocks asynchronously).
-	acceptorTipUpToDate := acceptorTip == (common.Hash{}) || acceptorTip == current.Hash()
-
-	// If the state is already available and the acceptor tip is up to date, skip re-processing.
-	if bc.HasState(current.Root()) && acceptorTipUpToDate {
-		log.Info("Skipping state reprocessing", "root", current.Root())
-		return nil
-	}
-
 	// If the acceptorTip is a non-empty hash, jump re-processing back to the acceptor tip to ensure that
 	// we re-process at a minimum from the last processed accepted block.
 	// Note: we do not have a guarantee that the last trie on disk will be at a height <= acceptorTip.
@@ -1873,6 +1862,7 @@ func (bc *BlockChain) reprocessState(current *types.Block, reexec uint64) error 
 	)
 	// Note: we add 1 since in each iteration, we attempt to re-execute the next block.
 	log.Info("Re-executing blocks to generate state for last accepted block", "from", current.NumberU64()+1, "to", origin)
+
 	for current.NumberU64() < origin {
 		// TODO: handle canceled context
 

@@ -18,6 +18,21 @@ This chain implements the Ethereum Virtual Machine and supports Solidity smart c
 The Subnet EVM runs in a separate process from the main RinkGo process and communicates with it over a local gRPC connection.
 
 
+**Note:** Starting with v1.14.0, Subnet-EVM versions are automatically aligned with AvalancheGo versions. The version is derived from [`version/constants.go`](../../version/constants.go) and no longer requires manual synchronization.
+
+```text
+[v0.7.0] AvalancheGo@v1.12.0-v1.12.1 (Protocol Version: 38)
+[v0.7.1] AvalancheGo@v1.12.2 (Protocol Version: 39)
+[v0.7.2] AvalancheGo@v1.12.2/1.13.0-fuji (Protocol Version: 39)
+[v0.7.3] AvalancheGo@v1.12.2/1.13.0 (Protocol Version: 39)
+[v0.7.4] AvalancheGo@v1.13.1 (Protocol Version: 40)
+[v0.7.5] AvalancheGo@v1.13.2 (Protocol Version: 41)
+[v0.7.6] AvalancheGo@v1.13.3-rc.2 (Protocol Version: 42)
+[v0.7.7] AvalancheGo@v1.13.3 (Protocol Version: 42)
+[v0.7.8] AvalancheGo@v1.13.4 (Protocol Version: 43)
+[v0.7.9] AvalancheGo@v1.13.5 (Protocol Version: 43)
+[v0.8.0] AvalancheGo@v1.14.0 (Protocol Version: 44)
+```
 
 ## API
 

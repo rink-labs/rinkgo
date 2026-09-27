@@ -256,7 +256,12 @@ Configuration is provided as a JSON object. All fields are optional unless other
 
 ## Database Configuration
 
-> **WARNING**: `path` is untested in production and is strongly discouraged.
+> **WARNING**: `firewood` and `path` schemes are untested in production. Using `path` is strongly discouraged. To use `firewood`, you must also set the following config options:
+>
+> - `populate-missing-tries: nil`
+> - `snapshot-cache: 0`
+
+Failing to set these options will result in errors on VM initialization. Additionally, not all APIs are available - see these portions of the config documentation for more details.
 
 | Option | Type | Description | Default |
 |--------|------|-------------|---------|

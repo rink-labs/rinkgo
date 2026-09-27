@@ -1,4 +1,4 @@
-// Copyright (C) 2019-2026, Ava Labs, Inc. All rights reserved.
+// Copyright (C) 2019, Ava Labs, Inc. All rights reserved.
 // See the file LICENSE for licensing terms.
 //
 // This file is a derived work, based on the go-ethereum library whose original
@@ -44,7 +44,7 @@ import (
 	"github.com/ava-labs/avalanchego/graft/coreth/core"
 	"github.com/ava-labs/avalanchego/graft/coreth/internal/ethapi"
 	"github.com/ava-labs/avalanchego/graft/coreth/params"
-	"github.com/ava-labs/avalanchego/graft/coreth/rpc"
+	"github.com/ava-labs/avalanchego/graft/evm/rpc"
 	"github.com/ava-labs/libevm/common"
 	"github.com/ava-labs/libevm/common/hexutil"
 	"github.com/ava-labs/libevm/core/rawdb"
@@ -100,7 +100,6 @@ func newTestBackend(t *testing.T, n int, gspec *core.Genesis, scheme string, gen
 		CommitInterval:            4096,
 		StateScheme:               scheme,
 		StateHistory:              100, // Sufficient history for testing
-		ChainDataDir:              t.TempDir(),
 	}
 	chain, err := core.NewBlockChain(backend.chaindb, cacheConfig, gspec, backend.engine, vm.Config{}, common.Hash{}, false)
 	if err != nil {
@@ -424,6 +423,20 @@ func testTraceCall(t *testing.T, scheme string) {
 			expect: ` {"gas":53020,"failed":false,"returnValue":"","structLogs":[
 		{"pc":0,"op":"NUMBER","gas":24946982,"gasCost":2,"depth":1,"stack":[]},
 		{"pc":1,"op":"STOP","gas":24946980,"gasCost":0,"depth":1,"stack":["0x1337"]}]}`,
+		},
+		// Tests issue #33014 where accessing nil block number override panics.
+		{
+			blockNumber: rpc.BlockNumber(0),
+			call: ethapi.TransactionArgs{
+				From:  &accounts[0].addr,
+				To:    &accounts[1].addr,
+				Value: (*hexutil.Big)(big.NewInt(1000)),
+			},
+			config: &TraceCallConfig{
+				BlockOverrides: &ethapi.BlockOverrides{},
+			},
+			expectErr: nil,
+			expect:    `{"gas":21000,"failed":false,"returnValue":"","structLogs":[]}`,
 		},
 	}
 	for i, testspec := range testSuite {

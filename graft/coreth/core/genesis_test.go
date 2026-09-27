@@ -1,4 +1,4 @@
-// Copyright (C) 2019-2026, Ava Labs, Inc. All rights reserved.
+// Copyright (C) 2019, Ava Labs, Inc. All rights reserved.
 // See the file LICENSE for licensing terms.
 //
 // This file is a derived work, based on the go-ethereum library whose original
@@ -40,8 +40,8 @@ import (
 	"github.com/ava-labs/avalanchego/graft/coreth/params/extras"
 	"github.com/ava-labs/avalanchego/graft/coreth/plugin/evm/upgrade/ap3"
 	"github.com/ava-labs/avalanchego/graft/coreth/precompile/contracts/warp"
-	"github.com/ava-labs/avalanchego/graft/coreth/triedb/pathdb"
-	"github.com/ava-labs/avalanchego/graft/coreth/utils"
+	"github.com/ava-labs/avalanchego/graft/evm/triedb/pathdb"
+	"github.com/ava-labs/avalanchego/utils"
 	"github.com/ava-labs/libevm/common"
 	"github.com/ava-labs/libevm/core/rawdb"
 	"github.com/ava-labs/libevm/core/types"
@@ -76,7 +76,7 @@ func TestSetupGenesis(t *testing.T) {
 
 func testSetupGenesis(t *testing.T, scheme string) {
 	apricotPhase1Config := params.Copy(params.TestApricotPhase1Config)
-	params.GetExtra(&apricotPhase1Config).ApricotPhase1BlockTimestamp = utils.NewUint64(100)
+	params.GetExtra(&apricotPhase1Config).ApricotPhase1BlockTimestamp = utils.PointerTo[uint64](100)
 	var (
 		customghash = common.HexToHash("0x1099a11e9e454bd3ef31d688cf21936671966407bc330f051d754b5ce401e7ed")
 		customg     = Genesis{
@@ -89,7 +89,7 @@ func testSetupGenesis(t *testing.T, scheme string) {
 	)
 
 	rollbackApricotPhase1Config := params.Copy(&apricotPhase1Config)
-	params.GetExtra(&rollbackApricotPhase1Config).ApricotPhase1BlockTimestamp = utils.NewUint64(90)
+	params.GetExtra(&rollbackApricotPhase1Config).ApricotPhase1BlockTimestamp = utils.PointerTo[uint64](90)
 	oldcustomg.Config = &rollbackApricotPhase1Config
 	tests := []struct {
 		name       string
@@ -147,7 +147,6 @@ func testSetupGenesis(t *testing.T, scheme string) {
 				tdb.Close()
 
 				cacheConfig := DefaultCacheConfigWithScheme(scheme)
-				cacheConfig.ChainDataDir = t.TempDir()
 				bc, err := NewBlockChain(db, cacheConfig, &oldcustomg, dummy.NewFullFaker(), vm.Config{}, genesis.Hash(), false)
 				if err != nil {
 					t.Fatal(err)
@@ -235,7 +234,7 @@ func TestNetworkUpgradeBetweenHeadAndAcceptedBlock(t *testing.T) {
 	require.Greater(block.Time, bc.lastAccepted.Time())
 
 	activatedGenesis := customg
-	apricotPhase2Timestamp := utils.NewUint64(51)
+	apricotPhase2Timestamp := utils.PointerTo[uint64](51)
 	updatedApricotPhase2Config := params.Copy(params.TestApricotPhase1Config)
 	params.GetExtra(&updatedApricotPhase2Config).ApricotPhase2BlockTimestamp = apricotPhase2Timestamp
 
@@ -273,7 +272,7 @@ func TestGenesisWriteUpgradesRegression(t *testing.T) {
 
 	params.GetExtra(genesis.Config).UpgradeConfig.PrecompileUpgrades = []extras.PrecompileUpgrade{
 		{
-			Config: warp.NewConfig(utils.NewUint64(51), 0, false),
+			Config: warp.NewConfig(utils.PointerTo[uint64](51), 0, false),
 		},
 	}
 	_, _, err = SetupGenesisBlock(db, trieDB, genesis, genesisBlock.Hash(), false)

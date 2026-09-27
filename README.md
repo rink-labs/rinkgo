@@ -17,7 +17,7 @@ The minimum recommended hardware specification for nodes connected to Mainnet is
 
 If you plan to build RinkGo from source, you will also need the following software:
 
-- [Go](https://golang.org/doc/install) version >= 1.24.9
+- [Go](https://golang.org/doc/install) version >= 1.25.8
 - [gcc](https://gcc.gnu.org/)
 - g++
 
@@ -189,6 +189,8 @@ RinkGo is first and foremost a client for the Rink network. The versioning of Ri
 ### Library Compatibility Guarantees
 
 Because RinkGo's version denotes the network version, it is expected that interfaces exported by RinkGo's packages may change in `Patch` version updates.
+
+AvalancheGo is organized as multiple Go modules that must be consumed together at matching versions. For guidance on depending on these modules in your Go projects, see [Depending on AvalancheGo Modules](docs/external_consumption.md).
 
 ### API Compatibility Guarantees
 

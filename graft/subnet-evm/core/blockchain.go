@@ -1,4 +1,4 @@
-// Copyright (C) 2019-2026, Ava Labs, Inc. All rights reserved.
+// Copyright (C) 2019, Ava Labs, Inc. All rights reserved.
 // See the file LICENSE for licensing terms.
 //
 // This file is a derived work, based on the go-ethereum library whose original
@@ -40,16 +40,17 @@ import (
 	"sync/atomic"
 	"time"
 
+	"github.com/ava-labs/avalanchego/database"
+	"github.com/ava-labs/avalanchego/graft/evm/core/state/snapshot"
+	"github.com/ava-labs/avalanchego/graft/evm/triedb/hashdb"
+	"github.com/ava-labs/avalanchego/graft/evm/triedb/pathdb"
 	"github.com/ava-labs/avalanchego/graft/subnet-evm/commontype"
 	"github.com/ava-labs/avalanchego/graft/subnet-evm/consensus"
 	"github.com/ava-labs/avalanchego/graft/subnet-evm/core/extstate"
-	"github.com/ava-labs/avalanchego/graft/subnet-evm/core/state/snapshot"
 	"github.com/ava-labs/avalanchego/graft/subnet-evm/internal/version"
 	"github.com/ava-labs/avalanchego/graft/subnet-evm/params"
-	"github.com/ava-labs/avalanchego/graft/subnet-evm/plugin/evm/customrawdb"
 	"github.com/ava-labs/avalanchego/graft/subnet-evm/plugin/evm/customtypes"
-	"github.com/ava-labs/avalanchego/graft/subnet-evm/triedb/hashdb"
-	"github.com/ava-labs/avalanchego/graft/subnet-evm/triedb/pathdb"
+	"github.com/ava-labs/avalanchego/vms/evm/sync/customrawdb"
 	"github.com/ava-labs/libevm/common"
 	"github.com/ava-labs/libevm/common/lru"
 	"github.com/ava-labs/libevm/consensus/misc/eip4844"
@@ -483,7 +484,10 @@ func NewBlockChain(
 
 	// if txlookup limit is 0 (uindexing disabled), we don't need to repair the tx index tail.
 	if bc.cacheConfig.TransactionHistory != 0 {
-		latestStateSynced := customrawdb.GetLatestSyncPerformed(bc.db)
+		latestStateSynced, err := customrawdb.GetLatestSyncPerformed(bc.db)
+		if err != nil {
+			return nil, err
+		}
 		bc.repairTxIndexTail(latestStateSynced)
 	}
 
@@ -989,7 +993,7 @@ func (bc *BlockChain) stopWithoutSaving() {
 func (bc *BlockChain) Stop() {
 	bc.stopWithoutSaving()
 
-	// Ensure that the entirety of the state snapshot is journaled to disk.
+	// Stop snapshot generation and release resources
 	if bc.snaps != nil {
 		bc.snaps.Release()
 	}
@@ -1842,7 +1846,11 @@ func (bc *BlockChain) initSnapshot(b *types.Header) {
 func (bc *BlockChain) reprocessState(current *types.Block, reexec uint64) error {
 	origin := current.NumberU64()
 	acceptorTip, err := customrawdb.ReadAcceptorTip(bc.db)
-	if err != nil {
+	// If no acceptor tip exists, treat it as empty hash (not initialized).
+	switch {
+	case errors.Is(err, database.ErrNotFound):
+		acceptorTip = common.Hash{}
+	case err != nil:
 		return fmt.Errorf("%w: unable to get Acceptor tip", err)
 	}
 	log.Info("Loaded Acceptor tip", "hash", acceptorTip)
@@ -2058,7 +2066,7 @@ func (bc *BlockChain) populateMissingTries() error {
 	// Write marker to DB to indicate populate missing tries finished successfully.
 	// Note: writing the marker here means that we do allow consecutive runs of re-populating
 	// missing tries if it does not finish during the prior run.
-	if err := customrawdb.WritePopulateMissingTries(bc.db); err != nil {
+	if err := customrawdb.WritePopulateMissingTries(bc.db, time.Now()); err != nil {
 		return fmt.Errorf("failed to write offline pruning success marker: %w", err)
 	}
 

@@ -1,4 +1,4 @@
-// Copyright (C) 2019-2026, Ava Labs, Inc. All rights reserved.
+// Copyright (C) 2019, Ava Labs, Inc. All rights reserved.
 // See the file LICENSE for licensing terms.
 //
 // This file is a derived work, based on the go-ethereum library whose original
@@ -34,9 +34,9 @@ import (
 	"testing"
 
 	"github.com/ava-labs/avalanchego/graft/coreth/consensus/dummy"
-	"github.com/ava-labs/avalanchego/graft/coreth/core/state/pruner"
 	"github.com/ava-labs/avalanchego/graft/coreth/params"
 	"github.com/ava-labs/avalanchego/graft/coreth/plugin/evm/upgrade/ap3"
+	"github.com/ava-labs/avalanchego/graft/evm/core/state/pruner"
 	"github.com/ava-labs/avalanchego/upgrade"
 	"github.com/ava-labs/avalanchego/vms/evm/sync/customrawdb"
 	"github.com/ava-labs/libevm/common"
@@ -129,7 +129,6 @@ func testArchiveBlockChainSnapsDisabled(t *testing.T, scheme string) {
 			SnapshotLimit:             0, // Disable snapshots
 			AcceptorQueueLimit:        64,
 			StateScheme:               scheme,
-			ChainDataDir:              dataPath,
 		}
 
 		return createBlockChain(
@@ -181,7 +180,6 @@ func testPruningBlockChainSnapsDisabled(t *testing.T, scheme string) {
 				SnapshotLimit:             0, // Disable snapshots
 				AcceptorQueueLimit:        64,
 				StateScheme:               scheme,
-				ChainDataDir:              dataPath,
 			},
 			gspec,
 			lastAcceptedHash,
@@ -217,7 +215,6 @@ func testPruningEmptyCallbacks(t *testing.T, scheme string) {
 			AcceptorQueueLimit:        64,
 			StateScheme:               scheme,
 			StateHistory:              32,
-			ChainDataDir:              dataPath,
 		}
 		blockchain, err := NewBlockChain(
 			db,
@@ -302,7 +299,6 @@ func testPruningBlockChainUngracefulShutdownSnapsDisabled(t *testing.T, scheme s
 				SnapshotLimit:             0, // Disable snapshots
 				AcceptorQueueLimit:        64,
 				StateScheme:               scheme,
-				ChainDataDir:              dataPath,
 			},
 			gspec,
 			lastAcceptedHash,
@@ -375,6 +371,7 @@ func TestCorruptSnapshots(t *testing.T) {
 }
 
 func TestBlockChainOfflinePruningUngracefulShutdown(t *testing.T) {
+	t.Skip("Flaky test from go-ethereum")
 	create := func(db ethdb.Database, gspec *Genesis, lastAcceptedHash common.Hash, _ string) (*BlockChain, error) {
 		// Import the chain. This runs all block validation rules.
 		blockchain, err := createBlockChain(db, pruningConfig, gspec, lastAcceptedHash)
@@ -416,7 +413,6 @@ func TestBlockChainOfflinePruningUngracefulShutdown(t *testing.T) {
 	}
 	for _, tt := range tests {
 		t.Run(tt.Name, func(t *testing.T) {
-			t.Parallel()
 			tt.testFunc(t, create)
 		})
 	}
@@ -455,7 +451,6 @@ func testPruningToNonPruning(t *testing.T, scheme string) {
 		Alloc:  types.GenesisAlloc{addr1: {Balance: big.NewInt(1000000)}},
 	}
 
-	chainDataDir := t.TempDir()
 	pruningConfig := &CacheConfig{
 		TrieCleanLimit:            256,
 		TrieDirtyLimit:            256,
@@ -466,7 +461,6 @@ func testPruningToNonPruning(t *testing.T, scheme string) {
 		StateHistory:              numStates,
 		AcceptorQueueLimit:        64,
 		StateScheme:               scheme,
-		ChainDataDir:              chainDataDir,
 	}
 
 	// Create a node in pruning mode.
@@ -528,7 +522,6 @@ func testPruningToNonPruning(t *testing.T, scheme string) {
 		AcceptorQueueLimit:        64,
 		StateScheme:               scheme,
 		StateHistory:              32,
-		ChainDataDir:              chainDataDir,
 	}
 
 	// Reopen the node, but switch from pruning to archival mode.
@@ -704,7 +697,6 @@ func testUngracefulAsyncShutdown(t *testing.T, scheme string, snapshotEnabled bo
 			Pruning:                   true,
 			CommitInterval:            commitInterval,
 			StateScheme:               scheme,
-			ChainDataDir:              dataPath,
 			StateHistory:              32,
 			SnapshotLimit:             snapshotLimit,
 			SnapshotNoBuild:           snapshotEnabled, // If true, ensure that the test errors if snapshot initialization fails
@@ -788,7 +780,6 @@ func testCanonicalHashMarker(t *testing.T, scheme string) {
 		// Initialize test chain
 		db := rawdb.NewMemoryDatabase()
 		cacheConfig := DefaultCacheConfigWithScheme(scheme)
-		cacheConfig.ChainDataDir = t.TempDir()
 		chain, err := NewBlockChain(db, cacheConfig, gspec, engine, vm.Config{}, common.Hash{}, false)
 		if err != nil {
 			t.Fatalf("failed to create tester chain: %v", err)

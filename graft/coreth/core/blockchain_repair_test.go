@@ -1,4 +1,4 @@
-// Copyright (C) 2019-2026, Ava Labs, Inc. All rights reserved.
+// Copyright (C) 2019, Ava Labs, Inc. All rights reserved.
 // See the file LICENSE for licensing terms.
 //
 // This file is a derived work, based on the go-ethereum library whose original
@@ -550,7 +550,6 @@ func testRepairWithScheme(t *testing.T, tt *rewindTest, snapshots bool, scheme s
 			SnapshotLimit:             0, // Disable snapshot by default
 			StateHistory:              32,
 			StateScheme:               scheme,
-			ChainDataDir:              datadir,
 		}
 	)
 	defer engine.Close()
